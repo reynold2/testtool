@@ -3,25 +3,30 @@ Created on 2018年7月4日
 
 @author: Administrator
 '''
-from PyQt5.QtWidgets import *
-from PyQt5.QtGui import *
-from PyQt5.QtCore import *
+from PyQt5.QtWidgets import QMainWindow, QAction, QSizePolicy, QTextEdit, QFileDialog, QDesktopWidget, QDialog, QProgressBar, QMessageBox, QWidget, QApplication, QLCDNumber, qApp, QVBoxLayout
+from PyQt5.QtGui import QIcon
+from PyQt5.QtCore import QDir, QTimer
 from tool.TableWidget import CentralView
-from test.Table import table_data
-from test.ProfileWizard import *
+from tool.ProfileWizard import ConfigDialog, ConfigModel
 from test.mianrun import runexe
 from test.aboutqt import Ui_AboutDialog
 import time
-from time import sleep
+import sys
 
 
 class window(QMainWindow):
     def __init__(self, parent=None):
         super().__init__(parent)
+        self.model = ConfigModel()
+        self.model.Register(self)
         self.myui()
+#         self.model = ConfigModel()
+#         print(id(self.model))
 
     def myui(self):
-        self.myshow1 = InputDialog()
+        self.dialog = ConfigDialog()
+        self.dialog.model.Register(self)
+
         self.widget1 = CentralView()
         self.setCentralWidget(self.widget1)
         self.qtdialog__init__()
@@ -62,7 +67,7 @@ class window(QMainWindow):
         self.freshenaction = QAction(QIcon("res/aboutus.png"), "刷新", self)
         self.freshenaction.setStatusTip("刷新列表")
         self.freshenaction.setShortcut("F5")
-        self.freshenaction.triggered.connect(self.shuaxing)
+        self.freshenaction.triggered.connect(self.Refresh)
 
         configaction = QAction(QIcon("res/qt.png"), "配置", self)
         configaction.setStatusTip("配置")
@@ -115,13 +120,12 @@ class window(QMainWindow):
         self.ui.setupUi(self.Form)
         self.ui.retranslateUi(self.Form)
 
-    def shuaxing(self):
-        self.widget1.freshen()
+    def Refresh(self):
+        self.widget1 = CentralView()
         self.setCentralWidget(self.widget1)
 
     def guide(self):
-
-        self.myshow1.show()
+        self.dialog.show()
 
     def run(self):
         self.runaction.setDisabled(True)
@@ -134,21 +138,19 @@ class window(QMainWindow):
         self.runaction.setDisabled(False)
 
     def openfile_data(self):
-        q = QFileDialog()
-        path = q.getOpenFileName(self, '选择测试用例',
-                                 './config/case',
-                                 'excel(*.xls)')
-        global globalpath
-        if q.exec_():
-            self.filename = globalpath['case']
-            q.destroy()
-        else:
-            self.filename = path[0]
-        globalpath['case'] = self.filename
+        file = QFileDialog()
+        file.setFileMode(QFileDialog.AnyFile)
+        file.setFilter(QDir.Files)
+        if file.exec_():
+            filename = file.selectedFiles()
+            self.dialog.model.datadit['case'] = filename[0]
+            self.widget1 = CentralView()
+            self.setCentralWidget(self.widget1)
 
-        self.setCentralWidget(self.widget1)
+        return self.dialog.model.valueChanged(self.dialog.model.datadit)
 
     def save(self):
+
         self.widget1.save_table()
 
     def center(self):
@@ -198,3 +200,9 @@ class MyTimer(QWidget):
 
     def onTimerOut(self):
         self.lcd.display(time.strftime("%X", time.localtime()))
+
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    ex = window()
+    sys.exit(app.exec_())

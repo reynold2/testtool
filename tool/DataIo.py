@@ -12,54 +12,56 @@ import logging
 
 
 class excel_io(object):
-    def __init__(self, defaultexcelpath="G:/Python3/layout/test/config/case/TestData1.xls", **kw):
-        self.excelpath = defaultexcelpath
+    def __init__(self, defaultexcelpath="report.xls", **kw):
+        self._excelpath = defaultexcelpath
         self.ReadEXcleBasis()
+        self.listdata = []
 
     @property
-    def excelpathproperty(self):
-        return self.excelpath
+    def excelpath(self):
+        return self._excelpath
 
-    @excelpathproperty.setter
-    def excelpathproperty(self, value):
-        self.excelpath = value
-        return self.excelpath
+    @excelpath.setter
+    def excelpath(self, value):
+        self._excelpath = value
+        return self._excelpath
 
     def ReadEXcleBasis(self):
-        if os.path.exists(self.excelpath):
-            exceldata = xlrd.open_workbook(self.excelpath)
+        if os.path.exists(self._excelpath):
+            exceldata = xlrd.open_workbook(self._excelpath)
             return exceldata
         else:
-            logging.exception("The file does not exist under the current path")
+            return None
 
     def ReadEXcleData(self):
-        # 返回字典
-        #ditdata = {}
-        listdata = []
-        try:
-            data = self.ReadEXcleBasis()
-            table = data.sheet_by_index(0)
-            for h in range(table.nrows):
-                for l in range(table.ncols):
-                            # 返回字典
-                    #ditdata[h, l] = table.cell(h, l).value
-                    listdata.append(h)
-                    listdata.append(l)
-                    listdata.append(table.cell(h, l).value)
-            return listdata
-        except IOError:
-            logging.exception("Read File opening exception")
+        self.listdata = []
+        if self.ReadEXcleBasis() == None:
+            return self.listdata
+        else:
+            try:
+                data = self.ReadEXcleBasis()
+                table = data.sheet_by_index(0)
+                for h in range(table.nrows):
+                    for l in range(table.ncols):
+                        self.listdata.append(h)
+                        self.listdata.append(l)
+                        self.listdata.append(str(table.cell(h, l).value))
+                return self.listdata
+            except IOError:
+                logging.exception("Read File opening exception")
 
-    def WriteEXcleData(self, ischangecontent=False, loc="G:/Python3/layout/tool/RE/report.xls", listdata=[], **kw):
-        if os.path.exists(loc):
+    def WriteEXcleData(self, listdata=[], **kw):
+
+        if os.path.exists(self._excelpath):
             pass
         else:
-            loc = "report.xls"
-            logging.exception("File path exception")
-        if ischangecontent == False:
+            self._excelpath = "report.xls"
+            logging.exception(
+                "The file does not exist and the default path is used[report.xls]")
+        if listdata == self.listdata:
             exceldata = self.ReadEXcleBasis()
             w_xls = copy(exceldata)
-            w_xls.save(loc)
+            w_xls.save(self._excelpath)
         else:
             try:
                 wb = xlwt.Workbook(encoding='utf-8')
@@ -68,47 +70,76 @@ class excel_io(object):
                     b = listdata[i:i + 3]
                     sh.write(b[0], b[1],
                              b[2])
-                wb.save(loc)
-            except IOError:
-                logging.exception("File write exception")
+            except IndexError:
+                logging.exception(
+                    "File data is lost, incoming data cannot be triples, illegal")
+            finally:
+                wb.save(self._excelpath)
 
 
 class config_io(object):
     def __init__(self, defaultconfigpath="config.ini", **kw):
-        self.configpath = defaultconfigpath
+        self._configpath = defaultconfigpath
+        self.confdata = {}
 
     @property
-    def configpathproperty(self):
-        return self.configpath
+    def configpath(self):
+        return self._configpath
 
-    @configpathproperty.setter
-    def configpathproperty(self, value):
-        self.configpath = value
+    @configpath.setter
+    def configpath(self, value):
+        self._configpath = value
 # 读取ini返回一个字典
 
     def ReadConfigData(self):
         try:
             conf = configparser.ConfigParser()
-            conf.read(self.configpath, encoding='utf-8-sig')
+            conf.read(self._configpath, encoding='utf-8-sig')
             hander = conf.sections()
-            if "config" in hander:
-                k_v = conf.items('config')
-                confdata = dict(k_v)
-                return confdata
+            if "Config" in hander:
+                k_v = conf.items('Config')
+                self.confdata = dict(k_v)
+                return self.confdata
             else:
                 k_v = conf.items(hander[0])
-                confdata = dict(k_v)
-                return confdata
+                self.confdata = dict(k_v)
+                return self.confdata
         except:
-            return None
+            self.confdata = {}
+            return self.confdata
 
-    def WriteConfigData(self, defaultloc="config.ini", section="config", confdata=None, **kw):
-        conf = configparser.ConfigParser()
-        try:
-            conf.add_section(section)
-            for key, value in confdata.items():
-                conf.set(section, key, value)
-            with open(defaultloc, 'w') as fw:
-                conf.write(fw)
-        except:
-            return None
+    def WriteConfigData(self, outconfdata={}, **kw):
+        section = "Config"
+        if outconfdata == self.confdata:
+            logging.info("Configuration files are not changed to write")
+        else:
+            self.confdata = outconfdata
+            conf = configparser.ConfigParser()
+            try:
+                conf.add_section(section)
+                for key, value in self.confdata.items():
+                    conf.set(section, str(key), str(value))
+                    try:
+                        with open(self._configpath, 'w') as fw:
+                            conf.write(fw)
+                    except IOError:
+                        logging.info(
+                            "The file path does not exist and cannot be saved")
+
+            except:
+                logging(
+                    "File content exception incorrect writing erro")
+
+
+if __name__ == "__main__":
+    c = config_io()
+    e = excel_io()
+    print(c.ReadConfigData())
+    print(e.ReadEXcleData())
+    c.configpath = "config.ini"
+    e.excelpath = "G:/Python3/layout/tool/RE/report.xls"
+    print(e.ReadEXcleData())
+    e.excelpath = "G:/Python3/layout/tool/report.xls"
+#     c.WriteConfigData(outconfdata={"f": 2221})
+    e.WriteEXcleData(listdata=[1, 3, 12])
+    print(c.ReadConfigData())

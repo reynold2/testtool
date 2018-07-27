@@ -3,30 +3,26 @@ Created on 2018年7月6日
 
 @author: Administrator
 '''
-from PyQt5.QtWidgets import *
-from PyQt5.QtGui import *
-from PyQt5.QtCore import *
+from PyQt5.QtWidgets import QTableWidget, QHBoxLayout, QWidget, QAbstractItemView, QHeaderView, QPushButton, QTableWidgetItem, QComboBox, QApplication
+
+from PyQt5.QtCore import QAbstractTableModel
 from DataManger import MangerData
-from DataIo import excel_io
+from tool.ProfileWizard import ConfigDialog, ConfigModel
 import sys
-from PyQt5 import QtCore
 
 
 class CentralView(QTableWidget):
 
     def __init__(self, datalist=[]):
         super(CentralView, self).__init__()
+        self.temp = ()
+        self.idlist = []
         self.datalist = []
+        self.templist = []
         self.table_widget = QTableWidget()
         self.ExcleView()
         self.ExtensionButton()
         self.table_widget.removeRow(0)
-#         self.data = MangerData().GetExcel()
-
-#         self.table_widget.removeRow(self.colum)
-
-
-#         self.table_widget.setColumnWidth(0, 40)
         hhbox = QHBoxLayout()
         hhbox.addWidget(self.table_widget)  # 把表格加入布局
         self.setLayout(hhbox)
@@ -55,40 +51,47 @@ class CentralView(QTableWidget):
             b = self.data[i:i + 3]
             self.table_widget.setItem(b[0], b[1],
                                       QTableWidgetItem(b[2]))
-
-        self.datalist.extend(self.exdatalist)
+        for i in range(self.row):
+            self.idlist.append(
+                self.table_widget.item(i, 0).text())
+        del self.idlist[0]
+        self.templist.extend(self.exdatalist)
+        return self.idlist
 
     def buttonForRow(self, id):
         widget = QWidget()
-        updateBtn = QPushButton('预览')
-        updateBtn.setStyleSheet(''' text-align : center;
+        PreviewsBtn = QPushButton('预览')
+        PreviewsBtn.setStyleSheet(''' text-align : center;
                                           background-color : NavajoWhite;
                                           height : 30px;
                                           border-style: outset;
                                           font : 13px  ''')
 
-#         updateBtn.clicked.connect(lambda: self.updateTable(id))
-        viewBtn = QPushButton('回放')
-        viewBtn.setStyleSheet(''' text-align : center;
+        PreviewsBtn.clicked.connect(self.text)
+        backBtn = QPushButton('回放')
+        backBtn.setStyleSheet(''' text-align : center;
                                   background-color : DarkSeaGreen;
                                   height : 30px;
                                   border-style: outset;
                                   font : 13px; ''')
-#         viewBtn.clicked.connect(lambda: self.viewTable(id))
-        deleteBtn = QPushButton('截图')
-        deleteBtn.setStyleSheet(''' text-align : center;
+        backBtn.clicked.connect(self.text)
+        screenshotBtn = QPushButton('截图')
+        screenshotBtn.setStyleSheet(''' text-align : center;
                                    background-color : LightCoral;
                                     height : 30px;
                                     border-style: outset;
                                    font : 13px; ''')
-#         viewBtn.clicked.connect(lambda: self.viewTable(id))
+        screenshotBtn.clicked.connect(self.text)
         hLayout = QHBoxLayout()
-        hLayout.addWidget(updateBtn)
-        hLayout.addWidget(viewBtn)
-        hLayout.addWidget(deleteBtn)
+        hLayout.addWidget(PreviewsBtn)
+        hLayout.addWidget(backBtn)
+        hLayout.addWidget(screenshotBtn)
         hLayout.setContentsMargins(5, 2, 5, 2)
         widget.setLayout(hLayout)
         return widget
+
+    def text(self):
+        print("12")
 
     def ExtensionButton(self):
         self.Defaultlistdata = []
@@ -107,7 +110,6 @@ class CentralView(QTableWidget):
 
             self.table_widget.setCellWidget(i, self.colum, self.combox)
             self.duixiang[self.combox] = "通过"
-
             self.table_widget.setCellWidget(
                 i, self.colum + 1, self.buttonForRow(id))
             self.combox.currentTextChanged.connect(self.onActivated)
@@ -118,21 +120,24 @@ class CentralView(QTableWidget):
         send = self.sender()
         self.duixiang[send] = x
         xlist = list(self.duixiang.values())
+
         for i in range(self.row):
-            self.listobjx.append(i)
-            self.listobjx.append(self.colum)
-            self.listobjx.append(xlist[i])
-        self.datalist.extend(self.listobjx)
+            if i == 0:
+                pass
+            else:
+                self.listobjx.append(i)
+                self.listobjx.append(self.colum)
+                self.listobjx.append(xlist[i])
+
+        self.temp = tuple(self.listobjx)
+
+        self.datalist = self.templist + list(self.temp)
         return self.datalist
-
-    def freshen(self, path):
-
-        return self.table_widget.show()
 
     def save_table(self):
         s = MangerData()
-        s.SetExcel(ischangecontent=True,
-                   loc="G:/Python3/layout/tool/RE/report.xls", listdata=self.datalist)
+        s.SetExcel(
+            datalist=self.datalist)
 
 
 class MyModel(QAbstractTableModel):
@@ -140,7 +145,9 @@ class MyModel(QAbstractTableModel):
         super().__init__()
         list1 = []
         list2 = []
-        self.data = MangerData().GetExcel()
+        model = ConfigModel()
+        dizhi = model.datadit["case"]
+        self.data = MangerData().GetExcel(location=dizhi)
         for i in range(0, len(self.data), 3):
             b = self.data[i:i + 3]
             list1.append(b[0])
@@ -163,4 +170,5 @@ if __name__ == '__main__':
     tableView = CentralView()
 
     tableView.show()
+
     a.exec_()

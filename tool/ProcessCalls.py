@@ -3,19 +3,22 @@ Created on 2018年7月6日
 
 @author: Administrator
 '''
-from test.ProfileWizard import *
 import os
 from subprocess import Popen, PIPE
 import subprocess
-from PyQt5.QtCore import QThread,pyqtSignal
-def  del_file(path):
+from PyQt5.QtCore import QThread, pyqtSignal
+
+
+def del_file(path):
     for i in os.listdir(path):
-        path_file = os.path.join(path,i) #取文件绝对路径
+        path_file = os.path.join(path, i)  # 取文件绝对路径
         if os.path.isfile(path_file):
             os.remove(path_file)
             print('正在移除文件: ' + path_file)
         else:
             del_file(path_file)
+
+
 def delete_gap_dir(path):
     if os.path.isdir(path):
         for d in os.listdir(path):
@@ -23,17 +26,20 @@ def delete_gap_dir(path):
     if not os.listdir(path):
         os.rmdir(path)
         print('正在移除空目录: ' + path)
+
+
 class runexe(QThread):
-    sinOut = pyqtSignal()       
+    sinOut = pyqtSignal()
+
     def __init__(self):
-        super(runexe,self).__init__()
+        super(runexe, self).__init__()
 
     def run(self):
-        global  globalpath
-        z,f=os.path.split(globalpath['exe']);  
-        configfilepath=z+ "/config"
-        if os.path.exists(configfilepath)==True:
-            p = Popen(['tasklist'],stdout=PIPE, stderr=PIPE)
+        global globalpath
+        z, f = os.path.split(globalpath['exe'])
+        configfilepath = z + "/config"
+        if os.path.exists(configfilepath) == True:
+            p = Popen(['tasklist'], stdout=PIPE, stderr=PIPE)
             process_lists = str(p.stdout.read())
             while 'app.exe' in process_lists:
                 Popen('taskkill /F /IM f /T')
@@ -43,7 +49,9 @@ class runexe(QThread):
             pass
         subprocess.call(globalpath['exe'])
         self.sinOut.emit()
-        print("测试程序已停止运行")       
-if __name__=="__main__":
-    ex=runexe()
+        print("测试程序已停止运行")
+
+
+if __name__ == "__main__":
+    ex = runexe()
     ex.run()
