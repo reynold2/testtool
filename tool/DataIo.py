@@ -9,13 +9,15 @@ import xlwt
 import os
 from xlutils.copy import copy
 import logging
+from tool.Gvariable import *
 
 
 class excel_io(object):
-    def __init__(self, defaultexcelpath="report.xls", **kw):
+    def __init__(self, defaultexcelpath=PATHDATA["case"], **kw):
         self._excelpath = defaultexcelpath
         self.ReadEXcleBasis()
         self.listdata = []
+        print("exc.io", id(PATHDATA))
 
     @property
     def excelpath(self):
@@ -27,10 +29,14 @@ class excel_io(object):
         return self._excelpath
 
     def ReadEXcleBasis(self):
-        if os.path.exists(self._excelpath):
-            exceldata = xlrd.open_workbook(self._excelpath)
-            return exceldata
-        else:
+        try:
+
+            if os.path.exists(self._excelpath):
+                exceldata = xlrd.open_workbook(self._excelpath)
+                return exceldata
+            else:
+                return None
+        except:
             return None
 
     def ReadEXcleData(self):
@@ -49,6 +55,7 @@ class excel_io(object):
                 return self.listdata
             except IOError:
                 logging.exception("Read File opening exception")
+                return self.listdata["1", "1", ""]
 
     def WriteEXcleData(self, listdata=[], **kw):
 
@@ -136,10 +143,10 @@ if __name__ == "__main__":
     e = excel_io()
     print(c.ReadConfigData())
     print(e.ReadEXcleData())
-    c.configpath = "config.ini"
+    c.configpath = "config1.ini"
     e.excelpath = "G:/Python3/layout/tool/RE/report.xls"
     print(e.ReadEXcleData())
     e.excelpath = "G:/Python3/layout/tool/report.xls"
-#     c.WriteConfigData(outconfdata={"f": 2221})
+    c.WriteConfigData(outconfdata={"f": 2221})
     e.WriteEXcleData(listdata=[1, 3, 12])
     print(c.ReadConfigData())

@@ -7,8 +7,8 @@ from PyQt5.QtWidgets import QMainWindow, QAction, QSizePolicy, QTextEdit, QFileD
 from PyQt5.QtGui import QIcon
 from PyQt5.QtCore import QDir, QTimer
 from tool.TableWidget import CentralView
-from tool.ProfileWizard import ConfigDialog, ConfigModel
-from test.mianrun import runexe
+from tool.ProfileWizard import *
+from tool.ProcessCalls import runexe
 from test.aboutqt import Ui_AboutDialog
 import time
 import sys
@@ -17,19 +17,14 @@ import sys
 class window(QMainWindow):
     def __init__(self, parent=None):
         super().__init__(parent)
-        self.model = ConfigModel()
-        self.model.Register(self)
         self.myui()
-#         self.model = ConfigModel()
-#         print(id(self.model))
 
     def myui(self):
         self.dialog = ConfigDialog()
-        self.dialog.model.Register(self)
-
-        self.widget1 = CentralView()
-        self.setCentralWidget(self.widget1)
-        self.qtdialog__init__()
+        self.widget = CentralView()
+        self.setCentralWidget(self.widget)
+        self.QTdialog__init__()
+        print("myui", id(PATHDATA))
 
         exitAction = QAction(QIcon("res/exit.png"), "退出", self)
         exitAction.setShortcut("ctrl+q")
@@ -114,15 +109,16 @@ class window(QMainWindow):
         self.center()
         self.show()
 
-    def qtdialog__init__(self):
+    def QTdialog__init__(self):
         self.Form = QDialog()
         self.ui = Ui_AboutDialog()
         self.ui.setupUi(self.Form)
         self.ui.retranslateUi(self.Form)
 
     def Refresh(self):
-        self.widget1 = CentralView()
-        self.setCentralWidget(self.widget1)
+        self.widget_Refresh = CentralView()
+        self.setCentralWidget(self.widget_Refresh)
+        print("Refresh", id(PATHDATA), PATHDATA)
 
     def guide(self):
         self.dialog.show()
@@ -143,11 +139,12 @@ class window(QMainWindow):
         file.setFilter(QDir.Files)
         if file.exec_():
             filename = file.selectedFiles()
-            self.dialog.model.datadit['case'] = filename[0]
-            self.widget1 = CentralView()
-            self.setCentralWidget(self.widget1)
-
-        return self.dialog.model.valueChanged(self.dialog.model.datadit)
+            global PATHDATA
+            PATHDATA['case'] = filename[0]
+            self.widget_openfile_data = CentralView()
+            self.setCentralWidget(self.widget_openfile_data)
+        print("openfile_data", id(PATHDATA), PATHDATA)
+        return PATHDATA
 
     def save(self):
 
@@ -159,15 +156,15 @@ class window(QMainWindow):
         qr.moveCenter(cp)
         self.move(qr.topLeft())
 
-    def closeEvent(self, event):
-        reply = QMessageBox.question(self, '提示？',
-                                     "你确定要退出么?", QMessageBox.Yes |
-                                     QMessageBox.No, QMessageBox.No)
-
-        if reply == QMessageBox.Yes:
-            event.accept()
-        else:
-            event.ignore()
+#     def closeEvent(self, event):
+#         reply = QMessageBox.question(self, '提示？',
+#                                      "你确定要退出么?", QMessageBox.Yes |
+#                                      QMessageBox.No, QMessageBox.No)
+#
+#         if reply == QMessageBox.Yes:
+#             event.accept()
+#         else:
+#             event.ignore()
 
     def aboutus(self):
         import webbrowser

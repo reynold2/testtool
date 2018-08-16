@@ -7,23 +7,20 @@ from PyQt5.QtWidgets import QWidget, QLabel, QFrame, QPushButton, QGridLayout, Q
 from PyQt5.QtGui import QIcon
 from PyQt5.QtCore import QDir
 from DataManger import MangerData
+from time import sleep
+from tool.Gvariable import *
 
 
 class ConfigDialog(QWidget):
 
     def __init__(self):
         super(ConfigDialog, self).__init__()
-        self.model = ConfigModel()
-        self.model.datadit
-        self.model.Register(self)
-        self.initUi()
+        self.temp = MangerData()
+        self.temp.Getconfig()
         self.exceptionfilter()
-        self.list = {}
+        self.initUi()
 
-    def update(self, model):
-        #         self.list = model.datalist
-        #         return self.list
-        pass
+        print("conf", id(PATHDATA))
 
     def initUi(self):
         self.setWindowTitle("配置文件")
@@ -36,15 +33,15 @@ class ConfigDialog(QWidget):
         label4 = QLabel("测试报告路径:")
         label5 = QLabel("配置文件路径:")
 
-        self.caseLable = QLabel(self.model.datadit['case'])
+        self.caseLable = QLabel(PATHDATA['case'])
         self.caseLable.setFrameStyle(QFrame.Panel | QFrame.Sunken)
-        self.dataLable = QLabel(self.model.datadit['data'])
+        self.dataLable = QLabel(PATHDATA['data'])
         self.dataLable.setFrameStyle(QFrame.Panel | QFrame.Sunken)
-        self.exeLable = QLabel(self.model.datadit['exe'])
+        self.exeLable = QLabel(PATHDATA['exe'])
         self.exeLable.setFrameStyle(QFrame.Panel | QFrame.Sunken)
-        self.reportLable = QLabel(self.model.datadit['report'])
+        self.reportLable = QLabel(PATHDATA['report'])
         self.reportLable.setFrameStyle(QFrame.Panel | QFrame.Sunken)
-        self.configLable = QLabel(self.model.datadit['config'])
+        self.configLable = QLabel(PATHDATA['config'])
         self.configLable.setFrameStyle(QFrame.Panel | QFrame.Sunken)
 
         caseButton = QPushButton("浏览")
@@ -83,13 +80,12 @@ class ConfigDialog(QWidget):
         self.center()
 
     def exceptionfilter(self):
-        if self.model.datadit == None:
-            self.model.datadit['case'] = None
-            self.model.datadit['data'] = None
-            self.model.datadit['exe'] = None
-            self.model.datadit['report'] = None
-            self.model.datadit['config'] = None
-            return self.model.valueChanged(self.model.datadit)
+        if PATHDATA == None:
+            PATHDATA['case'] = None
+            PATHDATA['data'] = None
+            PATHDATA['exe'] = None
+            PATHDATA['report'] = None
+            PATHDATA['config'] = None
         else:
             pass
 
@@ -99,9 +95,9 @@ class ConfigDialog(QWidget):
         file.setFilter(QDir.Files)
         if file.exec_():
             filename = file.selectedFiles()
-            self.model.datadit['case'] = filename[0]
-            self.caseLable.setText(self.model.datadit['case'])
-        return self.model.valueChanged(self.model.datadit)
+
+            PATHDATA['case'] = filename[0]
+            self.caseLable.setText(filename[0])
 
     def selectdata(self):
         file = QFileDialog()
@@ -109,9 +105,9 @@ class ConfigDialog(QWidget):
         file.setFilter(QDir.Files)
         if file.exec_():
             filename = file.selectedFiles()
-            self.model.datadit['data'] = filename[0]
-            self.dataLable.setText(self.model.datadit['data'])
-        return self.model.valueChanged(self.model.datadit)
+
+            PATHDATA['data'] = filename[0]
+            self.dataLable.setText(filename[0])
 
     def selectexe(self):
         file = QFileDialog()
@@ -119,9 +115,9 @@ class ConfigDialog(QWidget):
         file.setFilter(QDir.Files)
         if file.exec_():
             filename = file.selectedFiles()
-            self.model.datadit['exe'] = filename[0]
-            self.exeLable.setText(self.model.datadit['exe'])
-        return self.model.valueChanged(self.model.datadit)
+
+            PATHDATA['exe'] = filename[0]
+            self.exeLable.setText(filename[0])
 
     def selectreport(self):
         file = QFileDialog()
@@ -129,9 +125,9 @@ class ConfigDialog(QWidget):
         file.setFilter(QDir.Files)
         if file.exec_():
             filename = file.selectedFiles()
-            self.model.datadit['report'] = filename[0]
-            self.reportLable.setText(self.model.datadit['report'])
-        return self.model.valueChanged(self.model.datadit)
+
+            PATHDATA['report'] = filename[0]
+            self.reportLable.setText(filename[0])
 
     def selectconfig(self):
         file = QFileDialog()
@@ -139,9 +135,9 @@ class ConfigDialog(QWidget):
         file.setFilter(QDir.Files)
         if file.exec_():
             filename = file.selectedFiles()
-            self.model.datadit['config'] = filename[0]
-            self.configLable.setText(self.model.datadit['config'])
-        return self.model.valueChanged(self.model.datadit)
+
+            PATHDATA['config'] = filename[0]
+            self.configLable.setText(filename[0])
 
     def center(self):
         qr = self.frameGeometry()
@@ -150,38 +146,14 @@ class ConfigDialog(QWidget):
         self.move(qr.topLeft())
 
     def Confirmexit(self):
-        print(self.model.datadit.items())
+        print("Confirmexit", PATHDATA)
+        self.temp.Setconfig(location=PATHDATA["config"],
+                            outconfdata=PATHDATA)
 
+        print(id(PATHDATA))
+        print(id(PATHDATA["config"]))
+        sleep(0.5)
         self.close()
-
-
-class DataoBserved(object):
-
-    def __init__(self):
-        self._observers = []
-
-    def Register(self, observer):
-        self._observers.append(observer)
-        observer.update(self)
-
-    def Unregiter(self, observer):
-        self._observers.remove(observer)
-
-    def NotilyObservers(self):
-        for observer in self._observers:
-            observer.update(self)
-
-
-class ConfigModel(DataoBserved):
-    def __init__(self):
-        super(ConfigModel, self).__init__()
-        x = MangerData()
-        self.datadit = x.Getconfig(location="config.ini")
-
-    def valueChanged(self, datadit):
-        if self.datadit != datadit:
-            self.datadit = datadit
-            self.NotilyObservers()
 
 
 if __name__ == "__main__":

@@ -7,6 +7,7 @@ import os
 from subprocess import Popen, PIPE
 import subprocess
 from PyQt5.QtCore import QThread, pyqtSignal
+from tool.Gvariable import *
 
 
 def del_file(path):
@@ -20,6 +21,7 @@ def del_file(path):
 
 
 def delete_gap_dir(path):
+
     if os.path.isdir(path):
         for d in os.listdir(path):
             delete_gap_dir(os.path.join(path, d))
@@ -35,8 +37,8 @@ class runexe(QThread):
         super(runexe, self).__init__()
 
     def run(self):
-        global globalpath
-        z, f = os.path.split(globalpath['exe'])
+        print(id(PATHDATA), PATHDATA)
+        z, f = os.path.split(PATHDATA['exe'])
         configfilepath = z + "/config"
         if os.path.exists(configfilepath) == True:
             p = Popen(['tasklist'], stdout=PIPE, stderr=PIPE)
@@ -47,11 +49,13 @@ class runexe(QThread):
             delete_gap_dir(configfilepath)
         else:
             pass
-        subprocess.call(globalpath['exe'])
+        subprocess.call(PATHDATA['exe'])
         self.sinOut.emit()
         print("测试程序已停止运行")
+        print(PATHDATA['exe'])
 
 
 if __name__ == "__main__":
+
     ex = runexe()
     ex.run()

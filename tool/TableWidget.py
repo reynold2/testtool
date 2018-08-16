@@ -7,13 +7,13 @@ from PyQt5.QtWidgets import QTableWidget, QHBoxLayout, QWidget, QAbstractItemVie
 
 from PyQt5.QtCore import QAbstractTableModel
 from DataManger import MangerData
-from tool.ProfileWizard import ConfigDialog, ConfigModel
+from tool.Gvariable import *
 import sys
 
 
 class CentralView(QTableWidget):
 
-    def __init__(self, datalist=[]):
+    def __init__(self):
         super(CentralView, self).__init__()
         self.temp = ()
         self.idlist = []
@@ -26,6 +26,8 @@ class CentralView(QTableWidget):
         hhbox = QHBoxLayout()
         hhbox.addWidget(self.table_widget)  # 把表格加入布局
         self.setLayout(hhbox)
+#         self.table()
+        self.compose_id()
 
     def ExcleView(self):
 
@@ -67,21 +69,22 @@ class CentralView(QTableWidget):
                                           border-style: outset;
                                           font : 13px  ''')
 
-        PreviewsBtn.clicked.connect(self.text)
+        PreviewsBtn.clicked.connect(self.Previews)
         backBtn = QPushButton('回放')
+
         backBtn.setStyleSheet(''' text-align : center;
                                   background-color : DarkSeaGreen;
                                   height : 30px;
                                   border-style: outset;
                                   font : 13px; ''')
-        backBtn.clicked.connect(self.text)
+        backBtn.clicked.connect(self.Previews)
         screenshotBtn = QPushButton('截图')
         screenshotBtn.setStyleSheet(''' text-align : center;
                                    background-color : LightCoral;
                                     height : 30px;
                                     border-style: outset;
                                    font : 13px; ''')
-        screenshotBtn.clicked.connect(self.text)
+        screenshotBtn.clicked.connect(self.Previews)
         hLayout = QHBoxLayout()
         hLayout.addWidget(PreviewsBtn)
         hLayout.addWidget(backBtn)
@@ -90,11 +93,31 @@ class CentralView(QTableWidget):
         widget.setLayout(hLayout)
         return widget
 
-    def text(self):
-        print("12")
+    def Previews(self, x):
+        send = self.sender()
+#         send.parent_name
+        print(send.pos())
+        for idx in self.tempid:
+            for x in idx:
+
+                print(id(x))
+
+    def compose_id(self):
+        self.idlist
+#         for id in self.idlist:
+#             print(id)
+#         for idx in self.tempid:
+#             print(idx)
+
+    def table(self):
+        #         row = self.table_widget.rowCount()
+        #         for x in range(row):
+        #             print(x)
+        self.table_widget.item
 
     def ExtensionButton(self):
         self.Defaultlistdata = []
+        self.tempid = []
         self.duixiang = {}
         for i in range(self.row):
             self.combox = QComboBox()
@@ -112,6 +135,7 @@ class CentralView(QTableWidget):
             self.duixiang[self.combox] = "通过"
             self.table_widget.setCellWidget(
                 i, self.colum + 1, self.buttonForRow(id))
+            self.tempid.append(self.buttonForRow(id).children())
             self.combox.currentTextChanged.connect(self.onActivated)
         return self.Defaultlistdata
 
@@ -145,15 +169,18 @@ class MyModel(QAbstractTableModel):
         super().__init__()
         list1 = []
         list2 = []
-        model = ConfigModel()
-        dizhi = model.datadit["case"]
+        print("tab", id(PATHDATA))
+        dizhi = PATHDATA["case"]
         self.data = MangerData().GetExcel(location=dizhi)
-        for i in range(0, len(self.data), 3):
-            b = self.data[i:i + 3]
-            list1.append(b[0])
-            list2.append(b[1])
-        self.rownew = max(list1) + 1
-        self.columnew = max(list2) + 1
+        if self.data == None:
+            self.data = ["1", "1", ""]
+        else:
+            for i in range(0, len(self.data), 3):
+                b = self.data[i:i + 3]
+                list1.append(b[0])
+                list2.append(b[1])
+            self.rownew = max(list1) + 1
+            self.columnew = max(list2) + 1
 
     def row(self):
         return self.rownew

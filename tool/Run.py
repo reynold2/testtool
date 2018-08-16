@@ -6,6 +6,7 @@ Created on 2018年7月4日
 import sys
 from tool.MainWindow import window
 from PyQt5.QtWidgets import QApplication
+# from tool.Gvariable import gol
 
 
 class run(window):
