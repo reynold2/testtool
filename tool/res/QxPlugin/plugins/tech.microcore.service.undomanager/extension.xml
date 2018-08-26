@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Plugin filename="tech.microcore.service.undomanager" id="tech.microcore.service.undomanager">
+    <ExtDataSet>
+        <ExtData plugin="tech.microcore.service.undomanager" id="tech.microcore.mainwin.core.control" extPlugin="tech.microcore.mainwin.core">
+            <Format target="tech.microcore.mainwin.desktop">
+                <Action parent="tech.microcore.mainwin.desktop.toolbarPic" id="tech.microcore.service.undomanager.UndoActionHanler"/>
+                <Action parent="tech.microcore.mainwin.desktop.toolbarPic" id="tech.microcore.service.undomanager.RedoActionHanler"/>
+            </Format>
+            <Action shortcut="ctrl+z" autoRepeat="false" text="tr('Undo')" statusTip="tr('Undo')" icon="images/editundo.png" checked="false" checkable="false" sceneMode="true" iconSize="32x32" id="tech.microcore.service.undomanager.UndoActionHanler" enabled="true" toolTip="tr('Undo')" visible="true"/>
+            <Action shortcut="ctrl+y" autoRepeat="false" text="tr('Redo')" statusTip="tr('Redo')" icon="images/editredo.png" checked="false" checkable="false" sceneMode="true" iconSize="32x32" id="tech.microcore.service.undomanager.RedoActionHanler" enabled="true" toolTip="tr('Redo')" visible="true"/>
+        </ExtData>
+        <ExtData plugin="tech.microcore.service.undomanager" id="tech.microcore.mainwin.core.dockview" extPlugin="tech.microcore.mainwin.core">
+            <Dockview title="tr('UndoManager')" icon="resources/file.png" allowedAreas="15" id="tech.microcore.service.undomanager.UndoView.UI" isFloating="false" defareas="2" toolTip="tr('UndoManager')" index="5" sceneName="SCENE_V" visible="true"/>
+        </ExtData>
+    </ExtDataSet>
+</Plugin>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Plugin filename="tech.microcore.config.scenemanager" id="tech.microcore.config.scenemanager">
+    <ExtDataSet>
+        <ExtData plugin="tech.microcore.config.scenemanager" id="tech.microcore.config.optiondialog.options" extPlugin="tech.microcore.config.optiondialog">
+            <Page title="tr('Scene Manager')" parent="environment" icon="images/sceneManager.png" id="tech.microcore.config.scenemanager.action.ShowSceneManagertyWidget.page1" index="3"/>
+        </ExtData>
+    </ExtDataSet>
+</Plugin>

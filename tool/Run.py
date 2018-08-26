@@ -4,7 +4,7 @@ Created on 2018年7月4日
 @author: Administrator
 '''
 import sys
-from tool.MainWindow import window
+from MainWindow import window
 from PyQt5.QtWidgets import QApplication
 # from tool.Gvariable import gol
 

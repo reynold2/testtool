@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Plugin filename="tech.microcore.dstyle.tabwidget" id="tech.microcore.dstyle.tabwidget">
+    <ExtDataSet>
+        <ExtData plugin="tech.microcore.dstyle.tabwidget" id="tech.microcore.mainwin.core.dynamiclayout.style" extPlugin="tech.microcore.service.dynamiclayout">
+            <StyleWidget isFactory="true" title="tr('Tab Style')" id="tech.microcore.dstyle.tabwidget.dynamicLayout.UI">
+                <Meta>
+                    <bool key="show" value="false"/>
+                    <Int value="2"/>
+                </Meta>
+            </StyleWidget>
+        </ExtData>
+    </ExtDataSet>
+</Plugin>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Plugin id="tech.microcore.config.general" filename="tech.microcore.config.general">
+    <ExtDataSet>
+        <ExtData plugin="tech.microcore.config.general" id="tech.microcore.config.optiondialog.options" extPlugin="tech.microcore.config.optiondialog">
+            <Page id="tech.microcore.config.general.startup" title="tr('Startup')" parent="environment" icon="images/convention.png" index="1"/>
+        </ExtData>
+    </ExtDataSet>
+</Plugin>

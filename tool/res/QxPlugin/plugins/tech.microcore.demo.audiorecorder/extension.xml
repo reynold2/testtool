@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Plugin filename="tech.microcore.demo.audiorecorder" id="tech.microcore.demo.audiorecorder">
+    <ExtDataSet>
+        <ExtData plugin="tech.microcore.demo.audiorecorder" id="tech.microcore.demo.extsetdemo.demo1" extPlugin="tech.microcore.demo.extsetdemo">
+           <DemoLable title="Audiorecorder" id="tech.microcore.demo.audiorecorder.showlable" index="10" icon="" />
+        </ExtData>
+    </ExtDataSet>
+</Plugin>

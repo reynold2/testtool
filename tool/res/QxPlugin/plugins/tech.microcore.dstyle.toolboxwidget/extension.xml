@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Plugin id="tech.microcore.dstyle.toolboxwidget" filename="tech.microcore.dstyle.toolboxwidget">
+<ExtDataSet>
+<ExtData plugin="tech.microcore.dstyle.toolboxwidget" extPlugin="tech.microcore.service.dynamiclayout" id="tech.microcore.mainwin.core.dynamiclayout.style">
+   <StyleWidget id="tech.microcore.dstyle.toolboxwidget.dynamicLayout.UI" title="tr('Toolbox Style')">
+    <Meta>
+       <Bool key="show" value="true" />
+       <Int key="timeout" value="10" />
+    </Meta>
+   </StyleWidget>
+</ExtData>
+</ExtDataSet>
+</Plugin>

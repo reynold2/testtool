@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Plugin id="tech.microcore.dstyle.scrollwidget" filename="tech.microcore.dstyle.scrollwidget">
+<ExtDataSet>
+<ExtData plugin="tech.microcore.dstyle.scrollwidget" extPlugin="tech.microcore.service.dynamiclayout" id="tech.microcore.mainwin.core.dynamiclayout.style">
+   <StyleWidget id="tech.microcore.dstyle.scrollwidget.dynamicLayout.UI" title="tr('StaticWidget Style')" >
+    <Meta>
+       <String key="title" value="StaticWidget Style" />
+       <Int key="timeout" value="3" />
+    </Meta>
+   </StyleWidget>
+</ExtData>
+</ExtDataSet>
+</Plugin>

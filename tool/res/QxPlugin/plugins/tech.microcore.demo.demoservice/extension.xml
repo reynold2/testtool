@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Plugin Filename="tech.microcore.demo.demoservice" id="tech.microcore.demo.demoservice">
+    <ExtDataSet>
+        <ExtData plugin="tech.microcore.demo.demoservice" id="tech.microcore.mainwin.core.control" extPlugin="tech.microcore.mainwin.core">
+            <Format target="tech.microcore.mainwin.desktop">
+                <Action parent="tech.microcore.mainwin.desktop.toolbarPic" id="tech.microcore.demo.demoservice.edit"/>
+            </Format>
+            <Action autoRepeat="false" text="tr('DemoService')" icon="" checked="false" checkable="true" sceneMode="true" id="tech.microcore.demo.demoservice.edit" enabled="true" toolTip="tr('DemoService')" visible="true"/>
+        </ExtData>
+    </ExtDataSet>
+</Plugin>

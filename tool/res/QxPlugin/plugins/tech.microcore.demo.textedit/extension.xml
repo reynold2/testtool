@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Plugin id="tech.microcore.demo.textedit" filename="tech.microcore.demo.textedit">
+    <ExtDataSet>
+        <ExtData extPlugin="tech.microcore.mainwin.core" id="tech.microcore.mainwin.core.Centralview" plugin="tech.microcore.demo.textedit">
+            <Centralview index="3" title="tr('edit')" activated="true" sceneName="SCENE_V" id="tech.microcore.demo.textedit.edit.UI" icon="New.png" factory="true"/>
+        </ExtData>
+        <ExtData extPlugin="tech.microcore.mainwin.core" id="tech.microcore.mainwin.core.control" plugin="tech.microcore.demo.textedit">
+            <Format target="tech.microcore.mainwin.core.layout.desktop">
+          <MenuBar>
+             <Menu id="tech.microcore.mainwin.desktop.actionid.MenuBarFile">
+                       <Action id="tech.microcore.demo.textedit.ExportPdfActionHanler"/>
+                       <Action id="tech.microcore.demo.textedit.NewActionHanler" index="100"/>
+                       <Action id="tech.microcore.demo.textedit.OpenActionHanler" index="50"/>
+                       <Action id="tech.microcore.demo.textedit.TextEditSaveActionHanler" index="1"/>
+                       <Action id="tech.microcore.demo.textedit.PrintActionHanler" index="2"/>
+             </Menu>
+             <Menu visible="true" id="tech.microcore.mainwin.desktop.actionid.EditMenuBar">
+                        <Action id="tech.microcore.demo.textedit.CopyActionHanler"/>
+                        <Action id="tech.microcore.demo.textedit.PasteActionHanler"/>
+                        <Action id="tech.microcore.demo.textedit.CutActionHanler"/>
+                        <Action id="tech.microcore.mainwin.desktop.RevokeActionHanler"/>
+             </Menu>
+          </MenuBar>
+                <ToolBars>
+                    <Toolbar toolButtonStyle="0" index="3" id="tech.microcore.demo.textedit.toolbarFileHandle" text="tr('TextEdit')">
+                        <Action id="tech.microcore.demo.textedit.NewActionHanler"/>
+                        <Action id="tech.microcore.demo.textedit.OpenActionHanler" />
+                        <Action id="tech.microcore.demo.textedit.TextEditSaveActionHanler"/>
+                        <Action id="tech.microcore.demo.textedit.PrintActionHanler" />
+                        <Action id="tech.microcore.demo.textedit.ExportPdfActionHanler"/>
+                    </Toolbar>
+                    <Toolbar toolButtonStyle="0" index="2" id="tech.microcore.demo.textedit.toolbarTextEdit1" text="tr('TextEdit')">
+                        <Action id="tech.microcore.demo.textedit.CutActionHanler"/>
+                        <Action id="tech.microcore.demo.textedit.CopyActionHanler"/>
+                        <Action id="tech.microcore.demo.textedit.PasteActionHanler"/>
+                    </Toolbar>
+                    <Toolbar toolButtonStyle="0" index="1" id="tech.microcore.demo.textedit.toolbarTextEdit2" text="tr('TextEdit')">
+                        <Action id="tech.microcore.demo.textedit.BoldActionHanler"/>
+                        <Action id="tech.microcore.demo.textedit.ItalicActionHanler"/>
+                        <Action id="tech.microcore.demo.textedit.UnderlineActionHanler"/>
+                        <Action id="tech.microcore.demo.textedit.LeftActionHanler"/>
+                        <Action id="tech.microcore.demo.textedit.CenterActionHanler"/>
+                        <Action id="tech.microcore.demo.textedit.RightActionHanler"/>
+                        <Action id="tech.microcore.demo.textedit.JustifyActionHanler"/>
+                        <Action id="tech.microcore.demo.textedit.ColorActionHanler"/>
+                    </Toolbar>
+                    <Toolbar toolButtonStyle="0" index="4" id="tech.microcore.demo.textedit.toolbarTextEdit3" text="tr('TextEdit')">
+                        <Widget id="tech.microcore.demo.textedit.textStyleActionHanler"/>
+                        <Widget id="tech.microcore.demo.textedit.textFontActionHanler"/>
+                        <Widget id="tech.microcore.demo.textedit.textSizeActionHanler"/>
+                    </Toolbar>
+                </ToolBars>
+            </Format>
+             <Action enabled="false" visible="true" id="tech.microcore.mainwin.desktop.RevokeActionHanler" shortcut="ctrl+A" sceneMode="enabled" text="tr('Find')" sceneName=""/>
+            <Action shortcut="ctrl+O" visible="true" autoRepeat="false" iconSize="24x24" checked="false" sceneMode="enabled" enabled="true" id="tech.microcore.demo.textedit.NewActionHanler" text="tr('New')" icon="resources/filenew.png" checkable="false" toolTip="tr('New')" statusTip="tr('New')"/>
+            <Action shortcut="ctrl+O" visible="true" autoRepeat="false" iconSize="24x24" checked="false" sceneMode="enabled" enabled="true" sceneName="SCENE_V" id="tech.microcore.demo.textedit.OpenActionHanler" text="tr('Open')" icon="resources/fileopen.png" checkable="false" toolTip="tr('Open')" statusTip="tr('Open')"/>
+            <Action shortcut="ctrl+S" visible="true" autoRepeat="false" iconSize="24x24" checked="false" sceneMode="enabled" enabled="true" sceneName="SCENE_V" id="tech.microcore.demo.textedit.TextEditSaveActionHanler" text="tr('Save')" icon="resources/filesave.png" checkable="false" toolTip="tr('Save')" statusTip="tr('Save')"/>
+            <Action shortcut="ctrl+P" visible="true" autoRepeat="false" iconSize="24x24" checked="false" sceneMode="enabled" enabled="true" sceneName="SCENE_V" id="tech.microcore.demo.textedit.PrintActionHanler" text="tr('Print')" icon="resources/fileprint.png" checkable="false" toolTip="tr('Print')" statusTip="tr('Print')"/>
+            <Action visible="true" autoRepeat="false" iconSize="24x24" checked="false" sceneMode="enabled" enabled="true" sceneName="SCENE_V" id="tech.microcore.demo.textedit.ExportPdfActionHanler" text="tr('Pdf')" icon="resources/exportpdf.png" checkable="false" toolTip="tr('Export PDF')" statusTip="tr('Export PDF')"/>
+            <Action visible="true" autoRepeat="false" iconSize="32x32" checked="false" sceneMode="enabled" enabled="true" sceneName="SCENE_V" id="tech.microcore.demo.textedit.CutActionHanler" text="tr('Cut')" icon="resources/editcut.png" checkable="false" toolTip="tr('Cut')" statusTip="tr('Cut')"/>
+            <Action visible="true" autoRepeat="false" iconSize="24x24" checked="false" sceneMode="enabled" enabled="true" sceneName="SCENE_V" id="tech.microcore.demo.textedit.CopyActionHanler" text="tr('Copy')" icon="resources/editcopy.png" checkable="false" toolTip="tr('Copy')" statusTip="tr('Copy')"/>
+            <Action visible="true" autoRepeat="false" iconSize="24x24" checked="false" sceneMode="enabled" enabled="true" sceneName="SCENE_V" id="tech.microcore.demo.textedit.PasteActionHanler" text="tr('Paste')" icon="resources/editpaste.png" checkable="false" toolTip="tr('Paste')" statusTip="tr('Paste')"/>
+            <Action visible="true" autoRepeat="false" iconSize="24x24" checked="false" sceneMode="enabled" enabled="true" sceneName="SCENE_V" id="tech.microcore.demo.textedit.BoldActionHanler" text="tr('Bold')" icon="resources/textbold.png" checkable="true" toolTip="tr('Bold')" statusTip="tr('Bold')"/>
+            <Action visible="true" autoRepeat="false" iconSize="24x24" checked="false" sceneMode="enabled" enabled="true" sceneName="SCENE_V" id="tech.microcore.demo.textedit.ItalicActionHanler" text="tr('Italic')" icon="resources/textitalic.png" checkable="true" toolTip="tr('Italic')" statusTip="tr('Italic')"/>
+            <Action visible="true" autoRepeat="false" iconSize="32x32" checked="false" sceneMode="enabled" enabled="true" sceneName="SCENE_V" id="tech.microcore.demo.textedit.UnderlineActionHanler" text="tr('Underline')" icon="resources/textunder.png" checkable="true" toolTip="tr('Underline')" statusTip="tr('Underline')"/>
+            <Action visible="true" autoRepeat="false" iconSize="24x24" checked="false" sceneMode="enabled" enabled="true" sceneName="SCENE_V" id="tech.microcore.demo.textedit.LeftActionHanler" text="tr('Left')" icon="resources/textleft.png" checkable="true" toolTip="tr('Left')" statusTip="tr('Left')"/>
+            <Action visible="true" autoRepeat="false" iconSize="24x24" checked="false" sceneMode="enabled" enabled="true" sceneName="SCENE_V" id="tech.microcore.demo.textedit.CenterActionHanler" text="tr('Center')" icon="resources/textcenter.png" checkable="true" toolTip="tr('Center')" statusTip="tr('Center')"/>
+            <Action visible="true" autoRepeat="false" iconSize="24x24" checked="false" sceneMode="enabled" enabled="true" sceneName="SCENE_V" id="tech.microcore.demo.textedit.RightActionHanler" text="tr('Right')" icon="resources/textright.png" checkable="true" toolTip="tr('Right')" statusTip="tr('Right')"/>
+            <Action visible="true" autoRepeat="false" iconSize="24x24" checked="false" sceneMode="enabled" enabled="true" sceneName="SCENE_V" id="tech.microcore.demo.textedit.JustifyActionHanler" text="tr('Justify')" icon="resources/textjustify.png" checkable="true" toolTip="tr('Justify')" statusTip="tr('Justify')"/>
+            <Action visible="true" autoRepeat="false" iconSize="24x24" checked="false" sceneMode="enabled" enabled="true" sceneName="SCENE_V" id="tech.microcore.demo.textedit.ColorActionHanler" text="tr('Color')" icon="resources/color.png" checkable="false" toolTip="tr('Color')" statusTip="tr('Color')"/>
+            <Widget visible="true" sceneMode="enabled" enabled="true" sceneName="SCENE_V" id="tech.microcore.demo.textedit.textStyleActionHanler" text="tr('Font Style')" toolTip="tr('Font Style')" statusTip="tr('Font Style')"/>
+            <Widget visible="true" sceneMode="enabled" enabled="true" sceneName="SCENE_V" id="tech.microcore.demo.textedit.textSizeActionHanler" text="tr('Font Size')" toolTip="tr('Font Size')" statusTip="tr('Font Size')"/>
+            <Widget visible="true" sceneMode="enabled" enabled="true" sceneName="SCENE_V" id="tech.microcore.demo.textedit.textFontActionHanler" text="tr('comboFont')"/>
+        </ExtData>
+    </ExtDataSet>
+</Plugin>

@@ -8,7 +8,7 @@ from PyQt5.QtGui import QIcon
 from PyQt5.QtCore import QDir
 from DataManger import MangerData
 from time import sleep
-from tool.Gvariable import *
+from Gvariable import *
 
 
 class ConfigDialog(QWidget):

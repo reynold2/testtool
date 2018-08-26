@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Plugin filename="tech.microcore.config.shortcutmanager" id="tech.microcore.config.shortcutmanager">
+    <ExtDataSet>
+        <ExtData plugin="tech.microcore.config.shortcutmanager" id="tech.microcore.config.optiondialog.options" extPlugin="tech.microcore.config.optiondialog">
+            <Page title="tr('Key Sequence')" parent="environment" icon="images/shortcuts.png" id="tech.microcore.config.shortcutmanager.action.ShowShortcutWidget.page1" index="5"/>
+        </ExtData>
+    </ExtDataSet>
+</Plugin>

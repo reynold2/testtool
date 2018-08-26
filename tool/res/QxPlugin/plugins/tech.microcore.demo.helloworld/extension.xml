@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<Plugin id="tech.microcore.demo.helloworld" filename="tech.microcore.demo.helloworld">
+	<ExtPointSet>
+		<ExtPoint id="tech.microcore.demo.helloworld.ext.functions" name="ExtPoint1" plugin="tech.microcore.demo.helloworld" />
+	</ExtPointSet>
+
+	<ExtDataSet>
+		<ExtData plugin="tech.microcore.demo.helloworld" extPlugin="tech.microcore.demo.helloworld" id="tech.microcore.demo.helloworld.ext.functions">
+			<func id="tech.microcore.demo.helloworld.ext.func.settings" label="FUNC: Settings" icon="/images/settings.png"/>
+		</ExtData>
+	</ExtDataSet>
+
+</Plugin>

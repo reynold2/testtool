@@ -7,7 +7,7 @@ from PyQt5.QtWidgets import QTableWidget, QHBoxLayout, QWidget, QAbstractItemVie
 
 from PyQt5.QtCore import QAbstractTableModel
 from DataManger import MangerData
-from tool.Gvariable import *
+from Gvariable import *
 import sys
 
 

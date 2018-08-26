@@ -1,0 +1,11 @@
+symbolic: tech.microcore.config.shortcutmanager
+version: 1.0.0
+compatVersion: 1.0.0
+activation: lazy
+company: Micro Core
+copyright: (C) 2014 Chen Jian
+license: LGPL v3
+describe:
+category: demo
+website: the plugin's homepage
+dependency: tech.microcore.config.optiondialog,1.0.0

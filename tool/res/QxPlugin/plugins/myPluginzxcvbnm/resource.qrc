@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/myPluginzxcvbnm/META-DATA">
+        <file>META.INF</file>
+    </qresource>
+</RCC>

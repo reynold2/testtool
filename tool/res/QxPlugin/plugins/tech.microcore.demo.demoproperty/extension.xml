@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Plugin filename="tech.microcore.demo.demoproperty" id="tech.microcore.demo.demoproperty">
+    <ExtDataSet>
+        <ExtData plugin="tech.microcore.demo.demoproperty" id="tech.microcore.mainwin.core.dockview" extPlugin="tech.microcore.mainwin.core">
+            <Dockview title="tr('Demoproperty')" allowedAreas="15" id="tech.microcore.demo.demoproperty.demo" defareas="2" isFloating="false" visible="true"/>
+        </ExtData>
+    </ExtDataSet>
+</Plugin>

@@ -1,0 +1,11 @@
+symbolic:tech.microcore.demo.textedit
+version: 1.0.0
+compatVersion: 1.0.0
+activation: lazy
+company: Micro Core
+copyright: Copyright (c) 2016 Micro Core
+license:
+describe: simplecpp
+category: demo
+website: the plugin's homepage
+dependency: tech.microcore.service.undomanager, 1.0.0

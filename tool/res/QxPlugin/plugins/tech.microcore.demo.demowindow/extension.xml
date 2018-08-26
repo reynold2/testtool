@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Plugin id="tech.microcore.demo.demowindow" filename="tech.microcore.demo.demowindow">
+<ExtDataSet>
+<ExtData plugin="tech.microcore.demo.demowindow" extPlugin="tech.microcore.mainwin.core" id="tech.microcore.mainwin.core.Centralview">
+  <Centralview id="tech.microcore.demo.demowindow.centralviewShow" title="tr('Demo')" icon="" index="9" activated="true" sceneName="SCENE_DEMO" />
+</ExtData>
+<ExtData plugin="tech.microcore.demo.demowindow" id="tech.microcore.mainwin.core.dockview" extPlugin="tech.microcore.mainwin.core">
+    <Dockview title="tr('Demo')" allowedAreas="15" id="tech.microcore.demo.demowindow.dockShow" defareas="0" isFloating="false" index="4" visible="true"/>
+</ExtData>
+<ExtData plugin="tech.microcore.demo.demowindow" id="tech.microcore.mainwin.core.control" extPlugin="tech.microcore.mainwin.core">
+    <Format target="tech.microcore.mainwin.core.layout.desktop">
+  <MenuBar>
+    <Menu index="9" enabled="true" visible="cnscnsbcfsd" id="tech.microcore.demo.demowindow.controlShow" toolTip="tr('Demo')" sceneMode="visible" statusTip="tr('Demo')" sceneName="" title="tr('Demo')">
+        <Action id="tech.microcore.demo.demowindow.ExportPdfActionHanler" enabled="true" visible="true" shortcut="ctrl+D" autoRepeat="false" sceneMode="visible" text="tr('DemoAction')" checked="false" checkable="false" icon="resources/logo_min.png"/>
+    </Menu>
+  </MenuBar>
+  </Format>
+</ExtData>
+
+</ExtDataSet>
+</Plugin>

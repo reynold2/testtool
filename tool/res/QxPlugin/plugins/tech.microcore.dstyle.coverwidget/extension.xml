@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Plugin id="tech.microcore.dstyle.coverwidget" filename="tech.microcore.dstyle.coverwidget">
+<ExtDataSet>
+<ExtData plugin="tech.microcore.dstyle.coverwidget" extPlugin="tech.microcore.service.dynamiclayout" id="tech.microcore.mainwin.core.dynamiclayout.style">
+   <StyleWidget id="tech.microcore.dstyle.coverwidget.dynamicLayout.UI" title="tr('CoverWidget Style')"/>
+</ExtData>
+</ExtDataSet>
+</Plugin>

@@ -7,7 +7,7 @@ import os
 from subprocess import Popen, PIPE
 import subprocess
 from PyQt5.QtCore import QThread, pyqtSignal
-from tool.Gvariable import *
+from Gvariable import *
 
 
 def del_file(path):

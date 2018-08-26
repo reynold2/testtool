@@ -6,10 +6,10 @@ Created on 2018年7月4日
 from PyQt5.QtWidgets import QMainWindow, QAction, QSizePolicy, QTextEdit, QFileDialog, QDesktopWidget, QDialog, QProgressBar, QMessageBox, QWidget, QApplication, QLCDNumber, qApp, QVBoxLayout
 from PyQt5.QtGui import QIcon
 from PyQt5.QtCore import QDir, QTimer
-from tool.TableWidget import CentralView
-from tool.ProfileWizard import *
-from tool.ProcessCalls import runexe
-from test.aboutqt import Ui_AboutDialog
+from TableWidget import CentralView
+from ProfileWizard import *
+from ProcessCalls import runexe
+# from aboutqt import Ui_AboutDialog
 import time
 import sys
 
@@ -110,10 +110,11 @@ class window(QMainWindow):
         self.show()
 
     def QTdialog__init__(self):
-        self.Form = QDialog()
-        self.ui = Ui_AboutDialog()
-        self.ui.setupUi(self.Form)
-        self.ui.retranslateUi(self.Form)
+        # self.Form = QDialog()
+        # self.ui = Ui_AboutDialog()
+        # self.ui.setupUi(self.Form)
+        # self.ui.retranslateUi(self.Form)
+        pass
 
     def Refresh(self):
         self.widget_Refresh = CentralView()
