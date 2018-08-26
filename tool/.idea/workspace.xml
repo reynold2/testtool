@@ -2,25 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b05458b-3ac9-401d-9ab1-6bbef287be2e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Gvariable.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataIo.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataIo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataManger.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataManger.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HEAD" beforeDir="false" afterPath="$PROJECT_DIR$/res/HEAD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ImageComparison.py" beforeDir="false" afterPath="$PROJECT_DIR$/ImageComparison.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProcessCalls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProcessCalls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProfileWizard.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProfileWizard.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Run.exe" beforeDir="false" afterPath="$PROJECT_DIR$/res/Run.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Run.py" beforeDir="false" afterPath="$PROJECT_DIR$/Run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SubWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/SubWindow.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TableWidget.py" beforeDir="false" afterPath="$PROJECT_DIR$/TableWidget.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestData.xls" beforeDir="false" afterPath="$PROJECT_DIR$/res/TestData.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config" beforeDir="false" afterPath="$PROJECT_DIR$/res/config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/description" beforeDir="false" afterPath="$PROJECT_DIR$/res/description" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report.xls" beforeDir="false" afterPath="$PROJECT_DIR$/res/report.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gvariable.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gvariable.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/QxPlugin/config/app/configureadmin.db" beforeDir="false" afterPath="$PROJECT_DIR$/res/QxPlugin/config/app/configureadmin.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/QxPlugin/config/app/extension.dat" beforeDir="false" afterPath="$PROJECT_DIR$/res/QxPlugin/config/app/extension.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/res/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/res/config.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.spec" beforeDir="false" afterPath="$PROJECT_DIR$/res/run.spec" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,13 +15,13 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/tool$ImageComparison.coverage" NAME="ImageComparison Coverage Results" MODIFIED="1535261333713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/AppData/Local/Programs/Python/Python36-32" />
-    <SUITE FILE_PATH="coverage/tool$Run.coverage" NAME="Run Coverage Results" MODIFIED="1535261414160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/tool$Run.coverage" NAME="Run Coverage Results" MODIFIED="1535263367592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-98563984">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
@@ -47,22 +32,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="43" />
+          <entry key="py" value="47" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="43" />
+          <entry key="Python" value="47" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="116" />
+          <entry key="py" value="133" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="116" />
+          <entry key="Python" value="133" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -70,70 +55,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DataIo.py">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="209">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TableWidget.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DataManger.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="16" column="40" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="40" />
+              <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
               <folding>
-                <element signature="e#53#91#0" expanded="true" />
+                <element signature="e#53#63#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ProfileWizard.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="43" column="43" selection-start-line="43" selection-start-column="43" selection-end-line="43" selection-end-column="51" />
+              <folding>
+                <element signature="e#54#174#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gvariable.py">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="10" selection-start-column="10" selection-end-column="10" />
+              <caret column="237" selection-start-column="237" selection-end-column="237" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ImageComparison.py">
+        <entry file="file://$PROJECT_DIR$/MainWindow.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="55">
-              <caret line="5" selection-start-line="5" selection-start-column="2" selection-end-line="28" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ProcessCalls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="40" column="44" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="44" />
+            <state relative-caret-position="2204">
+              <caret line="116" column="8" selection-start-line="116" selection-start-column="8" selection-end-line="116" selection-end-column="8" />
               <folding>
-                <element signature="e#53#62#0" expanded="true" />
+                <element signature="e#53#244#0" expanded="true" />
+                <marker date="1535261291406" expanded="true" signature="3860:3869" ph="..." />
               </folding>
             </state>
           </provider>
@@ -174,7 +136,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="110" />
     <option name="y" value="22" />
     <option name="width" value="1346" />
@@ -338,15 +300,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18986385" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18986385" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3596059" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3596059" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39901477" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -409,24 +370,6 @@
     <entry file="file://$PROJECT_DIR$/res/Gvariable.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/MainWindow.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-418">
-          <caret line="116" column="8" selection-start-line="116" selection-start-column="8" selection-end-line="116" selection-end-column="8" />
-          <folding>
-            <element signature="e#53#244#0" expanded="true" />
-            <marker date="1535261291406" expanded="true" signature="3860:3869" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProfileWizard.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SubWindow.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -465,13 +408,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ProcessCalls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
@@ -482,10 +418,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ProfileWizard.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="43" column="43" selection-start-line="43" selection-start-column="43" selection-end-line="43" selection-end-column="51" />
+          <folding>
+            <element signature="e#54#174#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Gvariable.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="10" selection-start-column="10" selection-end-column="10" />
+          <caret column="237" selection-start-column="237" selection-end-column="237" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MainWindow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2204">
+          <caret line="116" column="8" selection-start-line="116" selection-start-column="8" selection-end-line="116" selection-end-column="8" />
+          <folding>
+            <element signature="e#53#244#0" expanded="true" />
+            <marker date="1535261291406" expanded="true" signature="3860:3869" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+          <folding>
+            <element signature="e#53#63#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
