@@ -158,9 +158,9 @@ class CentralView(QTableWidget):
         self.datalist = self.templist + list(self.temp)
         return self.datalist
 
-    def save_table(self):
+    def save_table(self,path):
         s = MangerData()
-        s.SetExcel(
+        s.SetExcel(location=path,
             datalist=self.datalist)
 
 

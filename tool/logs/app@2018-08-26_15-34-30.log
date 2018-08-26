@@ -1,0 +1,1438 @@
+[15:34:30-524][WARN] libpng warning: iCCP: known incorrect sRGB profile
+[15:34:30-524][WARN] libpng warning: iCCP: cHRM chunk does not match sRGB
+[15:34:30-566][WARN] libpng warning: iCCP: known incorrect sRGB profile
+[15:34:30-583][DEBUG] ExtensionStorage > dbpath: "D:/work/testtool/tool/res/QxPlugin/config/app/extension.dat" "D:/work/testtool/tool/res/QxPlugin/config/app/extension.dat"
+[15:34:30-619][DEBUG] Framework Configure: 
+ |-> plugin dir:            "D:/work/testtool/tool/res/QxPlugin/plugins" 
+ |-> language dir:          "D:/work/testtool/tool/res/QxPlugin/languages" 
+ |-> config dir:            "D:/work/testtool/tool/res/QxPlugin/config/app" 
+ |-> language:              "zh_CN" 
+ |-> loadEnabledPluginOnly: false 
+ |-> watchingPluginDir:     true
+[15:34:30-619][DEBUG] [PluginManager] > installPlugins:
+[15:34:30-620][DEBUG]  |-> "myPluginzxcvbnm"
+[15:34:30-620][DEBUG]  |-> "tech.microcore.config.configureadmin"
+[15:34:30-620][DEBUG]    |-> "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.config.configureadmin/tech.microcore.config.configureadmin.dll"
+[15:34:30-622][DEBUG]      |-> init: "tech.microcore.config.configureadmin"
+[15:34:30-622][DEBUG]      |-> "tech.microcore.config.configureadmin" : 0
+[15:34:30-622][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.config.configureadmin" ExtensionSystem::Plugin(0x96a338) - state: 2 -> 4
+[15:34:30-622][DEBUG] [ "Resolved  " ]	 "tech.microcore.config.configureadmin"
+[15:34:30-675][DEBUG] PluginChanged: "tech.microcore.config.configureadmin"  - state: 2 -> 4
+[15:34:30-675][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.config.configureadmin" ExtensionSystem::Plugin(0x96a338) - state: 1 -> 2
+[15:34:30-675][DEBUG] PluginChanged: "tech.microcore.config.configureadmin"  - state: 1 -> 2
+[15:34:30-676][DEBUG]  |-> "tech.microcore.config.dynamiclayoutedit"
+[15:34:30-676][DEBUG]    |-> "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/tech.microcore.config.dynamiclayoutedit.dll"
+[15:34:30-677][DEBUG]      |-> init: "tech.microcore.config.dynamiclayoutedit"
+[15:34:30-678][DEBUG]      |-> "tech.microcore.config.dynamiclayoutedit" : 0
+[15:34:30-678][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.config.dynamiclayoutedit" ExtensionSystem::Plugin(0x9c8340) - state: 1 -> 2
+[15:34:30-678][DEBUG] PluginChanged: "tech.microcore.config.dynamiclayoutedit"  - state: 1 -> 2
+[15:34:30-678][DEBUG]  |-> "tech.microcore.config.general"
+[15:34:30-678][DEBUG]    |-> "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.config.general/tech.microcore.config.general.dll"
+[15:34:30-680][DEBUG]      |-> init: "tech.microcore.config.general"
+[15:34:30-680][DEBUG]      |-> "tech.microcore.config.general" : 0
+[15:34:30-681][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.config.general" ExtensionSystem::Plugin(0x9c8600) - state: 1 -> 2
+[15:34:30-681][DEBUG] PluginChanged: "tech.microcore.config.general"  - state: 1 -> 2
+[15:34:30-681][DEBUG]  |-> "tech.microcore.config.optiondialog"
+[15:34:30-681][DEBUG]    |-> "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.config.optiondialog/tech.microcore.config.optiondialog.dll"
+[15:34:30-683][DEBUG]      |-> init: "tech.microcore.config.optiondialog"
+[15:34:30-683][DEBUG]      |-> "tech.microcore.config.optiondialog" : 0
+[15:34:30-684][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.config.optiondialog" ExtensionSystem::Plugin(0x9e6c40) - state: 2 -> 4
+[15:34:30-684][DEBUG] [ "Resolved  " ]	 "tech.microcore.config.optiondialog"
+[15:34:30-690][DEBUG] void ExtensionSystem::Internal::ExtensionFileParseTask::parseExtensionFile(ExtensionSystem::ExtType::Plugin&) > "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.config.configureadmin/extension.xml"
+[15:34:30-690][DEBUG] virtual void ExtensionSystem::Internal::ExtensionFileParseTask::run() [ "tech.microcore.config.configureadmin" ] QHash()
+[15:34:30-691][DEBUG] void ExtensionSystem::Internal::ExtensionFileParseTask::parseExtensionFile(ExtensionSystem::ExtType::Plugin&) > "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.config.general/extension.xml"
+[15:34:30-692][DEBUG] virtual void ExtensionSystem::Internal::ExtensionFileParseTask::run() [ "tech.microcore.config.general" ] QHash(("zh_CN", QHash(("Startup", "启动配置"))))
+[15:34:30-692][DEBUG] void ExtensionSystem::Internal::ExtensionFileParseTask::parseExtensionFile(ExtensionSystem::ExtType::Plugin&) > "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/extension.xml"
+[15:34:30-693][DEBUG] virtual void ExtensionSystem::Internal::ExtensionFileParseTask::run() [ "tech.microcore.config.dynamiclayoutedit" ] QHash(("zh_CN", QHash(("layoutEdit", "布局")))("en_US", QHash(("layoutEdit", "LayoutEdit"))))
+[15:34:30-697][DEBUG] PluginChanged: "tech.microcore.config.optiondialog"  - state: 2 -> 4
+[15:34:30-697][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.config.general" ExtensionSystem::Plugin(0x9c8600) - state: 2 -> 4
+[15:34:30-697][DEBUG] [ "Resolved  " ]	 "tech.microcore.config.general"
+[15:34:30-702][DEBUG] [DB] > writeExtensionPlugin: "tech.microcore.config.configureadmin"
+[15:34:30-714][DEBUG] void ExtensionSystem::Internal::ExtensionPointAdmin::dispatchExtensionData(const ExtensionSystem::ExtType::Plugin&) > true : QHash()
+[15:34:30-714][DEBUG] [DB] > writeExtensionPlugin: "tech.microcore.config.general"
+[15:34:30-727][DEBUG] void ExtensionSystem::Internal::ExtensionPointAdmin::dispatchExtensionData(const ExtensionSystem::ExtType::Plugin&) > true : QHash(("zh_CN", QHash(("Startup", "启动配置"))))
+[15:34:30-727][DEBUG] [DB] > writeExtensionPlugin: "tech.microcore.config.dynamiclayoutedit"
+[15:34:30-736][DEBUG] void ExtensionSystem::Internal::ExtensionPointAdmin::dispatchExtensionData(const ExtensionSystem::ExtType::Plugin&) > true : QHash(("zh_CN", QHash(("layoutEdit", "布局")))("en_US", QHash(("layoutEdit", "LayoutEdit"))))
+[15:34:30-741][DEBUG] PluginChanged: "tech.microcore.config.general"  - state: 2 -> 4
+[15:34:30-741][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.config.optiondialog" ExtensionSystem::Plugin(0x9e6c40) - state: 1 -> 2
+[15:34:30-741][DEBUG] PluginChanged: "tech.microcore.config.optiondialog"  - state: 1 -> 2
+[15:34:30-741][DEBUG]  |-> "tech.microcore.config.pluginmanager"
+[15:34:30-742][DEBUG]    |-> "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.config.pluginmanager/tech.microcore.config.pluginmanager.dll"
+[15:34:30-743][DEBUG]      |-> init: "tech.microcore.config.pluginmanager"
+[15:34:30-743][DEBUG]      |-> "tech.microcore.config.pluginmanager" : 0
+[15:34:30-743][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.config.pluginmanager" ExtensionSystem::Plugin(0x9e6cf0) - state: 1 -> 2
+[15:34:30-743][DEBUG] PluginChanged: "tech.microcore.config.pluginmanager"  - state: 1 -> 2
+[15:34:30-743][DEBUG]  |-> "tech.microcore.config.scenemanager"
+[15:34:30-743][DEBUG]    |-> "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.config.scenemanager/tech.microcore.config.scenemanager.dll"
+[15:34:30-744][DEBUG]      |-> init: "tech.microcore.config.scenemanager"
+[15:34:30-744][DEBUG]      |-> "tech.microcore.config.scenemanager" : 0
+[15:34:30-744][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.config.scenemanager" ExtensionSystem::Plugin(0x9e6d70) - state: 2 -> 4
+[15:34:30-744][DEBUG] [ "Resolved  " ]	 "tech.microcore.config.scenemanager"
+[15:34:30-749][DEBUG] void ExtensionSystem::Internal::ExtensionFileParseTask::parseExtensionFile(ExtensionSystem::ExtType::Plugin&) > "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.config.optiondialog/extension.xml"
+[15:34:30-749][DEBUG] void ExtensionSystem::Internal::ExtensionFileParseTask::parseExtensionFile(ExtensionSystem::ExtType::Plugin&) > "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.config.pluginmanager/extension.xml"
+[15:34:30-750][DEBUG] virtual void ExtensionSystem::Internal::ExtensionFileParseTask::run() [ "tech.microcore.config.pluginmanager" ] QHash(("zh_CN", QHash(("Plugin Manager", "插件管理器")))("en_US", QHash(("Plugin Manager", "Plugin Manager"))))
+[15:34:30-751][DEBUG] virtual void ExtensionSystem::Internal::ExtensionFileParseTask::run() [ "tech.microcore.config.optiondialog" ] QHash(("zh_CN", QHash(("Environment", "环境")("Options", "选项"))))
+[15:34:30-754][DEBUG] PluginChanged: "tech.microcore.config.scenemanager"  - state: 2 -> 4
+[15:34:30-754][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.config.scenemanager" ExtensionSystem::Plugin(0x9e6d70) - state: 1 -> 2
+[15:34:30-754][DEBUG] PluginChanged: "tech.microcore.config.scenemanager"  - state: 1 -> 2
+[15:34:30-754][DEBUG]  |-> "tech.microcore.config.shortcutmanager"
+[15:34:30-755][DEBUG]    |-> "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.config.shortcutmanager/tech.microcore.config.shortcutmanager.dll"
+[15:34:30-756][DEBUG]      |-> init: "tech.microcore.config.shortcutmanager"
+[15:34:30-756][DEBUG]      |-> "tech.microcore.config.shortcutmanager" : 0
+[15:34:30-756][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.config.shortcutmanager" ExtensionSystem::Plugin(0x9e6db0) - state: 2 -> 4
+[15:34:30-756][DEBUG] [ "Resolved  " ]	 "tech.microcore.config.shortcutmanager"
+[15:34:30-761][DEBUG] [DB] > writeExtensionPlugin: "tech.microcore.config.pluginmanager"
+[15:34:30-770][DEBUG] void ExtensionSystem::Internal::ExtensionPointAdmin::dispatchExtensionData(const ExtensionSystem::ExtType::Plugin&) > true : QHash(("zh_CN", QHash(("Plugin Manager", "插件管理器")))("en_US", QHash(("Plugin Manager", "Plugin Manager"))))
+[15:34:30-770][DEBUG] [DB] > writeExtensionPlugin: "tech.microcore.config.optiondialog"
+[15:34:30-779][DEBUG] void ExtensionSystem::Internal::ExtensionPointAdmin::dispatchExtensionData(const ExtensionSystem::ExtType::Plugin&) > true : QHash(("zh_CN", QHash(("Environment", "环境")("Options", "选项"))))
+[15:34:30-780][DEBUG] void ExtensionSystem::Internal::ExtensionFileParseTask::parseExtensionFile(ExtensionSystem::ExtType::Plugin&) > "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.config.scenemanager/extension.xml"
+[15:34:30-781][DEBUG] virtual void ExtensionSystem::Internal::ExtensionFileParseTask::run() [ "tech.microcore.config.scenemanager" ] QHash(("zh_CN", QHash(("Scene Manager", "场景管理器"))))
+[15:34:30-785][DEBUG] PluginChanged: "tech.microcore.config.shortcutmanager"  - state: 2 -> 4
+[15:34:30-785][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.config.shortcutmanager" ExtensionSystem::Plugin(0x9e6db0) - state: 1 -> 2
+[15:34:30-785][DEBUG] PluginChanged: "tech.microcore.config.shortcutmanager"  - state: 1 -> 2
+[15:34:30-785][DEBUG]  |-> "tech.microcore.demo.audiorecorder"
+[15:34:30-785][DEBUG]    |-> "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.demo.audiorecorder/tech.microcore.demo.audiorecorder.dll"
+[15:34:30-788][DEBUG]      |-> init: "tech.microcore.demo.audiorecorder"
+[15:34:30-788][DEBUG]      |-> "tech.microcore.demo.audiorecorder" : 0
+[15:34:30-788][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.audiorecorder" ExtensionSystem::Plugin(0x9e66b0) - state: 1 -> 2
+[15:34:30-788][DEBUG] PluginChanged: "tech.microcore.demo.audiorecorder"  - state: 1 -> 2
+[15:34:30-788][DEBUG]  |-> "tech.microcore.demo.clock"
+[15:34:30-788][DEBUG]    |-> "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.demo.clock/tech.microcore.demo.clock.dll"
+[15:34:30-789][DEBUG]      |-> init: "tech.microcore.demo.clock"
+[15:34:30-789][DEBUG]      |-> "tech.microcore.demo.clock" : 0
+[15:34:30-789][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.clock" ExtensionSystem::Plugin(0x9e6800) - state: 1 -> 2
+[15:34:30-789][DEBUG] PluginChanged: "tech.microcore.demo.clock"  - state: 1 -> 2
+[15:34:30-789][DEBUG]  |-> "tech.microcore.demo.demoproperty"
+[15:34:30-789][DEBUG]    |-> "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.demo.demoproperty/tech.microcore.demo.demoproperty.dll"
+[15:34:30-791][DEBUG]      |-> init: "tech.microcore.demo.demoproperty"
+[15:34:30-791][DEBUG]      |-> "tech.microcore.demo.demoproperty" : 0
+[15:34:30-791][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.demoproperty" ExtensionSystem::Plugin(0x9e6670) - state: 1 -> 2
+[15:34:30-791][DEBUG] PluginChanged: "tech.microcore.demo.demoproperty"  - state: 1 -> 2
+[15:34:30-791][DEBUG]  |-> "tech.microcore.demo.demoservice"
+[15:34:30-792][DEBUG]    |-> "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.demo.demoservice/tech.microcore.demo.demoservice.dll"
+[15:34:30-793][DEBUG]      |-> init: "tech.microcore.demo.demoservice"
+[15:34:30-793][DEBUG]      |-> "tech.microcore.demo.demoservice" : 0
+[15:34:30-793][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.demoservice" ExtensionSystem::Plugin(0x9e6680) - state: 2 -> 4
+[15:34:30-793][DEBUG] [ "Resolved  " ]	 "tech.microcore.demo.demoservice"
+[15:34:30-797][DEBUG] [DB] > writeExtensionPlugin: "tech.microcore.config.scenemanager"
+[15:34:30-806][DEBUG] void ExtensionSystem::Internal::ExtensionPointAdmin::dispatchExtensionData(const ExtensionSystem::ExtType::Plugin&) > true : QHash(("zh_CN", QHash(("Scene Manager", "场景管理器"))))
+[15:34:30-807][DEBUG] void ExtensionSystem::Internal::ExtensionFileParseTask::parseExtensionFile(ExtensionSystem::ExtType::Plugin&) > "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.config.shortcutmanager/extension.xml"
+[15:34:30-807][DEBUG] void ExtensionSystem::Internal::ExtensionFileParseTask::parseExtensionFile(ExtensionSystem::ExtType::Plugin&) > "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.demo.audiorecorder/extension.xml"
+[15:34:30-807][DEBUG] void ExtensionSystem::Internal::ExtensionFileParseTask::parseExtensionFile(ExtensionSystem::ExtType::Plugin&) > "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.demo.clock/extension.xml"
+[15:34:30-808][DEBUG] virtual void ExtensionSystem::Internal::ExtensionFileParseTask::run() [ "tech.microcore.config.shortcutmanager" ] QHash(("zh_CN", QHash(("Key Sequence", "快捷键"))))
+[15:34:30-808][DEBUG] virtual void ExtensionSystem::Internal::ExtensionFileParseTask::run() [ "tech.microcore.demo.audiorecorder" ] QHash(("zh_CN", QHash(("Audiorecorder", "录音"))))
+[15:34:30-808][DEBUG] void ExtensionSystem::Internal::ExtensionFileParseTask::parseExtensionFile(ExtensionSystem::ExtType::Plugin&) > "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.demo.demoproperty/extension.xml"
+[15:34:30-808][DEBUG] virtual void ExtensionSystem::Internal::ExtensionFileParseTask::run() [ "tech.microcore.demo.clock" ] QHash(("zh_CN", QHash(("clock", "钟表"))))
+[15:34:30-809][DEBUG] virtual void ExtensionSystem::Internal::ExtensionFileParseTask::run() [ "tech.microcore.demo.demoproperty" ] QHash()
+[15:34:30-813][DEBUG] PluginChanged: "tech.microcore.demo.demoservice"  - state: 2 -> 4
+[15:34:30-813][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.demoservice" ExtensionSystem::Plugin(0x9e6680) - state: 1 -> 2
+[15:34:30-813][DEBUG] PluginChanged: "tech.microcore.demo.demoservice"  - state: 1 -> 2
+[15:34:30-813][DEBUG]  |-> "tech.microcore.demo.demowindow"
+[15:34:30-813][DEBUG]    |-> "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.demo.demowindow/tech.microcore.demo.demowindow.dll"
+[15:34:30-814][DEBUG]      |-> init: "tech.microcore.demo.demowindow"
+[15:34:30-814][DEBUG]      |-> "tech.microcore.demo.demowindow" : 0
+[15:34:30-814][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.demowindow" ExtensionSystem::Plugin(0x9e67d0) - state: 1 -> 2
+[15:34:30-814][DEBUG] PluginChanged: "tech.microcore.demo.demowindow"  - state: 1 -> 2
+[15:34:30-814][DEBUG]  |-> "tech.microcore.demo.dragdroprobot"
+[15:34:30-815][DEBUG]    |-> "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.demo.dragdroprobot/tech.microcore.demo.dragdroprobot.dll"
+[15:34:30-816][DEBUG]      |-> init: "tech.microcore.demo.dragdroprobot"
+[15:34:30-816][DEBUG]      |-> "tech.microcore.demo.dragdroprobot" : 0
+[15:34:30-816][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.dragdroprobot" ExtensionSystem::Plugin(0x9e6980) - state: 1 -> 2
+[15:34:30-816][DEBUG] PluginChanged: "tech.microcore.demo.dragdroprobot"  - state: 1 -> 2
+[15:34:30-816][DEBUG]  |-> "tech.microcore.demo.extsetdemo"
+[15:34:30-816][DEBUG]    |-> "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.demo.extsetdemo/tech.microcore.demo.extsetdemo.dll"
+[15:34:30-817][DEBUG]      |-> init: "tech.microcore.demo.extsetdemo"
+[15:34:30-817][DEBUG]      |-> "tech.microcore.demo.extsetdemo" : 0
+[15:34:30-817][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.extsetdemo" ExtensionSystem::Plugin(0x9e69a0) - state: 2 -> 4
+[15:34:30-817][DEBUG] [ "Resolved  " ]	 "tech.microcore.demo.extsetdemo"
+[15:34:30-822][DEBUG] [DB] > writeExtensionPlugin: "tech.microcore.config.shortcutmanager"
+[15:34:30-832][DEBUG] void ExtensionSystem::Internal::ExtensionPointAdmin::dispatchExtensionData(const ExtensionSystem::ExtType::Plugin&) > true : QHash(("zh_CN", QHash(("Key Sequence", "快捷键"))))
+[15:34:30-832][DEBUG] [DB] > writeExtensionPlugin: "tech.microcore.demo.audiorecorder"
+[15:34:30-841][DEBUG] void ExtensionSystem::Internal::ExtensionPointAdmin::dispatchExtensionData(const ExtensionSystem::ExtType::Plugin&) > true : QHash(("zh_CN", QHash(("Audiorecorder", "录音"))))
+[15:34:30-841][DEBUG] [DB] > writeExtensionPlugin: "tech.microcore.demo.clock"
+[15:34:30-852][DEBUG] void ExtensionSystem::Internal::ExtensionPointAdmin::dispatchExtensionData(const ExtensionSystem::ExtType::Plugin&) > true : QHash(("zh_CN", QHash(("clock", "钟表"))))
+[15:34:30-852][DEBUG] [DB] > writeExtensionPlugin: "tech.microcore.demo.demoproperty"
+[15:34:30-864][DEBUG] void ExtensionSystem::Internal::ExtensionPointAdmin::dispatchExtensionData(const ExtensionSystem::ExtType::Plugin&) > true : QHash()
+[15:34:30-864][DEBUG] void ExtensionSystem::Internal::ExtensionFileParseTask::parseExtensionFile(ExtensionSystem::ExtType::Plugin&) > "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.demo.demoservice/extension.xml"
+[15:34:30-865][DEBUG] void ExtensionSystem::Internal::ExtensionFileParseTask::parseExtensionFile(ExtensionSystem::ExtType::Plugin&) > "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.demo.demowindow/extension.xml"
+[15:34:30-865][DEBUG] void ExtensionSystem::Internal::ExtensionFileParseTask::parseExtensionFile(ExtensionSystem::ExtType::Plugin&) > "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.demo.dragdroprobot/extension.xml"
+[15:34:30-865][DEBUG] virtual void ExtensionSystem::Internal::ExtensionFileParseTask::run() [ "tech.microcore.demo.demoservice" ] QHash()
+[15:34:30-866][DEBUG] virtual void ExtensionSystem::Internal::ExtensionFileParseTask::run() [ "tech.microcore.demo.demowindow" ] QHash()
+[15:34:30-866][DEBUG] virtual void ExtensionSystem::Internal::ExtensionFileParseTask::run() [ "tech.microcore.demo.dragdroprobot" ] QHash(("zh_CN", QHash(("Robot", "机器人"))))
+[15:34:30-870][DEBUG] PluginChanged: "tech.microcore.demo.extsetdemo"  - state: 2 -> 4
+[15:34:30-870][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.audiorecorder" ExtensionSystem::Plugin(0x9e66b0) - state: 2 -> 4
+[15:34:30-870][DEBUG] [ "Resolved  " ]	 "tech.microcore.demo.audiorecorder"
+[15:34:30-874][DEBUG] [DB] > writeExtensionPlugin: "tech.microcore.demo.demoservice"
+[15:34:30-884][DEBUG] void ExtensionSystem::Internal::ExtensionPointAdmin::dispatchExtensionData(const ExtensionSystem::ExtType::Plugin&) > true : QHash()
+[15:34:30-884][DEBUG] [DB] > writeExtensionPlugin: "tech.microcore.demo.demowindow"
+[15:34:30-892][DEBUG] void ExtensionSystem::Internal::ExtensionPointAdmin::dispatchExtensionData(const ExtensionSystem::ExtType::Plugin&) > true : QHash()
+[15:34:30-892][DEBUG] [DB] > writeExtensionPlugin: "tech.microcore.demo.dragdroprobot"
+[15:34:30-901][DEBUG] void ExtensionSystem::Internal::ExtensionPointAdmin::dispatchExtensionData(const ExtensionSystem::ExtType::Plugin&) > true : QHash(("zh_CN", QHash(("Robot", "机器人"))))
+[15:34:30-905][DEBUG] PluginChanged: "tech.microcore.demo.audiorecorder"  - state: 2 -> 4
+[15:34:30-906][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.extsetdemo" ExtensionSystem::Plugin(0x9e69a0) - state: 1 -> 2
+[15:34:30-906][DEBUG] PluginChanged: "tech.microcore.demo.extsetdemo"  - state: 1 -> 2
+[15:34:30-906][DEBUG]  |-> "tech.microcore.demo.hellochina"
+[15:34:30-906][DEBUG]    |-> "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.demo.hellochina/tech.microcore.demo.hellochina.dll"
+[15:34:30-907][DEBUG]      |-> init: "tech.microcore.demo.hellochina"
+[15:34:30-907][DEBUG]      |-> "tech.microcore.demo.hellochina" : 0
+[15:34:30-907][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.hellochina" ExtensionSystem::Plugin(0x9e68a0) - state: 1 -> 2
+[15:34:30-907][DEBUG] PluginChanged: "tech.microcore.demo.hellochina"  - state: 1 -> 2
+[15:34:30-907][DEBUG]  |-> "tech.microcore.demo.helloworld"
+[15:34:30-907][DEBUG]    |-> "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.demo.helloworld/tech.microcore.demo.helloworld.dll"
+[15:34:30-908][DEBUG]      |-> init: "tech.microcore.demo.helloworld"
+[15:34:30-908][DEBUG]      |-> "tech.microcore.demo.helloworld" : 0
+[15:34:30-908][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.helloworld" ExtensionSystem::Plugin(0x9e68e0) - state: 2 -> 4
+[15:34:30-908][DEBUG] [ "Resolved  " ]	 "tech.microcore.demo.helloworld"
+[15:34:30-913][DEBUG] void ExtensionSystem::Internal::ExtensionFileParseTask::parseExtensionFile(ExtensionSystem::ExtType::Plugin&) > "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.demo.extsetdemo/extension.xml"
+[15:34:30-914][DEBUG] void ExtensionSystem::Internal::ExtensionFileParseTask::parseExtensionFile(ExtensionSystem::ExtType::Plugin&) > "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.demo.hellochina/extension.xml"
+[15:34:30-914][DEBUG] virtual void ExtensionSystem::Internal::ExtensionFileParseTask::run() [ "tech.microcore.demo.hellochina" ] QHash()
+[15:34:30-914][DEBUG] virtual void ExtensionSystem::Internal::ExtensionFileParseTask::run() [ "tech.microcore.demo.extsetdemo" ] QHash()
+[15:34:30-918][DEBUG] PluginChanged: "tech.microcore.demo.helloworld"  - state: 2 -> 4
+[15:34:30-918][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.hellochina" ExtensionSystem::Plugin(0x9e68a0) - state: 2 -> 4
+[15:34:30-919][DEBUG] [ "Resolved  " ]	 "tech.microcore.demo.hellochina"
+[15:34:30-923][DEBUG] [DB] > writeExtensionPlugin: "tech.microcore.demo.hellochina"
+[15:34:30-933][DEBUG] void ExtensionSystem::Internal::ExtensionPointAdmin::dispatchExtensionData(const ExtensionSystem::ExtType::Plugin&) > true : QHash()
+[15:34:30-933][DEBUG] [DB] > writeExtensionPlugin: "tech.microcore.demo.extsetdemo"
+[15:34:30-942][DEBUG] void ExtensionSystem::Internal::ExtensionPointAdmin::dispatchExtensionData(const ExtensionSystem::ExtType::Plugin&) > true : QHash()
+[15:34:30-947][DEBUG] PluginChanged: "tech.microcore.demo.hellochina"  - state: 2 -> 4
+[15:34:30-947][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.helloworld" ExtensionSystem::Plugin(0x9e68e0) - state: 1 -> 2
+[15:34:30-947][DEBUG] PluginChanged: "tech.microcore.demo.helloworld"  - state: 1 -> 2
+[15:34:30-947][DEBUG]  |-> "tech.microcore.demo.qtwindow"
+[15:34:30-947][DEBUG]    |-> "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.demo.qtwindow/tech.microcore.demo.qtwindow.dll"
+[15:34:30-948][DEBUG]      |-> init: "tech.microcore.demo.qtwindow"
+[15:34:30-948][DEBUG]      |-> "tech.microcore.demo.qtwindow" : 0
+[15:34:30-948][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.qtwindow" ExtensionSystem::Plugin(0x9e6920) - state: 1 -> 2
+[15:34:30-948][DEBUG] PluginChanged: "tech.microcore.demo.qtwindow"  - state: 1 -> 2
+[15:34:30-948][DEBUG]  |-> "tech.microcore.demo.settingdemo"
+[15:34:30-949][DEBUG]    |-> "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.demo.settingdemo/tech.microcore.demo.settingdemo.dll"
+[15:34:30-949][DEBUG]      |-> init: "tech.microcore.demo.settingdemo"
+[15:34:30-949][DEBUG]      |-> "tech.microcore.demo.settingdemo" : 0
+[15:34:30-950][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.settingdemo" ExtensionSystem::Plugin(0x9e6970) - state: 2 -> 4
+[15:34:30-950][DEBUG] [ "Resolved  " ]	 "tech.microcore.demo.settingdemo"
+[15:34:30-954][DEBUG] void ExtensionSystem::Internal::ExtensionFileParseTask::parseExtensionFile(ExtensionSystem::ExtType::Plugin&) > "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.demo.helloworld/extension.xml"
+[15:34:30-954][DEBUG] void ExtensionSystem::Internal::ExtensionFileParseTask::parseExtensionFile(ExtensionSystem::ExtType::Plugin&) > "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.demo.qtwindow/extension.xml"
+[15:34:30-955][DEBUG] virtual void ExtensionSystem::Internal::ExtensionFileParseTask::run() [ "tech.microcore.demo.helloworld" ] QHash()
+[15:34:30-955][DEBUG] virtual void ExtensionSystem::Internal::ExtensionFileParseTask::run() [ "tech.microcore.demo.qtwindow" ] QHash(("zh_CN", QHash(("Window", "窗口"))))
+[15:34:30-959][DEBUG] PluginChanged: "tech.microcore.demo.settingdemo"  - state: 2 -> 4
+[15:34:30-959][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.settingdemo" ExtensionSystem::Plugin(0x9e6970) - state: 1 -> 2
+[15:34:30-959][DEBUG] PluginChanged: "tech.microcore.demo.settingdemo"  - state: 1 -> 2
+[15:34:30-959][DEBUG]  |-> "tech.microcore.demo.textedit"
+[15:34:30-959][DEBUG]    |-> "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.demo.textedit/tech.microcore.demo.textedit.dll"
+[15:34:30-963][DEBUG]      |-> init: "tech.microcore.demo.textedit"
+[15:34:30-963][DEBUG]      |-> "tech.microcore.demo.textedit" : 0
+[15:34:30-963][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.textedit" ExtensionSystem::Plugin(0x9e69e0) - state: 1 -> 2
+[15:34:30-963][DEBUG] PluginChanged: "tech.microcore.demo.textedit"  - state: 1 -> 2
+[15:34:30-964][DEBUG]  |-> "tech.microcore.demo.widget"
+[15:34:30-964][DEBUG]    |-> "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.demo.widget/tech.microcore.demo.widget.dll"
+[15:34:30-965][DEBUG]      |-> init: "tech.microcore.demo.widget"
+[15:34:30-965][DEBUG]      |-> "tech.microcore.demo.widget" : 0
+[15:34:30-965][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.widget" ExtensionSystem::Plugin(0x9e6a90) - state: 1 -> 2
+[15:34:30-965][DEBUG] PluginChanged: "tech.microcore.demo.widget"  - state: 1 -> 2
+[15:34:30-965][DEBUG]  |-> "tech.microcore.dstyle.coverwidget"
+[15:34:30-965][DEBUG]    |-> "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.dstyle.coverwidget/tech.microcore.dstyle.coverwidget.dll"
+[15:34:30-966][DEBUG]      |-> init: "tech.microcore.dstyle.coverwidget"
+[15:34:30-966][DEBUG]      |-> "tech.microcore.dstyle.coverwidget" : 0
+[15:34:30-966][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.dstyle.coverwidget" ExtensionSystem::Plugin(0x9e6aa0) - state: 1 -> 2
+[15:34:30-966][DEBUG] PluginChanged: "tech.microcore.dstyle.coverwidget"  - state: 1 -> 2
+[15:34:30-966][DEBUG]  |-> "tech.microcore.dstyle.scrollwidget"
+[15:34:30-967][DEBUG]    |-> "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.dstyle.scrollwidget/tech.microcore.dstyle.scrollwidget.dll"
+[15:34:30-967][DEBUG]      |-> init: "tech.microcore.dstyle.scrollwidget"
+[15:34:30-967][DEBUG]      |-> "tech.microcore.dstyle.scrollwidget" : 0
+[15:34:30-967][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.dstyle.scrollwidget" ExtensionSystem::Plugin(0x9e6be0) - state: 1 -> 2
+[15:34:30-967][DEBUG] PluginChanged: "tech.microcore.dstyle.scrollwidget"  - state: 1 -> 2
+[15:34:30-968][DEBUG]  |-> "tech.microcore.dstyle.tabwidget"
+[15:34:30-968][DEBUG]    |-> "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.dstyle.tabwidget/tech.microcore.dstyle.tabwidget.dll"
+[15:34:30-969][DEBUG]      |-> init: "tech.microcore.dstyle.tabwidget"
+[15:34:30-969][DEBUG]      |-> "tech.microcore.dstyle.tabwidget" : 0
+[15:34:30-969][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.dstyle.tabwidget" ExtensionSystem::Plugin(0x9e6bf0) - state: 1 -> 2
+[15:34:30-969][DEBUG] PluginChanged: "tech.microcore.dstyle.tabwidget"  - state: 1 -> 2
+[15:34:30-969][DEBUG]  |-> "tech.microcore.dstyle.toolboxwidget"
+[15:34:30-969][DEBUG]    |-> "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.dstyle.toolboxwidget/tech.microcore.dstyle.toolboxwidget.dll"
+[15:34:30-970][DEBUG]      |-> init: "tech.microcore.dstyle.toolboxwidget"
+[15:34:30-971][DEBUG]      |-> "tech.microcore.dstyle.toolboxwidget" : 0
+[15:34:30-971][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.dstyle.toolboxwidget" ExtensionSystem::Plugin(0x9e6ae0) - state: 1 -> 2
+[15:34:30-971][DEBUG] PluginChanged: "tech.microcore.dstyle.toolboxwidget"  - state: 1 -> 2
+[15:34:30-971][DEBUG]  |-> "tech.microcore.mainwin.core"
+[15:34:30-971][DEBUG]    |-> "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.mainwin.core/tech.microcore.mainwin.core.dll"
+[15:34:30-973][DEBUG]      |-> init: "tech.microcore.mainwin.core"
+[15:34:30-973][DEBUG]      |-> "tech.microcore.mainwin.core" : 0
+[15:34:30-973][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.mainwin.core" ExtensionSystem::Plugin(0x9e6b40) - state: 1 -> 2
+[15:34:30-973][DEBUG] PluginChanged: "tech.microcore.mainwin.core"  - state: 1 -> 2
+[15:34:30-974][DEBUG]  |-> "tech.microcore.mainwin.desktop"
+[15:34:30-974][DEBUG]    |-> "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/tech.microcore.mainwin.desktop.dll"
+[15:34:30-977][DEBUG]      |-> init: "tech.microcore.mainwin.desktop"
+[15:34:30-978][DEBUG]      |-> "tech.microcore.mainwin.desktop" : 0
+[15:34:30-978][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.mainwin.desktop" ExtensionSystem::Plugin(0x9e6d20) - state: 1 -> 2
+[15:34:30-978][DEBUG] PluginChanged: "tech.microcore.mainwin.desktop"  - state: 1 -> 2
+[15:34:30-978][DEBUG]  |-> "tech.microcore.service.dynamiclayout"
+[15:34:30-978][DEBUG]    |-> "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.service.dynamiclayout/tech.microcore.service.dynamiclayout.dll"
+[15:34:30-981][DEBUG]      |-> init: "tech.microcore.service.dynamiclayout"
+[15:34:30-981][DEBUG]      |-> "tech.microcore.service.dynamiclayout" : 0
+[15:34:30-981][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.service.dynamiclayout" ExtensionSystem::Plugin(0x9e6720) - state: 2 -> 4
+[15:34:30-981][DEBUG] [ "Resolved  " ]	 "tech.microcore.service.dynamiclayout"
+[15:34:30-986][DEBUG] [DB] > writeExtensionPlugin: "tech.microcore.demo.helloworld"
+[15:34:30-996][DEBUG] void ExtensionSystem::Internal::ExtensionPointAdmin::dispatchExtensionData(const ExtensionSystem::ExtType::Plugin&) > true : QHash()
+[15:34:30-996][DEBUG] [DB] > writeExtensionPlugin: "tech.microcore.demo.qtwindow"
+[15:34:31-005][DEBUG] void ExtensionSystem::Internal::ExtensionPointAdmin::dispatchExtensionData(const ExtensionSystem::ExtType::Plugin&) > true : QHash(("zh_CN", QHash(("Window", "窗口"))))
+[15:34:31-006][DEBUG] void ExtensionSystem::Internal::ExtensionFileParseTask::parseExtensionFile(ExtensionSystem::ExtType::Plugin&) > "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.demo.settingdemo/extension.xml"
+[15:34:31-006][DEBUG] void ExtensionSystem::Internal::ExtensionFileParseTask::parseExtensionFile(ExtensionSystem::ExtType::Plugin&) > "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.demo.textedit/extension.xml"
+[15:34:31-006][DEBUG] void ExtensionSystem::Internal::ExtensionFileParseTask::parseExtensionFile(ExtensionSystem::ExtType::Plugin&) > "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.demo.widget/extension.xml"
+[15:34:31-006][DEBUG] virtual void ExtensionSystem::Internal::ExtensionFileParseTask::run() [ "tech.microcore.demo.settingdemo" ] QHash()
+[15:34:31-007][DEBUG] void ExtensionSystem::Internal::ExtensionFileParseTask::parseExtensionFile(ExtensionSystem::ExtType::Plugin&) > "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.dstyle.coverwidget/extension.xml"
+[15:34:31-007][DEBUG] virtual void ExtensionSystem::Internal::ExtensionFileParseTask::run() [ "tech.microcore.demo.widget" ] QHash(("zh_CN", QHash(("Demo", "示例"))))
+[15:34:31-007][DEBUG] void ExtensionSystem::Internal::ExtensionFileParseTask::parseExtensionFile(ExtensionSystem::ExtType::Plugin&) > "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.dstyle.scrollwidget/extension.xml"
+[15:34:31-007][DEBUG] virtual void ExtensionSystem::Internal::ExtensionFileParseTask::run() [ "tech.microcore.dstyle.coverwidget" ] QHash(("zh_CN", QHash(("CoverWidget Style", "滑动浏览视图"))))
+[15:34:31-007][DEBUG] void ExtensionSystem::Internal::ExtensionFileParseTask::parseExtensionFile(ExtensionSystem::ExtType::Plugin&) > "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.dstyle.tabwidget/extension.xml"
+[15:34:31-008][DEBUG] void ExtensionSystem::Internal::ExtensionFileParseTask::parseExtensionFile(ExtensionSystem::ExtType::Plugin&) > "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.dstyle.toolboxwidget/extension.xml"
+[15:34:31-008][DEBUG] virtual void ExtensionSystem::Internal::ExtensionFileParseTask::run() [ "tech.microcore.dstyle.scrollwidget" ] QHash(("zh_CN", QHash(("StaticWidget Style", "定时分页视图"))))
+[15:34:31-008][DEBUG] void ExtensionSystem::Internal::ExtensionFileParseTask::parseExtensionFile(ExtensionSystem::ExtType::Plugin&) > "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.mainwin.core/extension.xml"
+[15:34:31-008][DEBUG] virtual void ExtensionSystem::Internal::ExtensionFileParseTask::run() [ "tech.microcore.dstyle.tabwidget" ] QHash(("zh_CN", QHash(("Tab Style", "分页样式"))))
+[15:34:31-009][DEBUG] virtual void ExtensionSystem::Internal::ExtensionFileParseTask::run() [ "tech.microcore.dstyle.toolboxwidget" ] QHash(("zh_CN", QHash(("Toolbox Style", "分栏样式"))))
+[15:34:31-009][DEBUG] void ExtensionSystem::Internal::ExtensionFileParseTask::parseExtensionFile(ExtensionSystem::ExtType::Plugin&) > "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/extension.xml"
+[15:34:31-011][DEBUG] virtual void ExtensionSystem::Internal::ExtensionFileParseTask::run() [ "tech.microcore.demo.textedit" ] QHash(("zh_CN", QHash(("comboFont", "字体")("Bold", "加粗")("Italic", "斜体")("Justify", "两端对齐")("Print", "打印")("Export PDF", "导出PDF")("Paste", "粘贴")("Center", "居中")("Color", "颜色")("Right", "右对齐")("New", "新建")("Font Style", "样式")("Left", "左对齐")("TextEdit", "文本编辑")("Save", "保存")("edit", "编辑")("Copy", "复制")("Pdf", "PDF")("Cut", "剪贴")("Open", "打开")("Font Size", "字号")("Underline", "下划线"))))
+[15:34:31-014][DEBUG] virtual void ExtensionSystem::Internal::ExtensionFileParseTask::run() [ "tech.microcore.mainwin.desktop" ] QHash(("zh_CN", QHash(("EdittoolTip", "编辑工具栏提示")("FilestatusTip", "文件状态栏提示")("TooltoolTip", "工具工具栏提示")("Pic", "图片")("Others", "其他")("=Exit", "=退出")("About Qt", "关于Qt")("ViewstatusTip", "视图状态栏提示")("about", "关于")("About Us", "关于我们")("Dock View", "停靠视图")("Desktop Main Window", "桌面主窗口")("Helps", "帮助")("FiletoolTip", "文件工具栏提示")("Opened Window", "打开的窗口")("ProgressBar", "进程栏")("View", "视图")("ToolstatusTip", "工具状态栏提示")("Exit", "退出")("EditstatusTip", "编辑状态栏提示")("AbouttoolTip", "关于工具栏提示")("Edit", "编辑")("File", "文件")("Help", "帮助")("ViewtoolTip", "视图工具栏提示")("AboutstatusTip", "关于状态栏提示")("About", "关于")("Save", "保存")("Tool", "工具")("about menu", "关于 菜单"))))
+[15:34:31-014][DEBUG] virtual void ExtensionSystem::Internal::ExtensionFileParseTask::run() [ "tech.microcore.mainwin.core" ] QHash()
+[15:34:31-015][DEBUG] PluginChanged: "tech.microcore.service.dynamiclayout"  - state: 2 -> 4
+[15:34:31-015][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.clock" ExtensionSystem::Plugin(0x9e6800) - state: 2 -> 4
+[15:34:31-015][DEBUG] [ "Resolved  " ]	 "tech.microcore.demo.clock"
+[15:34:31-019][DEBUG] [DB] > writeExtensionPlugin: "tech.microcore.demo.settingdemo"
+[15:34:31-029][DEBUG] void ExtensionSystem::Internal::ExtensionPointAdmin::dispatchExtensionData(const ExtensionSystem::ExtType::Plugin&) > true : QHash()
+[15:34:31-029][DEBUG] [DB] > writeExtensionPlugin: "tech.microcore.demo.widget"
+[15:34:31-042][DEBUG] void ExtensionSystem::Internal::ExtensionPointAdmin::dispatchExtensionData(const ExtensionSystem::ExtType::Plugin&) > true : QHash(("zh_CN", QHash(("Demo", "示例"))))
+[15:34:31-042][DEBUG] [DB] > writeExtensionPlugin: "tech.microcore.dstyle.coverwidget"
+[15:34:31-051][DEBUG] void ExtensionSystem::Internal::ExtensionPointAdmin::dispatchExtensionData(const ExtensionSystem::ExtType::Plugin&) > true : QHash(("zh_CN", QHash(("CoverWidget Style", "滑动浏览视图"))))
+[15:34:31-051][DEBUG] [DB] > writeExtensionPlugin: "tech.microcore.dstyle.scrollwidget"
+[15:34:31-059][DEBUG] void ExtensionSystem::Internal::ExtensionPointAdmin::dispatchExtensionData(const ExtensionSystem::ExtType::Plugin&) > true : QHash(("zh_CN", QHash(("StaticWidget Style", "定时分页视图"))))
+[15:34:31-059][DEBUG] [DB] > writeExtensionPlugin: "tech.microcore.dstyle.tabwidget"
+[15:34:31-067][DEBUG] void ExtensionSystem::Internal::ExtensionPointAdmin::dispatchExtensionData(const ExtensionSystem::ExtType::Plugin&) > true : QHash(("zh_CN", QHash(("Tab Style", "分页样式"))))
+[15:34:31-067][DEBUG] [DB] > writeExtensionPlugin: "tech.microcore.dstyle.toolboxwidget"
+[15:34:31-078][DEBUG] void ExtensionSystem::Internal::ExtensionPointAdmin::dispatchExtensionData(const ExtensionSystem::ExtType::Plugin&) > true : QHash(("zh_CN", QHash(("Toolbox Style", "分栏样式"))))
+[15:34:31-078][DEBUG] [DB] > writeExtensionPlugin: "tech.microcore.demo.textedit"
+[15:34:31-087][DEBUG] void ExtensionSystem::Internal::ExtensionPointAdmin::dispatchExtensionData(const ExtensionSystem::ExtType::Plugin&) > true : QHash(("zh_CN", QHash(("comboFont", "字体")("Bold", "加粗")("Italic", "斜体")("Justify", "两端对齐")("Print", "打印")("Export PDF", "导出PDF")("Paste", "粘贴")("Center", "居中")("Color", "颜色")("Right", "右对齐")("New", "新建")("Font Style", "样式")("Left", "左对齐")("TextEdit", "文本编辑")("Save", "保存")("edit", "编辑")("Copy", "复制")("Pdf", "PDF")("Cut", "剪贴")("Open", "打开")("Font Size", "字号")("Underline", "下划线"))))
+[15:34:31-087][DEBUG] [DB] > writeExtensionPlugin: "tech.microcore.mainwin.desktop"
+[15:34:31-096][DEBUG] void ExtensionSystem::Internal::ExtensionPointAdmin::dispatchExtensionData(const ExtensionSystem::ExtType::Plugin&) > true : QHash(("zh_CN", QHash(("EdittoolTip", "编辑工具栏提示")("FilestatusTip", "文件状态栏提示")("TooltoolTip", "工具工具栏提示")("Pic", "图片")("Others", "其他")("=Exit", "=退出")("About Qt", "关于Qt")("ViewstatusTip", "视图状态栏提示")("about", "关于")("About Us", "关于我们")("Dock View", "停靠视图")("Desktop Main Window", "桌面主窗口")("Helps", "帮助")("FiletoolTip", "文件工具栏提示")("Opened Window", "打开的窗口")("ProgressBar", "进程栏")("View", "视图")("ToolstatusTip", "工具状态栏提示")("Exit", "退出")("EditstatusTip", "编辑状态栏提示")("AbouttoolTip", "关于工具栏提示")("Edit", "编辑")("File", "文件")("Help", "帮助")("ViewtoolTip", "视图工具栏提示")("AboutstatusTip", "关于状态栏提示")("About", "关于")("Save", "保存")("Tool", "工具")("about menu", "关于 菜单"))))
+[15:34:31-096][DEBUG] [DB] > writeExtensionPlugin: "tech.microcore.mainwin.core"
+[15:34:31-107][DEBUG] void ExtensionSystem::Internal::ExtensionPointAdmin::dispatchExtensionData(const ExtensionSystem::ExtType::Plugin&) > true : QHash()
+[15:34:31-111][DEBUG] PluginChanged: "tech.microcore.demo.clock"  - state: 2 -> 4
+[15:34:31-112][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.config.dynamiclayoutedit" ExtensionSystem::Plugin(0x9c8340) - state: 2 -> 4
+[15:34:31-112][DEBUG] [ "Resolved  " ]	 "tech.microcore.config.dynamiclayoutedit"
+[15:34:31-120][DEBUG] PluginChanged: "tech.microcore.config.dynamiclayoutedit"  - state: 2 -> 4
+[15:34:31-120][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.service.dynamiclayout" ExtensionSystem::Plugin(0x9e6720) - state: 1 -> 2
+[15:34:31-120][DEBUG] PluginChanged: "tech.microcore.service.dynamiclayout"  - state: 1 -> 2
+[15:34:31-120][DEBUG]  |-> "tech.microcore.service.eventadmin"
+[15:34:31-120][DEBUG]    |-> "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.service.eventadmin/tech.microcore.service.eventadmin.dll"
+[15:34:31-121][DEBUG]      |-> init: "tech.microcore.service.eventadmin"
+[15:34:31-121][DEBUG]      |-> "tech.microcore.service.eventadmin" : 0
+[15:34:31-121][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.service.eventadmin" ExtensionSystem::Plugin(0x6043240) - state: 2 -> 4
+[15:34:31-121][DEBUG] [ "Resolved  " ]	 "tech.microcore.service.eventadmin"
+[15:34:31-126][DEBUG] void ExtensionSystem::Internal::ExtensionFileParseTask::parseExtensionFile(ExtensionSystem::ExtType::Plugin&) > "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.service.dynamiclayout/extension.xml"
+[15:34:31-128][DEBUG] virtual void ExtensionSystem::Internal::ExtensionFileParseTask::run() [ "tech.microcore.service.dynamiclayout" ] QHash(("zh_CN", QHash(("LayoutEdit", "布局编辑")("layout edit", "布局编辑"))))
+[15:34:31-131][DEBUG] PluginChanged: "tech.microcore.service.eventadmin"  - state: 2 -> 4
+[15:34:31-131][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.mainwin.core" ExtensionSystem::Plugin(0x9e6b40) - state: 2 -> 4
+[15:34:31-131][DEBUG] [ "Resolved  " ]	 "tech.microcore.mainwin.core"
+[15:34:31-136][DEBUG] [DB] > writeExtensionPlugin: "tech.microcore.service.dynamiclayout"
+[15:34:31-145][DEBUG] void ExtensionSystem::Internal::ExtensionPointAdmin::dispatchExtensionData(const ExtensionSystem::ExtType::Plugin&) > true : QHash(("zh_CN", QHash(("LayoutEdit", "布局编辑")("layout edit", "布局编辑"))))
+[15:34:31-150][DEBUG] PluginChanged: "tech.microcore.mainwin.core"  - state: 2 -> 4
+[15:34:31-150][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.mainwin.desktop" ExtensionSystem::Plugin(0x9e6d20) - state: 2 -> 4
+[15:34:31-150][DEBUG] [ "Resolved  " ]	 "tech.microcore.mainwin.desktop"
+[15:34:31-159][DEBUG] PluginChanged: "tech.microcore.mainwin.desktop"  - state: 2 -> 4
+[15:34:31-159][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.dstyle.toolboxwidget" ExtensionSystem::Plugin(0x9e6ae0) - state: 2 -> 4
+[15:34:31-159][DEBUG] [ "Resolved  " ]	 "tech.microcore.dstyle.toolboxwidget"
+[15:34:31-168][DEBUG] PluginChanged: "tech.microcore.dstyle.toolboxwidget"  - state: 2 -> 4
+[15:34:31-169][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.dstyle.tabwidget" ExtensionSystem::Plugin(0x9e6bf0) - state: 2 -> 4
+[15:34:31-169][DEBUG] [ "Resolved  " ]	 "tech.microcore.dstyle.tabwidget"
+[15:34:31-177][DEBUG] PluginChanged: "tech.microcore.dstyle.tabwidget"  - state: 2 -> 4
+[15:34:31-177][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.dstyle.scrollwidget" ExtensionSystem::Plugin(0x9e6be0) - state: 2 -> 4
+[15:34:31-177][DEBUG] [ "Resolved  " ]	 "tech.microcore.dstyle.scrollwidget"
+[15:34:31-187][DEBUG] PluginChanged: "tech.microcore.dstyle.scrollwidget"  - state: 2 -> 4
+[15:34:31-187][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.dstyle.coverwidget" ExtensionSystem::Plugin(0x9e6aa0) - state: 2 -> 4
+[15:34:31-187][DEBUG] [ "Resolved  " ]	 "tech.microcore.dstyle.coverwidget"
+[15:34:31-196][DEBUG] PluginChanged: "tech.microcore.dstyle.coverwidget"  - state: 2 -> 4
+[15:34:31-196][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.widget" ExtensionSystem::Plugin(0x9e6a90) - state: 2 -> 4
+[15:34:31-196][DEBUG] [ "Resolved  " ]	 "tech.microcore.demo.widget"
+[15:34:31-204][DEBUG] PluginChanged: "tech.microcore.demo.widget"  - state: 2 -> 4
+[15:34:31-204][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.qtwindow" ExtensionSystem::Plugin(0x9e6920) - state: 2 -> 4
+[15:34:31-204][DEBUG] [ "Resolved  " ]	 "tech.microcore.demo.qtwindow"
+[15:34:31-214][DEBUG] PluginChanged: "tech.microcore.demo.qtwindow"  - state: 2 -> 4
+[15:34:31-214][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.dragdroprobot" ExtensionSystem::Plugin(0x9e6980) - state: 2 -> 4
+[15:34:31-214][DEBUG] [ "Resolved  " ]	 "tech.microcore.demo.dragdroprobot"
+[15:34:31-222][DEBUG] PluginChanged: "tech.microcore.demo.dragdroprobot"  - state: 2 -> 4
+[15:34:31-222][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.demowindow" ExtensionSystem::Plugin(0x9e67d0) - state: 2 -> 4
+[15:34:31-222][DEBUG] [ "Resolved  " ]	 "tech.microcore.demo.demowindow"
+[15:34:31-232][DEBUG] PluginChanged: "tech.microcore.demo.demowindow"  - state: 2 -> 4
+[15:34:31-232][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.demoproperty" ExtensionSystem::Plugin(0x9e6670) - state: 2 -> 4
+[15:34:31-232][DEBUG] [ "Resolved  " ]	 "tech.microcore.demo.demoproperty"
+[15:34:31-241][DEBUG] PluginChanged: "tech.microcore.demo.demoproperty"  - state: 2 -> 4
+[15:34:31-241][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.config.pluginmanager" ExtensionSystem::Plugin(0x9e6cf0) - state: 2 -> 4
+[15:34:31-241][DEBUG] [ "Resolved  " ]	 "tech.microcore.config.pluginmanager"
+[15:34:31-251][DEBUG] PluginChanged: "tech.microcore.config.pluginmanager"  - state: 2 -> 4
+[15:34:31-251][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.service.eventadmin" ExtensionSystem::Plugin(0x6043240) - state: 1 -> 2
+[15:34:31-251][DEBUG] PluginChanged: "tech.microcore.service.eventadmin"  - state: 1 -> 2
+[15:34:31-251][DEBUG]  |-> "tech.microcore.service.propertybrowser"
+[15:34:31-252][DEBUG]    |-> "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.service.propertybrowser/tech.microcore.service.propertybrowser.dll"
+[15:34:31-253][DEBUG]      |-> init: "tech.microcore.service.propertybrowser"
+[15:34:31-253][DEBUG]      |-> "tech.microcore.service.propertybrowser" : 0
+[15:34:31-253][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.service.propertybrowser" ExtensionSystem::Plugin(0x6043210) - state: 2 -> 4
+[15:34:31-253][DEBUG] [ "Resolved  " ]	 "tech.microcore.service.propertybrowser"
+[15:34:31-262][DEBUG] PluginChanged: "tech.microcore.service.propertybrowser"  - state: 2 -> 4
+[15:34:31-262][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.service.propertybrowser" ExtensionSystem::Plugin(0x6043210) - state: 1 -> 2
+[15:34:31-262][DEBUG] PluginChanged: "tech.microcore.service.propertybrowser"  - state: 1 -> 2
+[15:34:31-262][DEBUG]  |-> "tech.microcore.service.undomanager"
+[15:34:31-263][DEBUG]    |-> "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.service.undomanager/tech.microcore.service.undomanager.dll"
+[15:34:31-264][DEBUG]      |-> init: "tech.microcore.service.undomanager"
+[15:34:31-264][DEBUG]      |-> "tech.microcore.service.undomanager" : 0
+[15:34:31-264][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.service.undomanager" ExtensionSystem::Plugin(0x60431e0) - state: 2 -> 4
+[15:34:31-264][DEBUG] [ "Resolved  " ]	 "tech.microcore.service.undomanager"
+[15:34:31-270][DEBUG] void ExtensionSystem::Internal::ExtensionFileParseTask::parseExtensionFile(ExtensionSystem::ExtType::Plugin&) > "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.service.propertybrowser/extension.xml"
+[15:34:31-270][DEBUG] virtual void ExtensionSystem::Internal::ExtensionFileParseTask::run() [ "tech.microcore.service.propertybrowser" ] QHash(("zh_CN", QHash(("property", "属性"))))
+[15:34:31-274][DEBUG] PluginChanged: "tech.microcore.service.undomanager"  - state: 2 -> 4
+[15:34:31-274][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.textedit" ExtensionSystem::Plugin(0x9e69e0) - state: 2 -> 4
+[15:34:31-274][DEBUG] [ "Resolved  " ]	 "tech.microcore.demo.textedit"
+[15:34:31-278][DEBUG] [DB] > writeExtensionPlugin: "tech.microcore.service.propertybrowser"
+[15:34:31-288][DEBUG] void ExtensionSystem::Internal::ExtensionPointAdmin::dispatchExtensionData(const ExtensionSystem::ExtType::Plugin&) > true : QHash(("zh_CN", QHash(("property", "属性"))))
+[15:34:31-293][DEBUG] PluginChanged: "tech.microcore.demo.textedit"  - state: 2 -> 4
+[15:34:31-293][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.service.undomanager" ExtensionSystem::Plugin(0x60431e0) - state: 1 -> 2
+[15:34:31-293][DEBUG] PluginChanged: "tech.microcore.service.undomanager"  - state: 1 -> 2
+[15:34:31-293][DEBUG] START: ("tech.microcore.config.configureadmin", "tech.microcore.config.optiondialog", "tech.microcore.config.general", "tech.microcore.config.scenemanager", "tech.microcore.config.shortcutmanager", "tech.microcore.demo.demoservice", "tech.microcore.demo.extsetdemo", "tech.microcore.demo.audiorecorder", "tech.microcore.demo.helloworld", "tech.microcore.demo.hellochina", "tech.microcore.demo.settingdemo", "tech.microcore.service.dynamiclayout", "tech.microcore.demo.clock", "tech.microcore.config.dynamiclayoutedit", "tech.microcore.service.eventadmin", "tech.microcore.mainwin.core", "tech.microcore.mainwin.desktop", "tech.microcore.dstyle.toolboxwidget", "tech.microcore.dstyle.tabwidget", "tech.microcore.dstyle.scrollwidget", "tech.microcore.dstyle.coverwidget", "tech.microcore.demo.widget", "tech.microcore.demo.qtwindow", "tech.microcore.demo.dragdroprobot", "tech.microcore.demo.demowindow", "tech.microcore.demo.demoproperty", "tech.microcore.config.pluginmanager", "tech.microcore.service.propertybrowser", "tech.microcore.service.undomanager", "tech.microcore.demo.textedit")
+[15:34:31-293][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.config.configureadmin" ExtensionSystem::Plugin(0x96a338) - state: 4 -> 8
+[15:34:31-293][DEBUG] PluginChanged: "tech.microcore.config.configureadmin"  - state: 4 -> 8
+[15:34:31-295][DEBUG] register configuration service success
+[15:34:31-295][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.config.configureadmin" ExtensionSystem::Plugin(0x96a338) - state: 8 -> 32
+[15:34:31-295][DEBUG] [ "Actived   " ]	 "tech.microcore.config.configureadmin"
+[15:34:31-301][DEBUG] void ExtensionSystem::Internal::ExtensionFileParseTask::parseExtensionFile(ExtensionSystem::ExtType::Plugin&) > "D:/work/testtool/tool/res/QxPlugin/plugins/tech.microcore.service.undomanager/extension.xml"
+[15:34:31-303][DEBUG] virtual void ExtensionSystem::Internal::ExtensionFileParseTask::run() [ "tech.microcore.service.undomanager" ] QHash(("zh_CN", QHash(("Undo", "撤销")("UndoManager", "撤销管理")("Redo", "恢复"))))
+[15:34:31-306][DEBUG] PluginChanged: "tech.microcore.config.configureadmin"  - state: 8 -> 32
+[15:34:31-306][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.config.optiondialog" ExtensionSystem::Plugin(0x9e6c40) - state: 4 -> 8
+[15:34:31-306][DEBUG] PluginChanged: "tech.microcore.config.optiondialog"  - state: 4 -> 8
+[15:34:31-307][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.config.optiondialog" ExtensionSystem::Plugin(0x9e6c40) - state: 8 -> 32
+[15:34:31-307][DEBUG] [ "Actived   " ]	 "tech.microcore.config.optiondialog"
+[15:34:31-311][DEBUG] [DB] > writeExtensionPlugin: "tech.microcore.service.undomanager"
+[15:34:31-321][DEBUG] void ExtensionSystem::Internal::ExtensionPointAdmin::dispatchExtensionData(const ExtensionSystem::ExtType::Plugin&) > true : QHash(("zh_CN", QHash(("Undo", "撤销")("UndoManager", "撤销管理")("Redo", "恢复"))))
+[15:34:31-325][DEBUG] PluginChanged: "tech.microcore.config.optiondialog"  - state: 8 -> 32
+[15:34:31-325][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.config.general" ExtensionSystem::Plugin(0x9c8600) - state: 4 -> 8
+[15:34:31-325][DEBUG] PluginChanged: "tech.microcore.config.general"  - state: 4 -> 8
+[15:34:31-326][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.config.general" ExtensionSystem::Plugin(0x9c8600) - state: 8 -> 32
+[15:34:31-326][DEBUG] [ "Actived   " ]	 "tech.microcore.config.general"
+[15:34:31-335][DEBUG] PluginChanged: "tech.microcore.config.general"  - state: 8 -> 32
+[15:34:31-335][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.config.scenemanager" ExtensionSystem::Plugin(0x9e6d70) - state: 4 -> 8
+[15:34:31-335][DEBUG] PluginChanged: "tech.microcore.config.scenemanager"  - state: 4 -> 8
+[15:34:31-336][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.config.scenemanager" ExtensionSystem::Plugin(0x9e6d70) - state: 8 -> 32
+[15:34:31-336][DEBUG] [ "Actived   " ]	 "tech.microcore.config.scenemanager"
+[15:34:31-345][DEBUG] PluginChanged: "tech.microcore.config.scenemanager"  - state: 8 -> 32
+[15:34:31-345][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.config.shortcutmanager" ExtensionSystem::Plugin(0x9e6db0) - state: 4 -> 8
+[15:34:31-345][DEBUG] PluginChanged: "tech.microcore.config.shortcutmanager"  - state: 4 -> 8
+[15:34:31-346][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.config.shortcutmanager" ExtensionSystem::Plugin(0x9e6db0) - state: 8 -> 32
+[15:34:31-346][DEBUG] [ "Actived   " ]	 "tech.microcore.config.shortcutmanager"
+[15:34:31-356][DEBUG] PluginChanged: "tech.microcore.config.shortcutmanager"  - state: 8 -> 32
+[15:34:31-356][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.demoservice" ExtensionSystem::Plugin(0x9e6680) - state: 4 -> 8
+[15:34:31-356][DEBUG] PluginChanged: "tech.microcore.demo.demoservice"  - state: 4 -> 8
+[15:34:31-356][DEBUG] register demo service success
+[15:34:31-356][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.demoservice" ExtensionSystem::Plugin(0x9e6680) - state: 8 -> 32
+[15:34:31-356][DEBUG] [ "Actived   " ]	 "tech.microcore.demo.demoservice"
+[15:34:31-365][DEBUG] PluginChanged: "tech.microcore.demo.demoservice"  - state: 8 -> 32
+[15:34:31-365][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.extsetdemo" ExtensionSystem::Plugin(0x9e69a0) - state: 4 -> 8
+[15:34:31-365][DEBUG] PluginChanged: "tech.microcore.demo.extsetdemo"  - state: 4 -> 8
+[15:34:31-365][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.extsetdemo" ExtensionSystem::Plugin(0x9e69a0) - state: 8 -> 32
+[15:34:31-365][DEBUG] [ "Actived   " ]	 "tech.microcore.demo.extsetdemo"
+[15:34:31-373][DEBUG] PluginChanged: "tech.microcore.demo.extsetdemo"  - state: 8 -> 32
+[15:34:31-373][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.audiorecorder" ExtensionSystem::Plugin(0x9e66b0) - state: 4 -> 8
+[15:34:31-373][DEBUG] PluginChanged: "tech.microcore.demo.audiorecorder"  - state: 4 -> 8
+[15:34:31-374][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.audiorecorder" ExtensionSystem::Plugin(0x9e66b0) - state: 8 -> 32
+[15:34:31-374][DEBUG] [ "Actived   " ]	 "tech.microcore.demo.audiorecorder"
+[15:34:31-383][DEBUG] PluginChanged: "tech.microcore.demo.audiorecorder"  - state: 8 -> 32
+[15:34:31-383][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.helloworld" ExtensionSystem::Plugin(0x9e68e0) - state: 4 -> 8
+[15:34:31-383][DEBUG] PluginChanged: "tech.microcore.demo.helloworld"  - state: 4 -> 8
+[15:34:31-383][DEBUG] [EVENT] > Service: 1
+[15:34:31-384][DEBUG] [EVENT] > Extension: 1
+[15:34:31-384][DEBUG] ExtensionPointPrivate::updateExtensionText > "tech.microcore.demo.helloworld.ext.ExePoint1" 
+	> ()
+[15:34:31-384][DEBUG] [EVENT] > Extension: 1
+[15:34:31-384][DEBUG] ExtensionPointPrivate::updateExtensionText > "tech.microcore.demo.helloworld.ext.ExePoint2" 
+	> ()
+[15:34:31-384][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.helloworld" ExtensionSystem::Plugin(0x9e68e0) - state: 8 -> 32
+[15:34:31-384][DEBUG] [EVENT] > Plugin: "tech.microcore.demo.helloworld" = 32
+[15:34:31-384][DEBUG] [ "Actived   " ]	 "tech.microcore.demo.helloworld"
+[15:34:31-392][DEBUG] PluginChanged: "tech.microcore.demo.helloworld"  - state: 8 -> 32
+[15:34:31-392][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.hellochina" ExtensionSystem::Plugin(0x9e68a0) - state: 4 -> 8
+[15:34:31-392][DEBUG] [EVENT] > Plugin: "tech.microcore.demo.hellochina" = 8
+[15:34:31-393][DEBUG] PluginChanged: "tech.microcore.demo.hellochina"  - state: 4 -> 8
+[15:34:31-393][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.hellochina" ExtensionSystem::Plugin(0x9e68a0) - state: 8 -> 32
+[15:34:31-393][DEBUG] [EVENT] > Plugin: "tech.microcore.demo.hellochina" = 32
+[15:34:31-393][DEBUG] [ "Actived   " ]	 "tech.microcore.demo.hellochina"
+[15:34:31-402][DEBUG] PluginChanged: "tech.microcore.demo.hellochina"  - state: 8 -> 32
+[15:34:31-403][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.settingdemo" ExtensionSystem::Plugin(0x9e6970) - state: 4 -> 8
+[15:34:31-403][DEBUG] [EVENT] > Plugin: "tech.microcore.demo.settingdemo" = 8
+[15:34:31-403][DEBUG] PluginChanged: "tech.microcore.demo.settingdemo"  - state: 4 -> 8
+[15:34:31-403][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.settingdemo" ExtensionSystem::Plugin(0x9e6970) - state: 8 -> 32
+[15:34:31-403][DEBUG] [EVENT] > Plugin: "tech.microcore.demo.settingdemo" = 32
+[15:34:31-403][DEBUG] [ "Actived   " ]	 "tech.microcore.demo.settingdemo"
+[15:34:31-412][DEBUG] PluginChanged: "tech.microcore.demo.settingdemo"  - state: 8 -> 32
+[15:34:31-412][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.service.dynamiclayout" ExtensionSystem::Plugin(0x9e6720) - state: 4 -> 8
+[15:34:31-412][DEBUG] [EVENT] > Plugin: "tech.microcore.service.dynamiclayout" = 8
+[15:34:31-412][DEBUG] PluginChanged: "tech.microcore.service.dynamiclayout"  - state: 4 -> 8
+[15:34:31-413][DEBUG] [EVENT] > Extension: 1
+[15:34:31-414][DEBUG] ## "tech.microcore.dstyle.coverwidget" : QHash(("CoverWidget Style", "滑动浏览视图"))
+[15:34:31-414][DEBUG] 	> "tr('CoverWidget Style')" :	 "CoverWidget Style" 	 "滑动浏览视图"
+[15:34:31-414][DEBUG] ## "tech.microcore.dstyle.scrollwidget" : QHash(("StaticWidget Style", "定时分页视图"))
+[15:34:31-414][DEBUG] 	> "tr('StaticWidget Style')" :	 "StaticWidget Style" 	 "定时分页视图"
+[15:34:31-414][DEBUG] ## "tech.microcore.dstyle.tabwidget" : QHash(("Tab Style", "分页样式"))
+[15:34:31-414][DEBUG] 	> "tr('Tab Style')" :	 "Tab Style" 	 "分页样式"
+[15:34:31-414][DEBUG] ## "tech.microcore.dstyle.toolboxwidget" : QHash(("Toolbox Style", "分栏样式"))
+[15:34:31-414][DEBUG] 	> "tr('Toolbox Style')" :	 "Toolbox Style" 	 "分栏样式"
+[15:34:31-414][DEBUG] ExtensionPointPrivate::updateExtensionText > "tech.microcore.mainwin.core.dynamiclayout.style" 
+	> ("<ExtData extPlugin=\"tech.microcore.service.dynamiclayout\" id=\"tech.microcore.mainwin.core.dynamiclayout.style\" plugin=\"tech.microcore.dstyle.coverwidget\">\n<StyleWidget id=\"tech.microcore.dstyle.coverwidget.dynamicLayout.UI\" title=\"滑动浏览视图\"/>\n</ExtData>\n", "<ExtData extPlugin=\"tech.microcore.service.dynamiclayout\" id=\"tech.microcore.mainwin.core.dynamiclayout.style\" plugin=\"tech.microcore.dstyle.scrollwidget\">\n<StyleWidget id=\"tech.microcore.dstyle.scrollwidget.dynamicLayout.UI\" title=\"定时分页视图\">\n<Meta>\n<String key=\"title\" value=\"StaticWidget Style\"/>\n<Int key=\"timeout\" value=\"3\"/>\n</Meta>\n</StyleWidget>\n</ExtData>\n", "<ExtData extPlugin=\"tech.microcore.service.dynamiclayout\" id=\"tech.microcore.mainwin.core.dynamiclayout.style\" plugin=\"tech.microcore.dstyle.tabwidget\">\n<StyleWidget isFactory=\"true\" id=\"tech.microcore.dstyle.tabwidget.dynamicLayout.UI\" title=\"分页样式\">\n<Meta>\n<bool key=\"show\" value=\"false\"/>\n<Int value=\"2\"/>\n</Meta>\n</StyleWidget>\n</ExtData>\n", "<ExtData extPlugin=\"tech.microcore.service.dynamiclayout\" id=\"tech.microcore.mainwin.core.dynamiclayout.style\" plugin=\"tech.microcore.dstyle.toolboxwidget\">\n<StyleWidget id=\"tech.microcore.dstyle.toolboxwidget.dynamicLayout.UI\" title=\"分栏样式\">\n<Meta>\n<Bool key=\"show\" value=\"true\"/>\n<Int key=\"timeout\" value=\"10\"/>\n</Meta>\n</StyleWidget>\n</ExtData>\n")
+[15:34:31-414][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-416][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-418][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-419][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-421][DEBUG] [EVENT] > Extension: 1
+[15:34:31-421][DEBUG] ## "tech.microcore.demo.clock" : QHash(("clock", "钟表"))
+[15:34:31-421][DEBUG] 	> "tr('clock')" :	 "clock" 	 "钟表"
+[15:34:31-421][DEBUG] ## "tech.microcore.demo.qtwindow" : QHash(("Window", "窗口"))
+[15:34:31-421][DEBUG] 	> "tr('Window')" :	 "Window" 	 "窗口"
+[15:34:31-421][DEBUG] ## "tech.microcore.demo.widget" : QHash(("Demo", "示例"))
+[15:34:31-422][DEBUG] 	> "tr('Demo')" :	 "Demo" 	 "示例"
+[15:34:31-422][DEBUG] ExtensionPointPrivate::updateExtensionText > "tech.microcore.mainwin.core.dynamiclayout" 
+	> ("<ExtData extPlugin=\"tech.microcore.service.dynamiclayout\" id=\"tech.microcore.mainwin.core.dynamiclayout\" plugin=\"tech.microcore.demo.clock\">\n<DynamicLayout icon=\"images/command.png\" id=\"tech.microcore.demo.clock.dock.UI\" title=\"钟表\"/>\n</ExtData>\n", "<ExtData extPlugin=\"tech.microcore.service.dynamiclayout\" id=\"tech.microcore.mainwin.core.dynamiclayout\" plugin=\"tech.microcore.demo.qtwindow\">\n<DynamicLayout defareas=\"2\" isFactory=\"true\" visible=\"true\" id=\"tech.microcore.demo.qtwindow.UI\" allowedAreas=\"15\" index=\"8\" isFloating=\"false\" title=\"窗口\"/>\n</ExtData>\n", "<ExtData extPlugin=\"tech.microcore.service.dynamiclayout\" id=\"tech.microcore.mainwin.core.dynamiclayout\" plugin=\"tech.microcore.demo.widget\">\n<DynamicLayout defareas=\"2\" visible=\"true\" id=\"tech.microcore.demo.widget.UI\" icon=\"\" sceneName=\"\" allowedAreas=\"2\" index=\"4\" isFloating=\"false\" title=\"示例\"/>\n</ExtData>\n")
+[15:34:31-422][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-423][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-425][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-428][DEBUG] [EVENT] > Service: 1
+[15:34:31-429][DEBUG] register dynamiclayout service success
+[15:34:31-429][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.service.dynamiclayout" ExtensionSystem::Plugin(0x9e6720) - state: 8 -> 32
+[15:34:31-429][DEBUG] [EVENT] > Plugin: "tech.microcore.service.dynamiclayout" = 32
+[15:34:31-429][DEBUG] [ "Actived   " ]	 "tech.microcore.service.dynamiclayout"
+[15:34:31-437][DEBUG] PluginChanged: "tech.microcore.service.dynamiclayout"  - state: 8 -> 32
+[15:34:31-438][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.clock" ExtensionSystem::Plugin(0x9e6800) - state: 4 -> 8
+[15:34:31-438][DEBUG] [EVENT] > Plugin: "tech.microcore.demo.clock" = 8
+[15:34:31-438][DEBUG] PluginChanged: "tech.microcore.demo.clock"  - state: 4 -> 8
+[15:34:31-438][DEBUG] ClockActivator::start
+[15:34:31-438][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.clock" ExtensionSystem::Plugin(0x9e6800) - state: 8 -> 32
+[15:34:31-438][DEBUG] [EVENT] > Plugin: "tech.microcore.demo.clock" = 32
+[15:34:31-438][DEBUG] [ "Actived   " ]	 "tech.microcore.demo.clock"
+[15:34:31-447][DEBUG] PluginChanged: "tech.microcore.demo.clock"  - state: 8 -> 32
+[15:34:31-447][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.config.dynamiclayoutedit" ExtensionSystem::Plugin(0x9c8340) - state: 4 -> 8
+[15:34:31-447][DEBUG] [EVENT] > Plugin: "tech.microcore.config.dynamiclayoutedit" = 8
+[15:34:31-447][DEBUG] PluginChanged: "tech.microcore.config.dynamiclayoutedit"  - state: 4 -> 8
+[15:34:31-447][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.config.dynamiclayoutedit" ExtensionSystem::Plugin(0x9c8340) - state: 8 -> 32
+[15:34:31-447][DEBUG] [EVENT] > Plugin: "tech.microcore.config.dynamiclayoutedit" = 32
+[15:34:31-447][DEBUG] [ "Actived   " ]	 "tech.microcore.config.dynamiclayoutedit"
+[15:34:31-456][DEBUG] PluginChanged: "tech.microcore.config.dynamiclayoutedit"  - state: 8 -> 32
+[15:34:31-456][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.service.eventadmin" ExtensionSystem::Plugin(0x6043240) - state: 4 -> 8
+[15:34:31-456][DEBUG] [EVENT] > Plugin: "tech.microcore.service.eventadmin" = 8
+[15:34:31-456][DEBUG] PluginChanged: "tech.microcore.service.eventadmin"  - state: 4 -> 8
+[15:34:31-456][DEBUG] [EVENT] > Service: 1
+[15:34:31-456][DEBUG] [INFO] EventAdmin: register event admin service success
+[15:34:31-457][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.service.eventadmin" ExtensionSystem::Plugin(0x6043240) - state: 8 -> 32
+[15:34:31-457][DEBUG] [EVENT] > Plugin: "tech.microcore.service.eventadmin" = 32
+[15:34:31-457][DEBUG] [ "Actived   " ]	 "tech.microcore.service.eventadmin"
+[15:34:31-465][DEBUG] PluginChanged: "tech.microcore.service.eventadmin"  - state: 8 -> 32
+[15:34:31-465][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.mainwin.core" ExtensionSystem::Plugin(0x9e6b40) - state: 4 -> 8
+[15:34:31-465][DEBUG] [EVENT] > Plugin: "tech.microcore.mainwin.core" = 8
+[15:34:31-465][DEBUG] PluginChanged: "tech.microcore.mainwin.core"  - state: 4 -> 8
+[15:34:31-465][DEBUG] [EVENT] > Extension: 1
+[15:34:31-466][DEBUG] ## "tech.microcore.config.dynamiclayoutedit" : QHash(("layoutEdit", "布局"))
+[15:34:31-466][DEBUG] 	> "tr('layoutEdit')" :	 "layoutEdit" 	 "布局"
+[15:34:31-466][DEBUG] ## "tech.microcore.demo.demowindow" : QHash()
+[15:34:31-466][DEBUG] 	> "tr('Demo')" :	 "Demo" 	 ""
+[15:34:31-466][DEBUG] ## "tech.microcore.demo.dragdroprobot" : QHash(("Robot", "机器人"))
+[15:34:31-466][DEBUG] 	> "tr('Robot')" :	 "Robot" 	 "机器人"
+[15:34:31-466][DEBUG] ## "tech.microcore.demo.textedit" : QHash(("comboFont", "字体")("Bold", "加粗")("Italic", "斜体")("Justify", "两端对齐")("Print", "打印")("Export PDF", "导出PDF")("Paste", "粘贴")("Center", "居中")("Color", "颜色")("Right", "右对齐")("Font Style", "样式")("New", "新建")("Left", "左对齐")("TextEdit", "文本编辑")("Save", "保存")("edit", "编辑")("Copy", "复制")("Pdf", "PDF")("Cut", "剪贴")("Open", "打开")("Font Size", "字号")("Underline", "下划线"))
+[15:34:31-466][DEBUG] 	> "tr('edit')" :	 "edit" 	 "编辑"
+[15:34:31-466][DEBUG] ExtensionPointPrivate::updateExtensionText > "tech.microcore.mainwin.core.Centralview" 
+	> ("<ExtData extPlugin=\"tech.microcore.mainwin.core\" id=\"tech.microcore.mainwin.core.Centralview\" plugin=\"tech.microcore.config.dynamiclayoutedit\">\n<Centralview id=\"tech.microcore.config.dynamiclayoutedit.UI\" icon=\"resources/editcopy.png\" sceneName=\"SCENE_EYE\" index=\"3\" title=\"布局\" activated=\"true\"/>\n</ExtData>\n", "<ExtData extPlugin=\"tech.microcore.mainwin.core\" id=\"tech.microcore.mainwin.core.Centralview\" plugin=\"tech.microcore.demo.demowindow\">\n<Centralview id=\"tech.microcore.demo.demowindow.centralviewShow\" icon=\"\" sceneName=\"SCENE_DEMO\" index=\"9\" title=\"Demo\" activated=\"true\"/>\n</ExtData>\n", "<ExtData extPlugin=\"tech.microcore.mainwin.core\" id=\"tech.microcore.mainwin.core.Centralview\" plugin=\"tech.microcore.demo.dragdroprobot\">\n<Centralview id=\"tech.microcore.demo.dragdroprobot.robot.UI\" icon=\"\" sceneName=\"SCENE_ROT\" index=\"3\" title=\"机器人\" activated=\"true\"/>\n</ExtData>\n", "<ExtData extPlugin=\"tech.microcore.mainwin.core\" id=\"tech.microcore.mainwin.core.Centralview\" plugin=\"tech.microcore.demo.textedit\">\n<Centralview factory=\"true\" id=\"tech.microcore.demo.textedit.edit.UI\" icon=\"New.png\" sceneName=\"SCENE_V\" index=\"3\" title=\"编辑\" activated=\"true\"/>\n</ExtData>\n")
+[15:34:31-466][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-466][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-466][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-467][DEBUG] [EVENT] > Extension: 1
+[15:34:31-467][DEBUG] ## "tech.microcore.demo.demoproperty" : QHash()
+[15:34:31-467][DEBUG] 	> "tr('Demoproperty')" :	 "Demoproperty" 	 ""
+[15:34:31-467][DEBUG] ## "tech.microcore.demo.demowindow" : QHash()
+[15:34:31-467][DEBUG] 	> "tr('Demo')" :	 "Demo" 	 ""
+[15:34:31-467][DEBUG] ## "tech.microcore.service.dynamiclayout" : QHash(("LayoutEdit", "布局编辑")("layout edit", "布局编辑"))
+[15:34:31-467][DEBUG] 	> "tr('ContentTree')" :	 "ContentTree" 	 ""
+[15:34:31-467][DEBUG] ## "tech.microcore.service.propertybrowser" : QHash(("property", "属性"))
+[15:34:31-467][DEBUG] 	> "tr('property')" :	 "property" 	 "属性"
+[15:34:31-467][DEBUG] ## "tech.microcore.service.undomanager" : QHash(("Undo", "撤销")("UndoManager", "撤销管理")("Redo", "恢复"))
+[15:34:31-467][DEBUG] 	> "tr('UndoManager')" :	 "UndoManager" 	 "撤销管理"
+[15:34:31-467][DEBUG] ExtensionPointPrivate::updateExtensionText > "tech.microcore.mainwin.core.dockview" 
+	> ("<ExtData extPlugin=\"tech.microcore.mainwin.core\" id=\"tech.microcore.mainwin.core.dockview\" plugin=\"tech.microcore.demo.demoproperty\">\n<Dockview defareas=\"2\" visible=\"true\" id=\"tech.microcore.demo.demoproperty.demo\" allowedAreas=\"15\" isFloating=\"false\" title=\"Demoproperty\"/>\n</ExtData>\n", "<ExtData extPlugin=\"tech.microcore.mainwin.core\" id=\"tech.microcore.mainwin.core.dockview\" plugin=\"tech.microcore.demo.demowindow\">\n<Dockview defareas=\"0\" visible=\"true\" id=\"tech.microcore.demo.demowindow.dockShow\" allowedAreas=\"15\" index=\"4\" isFloating=\"false\" title=\"Demo\"/>\n</ExtData>\n", "<ExtData DefAreas=\"2\" visible=\"true\" extPlugin=\"tech.microcore.mainwin.core\" id=\"tech.microcore.mainwin.core.dockview\" allowedAreas=\"15\" isFloating=\"false\" plugin=\"tech.microcore.service.dynamiclayout\">\n<dockview DefAreas=\"Left\" visible=\"true\" id=\"tech.microcore.service.dynamiclayout.contenttree\" allowedAreas=\"15\" isFloating=\"false\" title=\"ContentTree\"/>\n</ExtData>\n", "<ExtData extPlugin=\"tech.microcore.mainwin.core\" id=\"tech.microcore.mainwin.core.dockview\" plugin=\"tech.microcore.service.propertybrowser\">\n<Dockview toolTip=\"属性\" defareas=\"1\" visible=\"true\" icon=\"images/property.png\" id=\"tech.microcore.service.propertybrowser.property\" sceneName=\"\" allowedAreas=\"2,4\" isFloating=\"false\" title=\"属性\"/>\n</ExtData>\n", "<ExtData extPlugin=\"tech.microcore.mainwin.core\" id=\"tech.microcore.mainwin.core.dockview\" plugin=\"tech.microcore.service.undomanager\">\n<Dockview toolTip=\"撤销管理\" defareas=\"2\" visible=\"true\" icon=\"resources/file.png\" id=\"tech.microcore.service.undomanager.UndoView.UI\" sceneName=\"SCENE_V\" allowedAreas=\"15\" index=\"5\" isFloating=\"false\" title=\"撤销管理\"/>\n</ExtData>\n")
+[15:34:31-467][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-467][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-467][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-468][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-468][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-468][DEBUG] [EVENT] > Extension: 1
+[15:34:31-468][DEBUG] ## "tech.microcore.config.pluginmanager" : QHash(("Plugin Manager", "插件管理器"))
+[15:34:31-468][DEBUG] 	> "tr('Plugin Manager')" :	 "Plugin Manager" 	 "插件管理器"
+[15:34:31-468][DEBUG] ## "tech.microcore.config.optiondialog" : QHash(("Environment", "环境")("Options", "选项"))
+[15:34:31-468][DEBUG] 	> "tr('Options')" :	 "Options" 	 "选项"
+[15:34:31-468][DEBUG] ## "tech.microcore.demo.demoservice" : QHash()
+[15:34:31-468][DEBUG] 	> "tr('DemoService')" :	 "DemoService" 	 ""
+[15:34:31-468][DEBUG] ## "tech.microcore.demo.demowindow" : QHash()
+[15:34:31-468][DEBUG] 	> "tr('Demo')" :	 "Demo" 	 ""
+[15:34:31-468][DEBUG] 	> "tr('DemoAction')" :	 "DemoAction" 	 ""
+[15:34:31-469][DEBUG] ## "tech.microcore.demo.extsetdemo" : QHash()
+[15:34:31-469][DEBUG] 	> "tr('Demo')" :	 "Demo" 	 ""
+[15:34:31-469][DEBUG] ## "tech.microcore.demo.textedit" : QHash(("comboFont", "字体")("Bold", "加粗")("Italic", "斜体")("Justify", "两端对齐")("Print", "打印")("Export PDF", "导出PDF")("Paste", "粘贴")("Center", "居中")("Color", "颜色")("Right", "右对齐")("Font Style", "样式")("New", "新建")("Left", "左对齐")("TextEdit", "文本编辑")("Save", "保存")("edit", "编辑")("Copy", "复制")("Pdf", "PDF")("Cut", "剪贴")("Open", "打开")("Font Size", "字号")("Underline", "下划线"))
+[15:34:31-469][DEBUG] 	> "tr('Bold')" :	 "Bold" 	 "加粗"
+[15:34:31-469][DEBUG] 	> "tr('Center')" :	 "Center" 	 "居中"
+[15:34:31-469][DEBUG] 	> "tr('Color')" :	 "Color" 	 "颜色"
+[15:34:31-469][DEBUG] 	> "tr('Copy')" :	 "Copy" 	 "复制"
+[15:34:31-469][DEBUG] 	> "tr('Cut')" :	 "Cut" 	 "剪贴"
+[15:34:31-469][DEBUG] 	> "tr('Export PDF')" :	 "Export PDF" 	 "导出PDF"
+[15:34:31-469][DEBUG] 	> "tr('Find')" :	 "Find" 	 ""
+[15:34:31-469][DEBUG] 	> "tr('Font Size')" :	 "Font Size" 	 "字号"
+[15:34:31-469][DEBUG] 	> "tr('Font Style')" :	 "Font Style" 	 "样式"
+[15:34:31-469][DEBUG] 	> "tr('Italic')" :	 "Italic" 	 "斜体"
+[15:34:31-469][DEBUG] 	> "tr('Justify')" :	 "Justify" 	 "两端对齐"
+[15:34:31-469][DEBUG] 	> "tr('Left')" :	 "Left" 	 "左对齐"
+[15:34:31-469][DEBUG] 	> "tr('New')" :	 "New" 	 "新建"
+[15:34:31-469][DEBUG] 	> "tr('Open')" :	 "Open" 	 "打开"
+[15:34:31-469][DEBUG] 	> "tr('Paste')" :	 "Paste" 	 "粘贴"
+[15:34:31-469][DEBUG] 	> "tr('Pdf')" :	 "Pdf" 	 "PDF"
+[15:34:31-469][DEBUG] 	> "tr('Print')" :	 "Print" 	 "打印"
+[15:34:31-469][DEBUG] 	> "tr('Right')" :	 "Right" 	 "右对齐"
+[15:34:31-469][DEBUG] 	> "tr('Save')" :	 "Save" 	 "保存"
+[15:34:31-469][DEBUG] 	> "tr('TextEdit')" :	 "TextEdit" 	 "文本编辑"
+[15:34:31-469][DEBUG] 	> "tr('Underline')" :	 "Underline" 	 "下划线"
+[15:34:31-469][DEBUG] 	> "tr('comboFont')" :	 "comboFont" 	 "字体"
+[15:34:31-469][DEBUG] ## "tech.microcore.mainwin.desktop" : QHash(("EdittoolTip", "编辑工具栏提示")("FilestatusTip", "文件状态栏提示")("TooltoolTip", "工具工具栏提示")("Pic", "图片")("Others", "其他")("=Exit", "=退出")("About Qt", "关于Qt")("ViewstatusTip", "视图状态栏提示")("about", "关于")("About Us", "关于我们")("Dock View", "停靠视图")("Helps", "帮助")("FiletoolTip", "文件工具栏提示")("Opened Window", "打开的窗口")("Desktop Main Window", "桌面主窗口")("ProgressBar", "进程栏")("View", "视图")("ToolstatusTip", "工具状态栏提示")("Exit", "退出")("EditstatusTip", "编辑状态栏提示")("AbouttoolTip", "关于工具栏提示")("Edit", "编辑")("File", "文件")("Help", "帮助")("ViewtoolTip", "视图工具栏提示")("AboutstatusTip", "关于状态栏提示")("About", "关于")("Save", "保存")("Tool", "工具")("about menu", "关于 菜单"))
+[15:34:31-470][DEBUG] 	> "tr('=Exit')" :	 "=Exit" 	 "=退出"
+[15:34:31-470][DEBUG] 	> "tr('About Qt')" :	 "About Qt" 	 "关于Qt"
+[15:34:31-470][DEBUG] 	> "tr('About Us')" :	 "About Us" 	 "关于我们"
+[15:34:31-470][DEBUG] 	> "tr('About')" :	 "About" 	 "关于"
+[15:34:31-470][DEBUG] 	> "tr('AboutstatusTip')" :	 "AboutstatusTip" 	 "关于状态栏提示"
+[15:34:31-470][DEBUG] 	> "tr('AbouttoolTip')" :	 "AbouttoolTip" 	 "关于工具栏提示"
+[15:34:31-470][DEBUG] 	> "tr('Dock View')" :	 "Dock View" 	 "停靠视图"
+[15:34:31-470][DEBUG] 	> "tr('Edit')" :	 "Edit" 	 "编辑"
+[15:34:31-470][DEBUG] 	> "tr('EditstatusTip')" :	 "EditstatusTip" 	 "编辑状态栏提示"
+[15:34:31-470][DEBUG] 	> "tr('EdittoolTip')" :	 "EdittoolTip" 	 "编辑工具栏提示"
+[15:34:31-470][DEBUG] 	> "tr('Exit')" :	 "Exit" 	 "退出"
+[15:34:31-470][DEBUG] 	> "tr('File')" :	 "File" 	 "文件"
+[15:34:31-470][DEBUG] 	> "tr('FilestatusTip')" :	 "FilestatusTip" 	 "文件状态栏提示"
+[15:34:31-470][DEBUG] 	> "tr('FiletoolTip')" :	 "FiletoolTip" 	 "文件工具栏提示"
+[15:34:31-470][DEBUG] 	> "tr('Help')" :	 "Help" 	 "帮助"
+[15:34:31-470][DEBUG] 	> "tr('Opened Window')" :	 "Opened Window" 	 "打开的窗口"
+[15:34:31-470][DEBUG] 	> "tr('Tool')" :	 "Tool" 	 "工具"
+[15:34:31-470][DEBUG] 	> "tr('ToolstatusTip')" :	 "ToolstatusTip" 	 "工具状态栏提示"
+[15:34:31-470][DEBUG] 	> "tr('TooltoolTip')" :	 "TooltoolTip" 	 "工具工具栏提示"
+[15:34:31-470][DEBUG] 	> "tr('View')" :	 "View" 	 "视图"
+[15:34:31-470][DEBUG] 	> "tr('ViewstatusTip')" :	 "ViewstatusTip" 	 "视图状态栏提示"
+[15:34:31-470][DEBUG] 	> "tr('ViewtoolTip')" :	 "ViewtoolTip" 	 "视图工具栏提示"
+[15:34:31-470][DEBUG] 	> "tr('about menu')" :	 "about menu" 	 "关于 菜单"
+[15:34:31-470][DEBUG] 	> "tr('about')" :	 "about" 	 "关于"
+[15:34:31-470][DEBUG] ## "tech.microcore.service.dynamiclayout" : QHash(("LayoutEdit", "布局编辑")("layout edit", "布局编辑"))
+[15:34:31-470][DEBUG] 	> "tr('LayoutEdit')" :	 "LayoutEdit" 	 "布局编辑"
+[15:34:31-470][DEBUG] 	> "tr('layout edit')" :	 "layout edit" 	 "布局编辑"
+[15:34:31-470][DEBUG] ## "tech.microcore.service.undomanager" : QHash(("Undo", "撤销")("UndoManager", "撤销管理")("Redo", "恢复"))
+[15:34:31-470][DEBUG] 	> "tr('Redo')" :	 "Redo" 	 "恢复"
+[15:34:31-470][DEBUG] 	> "tr('Undo')" :	 "Undo" 	 "撤销"
+[15:34:31-471][DEBUG] ExtensionPointPrivate::updateExtensionText > "tech.microcore.mainwin.core.control" 
+	> ("<ExtData extPlugin=\"tech.microcore.mainwin.core\" id=\"tech.microcore.mainwin.core.control\" plugin=\"tech.microcore.config.pluginmanager\">\n<Format target=\"tech.microcore.mainwin.core.layout.desktop\">\n<Action parent=\"tech.microcore.mainwin.desktop.actionid.ToolMenuBar\" id=\"tech.microcore.pluginmanager.action.ShowPluginManagerDialog\" index=\"1\"/>\n</Format>\n<Action toolTip=\"plugin manager\" checkable=\"false\" visible=\"true\" checked=\"false\" id=\"tech.microcore.pluginmanager.action.ShowPluginManagerDialog\" icon=\"images/puzzle.png\" statusTip=\"plugin manager\" sceneName=\"\" autoRepeat=\"false\" iconSize=\"\" shortcut=\"\" enabled=\"true\" text=\"插件管理器\"/>\n</ExtData>\n", "<ExtData extPlugin=\"tech.microcore.mainwin.core\" id=\"tech.microcore.mainwin.core.control\" plugin=\"tech.microcore.config.optiondialog\">\n<Format target=\"tech.microcore.mainwin.core.layout.desktop\">\n<Action parent=\"tech.microcore.mainwin.desktop.actionid.ToolMenuBar\" id=\"tech.microcore.config.optiondialog.show\"/>\n</Format>\n<Action toolTip=\"选项\" checkable=\"false\" visible=\"true\" checked=\"false\" icon=\"images/logo_min.png\" sceneMode=\"true\" id=\"tech.microcore.config.optiondialog.show\" sceneName=\"\" autoRepeat=\"false\" enabled=\"true\" text=\"选项\"/>\n</ExtData>\n", "<ExtData extPlugin=\"tech.microcore.mainwin.core\" id=\"tech.microcore.mainwin.core.control\" plugin=\"tech.microcore.demo.demoservice\">\n<Format target=\"tech.microcore.mainwin.desktop\">\n<Action parent=\"tech.microcore.mainwin.desktop.toolbarPic\" id=\"tech.microcore.demo.demoservice.edit\"/>\n</Format>\n<Action toolTip=\"DemoService\" checkable=\"true\" visible=\"true\" checked=\"false\" icon=\"\" sceneMode=\"true\" id=\"tech.microcore.demo.demoservice.edit\" autoRepeat=\"false\" enabled=\"true\" text=\"DemoService\"/>\n</ExtData>\n", "<ExtData extPlugin=\"tech.microcore.mainwin.core\" id=\"tech.microcore.mainwin.core.control\" plugin=\"tech.microcore.demo.demowindow\">\n<Format target=\"tech.microcore.mainwin.core.layout.desktop\">\n<MenuBar>\n<Menu toolTip=\"Demo\" visible=\"cnscnsbcfsd\" id=\"tech.microcore.demo.demowindow.controlShow\" sceneMode=\"visible\" statusTip=\"Demo\" sceneName=\"\" index=\"9\" enabled=\"true\" title=\"Demo\">\n<Action checkable=\"false\" visible=\"true\" checked=\"false\" id=\"tech.microcore.demo.demowindow.ExportPdfActionHanler\" sceneMode=\"visible\" icon=\"resources/logo_min.png\" autoRepeat=\"false\" enabled=\"true\" shortcut=\"ctrl+D\" text=\"DemoAction\"/>\n</Menu>\n</MenuBar>\n</Format>\n</ExtData>\n", "<ExtData extPlugin=\"tech.microcore.mainwin.core\" id=\"tech.microcore.mainwin.core.control\" plugin=\"tech.microcore.demo.extsetdemo\">\n<Format target=\"tech.microcore.mainwin.core.layout.desktop\">\n<Action parent=\"tech.microcore.mainwin.desktop.actionid.ToolMenuBar\" id=\"tech.microcore.demo.extsetdemo.show\"/>\n</Format>\n<Action toolTip=\"Demo\" checkable=\"false\" visible=\"true\" checked=\"false\" icon=\"\" sceneMode=\"true\" id=\"tech.microcore.demo.extsetdemo.show\" sceneName=\"\" autoRepeat=\"false\" enabled=\"true\" text=\"Demo\"/>\n</ExtData>\n", "<ExtData extPlugin=\"tech.microcore.mainwin.core\" id=\"tech.microcore.mainwin.core.control\" plugin=\"tech.microcore.demo.textedit\">\n<Format target=\"tech.microcore.mainwin.core.layout.desktop\">\n<MenuBar>\n<Menu id=\"tech.microcore.mainwin.desktop.actionid.MenuBarFile\">\n<Action id=\"tech.microcore.demo.textedit.ExportPdfActionHanler\"/>\n<Action id=\"tech.microcore.demo.textedit.NewActionHanler\" index=\"100\"/>\n<Action id=\"tech.microcore.demo.textedit.OpenActionHanler\" index=\"50\"/>\n<Action id=\"tech.microcore.demo.textedit.TextEditSaveActionHanler\" index=\"1\"/>\n<Action id=\"tech.microcore.demo.textedit.PrintActionHanler\" index=\"2\"/>\n</Menu>\n<Menu visible=\"true\" id=\"tech.microcore.mainwin.desktop.actionid.EditMenuBar\">\n<Action id=\"tech.microcore.demo.textedit.CopyActionHanler\"/>\n<Action id=\"tech.microcore.demo.textedit.PasteActionHanler\"/>\n<Action id=\"tech.microcore.demo.textedit.CutActionHanler\"/>\n<Action id=\"tech.microcore.mainwin.desktop.RevokeActionHanler\"/>\n</Menu>\n</MenuBar>\n<ToolBars>\n<Toolbar id=\"tech.microcore.demo.textedit.toolbarFileHandle\" index=\"3\" toolButtonStyle=\"0\" text=\"文本编辑\">\n<Action id=\"tech.microcore.demo.textedit.NewActionHanler\"/>\n<Action id=\"tech.microcore.demo.textedit.OpenActionHanler\"/>\n<Action id=\"tech.microcore.demo.textedit.TextEditSaveActionHanler\"/>\n<Action id=\"tech.microcore.demo.textedit.PrintActionHanler\"/>\n<Action id=\"tech.microcore.demo.textedit.ExportPdfActionHanler\"/>\n</Toolbar>\n<Toolbar id=\"tech.microcore.demo.textedit.toolbarTextEdit1\" index=\"2\" toolButtonStyle=\"0\" text=\"文本编辑\">\n<Action id=\"tech.microcore.demo.textedit.CutActionHanler\"/>\n<Action id=\"tech.microcore.demo.textedit.CopyActionHanler\"/>\n<Action id=\"tech.microcore.demo.textedit.PasteActionHanler\"/>\n</Toolbar>\n<Toolbar id=\"tech.microcore.demo.textedit.toolbarTextEdit2\" index=\"1\" toolButtonStyle=\"0\" text=\"文本编辑\">\n<Action id=\"tech.microcore.demo.textedit.BoldActionHanler\"/>\n<Action id=\"tech.microcore.demo.textedit.ItalicActionHanler\"/>\n<Action id=\"tech.microcore.demo.textedit.UnderlineActionHanler\"/>\n<Action id=\"tech.microcore.demo.textedit.LeftActionHanler\"/>\n<Action id=\"tech.microcore.demo.textedit.CenterActionHanler\"/>\n<Action id=\"tech.microcore.demo.textedit.RightActionHanler\"/>\n<Action id=\"tech.microcore.demo.textedit.JustifyActionHanler\"/>\n<Action id=\"tech.microcore.demo.textedit.ColorActionHanler\"/>\n</Toolbar>\n<Toolbar id=\"tech.microcore.demo.textedit.toolbarTextEdit3\" index=\"4\" toolButtonStyle=\"0\" text=\"文本编辑\">\n<Widget id=\"tech.microcore.demo.textedit.textStyleActionHanler\"/>\n<Widget id=\"tech.microcore.demo.textedit.textFontActionHanler\"/>\n<Widget id=\"tech.microcore.demo.textedit.textSizeActionHanler\"/>\n</Toolbar>\n</ToolBars>\n</Format>\n<Action visible=\"true\" id=\"tech.microcore.mainwin.desktop.RevokeActionHanler\" sceneMode=\"enabled\" sceneName=\"\" enabled=\"false\" shortcut=\"ctrl+A\" text=\"Find\"/>\n<Action toolTip=\"新建\" checkable=\"false\" visible=\"true\" checked=\"false\" sceneMode=\"enabled\" id=\"tech.microcore.demo.textedit.NewActionHanler\" icon=\"resources/filenew.png\" statusTip=\"新建\" autoRepeat=\"false\" iconSize=\"24x24\" shortcut=\"ctrl+O\" enabled=\"true\" text=\"新建\"/>\n<Action toolTip=\"打开\" checkable=\"false\" visible=\"true\" checked=\"false\" sceneMode=\"enabled\" id=\"tech.microcore.demo.textedit.OpenActionHanler\" icon=\"resources/fileopen.png\" statusTip=\"打开\" sceneName=\"SCENE_V\" autoRepeat=\"false\" iconSize=\"24x24\" shortcut=\"ctrl+O\" enabled=\"true\" text=\"打开\"/>\n<Action toolTip=\"保存\" checkable=\"false\" visible=\"true\" checked=\"false\" sceneMode=\"enabled\" id=\"tech.microcore.demo.textedit.TextEditSaveActionHanler\" icon=\"resources/filesave.png\" statusTip=\"保存\" sceneName=\"SCENE_V\" autoRepeat=\"false\" iconSize=\"24x24\" shortcut=\"ctrl+S\" enabled=\"true\" text=\"保存\"/>\n<Action toolTip=\"打印\" checkable=\"false\" visible=\"true\" checked=\"false\" sceneMode=\"enabled\" id=\"tech.microcore.demo.textedit.PrintActionHanler\" icon=\"resources/fileprint.png\" statusTip=\"打印\" sceneName=\"SCENE_V\" autoRepeat=\"false\" iconSize=\"24x24\" shortcut=\"ctrl+P\" enabled=\"true\" text=\"打印\"/>\n<Action toolTip=\"导出PDF\" checkable=\"false\" visible=\"true\" checked=\"false\" sceneMode=\"enabled\" id=\"tech.microcore.demo.textedit.ExportPdfActionHanler\" icon=\"resources/exportpdf.png\" statusTip=\"导出PDF\" sceneName=\"SCENE_V\" autoRepeat=\"false\" iconSize=\"24x24\" enabled=\"true\" text=\"PDF\"/>\n<Action toolTip=\"剪贴\" checkable=\"false\" visible=\"true\" checked=\"false\" sceneMode=\"enabled\" id=\"tech.microcore.demo.textedit.CutActionHanler\" icon=\"resources/editcut.png\" statusTip=\"剪贴\" sceneName=\"SCENE_V\" autoRepeat=\"false\" iconSize=\"32x32\" enabled=\"true\" text=\"剪贴\"/>\n<Action toolTip=\"复制\" checkable=\"false\" visible=\"true\" checked=\"false\" sceneMode=\"enabled\" id=\"tech.microcore.demo.textedit.CopyActionHanler\" icon=\"resources/editcopy.png\" statusTip=\"复制\" sceneName=\"SCENE_V\" autoRepeat=\"false\" iconSize=\"24x24\" enabled=\"true\" text=\"复制\"/>\n<Action toolTip=\"粘贴\" checkable=\"false\" visible=\"true\" checked=\"false\" sceneMode=\"enabled\" id=\"tech.microcore.demo.textedit.PasteActionHanler\" icon=\"resources/editpaste.png\" statusTip=\"粘贴\" sceneName=\"SCENE_V\" autoRepeat=\"false\" iconSize=\"24x24\" enabled=\"true\" text=\"粘贴\"/>\n<Action toolTip=\"加粗\" checkable=\"true\" visible=\"true\" checked=\"false\" sceneMode=\"enabled\" id=\"tech.microcore.demo.textedit.BoldActionHanler\" icon=\"resources/textbold.png\" statusTip=\"加粗\" sceneName=\"SCENE_V\" autoRepeat=\"false\" iconSize=\"24x24\" enabled=\"true\" text=\"加粗\"/>\n<Action toolTip=\"斜体\" checkable=\"true\" visible=\"true\" checked=\"false\" sceneMode=\"enabled\" id=\"tech.microcore.demo.textedit.ItalicActionHanler\" icon=\"resources/textitalic.png\" statusTip=\"斜体\" sceneName=\"SCENE_V\" autoRepeat=\"false\" iconSize=\"24x24\" enabled=\"true\" text=\"斜体\"/>\n<Action toolTip=\"下划线\" checkable=\"true\" visible=\"true\" checked=\"false\" sceneMode=\"enabled\" id=\"tech.microcore.demo.textedit.UnderlineActionHanler\" icon=\"resources/textunder.png\" statusTip=\"下划线\" sceneName=\"SCENE_V\" autoRepeat=\"false\" iconSize=\"32x32\" enabled=\"true\" text=\"下划线\"/>\n<Action toolTip=\"左对齐\" checkable=\"true\" visible=\"true\" checked=\"false\" sceneMode=\"enabled\" id=\"tech.microcore.demo.textedit.LeftActionHanler\" icon=\"resources/textleft.png\" statusTip=\"左对齐\" sceneName=\"SCENE_V\" autoRepeat=\"false\" iconSize=\"24x24\" enabled=\"true\" text=\"左对齐\"/>\n<Action toolTip=\"居中\" checkable=\"true\" visible=\"true\" checked=\"false\" sceneMode=\"enabled\" id=\"tech.microcore.demo.textedit.CenterActionHanler\" icon=\"resources/textcenter.png\" statusTip=\"居中\" sceneName=\"SCENE_V\" autoRepeat=\"false\" iconSize=\"24x24\" enabled=\"true\" text=\"居中\"/>\n<Action toolTip=\"右对齐\" checkable=\"true\" visible=\"true\" checked=\"false\" sceneMode=\"enabled\" id=\"tech.microcore.demo.textedit.RightActionHanler\" icon=\"resources/textright.png\" statusTip=\"右对齐\" sceneName=\"SCENE_V\" autoRepeat=\"false\" iconSize=\"24x24\" enabled=\"true\" text=\"右对齐\"/>\n<Action toolTip=\"两端对齐\" checkable=\"true\" visible=\"true\" checked=\"false\" sceneMode=\"enabled\" id=\"tech.microcore.demo.textedit.JustifyActionHanler\" icon=\"resources/textjustify.png\" statusTip=\"两端对齐\" sceneName=\"SCENE_V\" autoRepeat=\"false\" iconSize=\"24x24\" enabled=\"true\" text=\"两端对齐\"/>\n<Action toolTip=\"颜色\" checkable=\"false\" visible=\"true\" checked=\"false\" sceneMode=\"enabled\" id=\"tech.microcore.demo.textedit.ColorActionHanler\" icon=\"resources/color.png\" statusTip=\"颜色\" sceneName=\"SCENE_V\" autoRepeat=\"false\" iconSize=\"24x24\" enabled=\"true\" text=\"颜色\"/>\n<Widget toolTip=\"样式\" visible=\"true\" sceneMode=\"enabled\" id=\"tech.microcore.demo.textedit.textStyleActionHanler\" statusTip=\"样式\" sceneName=\"SCENE_V\" enabled=\"true\" text=\"样式\"/>\n<Widget toolTip=\"字号\" visible=\"true\" sceneMode=\"enabled\" id=\"tech.microcore.demo.textedit.textSizeActionHanler\" statusTip=\"字号\" sceneName=\"SCENE_V\" enabled=\"true\" text=\"字号\"/>\n<Widget visible=\"true\" sceneMode=\"enabled\" id=\"tech.microcore.demo.textedit.textFontActionHanler\" sceneName=\"SCENE_V\" enabled=\"true\" text=\"字体\"/>\n</ExtData>\n", "<ExtData extPlugin=\"tech.microcore.mainwin.core\" id=\"tech.microcore.mainwin.core.control\" plugin=\"tech.microcore.mainwin.desktop\">\n<Format target=\"tech.microcore.mainwin.core.layout.desktop\">\n<MenuBar>\n<Menu toolTip=\"文件工具栏提示\" visible=\"true\" icon=\"resources/logo_min.png\" id=\"tech.microcore.mainwin.desktop.actionid.MenuBarFile\" sceneMode=\"visible\" statusTip=\"文件状态栏提示\" sceneName=\"\" index=\"0\" enabled=\"true\" title=\"文件\">\n<Group id=\"tech.microcore.mainwin.desktop.actionid.OtherGroup\" text=\"groupFile\">\n<Action toolTip=\"退出\" visible=\"true\" id=\"tech.microcore.mainwin.desktop.Exit\" sceneMode=\"visible\" icon=\"resources/logo_min.png\" statusTip=\"=退出\" iconSize=\"24x24\" enabled=\"true\" shortcut=\"ctrl+Q\" text=\"退出\"/>\n</Group>\n</Menu>\n<Menu toolTip=\"编辑工具栏提示\" visible=\"true\" id=\"tech.microcore.mainwin.desktop.actionid.EditMenuBar\" sceneMode=\"visible\" statusTip=\"编辑状态栏提示\" sceneName=\"\" index=\"1\" enabled=\"true\" title=\"编辑\"/>\n<Menu toolTip=\"视图工具栏提示\" visible=\"true\" id=\"tech.microcore.mainwin.desktop.actionid.ViewMenuBar\" sceneMode=\"visible\" statusTip=\"视图状态栏提示\" sceneName=\"\" index=\"2\" enabled=\"true\" title=\"视图\">\n<Menu toolTip=\"打开的窗口\" visible=\"true\" id=\"tech.microcore.mainwin.desktop.actionid.MenuBarView.Centralview\" icon=\"resources/view.png\" statusTip=\"打开的窗口\" index=\"4\" iconSize=\"24x24\" enabled=\"true\" title=\"打开的窗口\"/>\n<Menu toolTip=\"停靠视图\" id=\"tech.microcore.mainwin.desktop.actionid.MenuBarView.Dock\" icon=\"resources/view.png\" statusTip=\"停靠视图\" index=\"3\" iconSize=\"24x24\" enabled=\"true\" title=\"停靠视图\"/>\n</Menu>\n<Menu toolTip=\"工具工具栏提示\" visible=\"true\" id=\"tech.microcore.mainwin.desktop.actionid.ToolMenuBar\" sceneMode=\"visible\" statusTip=\"工具状态栏提示\" sceneName=\"\" index=\"6\" enabled=\"true\" title=\"工具\"/>\n<Menu toolTip=\"关于工具栏提示\" visible=\"true\" id=\"tech.microcore.mainwin.desktop.actionid.aboutMenuBar\" sceneMode=\"visible\" statusTip=\"关于状态栏提示\" sceneName=\"\" index=\"5\" enabled=\"true\" title=\"关于\">\n<Action id=\"tech.microcore.mainwin.desktop.AboutQt\"/>\n<Action id=\"tech.microcore.mainwin.desktop.AboutUs\"/>\n<Action id=\"tech.microcore.mainwin.desktop.Help\"/>\n</Menu>\n</MenuBar>\n<ToolBars>\n<Toolbar visible=\"true\" id=\"tech.microcore.mainwin.desktop.toolbarPic\" sceneMode=\"visible\" sceneName=\"\" index=\"1\" enabled=\"true\" text=\"关于\" toolButtonStyle=\"0\">\n<Menu toolTip=\"关于\" visible=\"true\" defaultActionId=\"tech.microcore.mainwin.desktop.AboutQt\" id=\"tech.microcore.mainwin.desktop.actionid.menuAbout\" statusTip=\"关于\" enabled=\"true\" title=\"关于 菜单\">\n<Action id=\"tech.microcore.mainwin.desktop.AboutUs\"/>\n<Action id=\"tech.microcore.mainwin.desktop.AboutQt\"/>\n</Menu>\n<Action id=\"tech.microcore.mainwin.desktop.Help\"/>\n</Toolbar>\n</ToolBars>\n</Format>\n<Action visible=\"true\" id=\"tech.microcore.mainwin.desktop.AboutUs\" icon=\"resources/logo_min.png\" iconSize=\"24x24\" enabled=\"true\" text=\"关于我们\"/>\n<Action checkable=\"false\" visible=\"true\" checked=\"false\" id=\"tech.microcore.mainwin.desktop.AboutQt\" sceneMode=\"true\" icon=\"resources/file.png\" autoRepeat=\"false\" iconSize=\"24x24\" enabled=\"true\" text=\"关于Qt\"/>\n<Action checkable=\"false\" visible=\"true\" checked=\"true\" id=\"tech.microcore.mainwin.desktop.Help\" sceneMode=\"visible\" icon=\"resources/logo_min.png\" autoRepeat=\"false\" iconSize=\"24x24\" enabled=\"true\" shortcut=\"ctrl+A\" text=\"帮助\"/>\n</ExtData>\n", "<ExtData extPlugin=\"tech.microcore.mainwin.core\" id=\"tech.microcore.mainwin.core.control\" plugin=\"tech.microcore.service.dynamiclayout\">\n<Format target=\"tech.microcore.mainwin.desktop\">\n<Action parent=\"tech.microcore.mainwin.desktop.toolbarPic\" id=\"tech.microcore.service.dynamiclayout.edit\"/>\n</Format>\n<Action toolTip=\"布局编辑\" checkable=\"true\" visible=\"true\" checked=\"false\" id=\"tech.microcore.service.dynamiclayout.edit\" icon=\"images/puzzle.png\" sceneMode=\"true\" autoRepeat=\"false\" enabled=\"true\" text=\"布局编辑\"/>\n</ExtData>\n", "<ExtData extPlugin=\"tech.microcore.mainwin.core\" id=\"tech.microcore.mainwin.core.control\" plugin=\"tech.microcore.service.undomanager\">\n<Format target=\"tech.microcore.mainwin.desktop\">\n<Action parent=\"tech.microcore.mainwin.desktop.toolbarPic\" id=\"tech.microcore.service.undomanager.UndoActionHanler\"/>\n<Action parent=\"tech.microcore.mainwin.desktop.toolbarPic\" id=\"tech.microcore.service.undomanager.RedoActionHanler\"/>\n</Format>\n<Action toolTip=\"撤销\" checkable=\"false\" visible=\"true\" checked=\"false\" icon=\"images/editundo.png\" sceneMode=\"true\" id=\"tech.microcore.service.undomanager.UndoActionHanler\" statusTip=\"撤销\" autoRepeat=\"false\" iconSize=\"32x32\" shortcut=\"ctrl+z\" enabled=\"true\" text=\"撤销\"/>\n<Action toolTip=\"恢复\" checkable=\"false\" visible=\"true\" checked=\"false\" icon=\"images/editredo.png\" sceneMode=\"true\" id=\"tech.microcore.service.undomanager.RedoActionHanler\" statusTip=\"恢复\" autoRepeat=\"false\" iconSize=\"32x32\" shortcut=\"ctrl+y\" enabled=\"true\" text=\"恢复\"/>\n</ExtData>\n")
+[15:34:31-471][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-471][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-471][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-471][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-472][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-472][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-472][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-472][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-473][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-473][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-473][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-473][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-473][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-473][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-473][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-473][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-473][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-473][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-473][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-473][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-473][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-473][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-473][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-473][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-473][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-474][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-474][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-474][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-474][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-474][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-474][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-474][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-474][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-474][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-474][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-475][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-475][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-475][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-475][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-475][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-475][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-475][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-475][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-475][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-475][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-475][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-476][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-476][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-476][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-476][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-476][DEBUG] [EVENT] > Extension: 1
+[15:34:31-477][DEBUG] ## "tech.microcore.mainwin.desktop" : QHash(("EdittoolTip", "编辑工具栏提示")("FilestatusTip", "文件状态栏提示")("TooltoolTip", "工具工具栏提示")("Pic", "图片")("Others", "其他")("=Exit", "=退出")("About Qt", "关于Qt")("ViewstatusTip", "视图状态栏提示")("about", "关于")("About Us", "关于我们")("Dock View", "停靠视图")("Helps", "帮助")("FiletoolTip", "文件工具栏提示")("Opened Window", "打开的窗口")("Desktop Main Window", "桌面主窗口")("ProgressBar", "进程栏")("View", "视图")("ToolstatusTip", "工具状态栏提示")("Exit", "退出")("EditstatusTip", "编辑状态栏提示")("AbouttoolTip", "关于工具栏提示")("Edit", "编辑")("File", "文件")("Help", "帮助")("ViewtoolTip", "视图工具栏提示")("AboutstatusTip", "关于状态栏提示")("About", "关于")("Save", "保存")("Tool", "工具")("about menu", "关于 菜单"))
+[15:34:31-477][DEBUG] 	> "tr('Desktop Main Window')" :	 "Desktop Main Window" 	 "桌面主窗口"
+[15:34:31-477][DEBUG] ExtensionPointPrivate::updateExtensionText > "tech.microcore.mainwin.core.layout" 
+	> ("<ExtData extPlugin=\"tech.microcore.mainwin.core\" id=\"tech.microcore.mainwin.core.layout\" plugin=\"tech.microcore.mainwin.desktop\">\n<Layout toolTip=\"Desktop Main Window\" id=\"tech.microcore.mainwin.core.layout.desktop\" size=\"1000,800\" icon=\"resources/file.png\" showMode=\"8\" title=\"桌面主窗口\"/>\n</ExtData>\n")
+[15:34:31-477][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-477][DEBUG] [EVENT] > Extension: 1
+[15:34:31-477][DEBUG] ## "tech.microcore.mainwin.desktop" : QHash(("EdittoolTip", "编辑工具栏提示")("FilestatusTip", "文件状态栏提示")("TooltoolTip", "工具工具栏提示")("Pic", "图片")("Others", "其他")("=Exit", "=退出")("About Qt", "关于Qt")("ViewstatusTip", "视图状态栏提示")("about", "关于")("About Us", "关于我们")("Dock View", "停靠视图")("Helps", "帮助")("FiletoolTip", "文件工具栏提示")("Opened Window", "打开的窗口")("Desktop Main Window", "桌面主窗口")("ProgressBar", "进程栏")("View", "视图")("ToolstatusTip", "工具状态栏提示")("Exit", "退出")("EditstatusTip", "编辑状态栏提示")("AbouttoolTip", "关于工具栏提示")("Edit", "编辑")("File", "文件")("Help", "帮助")("ViewtoolTip", "视图工具栏提示")("AboutstatusTip", "关于状态栏提示")("About", "关于")("Save", "保存")("Tool", "工具")("about menu", "关于 菜单"))
+[15:34:31-477][DEBUG] 	> "tr('Edit')" :	 "Edit" 	 "编辑"
+[15:34:31-477][DEBUG] 	> "tr('Exit')" :	 "Exit" 	 "退出"
+[15:34:31-477][DEBUG] 	> "tr('Exit123')" :	 "Exit123" 	 ""
+[15:34:31-477][DEBUG] 	> "tr('Helps')" :	 "Helps" 	 "帮助"
+[15:34:31-478][DEBUG] 	> "tr('Helpsssssssss')" :	 "Helpsssssssss" 	 ""
+[15:34:31-478][DEBUG] 	> "tr('Others')" :	 "Others" 	 "其他"
+[15:34:31-478][DEBUG] 	> "tr('Pic')" :	 "Pic" 	 "图片"
+[15:34:31-478][DEBUG] 	> "tr('ProgressBar')" :	 "ProgressBar" 	 "进程栏"
+[15:34:31-478][DEBUG] 	> "tr('Save')" :	 "Save" 	 "保存"
+[15:34:31-478][DEBUG] 	> "tr('slider11')" :	 "slider11" 	 ""
+[15:34:31-478][DEBUG] ExtensionPointPrivate::updateExtensionText > "tech.microcore.mainwin.core.statusbar" 
+	> ("<ExtData extPlugin=\"tech.microcore.mainwin.core\" id=\"tech.microcore.mainwin.core.statusbar\" plugin=\"tech.microcore.mainwin.desktop\">\n<Menu toolTip=\"helps\" visible=\"true\" id=\"tech.microcore.mainwin.desktop.Helpsvsddvgfsvgdsdvsv\" sceneMode=\"visible\" permanent=\"false\" sceneName=\"SCENE_ROT\" index=\"2\" enabled=\"true\" title=\"Helpsssssssss\">\n<Menu id=\"tech.microcore.mainwin.desktop. PrintEC\" enabled=\"true\" title=\"Print\">\n<Action toolTip=\"编辑\" checkable=\"true\" visible=\"true\" checked=\"true\" id=\"tech.microcore.mainwin.desktop.EditEC\" statusTip=\"编辑\" autoRepeat=\"false\" iconSize=\"24x24\" enabled=\"true\" text=\"编辑\"/>\n<Group id=\"tech.microcore.mainwin.desktop.Files\" text=\"Files\">\n<Action toolTip=\"保存\" checkable=\"true\" visible=\"true\" checked=\"true\" id=\"tech.microcore.mainwin.desktop.SaveEC\" statusTip=\"保存\" autoRepeat=\"false\" iconSize=\"24x24\" enabled=\"true\" text=\"保存\"/>\n<Action toolTip=\"图片\" checkable=\"true\" visible=\"true\" checked=\"true\" id=\"tech.microcore.mainwin.desktop.PicAc\" statusTip=\"图片\" autoRepeat=\"false\" iconSize=\"24x24\" enabled=\"true\" text=\"图片\"/>\n</Group>\n<Group id=\"tech.microcore.mainwin.desktop.toolButton.groupOther\" text=\"Other\">\n<Action toolTip=\"其他\" checkable=\"true\" visible=\"true\" checked=\"true\" id=\"tech.microcore.mainwin.desktop.OthersEC\" statusTip=\"其他\" autoRepeat=\"false\" iconSize=\"24x24\" enabled=\"true\" text=\"Others\"/>\n</Group>\n</Menu>\n<Action toolTip=\"编辑\" checkable=\"true\" visible=\"true\" checked=\"true\" id=\"tech.microcore.mainwin.desktop.EditEC\" statusTip=\"编辑\" autoRepeat=\"false\" iconSize=\"24x24\" enabled=\"true\" text=\"编辑\"/>\n<Group id=\"tech.microcore.mainwin.desktop.groupHelpvvv\" text=\"Help\">\n<Action toolTip=\"帮助\" checkable=\"true\" visible=\"true\" checked=\"true\" id=\"tech.microcore.mainwin.desktop.HelpECvsdv\" statusTip=\"帮助\" autoRepeat=\"false\" iconSize=\"24x24\" enabled=\"true\" text=\"帮助\"/>\n</Group>\n</Menu>\n<Action toolTip=\"Exit123\" visible=\"GREGGGGGGGGG\" icon=\"resources/logo_min.png\" id=\"tech.microcore.mainwin.desktop.ExitKLUJLU\" sceneMode=\"visible\" permanent=\"true\" sceneName=\"SCENE_V\" index=\"2\" shortcut=\"\" enabled=\"true\" text=\"退出\"/>\n<ProgressBar visible=\"true\" value=\"20\" id=\"tech.microcore.mainwin.desktop.progressbar\" sceneMode=\"visible\" permanent=\"false\" sceneName=\"SCENE_V\" index=\"5\" enabled=\"true\" text=\"进程栏\"/>\n<Slider maximum=\"100\" visible=\"true\" value=\"1\" id=\"tech.microcore.mainwin.desktop.slider1\" sceneMode=\"visible\" minimum=\"0\" permanent=\"true\" sceneName=\"SCENE_V\" index=\"1\" enabled=\"true\" text=\"slider11\"/>\n<LineEdit label=\"hello\" visible=\"true\" id=\"tech.microcore.mainwin.desktop.lineedit\" sceneMode=\"visible\" permanent=\"false\" sceneName=\"SCENE_V\" index=\"3\" readOnly=\"false\" enabled=\"true\" text=\"hellosss\"/>\n</ExtData>\n")
+[15:34:31-479][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-479][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-479][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-479][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-479][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-479][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-479][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-479][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-479][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-479][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-479][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-479][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-480][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-480][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-480][DEBUG] [EVENT] > Service: 1
+[15:34:31-480][DEBUG] [EVENT] > Service: 1
+[15:34:31-480][DEBUG] [EVENT] > Service: 1
+[15:34:31-480][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.mainwin.core" ExtensionSystem::Plugin(0x9e6b40) - state: 8 -> 32
+[15:34:31-480][DEBUG] [EVENT] > Plugin: "tech.microcore.mainwin.core" = 32
+[15:34:31-480][DEBUG] [ "Actived   " ]	 "tech.microcore.mainwin.core"
+[15:34:31-483][DEBUG] element.tag : "ExtPointSet"
+[15:34:31-489][DEBUG] PluginChanged: "tech.microcore.mainwin.core"  - state: 8 -> 32
+[15:34:31-489][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.mainwin.desktop" ExtensionSystem::Plugin(0x9e6d20) - state: 4 -> 8
+[15:34:31-489][DEBUG] [EVENT] > Plugin: "tech.microcore.mainwin.desktop" = 8
+[15:34:31-489][DEBUG] PluginChanged: "tech.microcore.mainwin.desktop"  - state: 4 -> 8
+[15:34:31-490][WARN] libpng warning: iCCP: known incorrect sRGB profile
+[15:34:31-506][DEBUG] m_obj QVariant(QString, "tech.microcore.demo.textedit.ExportPdfActionHanler")
+[15:34:31-508][DEBUG] aacc 1 MenuMock(0x61265a0, name="tech.microcore.mainwin.desktop.actionid.MenuBarFile") QVariant(QString, "tech.microcore.demo.textedit.TextEditSaveActionHanler")
+[15:34:31-512][DEBUG] m_obj QVariant(QString, "tech.microcore.demo.textedit.TextEditSaveActionHanler")
+[15:34:31-512][DEBUG] aacc 1 MenuMock(0x61265a0, name="tech.microcore.mainwin.desktop.actionid.MenuBarFile") QVariant(QString, "tech.microcore.demo.textedit.TextEditSaveActionHanler")
+[15:34:31-516][DEBUG] aacc 2 MenuMock(0x61265a0, name="tech.microcore.mainwin.desktop.actionid.MenuBarFile") QVariant(QString, "tech.microcore.demo.textedit.PrintActionHanler")
+[15:34:31-518][DEBUG] m_obj QVariant(QString, "tech.microcore.demo.textedit.PrintActionHanler")
+[15:34:31-518][DEBUG] aacc 2 MenuMock(0x61265a0, name="tech.microcore.mainwin.desktop.actionid.MenuBarFile") QVariant(QString, "tech.microcore.demo.textedit.PrintActionHanler")
+[15:34:31-520][DEBUG] aacc 3 MenuMock(0x61265a0, name="tech.microcore.mainwin.desktop.actionid.MenuBarFile") QVariant(QString, "tech.microcore.demo.textedit.OpenActionHanler")
+[15:34:31-523][DEBUG] m_obj QVariant(QString, "tech.microcore.demo.textedit.OpenActionHanler")
+[15:34:31-524][DEBUG] aacc 3 MenuMock(0x61265a0, name="tech.microcore.mainwin.desktop.actionid.MenuBarFile") QVariant(QString, "tech.microcore.demo.textedit.OpenActionHanler")
+[15:34:31-525][DEBUG] aacc 4 MenuMock(0x61265a0, name="tech.microcore.mainwin.desktop.actionid.MenuBarFile") QVariant(QString, "tech.microcore.demo.textedit.NewActionHanler")
+[15:34:31-529][DEBUG] m_obj QVariant(QString, "tech.microcore.demo.textedit.NewActionHanler")
+[15:34:31-530][DEBUG] aacc 4 MenuMock(0x61265a0, name="tech.microcore.mainwin.desktop.actionid.MenuBarFile") QVariant(QString, "tech.microcore.demo.textedit.NewActionHanler")
+[15:34:31-534][WARN] libpng warning: iCCP: known incorrect sRGB profile
+[15:34:31-538][DEBUG] m_obj QVariant(QString, "tech.microcore.mainwin.desktop.Exit")
+[15:34:31-548][DEBUG] m_obj QVariant(QString, "tech.microcore.demo.textedit.CopyActionHanler")
+[15:34:31-551][DEBUG] m_obj QVariant(QString, "tech.microcore.demo.textedit.PasteActionHanler")
+[15:34:31-554][DEBUG] m_obj QVariant(QString, "tech.microcore.demo.textedit.CutActionHanler")
+[15:34:31-557][DEBUG] m_obj QVariant(QString, "tech.microcore.mainwin.desktop.RevokeActionHanler")
+[15:34:31-561][WARN] QPixmap::scaled: Pixmap is a null pixmap
+[15:34:31-563][WARN] QPixmap::scaled: Pixmap is a null pixmap
+[15:34:31-568][WARN] QPixmap::scaled: Pixmap is a null pixmap
+[15:34:31-570][WARN] QPixmap::scaled: Pixmap is a null pixmap
+[15:34:31-575][WARN] libpng warning: iCCP: known incorrect sRGB profile
+[15:34:31-576][DEBUG] m_obj QVariant(QString, "tech.microcore.mainwin.desktop.AboutQt")
+[15:34:31-581][DEBUG] m_obj QVariant(QString, "tech.microcore.mainwin.desktop.AboutUs")
+[15:34:31-586][DEBUG] m_obj QVariant(QString, "tech.microcore.mainwin.desktop.Help")
+[15:34:31-591][DEBUG] m_obj QVariant(QString, "tech.microcore.demo.extsetdemo.show")
+[15:34:31-593][WARN] libpng warning: iCCP: known incorrect sRGB profile
+[15:34:31-596][DEBUG] m_obj QVariant(QString, "tech.microcore.config.optiondialog.show")
+[15:34:31-599][DEBUG] aacc 2 MenuMock(0x61278d8, name="tech.microcore.mainwin.desktop.actionid.ToolMenuBar") QVariant(QString, "tech.microcore.pluginmanager.action.ShowPluginManagerDialog")
+[15:34:31-601][WARN] libpng warning: iCCP: known incorrect sRGB profile
+[15:34:31-603][DEBUG] m_obj QVariant(QString, "tech.microcore.pluginmanager.action.ShowPluginManagerDialog")
+[15:34:31-603][DEBUG] aacc 2 MenuMock(0x61278d8, name="tech.microcore.mainwin.desktop.actionid.ToolMenuBar") QVariant(QString, "tech.microcore.pluginmanager.action.ShowPluginManagerDialog")
+[15:34:31-607][WARN] QPixmap::scaled: Pixmap is a null pixmap
+[15:34:31-609][DEBUG] m_obj QVariant(QString, "tech.microcore.demo.demowindow.ExportPdfActionHanler")
+[15:34:31-609][WARN] QPixmap::scaled: Pixmap is a null pixmap
+[15:34:31-610][DEBUG] m_obj QVariant(QString, "tech.microcore.demo.demoservice.edit")
+[15:34:31-621][WARN] QPixmap::scaled: Pixmap is a null pixmap
+[15:34:31-624][WARN] setGeometry: Unable to set geometry 85x18+363+124 on QWidgetWindow/'QToolButtonClassWindow'. Resulting geometry:  120x18+363+124 (frame: 8, 31, 8, 8, custom margin: 0, 0, 0, 0, minimum size: 0x0, maximum size: 16777215x16777215).
+[15:34:31-648][WARN] QPixmap::scaled: Pixmap is a null pixmap
+[15:34:31-649][DEBUG] m_obj QVariant(QString, "tech.microcore.service.dynamiclayout.edit")
+[15:34:31-649][WARN] QPixmap::scaled: Pixmap is a null pixmap
+[15:34:31-650][DEBUG] m_obj QVariant(QString, "tech.microcore.service.undomanager.UndoActionHanler")
+[15:34:31-651][DEBUG] m_obj QVariant(QString, "tech.microcore.service.undomanager.RedoActionHanler")
+[15:34:31-653][DEBUG] m_obj QVariant(QString, "tech.microcore.demo.textedit.BoldActionHanler")
+[15:34:31-653][DEBUG] m_obj QVariant(QString, "tech.microcore.demo.textedit.ItalicActionHanler")
+[15:34:31-654][DEBUG] m_obj QVariant(QString, "tech.microcore.demo.textedit.UnderlineActionHanler")
+[15:34:31-655][DEBUG] m_obj QVariant(QString, "tech.microcore.demo.textedit.LeftActionHanler")
+[15:34:31-655][DEBUG] m_obj QVariant(QString, "tech.microcore.demo.textedit.CenterActionHanler")
+[15:34:31-656][DEBUG] m_obj QVariant(QString, "tech.microcore.demo.textedit.RightActionHanler")
+[15:34:31-656][DEBUG] m_obj QVariant(QString, "tech.microcore.demo.textedit.JustifyActionHanler")
+[15:34:31-657][DEBUG] m_obj QVariant(QString, "tech.microcore.demo.textedit.ColorActionHanler")
+[15:34:31-658][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::start(const QString&) "tech.microcore.demo.textedit"
+[15:34:31-658][DEBUG] PluginManager::start > "tech.microcore.demo.textedit" ("tech.microcore.service.undomanager", "tech.microcore.demo.textedit")
+[15:34:31-658][DEBUG] PluginManager::Start > "tech.microcore.service.undomanager" : 4
+[15:34:31-658][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.service.undomanager" ExtensionSystem::Plugin(0x60431e0) - state: 4 -> 8
+[15:34:31-658][DEBUG] [EVENT] > Plugin: "tech.microcore.service.undomanager" = 8
+[15:34:31-658][DEBUG] PluginChanged: "tech.microcore.service.undomanager"  - state: 4 -> 8
+[15:34:31-658][DEBUG] [EVENT] > Service: 1
+[15:34:31-658][DEBUG] [INFO] UndoManager: success
+[15:34:31-658][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.service.undomanager" ExtensionSystem::Plugin(0x60431e0) - state: 8 -> 32
+[15:34:31-658][DEBUG] [EVENT] > Plugin: "tech.microcore.service.undomanager" = 32
+[15:34:31-658][DEBUG] [ "Actived   " ]	 "tech.microcore.service.undomanager"
+[15:34:31-700][DEBUG] PluginChanged: "tech.microcore.service.undomanager"  - state: 8 -> 32
+[15:34:31-700][DEBUG] PluginManager::Start > "tech.microcore.demo.textedit" : 4
+[15:34:31-700][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.textedit" ExtensionSystem::Plugin(0x9e69e0) - state: 4 -> 8
+[15:34:31-700][DEBUG] [EVENT] > Plugin: "tech.microcore.demo.textedit" = 8
+[15:34:31-700][DEBUG] PluginChanged: "tech.microcore.demo.textedit"  - state: 4 -> 8
+[15:34:31-701][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.textedit" ExtensionSystem::Plugin(0x9e69e0) - state: 8 -> 32
+[15:34:31-701][DEBUG] [EVENT] > Plugin: "tech.microcore.demo.textedit" = 32
+[15:34:31-701][DEBUG] [ "Actived   " ]	 "tech.microcore.demo.textedit"
+[15:34:31-717][DEBUG] PluginChanged: "tech.microcore.demo.textedit"  - state: 8 -> 32
+[15:34:31-717][DEBUG] virtual int ExtensionSystem::ExtensionData::active(QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument) Request Start Plugin: "tech.microcore.demo.textedit"
+[15:34:31-717][WARN] QWidget::setMinimumSize: (tech.microcore.demo.textedit.textStyleActionHanler/WidgetMock) Negative sizes (-1,-1) are not possible
+[15:34:31-717][DEBUG] virtual void WidgetMock::attributeChanged(const QString&, const QVariant&) > MAINWINDOW_PLUG_WIDGET: QComboBox(0x6656fb0)
+[15:34:31-738][WARN] QObject::connect: Cannot connect (null)::activated(int) to TextEditCallbackAdmin::textFamily(int)
+[15:34:31-738][WARN] QWidget::setMinimumSize: (tech.microcore.demo.textedit.textFontActionHanler/WidgetMock) Negative sizes (-1,-1) are not possible
+[15:34:31-738][DEBUG] virtual void WidgetMock::attributeChanged(const QString&, const QVariant&) > MAINWINDOW_PLUG_WIDGET: QWidget(0x0)
+[15:34:31-769][WARN] QWidget::setMinimumSize: (tech.microcore.demo.textedit.textSizeActionHanler/WidgetMock) Negative sizes (-1,-1) are not possible
+[15:34:31-769][DEBUG] virtual void WidgetMock::attributeChanged(const QString&, const QVariant&) > MAINWINDOW_PLUG_WIDGET: QComboBox(0x6685f50, name="comboSize")
+[15:34:31-775][WARN] setGeometry: Unable to set geometry 91x42+363+124 on QWidgetWindow/'tech.microcore.demo.textedit.textSizeActionHanlerWindow'. Resulting geometry:  120x42+363+124 (frame: 8, 31, 8, 8, custom margin: 0, 0, 0, 0, minimum size: 60x42, maximum size: 16777215x16777215).
+[15:34:31-793][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::start(const QString&) "tech.microcore.demo.dragdroprobot"
+[15:34:31-793][DEBUG] PluginManager::start > "tech.microcore.demo.dragdroprobot" ("tech.microcore.service.eventadmin", "tech.microcore.mainwin.core", "tech.microcore.demo.dragdroprobot")
+[15:34:31-793][DEBUG] PluginManager::Start > "tech.microcore.service.eventadmin" : 32
+[15:34:31-793][DEBUG] PluginManager::Start > "tech.microcore.mainwin.core" : 32
+[15:34:31-793][DEBUG] PluginManager::Start > "tech.microcore.demo.dragdroprobot" : 4
+[15:34:31-793][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.dragdroprobot" ExtensionSystem::Plugin(0x9e6980) - state: 4 -> 8
+[15:34:31-793][DEBUG] [EVENT] > Plugin: "tech.microcore.demo.dragdroprobot" = 8
+[15:34:31-793][DEBUG] PluginChanged: "tech.microcore.demo.dragdroprobot"  - state: 4 -> 8
+[15:34:31-794][DEBUG] virtual void CentralViewMock::attributeChanged(const QString&, const QVariant&) > "PLUG_WIDGET_605FDA42-6763-4982-8AE5-8F712BE9E94F" : QVariant(QVariantList, (QVariant(QWidget*, QWidget(0x6675118))))
+[15:34:31-803][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-803][DEBUG] m_obj QVariant(QString, "tech.microcore.mainwin.desktop.actionid.MenuBarView.Centralviewtech.microcore.demo.dragdroprobot.robot.UI")
+[15:34:31-803][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.dragdroprobot" ExtensionSystem::Plugin(0x9e6980) - state: 8 -> 32
+[15:34:31-803][DEBUG] [EVENT] > Plugin: "tech.microcore.demo.dragdroprobot" = 32
+[15:34:31-803][DEBUG] [ "Actived   " ]	 "tech.microcore.demo.dragdroprobot"
+[15:34:31-823][DEBUG] PluginChanged: "tech.microcore.demo.dragdroprobot"  - state: 8 -> 32
+[15:34:31-823][DEBUG] virtual int ExtensionSystem::ExtensionData::active(QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument) Request Start Plugin: "tech.microcore.demo.dragdroprobot"
+[15:34:31-823][DEBUG] virtual void CentralViewMock::attributeChanged(const QString&, const QVariant&) > "PLUG_WIDGET_605FDA42-6763-4982-8AE5-8F712BE9E94F" : QVariant(QVariantList, (QVariant(QWidget*, WidgetMock(0x668bc48))))
+[15:34:31-830][DEBUG] virtual void CentralViewMock::attributeChanged(const QString&, const QVariant&) > "sceneChange" : QVariant(QString, "false")
+[15:34:31-831][DEBUG] virtual void CentralViewMock::attributeChanged(const QString&, const QVariant&) > "sceneChange" : QVariant(QString, "false")
+[15:34:31-833][DEBUG] virtual void CentralViewMock::attributeChanged(const QString&, const QVariant&) > "sceneChange" : QVariant(QString, "false")
+[15:34:31-833][DEBUG] virtual void CentralViewMock::attributeChanged(const QString&, const QVariant&) > "sceneChange" : QVariant(QString, "true")
+[15:34:31-834][DEBUG] virtual void CentralViewMock::attributeChanged(const QString&, const QVariant&) > "focused" : QVariant(QString, "tech.microcore.config.dynamiclayoutedit.UI")
+[15:34:31-834][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-834][DEBUG] m_obj QVariant(QString, "tech.microcore.mainwin.desktop.actionid.MenuBarView.Centralviewtech.microcore.config.dynamiclayoutedit.UI")
+[15:34:31-835][DEBUG] error,  "No query Unable to fetch row"  file: configiodbimpl.cpp  function: read  line: 207
+[15:34:31-835][DEBUG] error,  "插件不存在"  file: configaccessimpl.cpp  function: handleCURDTaskError  line: 797
+[15:34:31-835][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::start(const QString&) "tech.microcore.demo.demowindow"
+[15:34:31-835][DEBUG] PluginManager::start > "tech.microcore.demo.demowindow" ("tech.microcore.service.eventadmin", "tech.microcore.mainwin.core", "tech.microcore.demo.demowindow")
+[15:34:31-835][DEBUG] PluginManager::Start > "tech.microcore.service.eventadmin" : 32
+[15:34:31-835][DEBUG] PluginManager::Start > "tech.microcore.mainwin.core" : 32
+[15:34:31-835][DEBUG] PluginManager::Start > "tech.microcore.demo.demowindow" : 4
+[15:34:31-835][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.demowindow" ExtensionSystem::Plugin(0x9e67d0) - state: 4 -> 8
+[15:34:31-835][DEBUG] [EVENT] > Plugin: "tech.microcore.demo.demowindow" = 8
+[15:34:31-835][DEBUG] PluginChanged: "tech.microcore.demo.demowindow"  - state: 4 -> 8
+[15:34:31-836][DEBUG] virtual void CentralViewMock::attributeChanged(const QString&, const QVariant&) > "PLUG_WIDGET_605FDA42-6763-4982-8AE5-8F712BE9E94F" : QVariant(QWidget*, DemoWidget(0x606e468))
+[15:34:31-839][DEBUG] virtual void CentralViewMock::attributeChanged(const QString&, const QVariant&) > "sceneChange" : QVariant(QString, "false")
+[15:34:31-840][DEBUG] virtual void CentralViewMock::attributeChanged(const QString&, const QVariant&) > "sceneChange" : QVariant(QString, "true")
+[15:34:31-840][DEBUG] virtual void CentralViewMock::attributeChanged(const QString&, const QVariant&) > "focused" : QVariant(QString, "tech.microcore.demo.demowindow.centralviewShow")
+[15:34:31-840][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-840][DEBUG] m_obj QVariant(QString, "tech.microcore.mainwin.desktop.actionid.MenuBarView.Centralviewtech.microcore.demo.demowindow.centralviewShow")
+[15:34:31-840][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.demowindow" ExtensionSystem::Plugin(0x9e67d0) - state: 8 -> 32
+[15:34:31-840][DEBUG] [EVENT] > Plugin: "tech.microcore.demo.demowindow" = 32
+[15:34:31-840][DEBUG] [ "Actived   " ]	 "tech.microcore.demo.demowindow"
+[15:34:31-859][DEBUG] PluginChanged: "tech.microcore.demo.demowindow"  - state: 8 -> 32
+[15:34:31-859][DEBUG] virtual int ExtensionSystem::ExtensionData::active(QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument) Request Start Plugin: "tech.microcore.demo.demowindow"
+[15:34:31-860][WARN] QStatusBar::insertPermanentWidget: Index out of range (0), appending widget
+[15:34:31-860][WARN] QStatusBar::insertPermanentWidget: Index out of range (0), appending widget
+[15:34:31-860][WARN] QStatusBar::insertPermanentWidget: Index out of range (0), appending widget
+[15:34:31-861][WARN] QStatusBar::insertPermanentWidget: Index out of range (0), appending widget
+[15:34:31-862][DEBUG] m_obj QVariant(QString, "tech.microcore.mainwin.desktop.EditEC")
+[15:34:31-862][DEBUG] m_obj QVariant(QString, "tech.microcore.mainwin.desktop.SaveEC")
+[15:34:31-862][DEBUG] m_obj QVariant(QString, "tech.microcore.mainwin.desktop.PicAc")
+[15:34:31-862][DEBUG] m_obj QVariant(QString, "tech.microcore.mainwin.desktop.OthersEC")
+[15:34:31-862][DEBUG] m_obj QVariant(QString, "tech.microcore.mainwin.desktop.HelpECvsdv")
+[15:34:31-862][WARN] QStatusBar::insertWidget: Index out of range (10000), appending widget
+[15:34:31-864][WARN] QStatusBar::insertWidget: Index out of range (10000), appending widget
+[15:34:31-866][WARN] QStatusBar::insertWidget: Index out of range (10000), appending widget
+[15:34:31-867][WARN] QStatusBar::insertWidget: Index out of range (10000), appending widget
+[15:34:31-868][WARN] QStatusBar::insertWidget: Index out of range (10000), appending widget
+[15:34:31-868][WARN] QStatusBar::insertWidget: Index out of range (10000), appending widget
+[15:34:31-868][DEBUG] [EVENT] > Service: 1
+[15:34:31-870][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::start(const QString&) "tech.microcore.service.propertybrowser"
+[15:34:31-870][DEBUG] PluginManager::start > "tech.microcore.service.propertybrowser" ("tech.microcore.service.eventadmin", "tech.microcore.mainwin.core", "tech.microcore.service.propertybrowser")
+[15:34:31-870][DEBUG] PluginManager::Start > "tech.microcore.service.eventadmin" : 32
+[15:34:31-870][DEBUG] PluginManager::Start > "tech.microcore.mainwin.core" : 32
+[15:34:31-870][DEBUG] PluginManager::Start > "tech.microcore.service.propertybrowser" : 4
+[15:34:31-870][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.service.propertybrowser" ExtensionSystem::Plugin(0x6043210) - state: 4 -> 8
+[15:34:31-870][DEBUG] [EVENT] > Plugin: "tech.microcore.service.propertybrowser" = 8
+[15:34:31-870][DEBUG] PluginChanged: "tech.microcore.service.propertybrowser"  - state: 4 -> 8
+[15:34:31-877][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-877][DEBUG] m_obj QVariant(QString, "tech.microcore.mainwin.desktop.actionid.MenuBarView.Docktech.microcore.service.propertybrowser.property")
+[15:34:31-877][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.service.propertybrowser" ExtensionSystem::Plugin(0x6043210) - state: 8 -> 32
+[15:34:31-877][DEBUG] [EVENT] > Plugin: "tech.microcore.service.propertybrowser" = 32
+[15:34:31-877][DEBUG] [ "Actived   " ]	 "tech.microcore.service.propertybrowser"
+[15:34:31-892][DEBUG] PluginChanged: "tech.microcore.service.propertybrowser"  - state: 8 -> 32
+[15:34:31-894][DEBUG] virtual int ExtensionSystem::ExtensionData::active(QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument) Request Start Plugin: "tech.microcore.service.propertybrowser"
+[15:34:31-906][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-906][DEBUG] m_obj QVariant(QString, "tech.microcore.mainwin.desktop.actionid.MenuBarView.Docktech.microcore.service.dynamiclayout.contenttree")
+[15:34:31-908][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::start(const QString&) "tech.microcore.demo.demoproperty"
+[15:34:31-908][DEBUG] PluginManager::start > "tech.microcore.demo.demoproperty" ("tech.microcore.service.eventadmin", "tech.microcore.mainwin.core", "tech.microcore.demo.demoproperty")
+[15:34:31-908][DEBUG] PluginManager::Start > "tech.microcore.service.eventadmin" : 32
+[15:34:31-908][DEBUG] PluginManager::Start > "tech.microcore.mainwin.core" : 32
+[15:34:31-908][DEBUG] PluginManager::Start > "tech.microcore.demo.demoproperty" : 4
+[15:34:31-908][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.demoproperty" ExtensionSystem::Plugin(0x9e6670) - state: 4 -> 8
+[15:34:31-908][DEBUG] [EVENT] > Plugin: "tech.microcore.demo.demoproperty" = 8
+[15:34:31-908][DEBUG] PluginChanged: "tech.microcore.demo.demoproperty"  - state: 4 -> 8
+[15:34:31-910][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-911][DEBUG] m_obj QVariant(QString, "tech.microcore.mainwin.desktop.actionid.MenuBarView.Docktech.microcore.demo.demoproperty.demo")
+[15:34:31-911][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.demoproperty" ExtensionSystem::Plugin(0x9e6670) - state: 8 -> 32
+[15:34:31-911][DEBUG] [EVENT] > Plugin: "tech.microcore.demo.demoproperty" = 32
+[15:34:31-911][DEBUG] [ "Actived   " ]	 "tech.microcore.demo.demoproperty"
+[15:34:31-932][DEBUG] PluginChanged: "tech.microcore.demo.demoproperty"  - state: 8 -> 32
+[15:34:31-933][DEBUG] virtual int ExtensionSystem::ExtensionData::active(QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument) Request Start Plugin: "tech.microcore.demo.demoproperty"
+[15:34:31-938][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-938][DEBUG] m_obj QVariant(QString, "tech.microcore.mainwin.desktop.actionid.MenuBarView.Docktech.microcore.demo.demowindow.dockShow")
+[15:34:31-943][DEBUG] ExtensionSystem::ExtensionData::ExtensionData(ExtensionSystem::Object*) > ""
+[15:34:31-943][DEBUG] m_obj QVariant(QString, "tech.microcore.mainwin.desktop.actionid.MenuBarView.Docktech.microcore.service.undomanager.UndoView.UI")
+[15:34:31-943][DEBUG] error,  "No query Unable to fetch row"  file: configiodbimpl.cpp  function: read  line: 207
+[15:34:31-943][DEBUG] error,  "插件不存在"  file: configaccessimpl.cpp  function: handleCURDTaskError  line: 797
+[15:34:31-943][DEBUG] error,  "No query Unable to fetch row"  file: configiodbimpl.cpp  function: read  line: 207
+[15:34:31-943][DEBUG] error,  "插件不存在"  file: configaccessimpl.cpp  function: handleCURDTaskError  line: 797
+[15:34:31-943][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.mainwin.desktop" ExtensionSystem::Plugin(0x9e6d20) - state: 8 -> 32
+[15:34:31-943][DEBUG] [EVENT] > Plugin: "tech.microcore.mainwin.desktop" = 32
+[15:34:31-944][DEBUG] [ "Actived   " ]	 "tech.microcore.mainwin.desktop"
+[15:34:31-959][DEBUG] PluginChanged: "tech.microcore.mainwin.desktop"  - state: 8 -> 32
+[15:34:31-959][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.dstyle.toolboxwidget" ExtensionSystem::Plugin(0x9e6ae0) - state: 4 -> 8
+[15:34:31-960][DEBUG] [EVENT] > Plugin: "tech.microcore.dstyle.toolboxwidget" = 8
+[15:34:31-960][DEBUG] PluginChanged: "tech.microcore.dstyle.toolboxwidget"  - state: 4 -> 8
+[15:34:31-960][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.dstyle.toolboxwidget" ExtensionSystem::Plugin(0x9e6ae0) - state: 8 -> 32
+[15:34:31-960][DEBUG] [EVENT] > Plugin: "tech.microcore.dstyle.toolboxwidget" = 32
+[15:34:31-960][DEBUG] [ "Actived   " ]	 "tech.microcore.dstyle.toolboxwidget"
+[15:34:31-969][DEBUG] PluginChanged: "tech.microcore.dstyle.toolboxwidget"  - state: 8 -> 32
+[15:34:31-969][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.dstyle.tabwidget" ExtensionSystem::Plugin(0x9e6bf0) - state: 4 -> 8
+[15:34:31-969][DEBUG] [EVENT] > Plugin: "tech.microcore.dstyle.tabwidget" = 8
+[15:34:31-969][DEBUG] PluginChanged: "tech.microcore.dstyle.tabwidget"  - state: 4 -> 8
+[15:34:31-970][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.dstyle.tabwidget" ExtensionSystem::Plugin(0x9e6bf0) - state: 8 -> 32
+[15:34:31-970][DEBUG] [EVENT] > Plugin: "tech.microcore.dstyle.tabwidget" = 32
+[15:34:31-970][DEBUG] [ "Actived   " ]	 "tech.microcore.dstyle.tabwidget"
+[15:34:31-979][DEBUG] PluginChanged: "tech.microcore.dstyle.tabwidget"  - state: 8 -> 32
+[15:34:31-980][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.dstyle.scrollwidget" ExtensionSystem::Plugin(0x9e6be0) - state: 4 -> 8
+[15:34:31-980][DEBUG] [EVENT] > Plugin: "tech.microcore.dstyle.scrollwidget" = 8
+[15:34:31-980][DEBUG] PluginChanged: "tech.microcore.dstyle.scrollwidget"  - state: 4 -> 8
+[15:34:31-980][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.dstyle.scrollwidget" ExtensionSystem::Plugin(0x9e6be0) - state: 8 -> 32
+[15:34:31-980][DEBUG] [EVENT] > Plugin: "tech.microcore.dstyle.scrollwidget" = 32
+[15:34:31-980][DEBUG] [ "Actived   " ]	 "tech.microcore.dstyle.scrollwidget"
+[15:34:32-000][DEBUG] PluginChanged: "tech.microcore.dstyle.scrollwidget"  - state: 8 -> 32
+[15:34:32-000][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.dstyle.coverwidget" ExtensionSystem::Plugin(0x9e6aa0) - state: 4 -> 8
+[15:34:32-000][DEBUG] [EVENT] > Plugin: "tech.microcore.dstyle.coverwidget" = 8
+[15:34:32-000][DEBUG] PluginChanged: "tech.microcore.dstyle.coverwidget"  - state: 4 -> 8
+[15:34:32-000][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.dstyle.coverwidget" ExtensionSystem::Plugin(0x9e6aa0) - state: 8 -> 32
+[15:34:32-000][DEBUG] [EVENT] > Plugin: "tech.microcore.dstyle.coverwidget" = 32
+[15:34:32-000][DEBUG] [ "Actived   " ]	 "tech.microcore.dstyle.coverwidget"
+[15:34:32-011][DEBUG] PluginChanged: "tech.microcore.dstyle.coverwidget"  - state: 8 -> 32
+[15:34:32-011][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.widget" ExtensionSystem::Plugin(0x9e6a90) - state: 4 -> 8
+[15:34:32-011][DEBUG] [EVENT] > Plugin: "tech.microcore.demo.widget" = 8
+[15:34:32-011][DEBUG] PluginChanged: "tech.microcore.demo.widget"  - state: 4 -> 8
+[15:34:32-012][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.widget" ExtensionSystem::Plugin(0x9e6a90) - state: 8 -> 32
+[15:34:32-012][DEBUG] [EVENT] > Plugin: "tech.microcore.demo.widget" = 32
+[15:34:32-012][DEBUG] [ "Actived   " ]	 "tech.microcore.demo.widget"
+[15:34:32-023][DEBUG] PluginChanged: "tech.microcore.demo.widget"  - state: 8 -> 32
+[15:34:32-023][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.qtwindow" ExtensionSystem::Plugin(0x9e6920) - state: 4 -> 8
+[15:34:32-023][DEBUG] [EVENT] > Plugin: "tech.microcore.demo.qtwindow" = 8
+[15:34:32-023][DEBUG] PluginChanged: "tech.microcore.demo.qtwindow"  - state: 4 -> 8
+[15:34:32-023][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.qtwindow" ExtensionSystem::Plugin(0x9e6920) - state: 8 -> 32
+[15:34:32-023][DEBUG] [EVENT] > Plugin: "tech.microcore.demo.qtwindow" = 32
+[15:34:32-023][DEBUG] [ "Actived   " ]	 "tech.microcore.demo.qtwindow"
+[15:34:32-033][DEBUG] PluginChanged: "tech.microcore.demo.qtwindow"  - state: 8 -> 32
+[15:34:32-033][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.config.pluginmanager" ExtensionSystem::Plugin(0x9e6cf0) - state: 4 -> 8
+[15:34:32-033][DEBUG] [EVENT] > Plugin: "tech.microcore.config.pluginmanager" = 8
+[15:34:32-033][DEBUG] PluginChanged: "tech.microcore.config.pluginmanager"  - state: 4 -> 8
+[15:34:32-033][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.config.pluginmanager" ExtensionSystem::Plugin(0x9e6cf0) - state: 8 -> 32
+[15:34:32-033][DEBUG] [EVENT] > Plugin: "tech.microcore.config.pluginmanager" = 32
+[15:34:32-033][DEBUG] [ "Actived   " ]	 "tech.microcore.config.pluginmanager"
+[15:34:32-042][DEBUG] PluginChanged: "tech.microcore.config.pluginmanager"  - state: 8 -> 32
+[15:34:32-043][DEBUG] [EVENT] > Framework: 8 to 16
+[15:38:42-166][DEBUG] virtual void CentralViewMock::attributeChanged(const QString&, const QVariant&) > "sceneChange" : QVariant(QString, "false")
+[15:38:42-166][DEBUG] virtual void CentralViewMock::attributeChanged(const QString&, const QVariant&) > "sceneChange" : QVariant(QString, "true")
+[15:38:43-993][DEBUG] [DockView] 1 Qt::DockWidgetArea(LeftDockWidgetArea)
+[15:38:43-994][DEBUG] [DockView] 0 Qt::DockWidgetArea(NoDockWidgetArea)
+[15:38:43-994][DEBUG] [DockView] 2 Qt::DockWidgetArea(RightDockWidgetArea)
+[15:38:43-994][DEBUG] [DockView] 0 Qt::DockWidgetArea(NoDockWidgetArea)
+[15:38:43-995][DEBUG] [DockView] 2 Qt::DockWidgetArea(RightDockWidgetArea)
+[15:38:44-000][DEBUG] [EVENT] > Framework: 16 to 4
+[15:38:44-000][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.textedit" ExtensionSystem::Plugin(0x9e69e0) - state: 32 -> 16
+[15:38:44-000][DEBUG] [EVENT] > Plugin: "tech.microcore.demo.textedit" = 16
+[15:38:44-000][DEBUG] PluginChanged: "tech.microcore.demo.textedit"  - state: 32 -> 16
+[15:38:44-000][DEBUG] [ExtensionHandler] > unregister "tech.microcore.demo.textedit.edit.UI"
+[15:38:44-000][DEBUG] [ExtensionHandler] > unregister "tech.microcore.demo.textedit.textSizeActionHanler"
+[15:38:44-001][DEBUG] [ExtensionHandler] > unregister "tech.microcore.demo.textedit.textFontActionHanler"
+[15:38:44-001][DEBUG] [ExtensionHandler] > unregister "tech.microcore.demo.textedit.textStyleActionHanler"
+[15:38:44-001][DEBUG] [ExtensionHandler] > unregister "tech.microcore.demo.textedit.ColorActionHanler"
+[15:38:44-001][DEBUG] [ExtensionHandler] > unregister "tech.microcore.demo.textedit.JustifyActionHanler"
+[15:38:44-001][DEBUG] [ExtensionHandler] > unregister "tech.microcore.demo.textedit.RightActionHanler"
+[15:38:44-002][DEBUG] [ExtensionHandler] > unregister "tech.microcore.demo.textedit.CenterActionHanler"
+[15:38:44-002][DEBUG] [ExtensionHandler] > unregister "tech.microcore.demo.textedit.LeftActionHanler"
+[15:38:44-002][DEBUG] [ExtensionHandler] > unregister "tech.microcore.demo.textedit.UnderlineActionHanler"
+[15:38:44-002][DEBUG] [ExtensionHandler] > unregister "tech.microcore.demo.textedit.ItalicActionHanler"
+[15:38:44-002][DEBUG] [ExtensionHandler] > unregister "tech.microcore.demo.textedit.BoldActionHanler"
+[15:38:44-002][DEBUG] [ExtensionHandler] > unregister "tech.microcore.demo.textedit.PasteActionHanler"
+[15:38:44-002][DEBUG] [ExtensionHandler] > unregister "tech.microcore.demo.textedit.CopyActionHanler"
+[15:38:44-004][DEBUG] [ExtensionHandler] > unregister "tech.microcore.demo.textedit.CutActionHanler"
+[15:38:44-004][DEBUG] [ExtensionHandler] > unregister "tech.microcore.demo.textedit.RedoActionHanler"
+[15:38:44-004][DEBUG] [ExtensionHandler] > unregister "tech.microcore.demo.textedit.UndoActionHanler"
+[15:38:44-004][DEBUG] [ExtensionHandler] > unregister "tech.microcore.demo.textedit.ExportPdfActionHanler"
+[15:38:44-004][DEBUG] [ExtensionHandler] > unregister "tech.microcore.demo.textedit.PrintActionHanler"
+[15:38:44-004][DEBUG] [ExtensionHandler] > unregister "tech.microcore.demo.textedit.TextEditSaveActionHanler"
+[15:38:44-005][DEBUG] [ExtensionHandler] > unregister "tech.microcore.demo.textedit.OpenActionHanler"
+[15:38:44-005][DEBUG] [ExtensionHandler] > unregister "tech.microcore.demo.textedit.NewActionHanler"
+[15:38:44-006][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.textedit" ExtensionSystem::Plugin(0x9e69e0) - state: 16 -> 4
+[15:38:44-008][DEBUG] [EVENT] > Plugin: "tech.microcore.demo.textedit" = 4
+[15:38:44-008][DEBUG] [ "Resolved  " ]	 "tech.microcore.demo.textedit"
+[15:38:44-009][DEBUG] PluginChanged: "tech.microcore.demo.textedit"  - state: 16 -> 4
+[15:38:44-009][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.service.undomanager" ExtensionSystem::Plugin(0x60431e0) - state: 32 -> 16
+[15:38:44-009][DEBUG] [EVENT] > Plugin: "tech.microcore.service.undomanager" = 16
+[15:38:44-009][DEBUG] PluginChanged: "tech.microcore.service.undomanager"  - state: 32 -> 16
+[15:38:44-009][DEBUG] [ExtensionHandler] > unregister "tech.microcore.service.undomanager.UndoView.UI"
+[15:38:44-009][DEBUG] [ExtensionHandler] > unregister "tech.microcore.service.undomanager.RedoActionHanler"
+[15:38:44-009][DEBUG] [ExtensionHandler] > unregister "tech.microcore.service.undomanager.UndoActionHanler"
+[15:38:44-010][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.service.undomanager" ExtensionSystem::Plugin(0x60431e0) - state: 16 -> 4
+[15:38:44-010][DEBUG] [EVENT] > Plugin: "tech.microcore.service.undomanager" = 4
+[15:38:44-010][DEBUG] [ "Resolved  " ]	 "tech.microcore.service.undomanager"
+[15:38:44-010][DEBUG] PluginChanged: "tech.microcore.service.undomanager"  - state: 16 -> 4
+[15:38:44-010][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.service.propertybrowser" ExtensionSystem::Plugin(0x6043210) - state: 32 -> 16
+[15:38:44-010][DEBUG] [EVENT] > Plugin: "tech.microcore.service.propertybrowser" = 16
+[15:38:44-010][DEBUG] PluginChanged: "tech.microcore.service.propertybrowser"  - state: 32 -> 16
+[15:38:44-010][DEBUG] [ExtensionHandler] > unregister "tech.microcore.service.propertybrowser.property"
+[15:38:44-010][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.service.propertybrowser" ExtensionSystem::Plugin(0x6043210) - state: 16 -> 4
+[15:38:44-010][DEBUG] [EVENT] > Plugin: "tech.microcore.service.propertybrowser" = 4
+[15:38:44-010][DEBUG] [ "Resolved  " ]	 "tech.microcore.service.propertybrowser"
+[15:38:44-010][DEBUG] PluginChanged: "tech.microcore.service.propertybrowser"  - state: 16 -> 4
+[15:38:44-010][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.config.pluginmanager" ExtensionSystem::Plugin(0x9e6cf0) - state: 32 -> 16
+[15:38:44-010][DEBUG] [EVENT] > Plugin: "tech.microcore.config.pluginmanager" = 16
+[15:38:44-010][DEBUG] PluginChanged: "tech.microcore.config.pluginmanager"  - state: 32 -> 16
+[15:38:44-010][DEBUG] [ExtensionHandler] > unregister "tech.microcore.pluginmanager.action.ShowPluginManagerDialog"
+[15:38:44-011][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.config.pluginmanager" ExtensionSystem::Plugin(0x9e6cf0) - state: 16 -> 4
+[15:38:44-011][DEBUG] [EVENT] > Plugin: "tech.microcore.config.pluginmanager" = 4
+[15:38:44-011][DEBUG] [ "Resolved  " ]	 "tech.microcore.config.pluginmanager"
+[15:38:44-011][DEBUG] PluginChanged: "tech.microcore.config.pluginmanager"  - state: 16 -> 4
+[15:38:44-011][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.demoproperty" ExtensionSystem::Plugin(0x9e6670) - state: 32 -> 16
+[15:38:44-012][DEBUG] [EVENT] > Plugin: "tech.microcore.demo.demoproperty" = 16
+[15:38:44-012][DEBUG] PluginChanged: "tech.microcore.demo.demoproperty"  - state: 32 -> 16
+[15:38:44-012][DEBUG] [ExtensionHandler] > unregister "tech.microcore.demo.demoproperty.demo"
+[15:38:44-012][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.demoproperty" ExtensionSystem::Plugin(0x9e6670) - state: 16 -> 4
+[15:38:44-012][DEBUG] [EVENT] > Plugin: "tech.microcore.demo.demoproperty" = 4
+[15:38:44-012][DEBUG] [ "Resolved  " ]	 "tech.microcore.demo.demoproperty"
+[15:38:44-014][DEBUG] PluginChanged: "tech.microcore.demo.demoproperty"  - state: 16 -> 4
+[15:38:44-014][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.demowindow" ExtensionSystem::Plugin(0x9e67d0) - state: 32 -> 16
+[15:38:44-014][DEBUG] [EVENT] > Plugin: "tech.microcore.demo.demowindow" = 16
+[15:38:44-014][DEBUG] PluginChanged: "tech.microcore.demo.demowindow"  - state: 32 -> 16
+[15:38:44-014][DEBUG] [ExtensionHandler] > unregister "tech.microcore.demo.demowindow.controlShow"
+[15:38:44-014][DEBUG] [ExtensionHandler] > unregister "tech.microcore.demo.demowindow.dockShow"
+[15:38:44-014][DEBUG] [ExtensionHandler] > unregister "tech.microcore.demo.demowindow.centralviewShow"
+[15:38:44-014][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.demowindow" ExtensionSystem::Plugin(0x9e67d0) - state: 16 -> 4
+[15:38:44-014][DEBUG] [EVENT] > Plugin: "tech.microcore.demo.demowindow" = 4
+[15:38:44-014][DEBUG] [ "Resolved  " ]	 "tech.microcore.demo.demowindow"
+[15:38:44-014][DEBUG] PluginChanged: "tech.microcore.demo.demowindow"  - state: 16 -> 4
+[15:38:44-014][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.dragdroprobot" ExtensionSystem::Plugin(0x9e6980) - state: 32 -> 16
+[15:38:44-014][DEBUG] [EVENT] > Plugin: "tech.microcore.demo.dragdroprobot" = 16
+[15:38:44-014][DEBUG] PluginChanged: "tech.microcore.demo.dragdroprobot"  - state: 32 -> 16
+[15:38:44-014][DEBUG] [ExtensionHandler] > unregister "tech.microcore.demo.dragdroprobot.robot.UI"
+[15:38:44-015][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.dragdroprobot" ExtensionSystem::Plugin(0x9e6980) - state: 16 -> 4
+[15:38:44-015][DEBUG] [EVENT] > Plugin: "tech.microcore.demo.dragdroprobot" = 4
+[15:38:44-015][DEBUG] [ "Resolved  " ]	 "tech.microcore.demo.dragdroprobot"
+[15:38:44-015][DEBUG] PluginChanged: "tech.microcore.demo.dragdroprobot"  - state: 16 -> 4
+[15:38:44-015][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.qtwindow" ExtensionSystem::Plugin(0x9e6920) - state: 32 -> 16
+[15:38:44-015][DEBUG] [EVENT] > Plugin: "tech.microcore.demo.qtwindow" = 16
+[15:38:44-015][DEBUG] PluginChanged: "tech.microcore.demo.qtwindow"  - state: 32 -> 16
+[15:38:44-015][DEBUG] [ExtensionHandler] > unregister "tech.microcore.demo.qtwindow.UI"
+[15:38:44-015][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.qtwindow" ExtensionSystem::Plugin(0x9e6920) - state: 16 -> 4
+[15:38:44-015][DEBUG] [EVENT] > Plugin: "tech.microcore.demo.qtwindow" = 4
+[15:38:44-015][DEBUG] [ "Resolved  " ]	 "tech.microcore.demo.qtwindow"
+[15:38:44-015][DEBUG] PluginChanged: "tech.microcore.demo.qtwindow"  - state: 16 -> 4
+[15:38:44-015][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.widget" ExtensionSystem::Plugin(0x9e6a90) - state: 32 -> 16
+[15:38:44-015][DEBUG] [EVENT] > Plugin: "tech.microcore.demo.widget" = 16
+[15:38:44-015][DEBUG] PluginChanged: "tech.microcore.demo.widget"  - state: 32 -> 16
+[15:38:44-015][DEBUG] [ExtensionHandler] > unregister "tech.microcore.demo.widget.UI"
+[15:38:44-015][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.widget" ExtensionSystem::Plugin(0x9e6a90) - state: 16 -> 4
+[15:38:44-015][DEBUG] [EVENT] > Plugin: "tech.microcore.demo.widget" = 4
+[15:38:44-015][DEBUG] [ "Resolved  " ]	 "tech.microcore.demo.widget"
+[15:38:44-015][DEBUG] PluginChanged: "tech.microcore.demo.widget"  - state: 16 -> 4
+[15:38:44-015][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.dstyle.coverwidget" ExtensionSystem::Plugin(0x9e6aa0) - state: 32 -> 16
+[15:38:44-015][DEBUG] [EVENT] > Plugin: "tech.microcore.dstyle.coverwidget" = 16
+[15:38:44-015][DEBUG] PluginChanged: "tech.microcore.dstyle.coverwidget"  - state: 32 -> 16
+[15:38:44-015][DEBUG] [ExtensionHandler] > unregister "tech.microcore.dstyle.coverwidget.dynamicLayout.UI"
+[15:38:44-015][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.dstyle.coverwidget" ExtensionSystem::Plugin(0x9e6aa0) - state: 16 -> 4
+[15:38:44-015][DEBUG] [EVENT] > Plugin: "tech.microcore.dstyle.coverwidget" = 4
+[15:38:44-015][DEBUG] [ "Resolved  " ]	 "tech.microcore.dstyle.coverwidget"
+[15:38:44-015][DEBUG] PluginChanged: "tech.microcore.dstyle.coverwidget"  - state: 16 -> 4
+[15:38:44-015][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.dstyle.scrollwidget" ExtensionSystem::Plugin(0x9e6be0) - state: 32 -> 16
+[15:38:44-015][DEBUG] [EVENT] > Plugin: "tech.microcore.dstyle.scrollwidget" = 16
+[15:38:44-015][DEBUG] PluginChanged: "tech.microcore.dstyle.scrollwidget"  - state: 32 -> 16
+[15:38:44-015][DEBUG] [ExtensionHandler] > unregister "tech.microcore.dstyle.scrollwidget.dynamicLayout.UI"
+[15:38:44-016][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.dstyle.scrollwidget" ExtensionSystem::Plugin(0x9e6be0) - state: 16 -> 4
+[15:38:44-016][DEBUG] [EVENT] > Plugin: "tech.microcore.dstyle.scrollwidget" = 4
+[15:38:44-016][DEBUG] [ "Resolved  " ]	 "tech.microcore.dstyle.scrollwidget"
+[15:38:44-016][DEBUG] PluginChanged: "tech.microcore.dstyle.scrollwidget"  - state: 16 -> 4
+[15:38:44-016][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.dstyle.tabwidget" ExtensionSystem::Plugin(0x9e6bf0) - state: 32 -> 16
+[15:38:44-016][DEBUG] [EVENT] > Plugin: "tech.microcore.dstyle.tabwidget" = 16
+[15:38:44-016][DEBUG] PluginChanged: "tech.microcore.dstyle.tabwidget"  - state: 32 -> 16
+[15:38:44-016][DEBUG] [ExtensionHandler] > unregister "tech.microcore.dstyle.tabwidget.dynamicLayout.UI"
+[15:38:44-016][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.dstyle.tabwidget" ExtensionSystem::Plugin(0x9e6bf0) - state: 16 -> 4
+[15:38:44-016][DEBUG] [EVENT] > Plugin: "tech.microcore.dstyle.tabwidget" = 4
+[15:38:44-016][DEBUG] [ "Resolved  " ]	 "tech.microcore.dstyle.tabwidget"
+[15:38:44-016][DEBUG] PluginChanged: "tech.microcore.dstyle.tabwidget"  - state: 16 -> 4
+[15:38:44-017][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.dstyle.toolboxwidget" ExtensionSystem::Plugin(0x9e6ae0) - state: 32 -> 16
+[15:38:44-017][DEBUG] [EVENT] > Plugin: "tech.microcore.dstyle.toolboxwidget" = 16
+[15:38:44-017][DEBUG] PluginChanged: "tech.microcore.dstyle.toolboxwidget"  - state: 32 -> 16
+[15:38:44-017][DEBUG] [ExtensionHandler] > unregister "tech.microcore.dstyle.toolboxwidget.dynamicLayout.UI"
+[15:38:44-017][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.dstyle.toolboxwidget" ExtensionSystem::Plugin(0x9e6ae0) - state: 16 -> 4
+[15:38:44-017][DEBUG] [EVENT] > Plugin: "tech.microcore.dstyle.toolboxwidget" = 4
+[15:38:44-017][DEBUG] [ "Resolved  " ]	 "tech.microcore.dstyle.toolboxwidget"
+[15:38:44-018][DEBUG] PluginChanged: "tech.microcore.dstyle.toolboxwidget"  - state: 16 -> 4
+[15:38:44-018][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.mainwin.desktop" ExtensionSystem::Plugin(0x9e6d20) - state: 32 -> 16
+[15:38:44-018][DEBUG] [EVENT] > Plugin: "tech.microcore.mainwin.desktop" = 16
+[15:38:44-018][DEBUG] PluginChanged: "tech.microcore.mainwin.desktop"  - state: 32 -> 16
+[15:38:44-018][DEBUG] [ExtensionHandler] > unregister "tech.microcore.mainwin.desktop.Exit"
+[15:38:44-019][DEBUG] [ExtensionHandler] > unregister "tech.microcore.mainwin.desktop.Help"
+[15:38:44-019][DEBUG] [ExtensionHandler] > unregister "tech.microcore.mainwin.desktop.AboutQt"
+[15:38:44-019][DEBUG] [ExtensionHandler] > unregister "tech.microcore.mainwin.desktop.AboutUs"
+[15:38:44-019][DEBUG] ~LayoutManager
+[15:38:44-020][DEBUG] ~DockPointManager
+[15:38:44-020][DEBUG] ~ControlPointManager
+[15:38:44-020][DEBUG] ~StatusBarPointManager
+[15:38:44-034][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.mainwin.desktop" ExtensionSystem::Plugin(0x9e6d20) - state: 16 -> 4
+[15:38:44-034][DEBUG] [EVENT] > Plugin: "tech.microcore.mainwin.desktop" = 4
+[15:38:44-034][DEBUG] [ "Resolved  " ]	 "tech.microcore.mainwin.desktop"
+[15:38:44-035][DEBUG] PluginChanged: "tech.microcore.mainwin.desktop"  - state: 16 -> 4
+[15:38:44-035][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.mainwin.core" ExtensionSystem::Plugin(0x9e6b40) - state: 32 -> 16
+[15:38:44-035][DEBUG] [EVENT] > Plugin: "tech.microcore.mainwin.core" = 16
+[15:38:44-035][DEBUG] PluginChanged: "tech.microcore.mainwin.core"  - state: 32 -> 16
+[15:38:44-035][DEBUG] [EVENT] > Service: 2
+[15:38:44-035][DEBUG] [EVENT] > Service: 2
+[15:38:44-035][DEBUG] [EVENT] > Service: 2
+[15:38:44-035][DEBUG] [EVENT] > Extension: 2
+[15:38:44-035][DEBUG] [EVENT] > Extension: 2
+[15:38:44-035][DEBUG] [EVENT] > Extension: 2
+[15:38:44-035][DEBUG] [EVENT] > Extension: 2
+[15:38:44-035][DEBUG] [EVENT] > Extension: 2
+[15:38:44-035][DEBUG] [EVENT] > Extension: 2
+[15:38:44-035][DEBUG] [EVENT] > Extension: 2
+[15:38:44-035][DEBUG] [EVENT] > Extension: 2
+[15:38:44-035][DEBUG] [EVENT] > Extension: 2
+[15:38:44-035][DEBUG] [EVENT] > Extension: 2
+[15:38:44-035][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.demo.dragdroprobot.robot.UI"
+[15:38:44-035][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.demo.textedit.edit.UI"
+[15:38:44-035][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.config.dynamiclayoutedit.UI"
+[15:38:44-035][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.demo.demowindow.centralviewShow"
+[15:38:44-036][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.service.propertybrowser.property"
+[15:38:44-036][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.service.dynamiclayout.contenttree"
+[15:38:44-036][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.demo.demoproperty.demo"
+[15:38:44-036][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.demo.demowindow.dockShow"
+[15:38:44-036][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.service.undomanager.UndoView.UI"
+[15:38:44-036][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "Format"
+[15:38:44-036][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "MenuBar"
+[15:38:44-036][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.mainwin.desktop.actionid.MenuBarFile"
+[15:38:44-036][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.demo.textedit.ExportPdfActionHanler"
+[15:38:44-036][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.demo.textedit.TextEditSaveActionHanler"
+[15:38:44-036][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.demo.textedit.PrintActionHanler"
+[15:38:44-036][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.demo.textedit.OpenActionHanler"
+[15:38:44-036][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.demo.textedit.NewActionHanler"
+[15:38:44-036][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.mainwin.desktop.actionid.OtherGroup"
+[15:38:44-036][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.mainwin.desktop.Exit"
+[15:38:44-036][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.mainwin.desktop.actionid.EditMenuBar"
+[15:38:44-036][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.demo.textedit.CopyActionHanler"
+[15:38:44-036][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.demo.textedit.PasteActionHanler"
+[15:38:44-036][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.demo.textedit.CutActionHanler"
+[15:38:44-036][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.mainwin.desktop.RevokeActionHanler"
+[15:38:44-036][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.mainwin.desktop.actionid.ViewMenuBar"
+[15:38:44-036][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.mainwin.desktop.actionid.MenuBarView.Dock"
+[15:38:44-036][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.mainwin.desktop.actionid.MenuBarView.Centralview"
+[15:38:44-036][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.mainwin.desktop.actionid.aboutMenuBar"
+[15:38:44-036][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.mainwin.desktop.AboutQt"
+[15:38:44-036][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.mainwin.desktop.AboutUs"
+[15:38:44-036][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.mainwin.desktop.Help"
+[15:38:44-037][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.mainwin.desktop.actionid.ToolMenuBar"
+[15:38:44-037][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.demo.extsetdemo.show"
+[15:38:44-037][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.config.optiondialog.show"
+[15:38:44-037][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.pluginmanager.action.ShowPluginManagerDialog"
+[15:38:44-037][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.demo.demowindow.controlShow"
+[15:38:44-037][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.demo.demowindow.ExportPdfActionHanler"
+[15:38:44-037][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "ToolBars"
+[15:38:44-037][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.mainwin.desktop.toolbarPic"
+[15:38:44-037][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.demo.demoservice.edit"
+[15:38:44-037][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.mainwin.desktop.actionid.menuAbout"
+[15:38:44-037][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.service.dynamiclayout.edit"
+[15:38:44-037][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.service.undomanager.UndoActionHanler"
+[15:38:44-037][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.service.undomanager.RedoActionHanler"
+[15:38:44-037][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.demo.textedit.toolbarTextEdit2"
+[15:38:44-037][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.demo.textedit.BoldActionHanler"
+[15:38:44-038][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.demo.textedit.ItalicActionHanler"
+[15:38:44-038][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.demo.textedit.UnderlineActionHanler"
+[15:38:44-038][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.demo.textedit.LeftActionHanler"
+[15:38:44-038][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.demo.textedit.CenterActionHanler"
+[15:38:44-038][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.demo.textedit.RightActionHanler"
+[15:38:44-038][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.demo.textedit.JustifyActionHanler"
+[15:38:44-038][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.demo.textedit.ColorActionHanler"
+[15:38:44-038][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.demo.textedit.toolbarTextEdit1"
+[15:38:44-038][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.demo.textedit.toolbarFileHandle"
+[15:38:44-038][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.demo.textedit.toolbarTextEdit3"
+[15:38:44-038][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.demo.textedit.textStyleActionHanler"
+[15:38:44-038][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.demo.textedit.textFontActionHanler"
+[15:38:44-038][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.demo.textedit.textSizeActionHanler"
+[15:38:44-038][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.mainwin.core.layout.desktop"
+[15:38:44-038][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.mainwin.desktop.slider1"
+[15:38:44-038][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.mainwin.desktop.ExitKLUJLU"
+[15:38:44-038][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.mainwin.desktop.Helpsvsddvgfsvgdsdvsv"
+[15:38:44-038][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.mainwin.desktop. PrintEC"
+[15:38:44-038][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.mainwin.desktop.EditEC"
+[15:38:44-038][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.mainwin.desktop.Files"
+[15:38:44-038][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.mainwin.desktop.SaveEC"
+[15:38:44-039][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.mainwin.desktop.PicAc"
+[15:38:44-039][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.mainwin.desktop.toolButton.groupOther"
+[15:38:44-039][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.mainwin.desktop.OthersEC"
+[15:38:44-039][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.mainwin.desktop.groupHelpvvv"
+[15:38:44-039][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.mainwin.desktop.HelpECvsdv"
+[15:38:44-039][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.mainwin.desktop.lineedit"
+[15:38:44-039][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.mainwin.desktop.progressbar"
+[15:38:44-039][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.mainwin.core" ExtensionSystem::Plugin(0x9e6b40) - state: 16 -> 4
+[15:38:44-039][DEBUG] [EVENT] > Plugin: "tech.microcore.mainwin.core" = 4
+[15:38:44-039][DEBUG] [ "Resolved  " ]	 "tech.microcore.mainwin.core"
+[15:38:44-039][DEBUG] PluginChanged: "tech.microcore.mainwin.core"  - state: 16 -> 4
+[15:38:44-039][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.service.eventadmin" ExtensionSystem::Plugin(0x6043240) - state: 32 -> 16
+[15:38:44-039][DEBUG] [EVENT] > Plugin: "tech.microcore.service.eventadmin" = 16
+[15:38:44-039][DEBUG] PluginChanged: "tech.microcore.service.eventadmin"  - state: 32 -> 16
+[15:38:44-039][DEBUG] [EVENT] > Service: 2
+[15:38:44-039][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.service.eventadmin" ExtensionSystem::Plugin(0x6043240) - state: 16 -> 4
+[15:38:44-039][DEBUG] [EVENT] > Plugin: "tech.microcore.service.eventadmin" = 4
+[15:38:44-039][DEBUG] [ "Resolved  " ]	 "tech.microcore.service.eventadmin"
+[15:38:44-039][DEBUG] PluginChanged: "tech.microcore.service.eventadmin"  - state: 16 -> 4
+[15:38:44-039][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.config.dynamiclayoutedit" ExtensionSystem::Plugin(0x9c8340) - state: 32 -> 16
+[15:38:44-039][DEBUG] [EVENT] > Plugin: "tech.microcore.config.dynamiclayoutedit" = 16
+[15:38:44-039][DEBUG] PluginChanged: "tech.microcore.config.dynamiclayoutedit"  - state: 32 -> 16
+[15:38:44-039][DEBUG] [ExtensionHandler] > unregister "tech.microcore.config.dynamiclayoutedit.UI"
+[15:38:44-039][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.config.dynamiclayoutedit" ExtensionSystem::Plugin(0x9c8340) - state: 16 -> 4
+[15:38:44-039][DEBUG] [EVENT] > Plugin: "tech.microcore.config.dynamiclayoutedit" = 4
+[15:38:44-039][DEBUG] [ "Resolved  " ]	 "tech.microcore.config.dynamiclayoutedit"
+[15:38:44-039][DEBUG] PluginChanged: "tech.microcore.config.dynamiclayoutedit"  - state: 16 -> 4
+[15:38:44-040][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.clock" ExtensionSystem::Plugin(0x9e6800) - state: 32 -> 16
+[15:38:44-040][DEBUG] [EVENT] > Plugin: "tech.microcore.demo.clock" = 16
+[15:38:44-040][DEBUG] PluginChanged: "tech.microcore.demo.clock"  - state: 32 -> 16
+[15:38:44-040][DEBUG] [ExtensionHandler] > unregister "tech.microcore.demo.clock.dock.UI"
+[15:38:44-040][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.clock" ExtensionSystem::Plugin(0x9e6800) - state: 16 -> 4
+[15:38:44-040][DEBUG] [EVENT] > Plugin: "tech.microcore.demo.clock" = 4
+[15:38:44-040][DEBUG] [ "Resolved  " ]	 "tech.microcore.demo.clock"
+[15:38:44-040][DEBUG] PluginChanged: "tech.microcore.demo.clock"  - state: 16 -> 4
+[15:38:44-040][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.service.dynamiclayout" ExtensionSystem::Plugin(0x9e6720) - state: 32 -> 16
+[15:38:44-040][DEBUG] [EVENT] > Plugin: "tech.microcore.service.dynamiclayout" = 16
+[15:38:44-040][DEBUG] PluginChanged: "tech.microcore.service.dynamiclayout"  - state: 32 -> 16
+[15:38:44-040][DEBUG] [ExtensionHandler] > unregister "tech.microcore.service.dynamiclayout.edit"
+[15:38:44-040][DEBUG] [ExtensionHandler] > unregister "tech.microcore.service.dynamiclayout.contenttree"
+[15:38:44-040][DEBUG] [EVENT] > Service: 2
+[15:38:44-040][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.service.dynamiclayout" ExtensionSystem::Plugin(0x9e6720) - state: 16 -> 4
+[15:38:44-040][DEBUG] [EVENT] > Plugin: "tech.microcore.service.dynamiclayout" = 4
+[15:38:44-040][DEBUG] [ "Resolved  " ]	 "tech.microcore.service.dynamiclayout"
+[15:38:44-040][DEBUG] PluginChanged: "tech.microcore.service.dynamiclayout"  - state: 16 -> 4
+[15:38:44-040][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.settingdemo" ExtensionSystem::Plugin(0x9e6970) - state: 32 -> 16
+[15:38:44-040][DEBUG] [EVENT] > Plugin: "tech.microcore.demo.settingdemo" = 16
+[15:38:44-040][DEBUG] PluginChanged: "tech.microcore.demo.settingdemo"  - state: 32 -> 16
+[15:38:44-040][DEBUG] [ExtensionHandler] > unregister "tech.microcore.demo.settingdemo.showPage"
+[15:38:44-040][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.settingdemo" ExtensionSystem::Plugin(0x9e6970) - state: 16 -> 4
+[15:38:44-040][DEBUG] [EVENT] > Plugin: "tech.microcore.demo.settingdemo" = 4
+[15:38:44-040][DEBUG] [ "Resolved  " ]	 "tech.microcore.demo.settingdemo"
+[15:38:44-040][DEBUG] PluginChanged: "tech.microcore.demo.settingdemo"  - state: 16 -> 4
+[15:38:44-040][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.hellochina" ExtensionSystem::Plugin(0x9e68a0) - state: 32 -> 16
+[15:38:44-040][DEBUG] [EVENT] > Plugin: "tech.microcore.demo.hellochina" = 16
+[15:38:44-040][DEBUG] PluginChanged: "tech.microcore.demo.hellochina"  - state: 32 -> 16
+[15:38:44-040][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.hellochina" ExtensionSystem::Plugin(0x9e68a0) - state: 16 -> 4
+[15:38:44-040][DEBUG] [EVENT] > Plugin: "tech.microcore.demo.hellochina" = 4
+[15:38:44-040][DEBUG] [ "Resolved  " ]	 "tech.microcore.demo.hellochina"
+[15:38:44-041][DEBUG] PluginChanged: "tech.microcore.demo.hellochina"  - state: 16 -> 4
+[15:38:44-041][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.helloworld" ExtensionSystem::Plugin(0x9e68e0) - state: 32 -> 16
+[15:38:44-041][DEBUG] [EVENT] > Plugin: "tech.microcore.demo.helloworld" = 16
+[15:38:44-041][DEBUG] PluginChanged: "tech.microcore.demo.helloworld"  - state: 32 -> 16
+[15:38:44-041][DEBUG] [EVENT] > Service: 2
+[15:38:44-041][DEBUG] [EVENT] > Extension: 2
+[15:38:44-041][DEBUG] [EVENT] > Extension: 2
+[15:38:44-041][DEBUG] [EVENT] > Extension: 2
+[15:38:44-041][DEBUG] [EVENT] > Extension: 2
+[15:38:44-041][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.helloworld" ExtensionSystem::Plugin(0x9e68e0) - state: 16 -> 4
+[15:38:44-041][DEBUG] [EVENT] > Plugin: "tech.microcore.demo.helloworld" = 4
+[15:38:44-041][DEBUG] [ "Resolved  " ]	 "tech.microcore.demo.helloworld"
+[15:38:44-041][DEBUG] PluginChanged: "tech.microcore.demo.helloworld"  - state: 16 -> 4
+[15:38:44-041][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.audiorecorder" ExtensionSystem::Plugin(0x9e66b0) - state: 32 -> 16
+[15:38:44-041][DEBUG] [EVENT] > Plugin: "tech.microcore.demo.audiorecorder" = 16
+[15:38:44-041][DEBUG] PluginChanged: "tech.microcore.demo.audiorecorder"  - state: 32 -> 16
+[15:38:44-041][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.audiorecorder" ExtensionSystem::Plugin(0x9e66b0) - state: 16 -> 4
+[15:38:44-041][DEBUG] [EVENT] > Plugin: "tech.microcore.demo.audiorecorder" = 4
+[15:38:44-041][DEBUG] [ "Resolved  " ]	 "tech.microcore.demo.audiorecorder"
+[15:38:44-041][DEBUG] PluginChanged: "tech.microcore.demo.audiorecorder"  - state: 16 -> 4
+[15:38:44-041][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.extsetdemo" ExtensionSystem::Plugin(0x9e69a0) - state: 32 -> 16
+[15:38:44-041][DEBUG] [EVENT] > Plugin: "tech.microcore.demo.extsetdemo" = 16
+[15:38:44-041][DEBUG] PluginChanged: "tech.microcore.demo.extsetdemo"  - state: 32 -> 16
+[15:38:44-041][DEBUG] [ExtensionHandler] > unregister "tech.microcore.demo.extsetdemo.show"
+[15:38:44-041][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.extsetdemo" ExtensionSystem::Plugin(0x9e69a0) - state: 16 -> 4
+[15:38:44-041][DEBUG] [EVENT] > Plugin: "tech.microcore.demo.extsetdemo" = 4
+[15:38:44-041][DEBUG] [ "Resolved  " ]	 "tech.microcore.demo.extsetdemo"
+[15:38:44-041][DEBUG] PluginChanged: "tech.microcore.demo.extsetdemo"  - state: 16 -> 4
+[15:38:44-041][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.demoservice" ExtensionSystem::Plugin(0x9e6680) - state: 32 -> 16
+[15:38:44-041][DEBUG] [EVENT] > Plugin: "tech.microcore.demo.demoservice" = 16
+[15:38:44-041][DEBUG] PluginChanged: "tech.microcore.demo.demoservice"  - state: 32 -> 16
+[15:38:44-041][DEBUG] [ExtensionHandler] > unregister "tech.microcore.demo.demoservice.edit"
+[15:38:44-042][DEBUG] [EVENT] > Service: 2
+[15:38:44-042][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.demo.demoservice" ExtensionSystem::Plugin(0x9e6680) - state: 16 -> 4
+[15:38:44-042][DEBUG] [EVENT] > Plugin: "tech.microcore.demo.demoservice" = 4
+[15:38:44-042][DEBUG] [ "Resolved  " ]	 "tech.microcore.demo.demoservice"
+[15:38:44-042][DEBUG] PluginChanged: "tech.microcore.demo.demoservice"  - state: 16 -> 4
+[15:38:44-042][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.config.shortcutmanager" ExtensionSystem::Plugin(0x9e6db0) - state: 32 -> 16
+[15:38:44-042][DEBUG] [EVENT] > Plugin: "tech.microcore.config.shortcutmanager" = 16
+[15:38:44-042][DEBUG] PluginChanged: "tech.microcore.config.shortcutmanager"  - state: 32 -> 16
+[15:38:44-042][DEBUG] [ExtensionHandler] > unregister "tech.microcore.config.shortcutmanager.action.ShowShortcutWidget.page1"
+[15:38:44-042][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.config.shortcutmanager" ExtensionSystem::Plugin(0x9e6db0) - state: 16 -> 4
+[15:38:44-043][DEBUG] [EVENT] > Plugin: "tech.microcore.config.shortcutmanager" = 4
+[15:38:44-043][DEBUG] [ "Resolved  " ]	 "tech.microcore.config.shortcutmanager"
+[15:38:44-043][DEBUG] PluginChanged: "tech.microcore.config.shortcutmanager"  - state: 16 -> 4
+[15:38:44-043][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.config.scenemanager" ExtensionSystem::Plugin(0x9e6d70) - state: 32 -> 16
+[15:38:44-043][DEBUG] [EVENT] > Plugin: "tech.microcore.config.scenemanager" = 16
+[15:38:44-043][DEBUG] PluginChanged: "tech.microcore.config.scenemanager"  - state: 32 -> 16
+[15:38:44-043][DEBUG] [ExtensionHandler] > unregister "tech.microcore.config.scenemanager.action.ShowSceneManagertyWidget.page1"
+[15:38:44-044][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.config.scenemanager" ExtensionSystem::Plugin(0x9e6d70) - state: 16 -> 4
+[15:38:44-044][DEBUG] [EVENT] > Plugin: "tech.microcore.config.scenemanager" = 4
+[15:38:44-044][DEBUG] [ "Resolved  " ]	 "tech.microcore.config.scenemanager"
+[15:38:44-044][DEBUG] PluginChanged: "tech.microcore.config.scenemanager"  - state: 16 -> 4
+[15:38:44-044][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.config.general" ExtensionSystem::Plugin(0x9c8600) - state: 32 -> 16
+[15:38:44-044][DEBUG] [EVENT] > Plugin: "tech.microcore.config.general" = 16
+[15:38:44-044][DEBUG] PluginChanged: "tech.microcore.config.general"  - state: 32 -> 16
+[15:38:44-044][DEBUG] [ExtensionHandler] > unregister "tech.microcore.config.general.startup"
+[15:38:44-044][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.config.general" ExtensionSystem::Plugin(0x9c8600) - state: 16 -> 4
+[15:38:44-044][DEBUG] [EVENT] > Plugin: "tech.microcore.config.general" = 4
+[15:38:44-044][DEBUG] [ "Resolved  " ]	 "tech.microcore.config.general"
+[15:38:44-044][DEBUG] PluginChanged: "tech.microcore.config.general"  - state: 16 -> 4
+[15:38:44-044][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.config.optiondialog" ExtensionSystem::Plugin(0x9e6c40) - state: 32 -> 16
+[15:38:44-044][DEBUG] [EVENT] > Plugin: "tech.microcore.config.optiondialog" = 16
+[15:38:44-044][DEBUG] PluginChanged: "tech.microcore.config.optiondialog"  - state: 32 -> 16
+[15:38:44-045][DEBUG] [ExtensionHandler] > unregister "tech.microcore.config.optiondialog.show"
+[15:38:44-045][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.config.optiondialog" ExtensionSystem::Plugin(0x9e6c40) - state: 16 -> 4
+[15:38:44-045][DEBUG] [EVENT] > Plugin: "tech.microcore.config.optiondialog" = 4
+[15:38:44-045][DEBUG] [ "Resolved  " ]	 "tech.microcore.config.optiondialog"
+[15:38:44-045][DEBUG] PluginChanged: "tech.microcore.config.optiondialog"  - state: 16 -> 4
+[15:38:44-045][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.config.configureadmin" ExtensionSystem::Plugin(0x96a338) - state: 32 -> 16
+[15:38:44-045][DEBUG] [EVENT] > Plugin: "tech.microcore.config.configureadmin" = 16
+[15:38:44-045][DEBUG] PluginChanged: "tech.microcore.config.configureadmin"  - state: 32 -> 16
+[15:38:44-045][DEBUG] [EVENT] > Service: 2
+[15:38:44-060][DEBUG] void ExtensionSystem::Internal::PluginManagerPrivate::pluginStateChanaged(const QString&, int, int) > "tech.microcore.config.configureadmin" ExtensionSystem::Plugin(0x96a338) - state: 16 -> 4
+[15:38:44-060][DEBUG] [EVENT] > Plugin: "tech.microcore.config.configureadmin" = 4
+[15:38:44-060][DEBUG] [ "Resolved  " ]	 "tech.microcore.config.configureadmin"
+[15:38:44-060][DEBUG] PluginChanged: "tech.microcore.config.configureadmin"  - state: 16 -> 4
+[15:38:44-060][DEBUG] [EVENT] > Framework: 4 to 2
+[15:38:44-060][DEBUG] [EVENT] > Framework: 2 to 4
+[15:38:44-061][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.demo.textedit, that is not actived"
+[15:38:44-061][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.service.undomanager, that is not actived"
+[15:38:44-061][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.service.propertybrowser, that is not actived"
+[15:38:44-061][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.config.pluginmanager, that is not actived"
+[15:38:44-061][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.demo.demoproperty, that is not actived"
+[15:38:44-061][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.demo.demowindow, that is not actived"
+[15:38:44-061][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.demo.dragdroprobot, that is not actived"
+[15:38:44-061][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.demo.qtwindow, that is not actived"
+[15:38:44-061][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.demo.widget, that is not actived"
+[15:38:44-061][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.dstyle.coverwidget, that is not actived"
+[15:38:44-061][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.dstyle.scrollwidget, that is not actived"
+[15:38:44-061][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.dstyle.tabwidget, that is not actived"
+[15:38:44-061][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.dstyle.toolboxwidget, that is not actived"
+[15:38:44-061][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.mainwin.desktop, that is not actived"
+[15:38:44-061][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.mainwin.core, that is not actived"
+[15:38:44-061][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.service.eventadmin, that is not actived"
+[15:38:44-061][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.config.dynamiclayoutedit, that is not actived"
+[15:38:44-061][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.demo.clock, that is not actived"
+[15:38:44-061][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.service.dynamiclayout, that is not actived"
+[15:38:44-061][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.demo.settingdemo, that is not actived"
+[15:38:44-061][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.demo.hellochina, that is not actived"
+[15:38:44-061][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.demo.helloworld, that is not actived"
+[15:38:44-061][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.demo.audiorecorder, that is not actived"
+[15:38:44-061][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.demo.extsetdemo, that is not actived"
+[15:38:44-061][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.demo.demoservice, that is not actived"
+[15:38:44-061][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.config.shortcutmanager, that is not actived"
+[15:38:44-061][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.config.scenemanager, that is not actived"
+[15:38:44-061][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.config.general, that is not actived"
+[15:38:44-061][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.config.optiondialog, that is not actived"
+[15:38:44-061][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.config.configureadmin, that is not actived"
+[15:38:44-061][DEBUG] [EVENT] > Framework: 4 to 2
+[15:38:44-070][DEBUG] [EVENT] > Framework: 2 to 4
+[15:38:44-070][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.demo.textedit, that is not actived"
+[15:38:44-070][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.service.undomanager, that is not actived"
+[15:38:44-070][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.service.propertybrowser, that is not actived"
+[15:38:44-070][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.config.pluginmanager, that is not actived"
+[15:38:44-070][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.demo.demoproperty, that is not actived"
+[15:38:44-070][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.demo.demowindow, that is not actived"
+[15:38:44-070][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.demo.dragdroprobot, that is not actived"
+[15:38:44-070][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.demo.qtwindow, that is not actived"
+[15:38:44-070][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.demo.widget, that is not actived"
+[15:38:44-070][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.dstyle.coverwidget, that is not actived"
+[15:38:44-070][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.dstyle.scrollwidget, that is not actived"
+[15:38:44-070][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.dstyle.tabwidget, that is not actived"
+[15:38:44-070][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.dstyle.toolboxwidget, that is not actived"
+[15:38:44-070][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.mainwin.desktop, that is not actived"
+[15:38:44-070][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.mainwin.core, that is not actived"
+[15:38:44-070][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.service.eventadmin, that is not actived"
+[15:38:44-070][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.config.dynamiclayoutedit, that is not actived"
+[15:38:44-070][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.demo.clock, that is not actived"
+[15:38:44-070][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.service.dynamiclayout, that is not actived"
+[15:38:44-071][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.demo.settingdemo, that is not actived"
+[15:38:44-071][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.demo.hellochina, that is not actived"
+[15:38:44-071][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.demo.helloworld, that is not actived"
+[15:38:44-071][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.demo.audiorecorder, that is not actived"
+[15:38:44-071][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.demo.extsetdemo, that is not actived"
+[15:38:44-071][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.demo.demoservice, that is not actived"
+[15:38:44-071][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.config.shortcutmanager, that is not actived"
+[15:38:44-071][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.config.scenemanager, that is not actived"
+[15:38:44-072][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.config.general, that is not actived"
+[15:38:44-072][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.config.optiondialog, that is not actived"
+[15:38:44-073][DEBUG] PluginManager::Error > "Cannot stop plugin: tech.microcore.config.configureadmin, that is not actived"
+[15:38:44-073][DEBUG] [EVENT] > Framework: 4 to 2
+[15:38:44-074][DEBUG] virtual ExtensionSystem::Plugin::~Plugin() > false
+[15:38:44-074][DEBUG] virtual ExtensionSystem::Plugin::~Plugin() > false
+[15:38:44-074][DEBUG] virtual ExtensionSystem::Plugin::~Plugin() > false
+[15:38:44-074][DEBUG] virtual ExtensionSystem::Plugin::~Plugin() > false
+[15:38:44-074][DEBUG] virtual ExtensionSystem::Plugin::~Plugin() > false
+[15:38:44-074][DEBUG] virtual ExtensionSystem::Plugin::~Plugin() > false
+[15:38:44-074][DEBUG] virtual ExtensionSystem::Plugin::~Plugin() > false
+[15:38:44-074][DEBUG] virtual ExtensionSystem::Plugin::~Plugin() > false
+[15:38:44-074][DEBUG] virtual ExtensionSystem::Plugin::~Plugin() > false
+[15:38:44-074][DEBUG] virtual ExtensionSystem::Plugin::~Plugin() > false
+[15:38:44-074][DEBUG] virtual ExtensionSystem::Plugin::~Plugin() > false
+[15:38:44-074][DEBUG] virtual ExtensionSystem::Plugin::~Plugin() > false
+[15:38:44-074][DEBUG] virtual ExtensionSystem::Plugin::~Plugin() > false
+[15:38:44-074][DEBUG] virtual ExtensionSystem::Plugin::~Plugin() > false
+[15:38:44-074][DEBUG] virtual ExtensionSystem::Plugin::~Plugin() > false
+[15:38:44-074][DEBUG] virtual ExtensionSystem::Plugin::~Plugin() > false
+[15:38:44-074][DEBUG] virtual ExtensionSystem::Plugin::~Plugin() > false
+[15:38:44-075][DEBUG] virtual ExtensionSystem::Plugin::~Plugin() > false
+[15:38:44-075][DEBUG] virtual ExtensionSystem::Plugin::~Plugin() > false
+[15:38:44-075][DEBUG] virtual ExtensionSystem::Plugin::~Plugin() > false
+[15:38:44-075][DEBUG] virtual ExtensionSystem::Plugin::~Plugin() > false
+[15:38:44-075][DEBUG] virtual ExtensionSystem::Plugin::~Plugin() > false
+[15:38:44-075][DEBUG] virtual ExtensionSystem::Plugin::~Plugin() > false
+[15:38:44-075][DEBUG] virtual ExtensionSystem::Plugin::~Plugin() > false
+[15:38:44-075][DEBUG] virtual ExtensionSystem::Plugin::~Plugin() > false
+[15:38:44-075][DEBUG] virtual ExtensionSystem::Plugin::~Plugin() > false
+[15:38:44-075][DEBUG] virtual ExtensionSystem::Plugin::~Plugin() > false
+[15:38:44-075][DEBUG] virtual ExtensionSystem::Plugin::~Plugin() > false
+[15:38:44-075][DEBUG] virtual ExtensionSystem::Plugin::~Plugin() > false
+[15:38:44-075][DEBUG] virtual ExtensionSystem::Plugin::~Plugin() > false
+[15:38:44-076][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.dstyle.coverwidget.dynamicLayout.UI"
+[15:38:44-076][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.dstyle.scrollwidget.dynamicLayout.UI"
+[15:38:44-076][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.dstyle.tabwidget.dynamicLayout.UI"
+[15:38:44-076][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.dstyle.toolboxwidget.dynamicLayout.UI"
+[15:38:44-076][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.demo.clock.dock.UI"
+[15:38:44-076][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.demo.qtwindow.UI"
+[15:38:44-076][DEBUG] virtual ExtensionSystem::ExtensionData::~ExtensionData() > "tech.microcore.demo.widget.UI"

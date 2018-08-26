@@ -14,11 +14,13 @@ class MangerData(object):
         self.p = config_io()
         self.p.configpath
 
-    def GetExcel(self, location=PATHDATA["case"], **kwargs):
+    # def GetExcel(self, location=PATHDATA["case"], **kwargs):
+    def GetExcel(self, location=None, **kwargs):
         self.E.excelpath = location
         return self.E.ReadEXcleData()
 
-    def SetExcel(self, location=PATHDATA["report"], datalist=[]):
+    # def SetExcel(self, location=PATHDATA["report"], datalist=[]):
+    def SetExcel(self, location=None, datalist=[]):
         self.E.excelpath = location
         return self.E.WriteEXcleData(listdata=datalist)
 
@@ -29,7 +31,6 @@ class MangerData(object):
         PATHDATA["report"] = self.p.ReadConfigData()["report"]
         PATHDATA["exe"] = self.p.ReadConfigData()["exe"]
         PATHDATA["data"] = self.p.ReadConfigData()["data"]
-        print("Getconfig", PATHDATA)
         return self.p.ReadConfigData()
 
     def Setconfig(self, location=PATHDATA["config"], outconfdata=None):

@@ -5,14 +5,14 @@ Created on 2018年7月19日
 '''
 from PyQt5.QtWidgets import QWidget, QLabel, QFrame, QPushButton, QGridLayout, QFileDialog, QDesktopWidget, QApplication
 from PyQt5.QtGui import QIcon
-from PyQt5.QtCore import QDir
+from PyQt5.QtCore import QDir,pyqtSignal
 from DataManger import MangerData
 from time import sleep
 from Gvariable import *
 
 
 class ConfigDialog(QWidget):
-
+    pathchanged = pyqtSignal(int)
     def __init__(self):
         super(ConfigDialog, self).__init__()
         self.temp = MangerData()
@@ -20,7 +20,7 @@ class ConfigDialog(QWidget):
         self.exceptionfilter()
         self.initUi()
 
-        print("conf", id(PATHDATA))
+        # print("conf", id(PATHDATA))
 
     def initUi(self):
         self.setWindowTitle("配置文件")
@@ -80,7 +80,7 @@ class ConfigDialog(QWidget):
         self.center()
 
     def exceptionfilter(self):
-        if PATHDATA == None:
+        if PATHDATA is None:
             PATHDATA['case'] = None
             PATHDATA['data'] = None
             PATHDATA['exe'] = None
@@ -95,17 +95,21 @@ class ConfigDialog(QWidget):
         file.setFilter(QDir.Files)
         if file.exec_():
             filename = file.selectedFiles()
+            if PATHDATA['case'] != filename[0]:
+                self.pathchanged.emit(1)
 
-            PATHDATA['case'] = filename[0]
-            self.caseLable.setText(filename[0])
-
+                PATHDATA['case'] = filename[0]
+                self.caseLable.setText(filename[0])
+            else:
+                pass
+            # PATHDATA['case'] = filename[0]
+            # self.caseLable.setText(filename[0])
     def selectdata(self):
         file = QFileDialog()
         file.setFileMode(QFileDialog.AnyFile)
         file.setFilter(QDir.Files)
         if file.exec_():
             filename = file.selectedFiles()
-
             PATHDATA['data'] = filename[0]
             self.dataLable.setText(filename[0])
 
@@ -115,7 +119,6 @@ class ConfigDialog(QWidget):
         file.setFilter(QDir.Files)
         if file.exec_():
             filename = file.selectedFiles()
-
             PATHDATA['exe'] = filename[0]
             self.exeLable.setText(filename[0])
 
@@ -125,7 +128,6 @@ class ConfigDialog(QWidget):
         file.setFilter(QDir.Files)
         if file.exec_():
             filename = file.selectedFiles()
-
             PATHDATA['report'] = filename[0]
             self.reportLable.setText(filename[0])
 
@@ -135,7 +137,6 @@ class ConfigDialog(QWidget):
         file.setFilter(QDir.Files)
         if file.exec_():
             filename = file.selectedFiles()
-
             PATHDATA['config'] = filename[0]
             self.configLable.setText(filename[0])
 
@@ -146,12 +147,11 @@ class ConfigDialog(QWidget):
         self.move(qr.topLeft())
 
     def Confirmexit(self):
-        print("Confirmexit", PATHDATA)
+        # print("Confirmexit", PATHDATA)
         self.temp.Setconfig(location=PATHDATA["config"],
                             outconfdata=PATHDATA)
 
-        print(id(PATHDATA))
-        print(id(PATHDATA["config"]))
+        # print(id(PATHDATA["config"]))
         sleep(0.5)
         self.close()
 

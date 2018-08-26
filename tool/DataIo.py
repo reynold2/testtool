@@ -13,11 +13,12 @@ from Gvariable import *
 
 
 class excel_io(object):
-    def __init__(self, defaultexcelpath=PATHDATA["case"], **kw):
+    # def __init__(self, defaultexcelpath=PATHDATA["case"], **kw):
+    def __init__(self,defaultexcelpath=None,**kw):
         self._excelpath = defaultexcelpath
         self.ReadEXcleBasis()
         self.listdata = []
-        print("exc.io", id(PATHDATA))
+
 
     @property
     def excelpath(self):

@@ -5,7 +5,7 @@ Created on 2018年7月4日
 '''
 from PyQt5.QtWidgets import QMainWindow, QAction, QSizePolicy, QTextEdit, QFileDialog, QDesktopWidget, QDialog, QProgressBar, QMessageBox, QWidget, QApplication, QLCDNumber, qApp, QVBoxLayout
 from PyQt5.QtGui import QIcon
-from PyQt5.QtCore import QDir, QTimer
+from PyQt5.QtCore import QTimer
 from TableWidget import CentralView
 from ProfileWizard import *
 from ProcessCalls import runexe
@@ -21,10 +21,11 @@ class window(QMainWindow):
 
     def myui(self):
         self.dialog = ConfigDialog()
+
         self.widget = CentralView()
         self.setCentralWidget(self.widget)
         self.QTdialog__init__()
-        print("myui", id(PATHDATA))
+        # print("myui", id(PATHDATA))
 
         exitAction = QAction(QIcon("res/exit.png"), "退出", self)
         exitAction.setShortcut("ctrl+q")
@@ -104,7 +105,7 @@ class window(QMainWindow):
         self.pbar = QProgressBar(self)
         self.pbar.setGeometry(1050, 730, 100, 20)
         self.setGeometry(100, 100, 1120, 750)
-        self.setWindowTitle("自动化测试")
+        self.setWindowTitle("自动化")
         self.setWindowIcon(QIcon("res/aboutus.png"))
         self.center()
         self.show()
@@ -117,12 +118,17 @@ class window(QMainWindow):
         pass
 
     def Refresh(self):
+
         self.widget_Refresh = CentralView()
         self.setCentralWidget(self.widget_Refresh)
-        print("Refresh", id(PATHDATA), PATHDATA)
+
+        # print("Refresh", id(PATHDATA), PATHDATA)
 
     def guide(self):
-        self.dialog.show()
+        # self.dialog.show()
+
+        self.dialog1= ConfigDialog()
+        self.dialog1.show()
 
     def run(self):
         self.runaction.setDisabled(True)
@@ -140,16 +146,17 @@ class window(QMainWindow):
         file.setFilter(QDir.Files)
         if file.exec_():
             filename = file.selectedFiles()
-            global PATHDATA
+            # global PATHDATA
             PATHDATA['case'] = filename[0]
             self.widget_openfile_data = CentralView()
             self.setCentralWidget(self.widget_openfile_data)
-        print("openfile_data", id(PATHDATA), PATHDATA)
+
+        # print("openfile_data", id(PATHDATA), PATHDATA)
         return PATHDATA
 
     def save(self):
-
-        self.widget1.save_table()
+        x=PATHDATA["report"]
+        self.widget.save_table(x)
 
     def center(self):
         qr = self.frameGeometry()
@@ -157,17 +164,17 @@ class window(QMainWindow):
         qr.moveCenter(cp)
         self.move(qr.topLeft())
 
-#     def closeEvent(self, event):
-#         reply = QMessageBox.question(self, '提示？',
-#                                      "你确定要退出么?", QMessageBox.Yes |
-#                                      QMessageBox.No, QMessageBox.No)
-#
-#         if reply == QMessageBox.Yes:
-#             event.accept()
-#         else:
-#             event.ignore()
+    def closeEvent(self, event):
+        reply = QMessageBox.question(self, '提示？',
+                                     "你确定要退出么?", QMessageBox.Yes |
+                                     QMessageBox.No, QMessageBox.No)
 
-    def aboutus(self):
+        if reply == QMessageBox.Yes:
+            event.accept()
+        else:
+            event.ignore()
+    @staticmethod
+    def aboutus():
         import webbrowser
         webbrowser.open(
             "http://www.microcorecn.com/about/toMcHome.do", new=0, autoraise=True)
@@ -181,8 +188,8 @@ class window(QMainWindow):
 
 
 class MyTimer(QWidget):
-    def __init__(self, parent=None):
-        super(MyTimer, self).__init__(parent)
+    def __init__(self):
+        super(MyTimer, self).__init__()
         self.lcd = QLCDNumber()
         self.lcd.setDigitCount(10)
         self.lcd.setMode(QLCDNumber.Dec)
