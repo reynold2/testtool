@@ -4,7 +4,7 @@ Created on 2018年7月4日
 @author: Administrator
 '''
 from PyQt5.QtWidgets import QMainWindow, QAction, QSizePolicy, QTextEdit, QFileDialog, QDesktopWidget, QDialog, QProgressBar, QMessageBox, QWidget, QApplication, QLCDNumber, qApp, QVBoxLayout
-from PyQt5.QtGui import QIcon
+# from PyQt5.QtGui import QIcon
 from PyQt5.QtCore import QTimer
 from TableWidget import CentralView
 from ProfileWizard import *

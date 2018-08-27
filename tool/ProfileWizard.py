@@ -12,7 +12,7 @@ from Gvariable import *
 
 
 class ConfigDialog(QWidget):
-    pathchanged = pyqtSignal(int)
+    pathchanged = pyqtSignal()
     def __init__(self):
         super(ConfigDialog, self).__init__()
         self.temp = MangerData()
@@ -96,7 +96,7 @@ class ConfigDialog(QWidget):
         if file.exec_():
             filename = file.selectedFiles()
             if PATHDATA['case'] != filename[0]:
-                self.pathchanged.emit(1)
+                self.pathchanged.emit()
 
                 PATHDATA['case'] = filename[0]
                 self.caseLable.setText(filename[0])

@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b05458b-3ac9-401d-9ab1-6bbef287be2e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/tool.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataIo.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataIo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataManger.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataManger.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gvariable.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gvariable.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProcessCalls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProcessCalls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProfileWizard.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProfileWizard.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RE/report.xls" beforeDir="false" afterPath="$PROJECT_DIR$/RE/report.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TableWidget.py" beforeDir="false" afterPath="$PROJECT_DIR$/TableWidget.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/config/app/extension.dat" beforeDir="false" afterPath="$PROJECT_DIR$/res/QxPlugin/config/app/extension.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/res/config.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/report.xls" beforeDir="false" afterPath="$PROJECT_DIR$/res/report.xls" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +13,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/tool$ImageComparison.coverage" NAME="ImageComparison Coverage Results" MODIFIED="1535261333713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/AppData/Local/Programs/Python/Python36-32" />
-    <SUITE FILE_PATH="coverage/tool$Run.coverage" NAME="Run Coverage Results" MODIFIED="1535284512011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/tool$Run.coverage" NAME="Run Coverage Results" MODIFIED="1535374335851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/tool$ProcessCalls.coverage" NAME="ProcessCalls Coverage Results" MODIFIED="1535274059225" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/AppData/Local/Programs/Python/Python36-32" />
     <SUITE FILE_PATH="coverage/tool$DataIo.coverage" NAME="DataIo Coverage Results" MODIFIED="1535266782722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/AppData/Local/Programs/Python/Python36-32" />
   </component>
@@ -49,16 +35,17 @@
     <session id="-98563984">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="2" />
+          <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -89,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProcessCalls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="54" column="25" lean-forward="true" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
+            <state relative-caret-position="950">
+              <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
               <folding>
                 <element signature="e#0#52#1" />
                 <element signature="e#53#62#0" expanded="true" />
@@ -102,8 +89,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ProfileWizard.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1748">
-              <caret line="92" column="28" lean-forward="true" selection-start-line="92" selection-start-column="28" selection-end-line="92" selection-end-column="28" />
+            <state relative-caret-position="266">
+              <caret line="98" column="38" selection-start-line="98" selection-start-column="38" selection-end-line="98" selection-end-column="38" />
               <folding>
                 <element signature="e#54#174#0" expanded="true" />
               </folding>
@@ -114,13 +101,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MainWindow.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2468">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="209">
+              <caret line="11" column="36" lean-forward="true" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
               <folding>
-                <element signature="e#53#244#0" expanded="true" />
-                <marker date="1535284755571" expanded="true" signature="3855:3864" ph="..." />
-                <marker date="1535284755571" expanded="true" signature="4042:4051" ph="..." />
-                <marker date="1535284755571" expanded="true" signature="4211:4220" ph="..." />
+                <marker date="1535291612647" expanded="true" signature="3857:3866" ph="..." />
+                <marker date="1535291612647" expanded="true" signature="4044:4053" ph="..." />
+                <marker date="1535291612647" expanded="true" signature="4213:4222" ph="..." />
               </folding>
             </state>
           </provider>
@@ -150,8 +136,8 @@
         <option value="$PROJECT_DIR$/Gvariable.py" />
         <option value="$PROJECT_DIR$/ProcessCalls.py" />
         <option value="$PROJECT_DIR$/TableWidget.py" />
-        <option value="$PROJECT_DIR$/ProfileWizard.py" />
         <option value="$PROJECT_DIR$/MainWindow.py" />
+        <option value="$PROJECT_DIR$/ProfileWizard.py" />
       </list>
     </option>
   </component>
@@ -161,7 +147,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-269" />
     <option name="y" value="95" />
     <option name="width" value="1346" />
@@ -175,23 +161,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="tool" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tool" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Changed Files'; set:Changed Files; ALL; class com.intellij.packageDependencies.ChangeListScope">
           <expand>
             <path>
               <item name="tool" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="tool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tool" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -386,7 +372,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20196672" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20499243" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -553,10 +539,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/MainWindow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="36" lean-forward="true" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+          <folding>
+            <marker date="1535291612647" expanded="true" signature="3857:3866" ph="..." />
+            <marker date="1535291612647" expanded="true" signature="4044:4053" ph="..." />
+            <marker date="1535291612647" expanded="true" signature="4213:4222" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ProcessCalls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="54" column="25" lean-forward="true" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
+        <state relative-caret-position="950">
+          <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
           <folding>
             <element signature="e#0#52#1" />
             <element signature="e#53#62#0" expanded="true" />
@@ -564,23 +562,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MainWindow.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2468">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="e#53#244#0" expanded="true" />
-            <marker date="1535284755571" expanded="true" signature="3855:3864" ph="..." />
-            <marker date="1535284755571" expanded="true" signature="4042:4051" ph="..." />
-            <marker date="1535284755571" expanded="true" signature="4211:4220" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ProfileWizard.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1748">
-          <caret line="92" column="28" lean-forward="true" selection-start-line="92" selection-start-column="28" selection-end-line="92" selection-end-column="28" />
+        <state relative-caret-position="266">
+          <caret line="98" column="38" selection-start-line="98" selection-start-column="38" selection-end-line="98" selection-end-column="38" />
           <folding>
             <element signature="e#54#174#0" expanded="true" />
           </folding>
