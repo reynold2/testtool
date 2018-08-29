@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Plugin filename="tech.microcore.service.propertybrowser" id="tech.microcore.service.propertybrowser">
-    <ExtDataSet>
-        <ExtData plugin="tech.microcore.service.propertybrowser" id="tech.microcore.mainwin.core.dockview" extPlugin="tech.microcore.mainwin.core">
-            <Dockview title="tr('property')" sceneName="" icon="images/property.png" allowedAreas="2,4" id="tech.microcore.service.propertybrowser.property" defareas="1" isFloating="false" toolTip="tr('property')" visible="true"/>
-        </ExtData>
-    </ExtDataSet>
-</Plugin>

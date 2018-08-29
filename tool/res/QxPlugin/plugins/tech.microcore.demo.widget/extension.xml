@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Plugin id="tech.microcore.demo.widget" filename="tech.microcore.demo.widget">
- <ExtDataSet>
-   <ExtData plugin="tech.microcore.demo.widget" extPlugin="tech.microcore.service.dynamiclayout" id="tech.microcore.mainwin.core.dynamiclayout">
-     <DynamicLayout id="tech.microcore.demo.widget.UI" allowedAreas="2" defareas="2" title="tr('Demo')" isFloating="false" icon="" index="4" visible="true" sceneName="" />
-   </ExtData>
-  </ExtDataSet>
-</Plugin>

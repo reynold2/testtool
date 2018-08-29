@@ -10,7 +10,7 @@ from TableWidget import CentralView
 
 
 class CaseData(CentralView):
-    def __init__(self, path="G:\\Python3\\layout\\tool\\RE"):
+    def __init__(self, path="D:/work/testtool/tool/RE"):
 
         self.path = path
         self.dirset = set()

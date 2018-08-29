@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Plugin filename="tech.microcore.demo.qtwindow" id="tech.microcore.demo.qtwindow">
-    <ExtDataSet>
-        <ExtData plugin="tech.microcore.demo.qtwindow" id="tech.microcore.mainwin.core.dynamiclayout" extPlugin="tech.microcore.service.dynamiclayout">
-            <DynamicLayout isFactory="true" title="tr('Window')" allowedAreas="15" id="tech.microcore.demo.qtwindow.UI" isFloating="false" defareas="2" index="8" visible="true"/>
-        </ExtData>
-    </ExtDataSet>
-</Plugin>

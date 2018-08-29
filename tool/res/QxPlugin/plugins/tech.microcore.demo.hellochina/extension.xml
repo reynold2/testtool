@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<Plugin id="tech.microcore.demo.hellochina" filename="tech.microcore.demo.hellochina">
-	<ExtDataSet>
-		<ExtData plugin="tech.microcore.demo.hellochina" extPlugin="tech.microcore.demo.helloworld" id="tech.microcore.demo.helloworld.ext.functions">
-			<func id="tech.microcore.demo.hellochina.ext.func.showview" label="FUNC: Show View" icon="/images/settings.png"/>
-		</ExtData>
-	</ExtDataSet>
-</Plugin>

@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Plugin id="tech.microcore.demo.settingdemo" filename="tech.microcore.demo.settingdemo">
-<ExtDataSet>
-  <ExtData plugin="tech.microcore.demo.settingdemo" id="tech.microcore.config.optiondialog.options" extPlugin="tech.microcore.config.optiondialog">
-    <Page title="tr('Demo-Page')" parent="showCategory" icon="" id="tech.microcore.demo.settingdemo.showPage" index="1"/>
- </ExtData>
-</ExtDataSet>
-</Plugin>

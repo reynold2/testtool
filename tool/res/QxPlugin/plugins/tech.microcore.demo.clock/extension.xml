@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Plugin filename="tech.microcore.demo.clock" id="tech.microcore.demo.clock">
-    <ExtDataSet>
-        <ExtData plugin="tech.microcore.demo.clock" id="tech.microcore.mainwin.core.dynamiclayout" extPlugin="tech.microcore.service.dynamiclayout">
-            <DynamicLayout title="tr('clock')" icon="images/command.png" id="tech.microcore.demo.clock.dock.UI"/>
-        </ExtData>
-    </ExtDataSet>
-</Plugin>
