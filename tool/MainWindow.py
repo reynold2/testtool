@@ -6,9 +6,9 @@ Created on 2018年7月4日
 from PyQt5.QtWidgets import QMainWindow, QAction, QSizePolicy, QTextEdit, QFileDialog, QDesktopWidget, QDialog, QProgressBar, QMessageBox, QWidget, QApplication, QLCDNumber, qApp, QVBoxLayout
 # from PyQt5.QtGui import QIcon
 from PyQt5.QtCore import QTimer
-from TableWidget import CentralView
-from ProfileWizard import *
-from ProcessCalls import runexe
+from tool.TableWidget import CentralView
+from tool.ProfileWizard import *
+from tool.ProcessCalls import runexe
 # from aboutqt import Ui_AboutDialog
 import time
 import sys
@@ -23,6 +23,7 @@ class window(QMainWindow):
         self.dialog = ConfigDialog()
 
         self.widget = CentralView()
+
         self.setCentralWidget(self.widget)
         self.QTdialog__init__()
         # print("myui", id(PATHDATA))

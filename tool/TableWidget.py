@@ -7,8 +7,9 @@ from PyQt5.QtWidgets import QTableWidget, QHBoxLayout, QWidget, QAbstractItemVie
     QTableWidgetItem, QComboBox, QApplication
 
 from PyQt5.QtCore import QAbstractTableModel
-from DataManger import MangerData
-from Gvariable import *
+from tool.DataManger import MangerData
+from tool.Gvariable import *
+import re
 import sys
 
 
@@ -97,47 +98,43 @@ class CentralView(QTableWidget):
         hLayout.setContentsMargins(5, 2, 5, 2)
         widget.setLayout(hLayout)
         return widget
-
-    def Previews(self, x):
+    def __translate(self):
+        list1=[]
+        for x in self.tempid:
+            list1.append(x[105:155])
+        del list1[-1]
+        Z=dict(zip(list1,self.idlist))
+        return Z
+    def Previews(self):
         send = self.sender()
-#         send.parent_name
-        print(send)
-        print("*"*40)
-        print(self.tempid)
-        print("*"*40)
+        # print(self.__translate())
+        x=self.__translate()[str(send)]
+        return  x
+        # for x in self.tempid:
+        #     list1.append(x[105:155])
+            # if x[105:155] ==str(send):
+            #     print(x[105:155])
+        # print(str(send))
+        # print(list1)
+        # del list1[-1]
+        # print(list1)
+        # print(self.idlist)
+        # print("*"*40)
+        # for y in self.idlist:
+        #     print(y)
 
-        for x in self.temp:
-            print(x)
-        # if send in self.temp:
-        #     print(send)
-        # for idx in self.tempid:
-        #     for x in idx:
-        #         if send == x:
-        #             print(x)
-        #
-        #         print(id(x))
+
+
+
 
     def compose_id(self):
         print(self.idlist)
-#         for id in self.idlist:
-#             print(id)
-#         for idx in self.tempid:
-#             print(idx)
 
     def table(self):
-        """
 
-        """
-        #         row = self.table_widget.rowCount()
-        #         for x in range(row):
-        #             print(x)
         self.table_widget.item
 
     def ExtensionButton(self):
-        """
-
-        :return:
-        """
         self.Defaultlistdata = []
         self.tempid = []
         self.duixiang = {}

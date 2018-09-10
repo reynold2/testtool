@@ -9,7 +9,7 @@ import xlwt
 import os
 from xlutils.copy import copy
 import logging
-from Gvariable import *
+from tool.Gvariable import *
 
 
 class excel_io(object):

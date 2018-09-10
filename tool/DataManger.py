@@ -3,8 +3,8 @@ Created on 2018年7月4日
 
 @author: Administrator
 '''
-from DataIo import excel_io, config_io
-from Gvariable import *
+from tool.DataIo import excel_io, config_io
+from tool.Gvariable import *
 
 
 class MangerData(object):

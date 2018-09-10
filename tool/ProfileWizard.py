@@ -6,9 +6,9 @@ Created on 2018年7月19日
 from PyQt5.QtWidgets import QWidget, QLabel, QFrame, QPushButton, QGridLayout, QFileDialog, QDesktopWidget, QApplication
 from PyQt5.QtGui import QIcon
 from PyQt5.QtCore import QDir,pyqtSignal
-from DataManger import MangerData
+from tool.DataManger import MangerData
 from time import sleep
-from Gvariable import *
+from tool.Gvariable import *
 
 
 class ConfigDialog(QWidget):

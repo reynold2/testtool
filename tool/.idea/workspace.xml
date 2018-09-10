@@ -2,225 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b05458b-3ac9-401d-9ab1-6bbef287be2e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SubWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/SubWindow.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TableWidget.py" beforeDir="false" afterPath="$PROJECT_DIR$/TableWidget.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/run/base_library.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/run/out00-Analysis.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/run/out00-EXE.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/run/out00-PKG.pkg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/run/out00-PKG.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/run/out00-PYZ.pyz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/run/out00-PYZ.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/run/run.exe.manifest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/run/warnrun.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/run/xref-run.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/Run.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hooks/applypatch-msg.sample" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hooks/commit-msg.sample" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hooks/post-update.sample" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hooks/pre-applypatch.sample" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hooks/pre-commit.sample" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hooks/pre-push.sample" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hooks/pre-rebase.sample" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hooks/prepare-commit-msg.sample" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hooks/update.sample" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/exclude" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/app@2018-07-17_15-19-21.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/app@2018-07-19_16-02-27.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/app@2018-07-19_16-02-39.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/app@2018-07-20_17-44-47.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/app@2018-07-25_10-58-15.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/app@2018-08-26_14-02-49.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/app@2018-08-26_14-11-06.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/app@2018-08-26_15-03-21.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/app@2018-08-26_15-07-17.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/app@2018-08-26_15-34-30.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/app@2018-08-26_15-41-20.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/app@2018-08-26_15-50-50.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/app@2018-08-26_17-24-00.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/app@2018-08-26_17-24-31.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/app@2018-08-26_17-38-42.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/app@2018-08-26_17-42-00.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/app@2018-08-26_19-40-21.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/config/app/configureadmin.db" beforeDir="false" afterPath="$PROJECT_DIR$/res/QxPlugin/config/app/configureadmin.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/config/app/extension.dat" beforeDir="false" afterPath="$PROJECT_DIR$/res/QxPlugin/config/app/extension.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/myPluginzxcvbnm/META.INF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/myPluginzxcvbnm/extension.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/myPluginzxcvbnm/myActivatorzxcvbnm.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/myPluginzxcvbnm/myActivatorzxcvbnm.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/myPluginzxcvbnm/myPluginzxcvbnm.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/myPluginzxcvbnm/myPluginzxcvbnm.pro.user" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/myPluginzxcvbnm/resource.qrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.config.general/META.INF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.config.general/extension.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.config.general/extension.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.config.general/images/category.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.config.general/images/convention.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.config.general/languages/zh_CN.qm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.config.general/libtech.microcore.config.general.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.config.general/tech.microcore.config.general.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.config.optiondialog/META.INF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.config.optiondialog/extension.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.config.optiondialog/extension.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.config.optiondialog/images/clear.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.config.optiondialog/images/environment.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.config.optiondialog/images/logo_min.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.config.optiondialog/languages/zh_CN.qm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.config.optiondialog/libtech.microcore.config.optiondialog.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.config.optiondialog/tech.microcore.config.optiondialog.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.config.pluginmanager/META.INF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.config.pluginmanager/extension.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.config.pluginmanager/extension.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.config.pluginmanager/images/puzzle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.config.pluginmanager/languages/zh_CN.qm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.config.pluginmanager/libtech.microcore.config.pluginmanager.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.config.pluginmanager/tech.microcore.config.pluginmanager.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.config.scenemanager/META.INF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.config.scenemanager/extension.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.config.scenemanager/extension.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.config.scenemanager/images/sceneManager.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.config.scenemanager/languages/zh_CN.qm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.config.scenemanager/libtech.microcore.config.scenemanager.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.config.scenemanager/tech.microcore.config.scenemanager.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.config.shortcutmanager/META.INF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.config.shortcutmanager/extension.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.config.shortcutmanager/extension.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.config.shortcutmanager/images/shortcuts.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.config.shortcutmanager/languages/zh_CN.qm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.config.shortcutmanager/libtech.microcore.config.shortcutmanager.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.config.shortcutmanager/tech.microcore.config.shortcutmanager.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.audiorecorder/META.INF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.audiorecorder/extension.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.audiorecorder/extension.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.audiorecorder/languages/zh_CN.qm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.audiorecorder/libtech.microcore.demo.audiorecorder.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.audiorecorder/tech.microcore.demo.audiorecorder.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.clock/META.INF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.clock/extension.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.clock/extension.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.clock/images/command.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.clock/images/shortcuts.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.clock/languages/zh_CN.qm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.clock/libtech.microcore.demo.clock.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.clock/tech.microcore.demo.clock.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.demoproperty/META.INF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.demoproperty/extension.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.demoproperty/libtech.microcore.demo.demoproperty.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.demoproperty/tech.microcore.demo.demoproperty.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.demoservice/META.INF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.demoservice/extension.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.demoservice/libtech.microcore.demo.demoservice.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.demoservice/tech.microcore.demo.demoservice.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.demowindow/META.INF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.demowindow/extension.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.demowindow/libtech.microcore.demo.demowindow.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.demowindow/tech.microcore.demo.demowindow.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.dragdroprobot/META.INF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.dragdroprobot/extension.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.dragdroprobot/extension.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.dragdroprobot/libtech.microcore.demo.dragdroprobot.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.dragdroprobot/tech.microcore.demo.dragdroprobot.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.extsetdemo/META.INF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.extsetdemo/extension.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.extsetdemo/libtech.microcore.demo.extsetdemo.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.extsetdemo/tech.microcore.demo.extsetdemo.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.hellochina/META.INF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.hellochina/extension.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.hellochina/libtech.microcore.demo.hellochina.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.hellochina/tech.microcore.demo.hellochina.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.helloworld/META.INF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.helloworld/extension.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.helloworld/libtech.microcore.demo.helloworld.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.helloworld/tech.microcore.demo.helloworld.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.qtwindow/META.INF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.qtwindow/extension.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.qtwindow/extension.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.qtwindow/libtech.microcore.demo.qtwindow.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.qtwindow/tech.microcore.demo.qtwindow.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.settingdemo/META.INF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.settingdemo/extension.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.settingdemo/libtech.microcore.demo.settingdemo.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.settingdemo/tech.microcore.demo.settingdemo.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.textedit/META.INF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.textedit/extension.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.textedit/extension.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.textedit/libtech.microcore.demo.textedit.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.textedit/resources/color.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.textedit/resources/editcopy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.textedit/resources/editcut.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.textedit/resources/editpaste.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.textedit/resources/editredo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.textedit/resources/editundo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.textedit/resources/exportpdf.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.textedit/resources/filenew.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.textedit/resources/fileopen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.textedit/resources/fileprint.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.textedit/resources/filesave.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.textedit/resources/textbold.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.textedit/resources/textcenter.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.textedit/resources/textitalic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.textedit/resources/textjustify.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.textedit/resources/textleft.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.textedit/resources/textright.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.textedit/resources/textunder.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.textedit/resources/zoomin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.textedit/resources/zoomout.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.textedit/tech.microcore.demo.textedit.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.widget/META.INF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.widget/extension.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.widget/extension.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.widget/libtech.microcore.demo.widget.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.demo.widget/tech.microcore.demo.widget.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.dstyle.coverwidget/META.INF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.dstyle.coverwidget/extension.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.dstyle.coverwidget/extension.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.dstyle.coverwidget/libtech.microcore.dstyle.coverwidget.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.dstyle.coverwidget/tech.microcore.dstyle.coverwidget.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.dstyle.scrollwidget/META.INF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.dstyle.scrollwidget/extension.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.dstyle.scrollwidget/extension.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.dstyle.scrollwidget/libtech.microcore.dstyle.scrollwidget.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.dstyle.scrollwidget/resources/images/Chrysanthemum.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.dstyle.scrollwidget/resources/images/Desert.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.dstyle.scrollwidget/resources/images/Hydrangeas.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.dstyle.scrollwidget/resources/images/Jellyfish.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.dstyle.scrollwidget/resources/images/Koala.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.dstyle.scrollwidget/resources/images/Lighthouse.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.dstyle.scrollwidget/resources/images/Penguins.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.dstyle.scrollwidget/resources/images/Tulips.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.dstyle.scrollwidget/tech.microcore.dstyle.scrollwidget.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.dstyle.tabwidget/META.INF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.dstyle.tabwidget/extension.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.dstyle.tabwidget/extension.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.dstyle.tabwidget/languages/zh_CN.qm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.dstyle.tabwidget/libtech.microcore.dstyle.tabwidget.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.dstyle.tabwidget/tech.microcore.dstyle.tabwidget.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.dstyle.toolboxwidget/META.INF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.dstyle.toolboxwidget/extension.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.dstyle.toolboxwidget/extension.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.dstyle.toolboxwidget/libtech.microcore.dstyle.toolboxwidget.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.dstyle.toolboxwidget/tech.microcore.dstyle.toolboxwidget.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.service.dynamiclayout/META.INF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.service.dynamiclayout/extension.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.service.dynamiclayout/extension.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.service.dynamiclayout/libtech.microcore.service.dynamiclayout.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.service.dynamiclayout/tech.microcore.service.dynamiclayout.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.service.propertybrowser/META.INF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.service.propertybrowser/extension.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.service.propertybrowser/extension.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.service.propertybrowser/images/property.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.service.propertybrowser/libtech.microcore.service.propertybrowser.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.service.propertybrowser/tech.microcore.service.propertybrowser.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.service.undomanager/META.INF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.service.undomanager/extension.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.service.undomanager/extension.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.service.undomanager/images/editredo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.service.undomanager/images/editundo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.service.undomanager/libtech.microcore.service.undomanager.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/QxPlugin/plugins/tech.microcore.service.undomanager/tech.microcore.service.undomanager.dll" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -231,7 +13,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/tool$ImageComparison.coverage" NAME="ImageComparison Coverage Results" MODIFIED="1535261333713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/AppData/Local/Programs/Python/Python36-32" />
     <SUITE FILE_PATH="coverage/tool$test.coverage" NAME="test Coverage Results" MODIFIED="1535553561541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/AppData/Local/Programs/Python/Python36-32" />
-    <SUITE FILE_PATH="coverage/tool$Run.coverage" NAME="Run Coverage Results" MODIFIED="1535560071140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/tool$Run.coverage" NAME="Run Coverage Results" MODIFIED="1535982498814" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/tool$ProcessCalls.coverage" NAME="ProcessCalls Coverage Results" MODIFIED="1535274059225" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/AppData/Local/Programs/Python/Python36-32" />
     <SUITE FILE_PATH="coverage/tool$SubWindow.coverage" NAME="SubWindow Coverage Results" MODIFIED="1535547784187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/AppData/Local/Programs/Python/Python36-32" />
     <SUITE FILE_PATH="coverage/tool$DataIo.coverage" NAME="DataIo Coverage Results" MODIFIED="1535266782722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/AppData/Local/Programs/Python/Python36-32" />
@@ -254,8 +36,8 @@
     <session id="-98563984">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="16" />
-          <entry key="project.open.time.10" value="2" />
+          <entry key="project.closed" value="18" />
+          <entry key="project.open.time.10" value="3" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="2" />
           <entry key="project.open.time.13" value="2" />
@@ -266,20 +48,20 @@
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="3" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="18" />
+          <entry key="project.open.time.9" value="3" />
+          <entry key="project.opened" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="ini" value="1" />
-          <entry key="py" value="101" />
+          <entry key="py" value="102" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Ini" value="1" />
-          <entry key="Python" value="101" />
+          <entry key="Python" value="102" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -300,11 +82,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TableWidget.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="160" selection-start-line="160" selection-end-line="160" selection-end-column="73" />
+            <state relative-caret-position="510">
+              <caret line="170" column="35" selection-start-line="170" selection-start-column="35" selection-end-line="170" selection-end-column="35" />
               <folding>
                 <element signature="e#53#209#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Run.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -346,8 +137,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="21" />
-    <option name="y" value="20" />
+    <option name="x" value="-93" />
+    <option name="y" value="47" />
     <option name="width" value="1346" />
     <option name="height" value="688" />
   </component>
@@ -355,7 +146,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -380,6 +171,15 @@
           </expand>
           <select />
         </subPane>
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="tool" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
       </pane>
     </panes>
   </component>
@@ -387,7 +187,7 @@
     <property name="SearchEverywhereHistoryKey" value="tempid&#9;null&#9;null&#10;tab&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Run.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../tool" />
     <property name="nodejs.jest.jest_package" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -592,9 +392,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22617246" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23676248" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -692,9 +491,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2450">
           <caret line="103" column="20" selection-start-line="103" selection-start-column="20" selection-end-line="103" selection-end-column="20" />
-          <folding>
-            <element signature="e#54#174#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -730,9 +526,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1175">
           <caret line="49" column="39" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="39" />
-          <folding>
-            <element signature="e#54#63#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -761,10 +554,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="263">
           <caret line="54" column="34" lean-forward="true" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#52#1" />
-            <element signature="e#53#62#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -772,12 +561,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#53#244#0" expanded="true" />
-            <marker date="1535291612647" expanded="true" signature="3857:3866" ph="..." />
-            <marker date="1535291612647" expanded="true" signature="4044:4053" ph="..." />
-            <marker date="1535291612647" expanded="true" signature="4213:4222" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -788,20 +571,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TableWidget.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="160" selection-start-line="160" selection-end-line="160" selection-end-column="73" />
+        <state relative-caret-position="510">
+          <caret line="170" column="35" selection-start-line="170" selection-start-column="35" selection-end-line="170" selection-end-column="35" />
           <folding>
             <element signature="e#53#209#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>

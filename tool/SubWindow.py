@@ -6,7 +6,7 @@ Created on 2018年7月6日
 
 import os
 
-from TableWidget import CentralView
+from tool.TableWidget import CentralView
 
 
 class CaseData(CentralView):
