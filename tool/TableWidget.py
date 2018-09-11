@@ -11,8 +11,8 @@ from tool.DataManger import MangerData
 from tool.Gvariable import *
 import re
 import sys
-
-
+from  tool.ProcessCalls import runexe
+import time
 class CentralView(QTableWidget):
 
     def __init__(self):
@@ -28,8 +28,9 @@ class CentralView(QTableWidget):
         hhbox = QHBoxLayout()
         hhbox.addWidget(self.table_widget)  # 把表格加入布局
         self.setLayout(hhbox)
-#         self.table()
-#         self.compose_id()
+
+    #         self.table()
+    #         self.compose_id()
 
     def ExcleView(self):
 
@@ -44,8 +45,8 @@ class CentralView(QTableWidget):
         self.table_widget.setColumnCount(self.colum + 2)
         self.table_widget.setHorizontalHeaderLabels(
             ["用例编号", "用例标题", "用例步骤", "期望结果", "测试人员", "备注", "状态", "附件"])
-#         self.table_widget.setVerticalHeaderLabels(
-#             ["用例编号", "用例标题", "用例步骤", "期望结果"])
+        #         self.table_widget.setVerticalHeaderLabels(
+        #             ["用例编号", "用例标题", "用例步骤", "期望结果"])
         self.table_widget.setSelectionBehavior(QAbstractItemView.SelectRows)
         self.table_widget.setEditTriggers(QAbstractItemView.NoEditTriggers)
         self.table_widget.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
@@ -65,8 +66,7 @@ class CentralView(QTableWidget):
     def buttonForRow(self):
 
         widget = QWidget()
-        PreviewsBtn = QPushButton('预览')
-        PreviewsBtn.setObjectName("y")
+        PreviewsBtn = QPushButton('运行')
         PreviewsBtn.setStyleSheet(''' text-align : center;
                                           background-color : NavajoWhite;
                                           height : 30px;
@@ -74,23 +74,21 @@ class CentralView(QTableWidget):
                                           font : 13px  ''')
 
         PreviewsBtn.clicked.connect(self.Previews)
-        backBtn = QPushButton('回放')
-        backBtn.setObjectName("h")
+        backBtn = QPushButton('截图')
         backBtn.setStyleSheet(''' text-align : center;
                                   background-color : DarkSeaGreen;
                                   height : 30px;
                                   border-style: outset;
                                   font : 13px; ''')
         backBtn.clicked.connect(self.compose_id)
-        screenshotBtn = QPushButton('截图')
-        backBtn.setObjectName("z")
+        screenshotBtn = QPushButton('注')
 
         screenshotBtn.setStyleSheet(''' text-align : center;
                                    background-color : LightCoral;
                                     height : 30px;
                                     border-style: outset;
                                    font : 13px; ''')
-        screenshotBtn.clicked.connect(self.Previews)
+        screenshotBtn.clicked.connect(self.png)
         hLayout = QHBoxLayout()
         hLayout.addWidget(PreviewsBtn)
         hLayout.addWidget(backBtn)
@@ -98,41 +96,38 @@ class CentralView(QTableWidget):
         hLayout.setContentsMargins(5, 2, 5, 2)
         widget.setLayout(hLayout)
         return widget
+
     def __translate(self):
-        list1=[]
+        list1 = []
         for x in self.tempid:
-            list1.append(x[105:155])
+            # list1.append(x[105:155])
+            z = re.split(r", ", x)
+            list1.append(z[2])
         del list1[-1]
-        Z=dict(zip(list1,self.idlist))
+        Z = dict(zip(list1, self.idlist))
         return Z
+
+    # noinspection PyPep8Naming
     def Previews(self):
         send = self.sender()
-        # print(self.__translate())
-        x=self.__translate()[str(send)]
-        return  x
-        # for x in self.tempid:
-        #     list1.append(x[105:155])
-            # if x[105:155] ==str(send):
-            #     print(x[105:155])
-        # print(str(send))
-        # print(list1)
-        # del list1[-1]
-        # print(list1)
-        # print(self.idlist)
-        # print("*"*40)
-        # for y in self.idlist:
-        #     print(y)
-
-
-
-
+        x = self.__translate()[str(send)]
+        time.sleep(0.5)
+        self.x = runexe(x)
+        self.x.start()
+        time.sleep(0.5)
+        # return x
 
     def compose_id(self):
-        print(self.idlist)
+        send = self.sender()
+        print(send)
 
     def table(self):
 
         self.table_widget.item
+
+    def png(self):
+        send = self.sender()
+        print(send)
 
     def ExtensionButton(self):
         self.Defaultlistdata = []
@@ -156,8 +151,6 @@ class CentralView(QTableWidget):
                 i, self.colum + 1, self.buttonForRow())
             # self.tempid.append(self.buttonForRow().children())
             self.tempid.append(self.buttonForRow().children().__repr__())
-
-            # self.tempid.append(self.buttonForRow().children().__str__())
             self.combox.currentTextChanged.connect(self.onActivated)
         return self.Defaultlistdata
 
@@ -166,7 +159,6 @@ class CentralView(QTableWidget):
         send = self.sender()
         self.duixiang[send] = x
         xlist = list(self.duixiang.values())
-
         for i in range(self.row):
             if i == 0:
                 pass
@@ -174,15 +166,13 @@ class CentralView(QTableWidget):
                 self.listobjx.append(i)
                 self.listobjx.append(self.colum)
                 self.listobjx.append(xlist[i])
-
         self.temp = tuple(self.listobjx)
-
         self.datalist = self.templist + list(self.temp)
         return self.datalist
 
-    def save_table(self,path):
+    def save_table(self, path):
         s = MangerData()
-        s.SetExcel(location=path,datalist=self.datalist)
+        s.SetExcel(location=path, datalist=self.datalist)
 
 
 class MyModel(QAbstractTableModel):
@@ -190,7 +180,6 @@ class MyModel(QAbstractTableModel):
         super().__init__()
         list1 = []
         list2 = []
-        # print("tab", id(PATHDATA))
         dizhi = PATHDATA["case"]
         self.data = MangerData().GetExcel(location=dizhi)
         if self.data is None:

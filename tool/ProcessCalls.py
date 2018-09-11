@@ -33,11 +33,12 @@ def delete_gap_dir(path):
 class runexe(QThread):
     sinOut = pyqtSignal()
 
-    def __init__(self):
+    def __init__(self,args=None):
+        self.args=args
+        print(args)
         super(runexe, self).__init__()
 
     def run(self):
-        # print(id(PATHDATA), PATHDATA)
         z, f = os.path.split(PATHDATA.get('exe'))
         configfilepath = z + "/config"
         if os.path.exists(configfilepath) is True:

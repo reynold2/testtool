@@ -132,8 +132,9 @@ class window(QMainWindow):
         self.dialog1.show()
 
     def run(self):
+        # print(self.widget.Previews())
         self.runaction.setDisabled(True)
-        self.runmian = runexe()
+        self.runmian = runexe("yu")
         self.runmian.sinOut.connect(self.finsh)
         self.runmian.start()
         print("测试程序正在启动......")

@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc724217-7017-47c4-9292-bd41aa841c85" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sqlite/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlite/dataobject.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tool/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool/DataIo.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool/DataIo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool/DataManger.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool/DataManger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tool/MainWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool/MainWindow.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tool/ProcessCalls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool/ProcessCalls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool/ProfileWizard.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool/ProfileWizard.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool/Run.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool/Run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool/SubWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool/SubWindow.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tool/TableWidget.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool/TableWidget.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/config/app/configureadmin.db" beforeDir="false" afterPath="$PROJECT_DIR$/tool/res/QxPlugin/config/app/configureadmin.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/config/app/extension.dat" beforeDir="false" afterPath="$PROJECT_DIR$/tool/res/QxPlugin/config/app/extension.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/tool/res/config.ini" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +17,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/testtool$Run.coverage" NAME="Run Coverage Results" MODIFIED="1536592229811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tool" />
     <SUITE FILE_PATH="coverage/testtool$TableWidget.coverage" NAME="TableWidget Coverage Results" MODIFIED="1536586674411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tool" />
+    <SUITE FILE_PATH="coverage/testtool$Run.coverage" NAME="Run Coverage Results" MODIFIED="1536655159383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tool" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="191069982">
@@ -58,30 +54,47 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="250361049">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="7" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="7" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="Python Console" value="12" />
+          <entry key="py" value="391" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="403" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tool/Run.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-              <folding>
-                <element signature="e#53#63#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tool/TableWidget.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="111" column="17" lean-forward="true" selection-start-line="111" selection-start-column="17" selection-end-line="111" selection-end-column="17" />
+            <state relative-caret-position="285">
+              <caret line="117" column="1" selection-start-line="117" selection-start-column="1" selection-end-line="117" selection-end-column="18" />
               <folding>
                 <element signature="e#53#209#0" expanded="true" />
-                <marker date="1536591755583" expanded="true" signature="3727:3731" ph="..." />
-                <marker date="1536591755583" expanded="true" signature="3727:3872" ph="..." />
+                <marker date="1536652933238" expanded="true" signature="4294:4349" ph="..." />
               </folding>
             </state>
           </provider>
@@ -90,20 +103,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tool/MainWindow.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
-              <folding>
-                <element signature="e#53#244#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="2432">
+              <caret line="136" column="33" selection-start-line="136" selection-start-column="33" selection-end-line="136" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tool/ProcessCalls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-600">
-              <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+            <state relative-caret-position="377">
+              <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
+              <folding>
+                <element signature="e#53#62#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -125,13 +138,14 @@
       <list>
         <option value="$PROJECT_DIR$/sqlite/dataobject.py" />
         <option value="$PROJECT_DIR$/tool/ProfileWizard.py" />
-        <option value="$PROJECT_DIR$/tool/ProcessCalls.py" />
         <option value="$PROJECT_DIR$/tool/DataManger.py" />
         <option value="$PROJECT_DIR$/tool/DataIo.py" />
         <option value="$PROJECT_DIR$/tool/Run.py" />
         <option value="$PROJECT_DIR$/tool/SubWindow.py" />
-        <option value="$PROJECT_DIR$/tool/TableWidget.py" />
+        <option value="$PROJECT_DIR$/tool/Gvariable.py" />
         <option value="$PROJECT_DIR$/tool/MainWindow.py" />
+        <option value="$PROJECT_DIR$/tool/TableWidget.py" />
+        <option value="$PROJECT_DIR$/tool/ProcessCalls.py" />
       </list>
     </option>
   </component>
@@ -141,21 +155,17 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="5" />
-    <option name="y" value="20" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="72" />
+    <option name="y" value="132" />
     <option name="width" value="1346" />
     <option name="height" value="688" />
-  </component>
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -172,6 +182,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -261,10 +272,20 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="5" y="20" width="1346" height="688" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16951789" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11886994" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -273,13 +294,17 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.6039783" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32899022" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32899022" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32899022" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32899022" />
+      <window_info anchor="bottom" id="找到" order="13" />
+      <window_info active="true" anchor="bottom" id="运行" order="14" visible="true" weight="0.18892509" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="15" weight="0.32899022" />
+      <window_info anchor="bottom" id="调试" order="16" weight="0.31378937" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -311,13 +336,6 @@
     <entry file="file://$PROJECT_DIR$/sqlite/dataobject.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tool/DataManger.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tool/DataIo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -325,25 +343,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tool/Gvariable.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/tool/ImageComparison.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#53#1" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/tool/ProfileWizard.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1150">
           <caret line="5" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#54#174#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -354,41 +360,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tool/DataManger.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool/Gvariable.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/sre_parse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="219" selection-start-line="219" selection-end-line="219" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/sre_compile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="578" selection-start-line="578" selection-end-line="578" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/re.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="211" selection-start-line="211" selection-end-line="211" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tool/Run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
+        <state relative-caret-position="361">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#53#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool/ProcessCalls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-600">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool/MainWindow.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#53#244#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tool/TableWidget.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="111" column="17" lean-forward="true" selection-start-line="111" selection-start-column="17" selection-end-line="111" selection-end-column="17" />
+        <state relative-caret-position="285">
+          <caret line="117" column="1" selection-start-line="117" selection-start-column="1" selection-end-line="117" selection-end-column="18" />
           <folding>
             <element signature="e#53#209#0" expanded="true" />
-            <marker date="1536591755583" expanded="true" signature="3727:3731" ph="..." />
-            <marker date="1536591755583" expanded="true" signature="3727:3872" ph="..." />
+            <marker date="1536652933238" expanded="true" signature="4294:4349" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool/MainWindow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2432">
+          <caret line="136" column="33" selection-start-line="136" selection-start-column="33" selection-end-line="136" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool/ProcessCalls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
+          <folding>
+            <element signature="e#53#62#0" expanded="true" />
           </folding>
         </state>
       </provider>
