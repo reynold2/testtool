@@ -9,10 +9,11 @@ class x(object):
         sheet_name = workbook.sheet_names()[0]
         sheet = workbook.sheet_by_name(sheet_name)
         for x in range(sheet.nrows):
+            # list.append(tuple(map(lambda x:x.encode("utf-8"),sheet.row_values(x))))
             list.append(tuple(sheet.row_values(x)))
         return list
 
-print(x().read_excel())
+
 
 
 

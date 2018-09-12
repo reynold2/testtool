@@ -9,10 +9,12 @@ class sql(object):
     def insert(self):
         conn = sqlite3.connect('data.db')
         cursor = conn.cursor()
+
+        print(self.datalist.read_excel())
         cursor.execute("create table test(z varchar(20),x varchar(20),c varchar(30),v varchar(30))")
 
-        sql = 'insert into test(province,num,city,town) values(?,?,?,?)'
-        cursor.executemany(sql, self.datalist.read_excel()[1])
+        sql = 'insert into test(z,x,c,v) values(?,?,?,?)'
+        cursor.executemany(sql, self.datalist.read_excel())
 
         conn.commit()
         conn.close()
@@ -31,4 +33,4 @@ class sql(object):
 
 
 x=sql()
-print(x.insert())
+x.insert()
