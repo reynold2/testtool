@@ -13,17 +13,12 @@ class MangerData(object):
         self.E.excelpath
         self.p = config_io()
         self.p.configpath
-
-    # def GetExcel(self, location=PATHDATA["case"], **kwargs):
     def GetExcel(self, location=None, **kwargs):
         self.E.excelpath = location
         return self.E.ReadEXcleData()
-
-    # def SetExcel(self, location=PATHDATA["report"], datalist=[]):
     def SetExcel(self, location=None, datalist=[]):
         self.E.excelpath = location
         return self.E.WriteEXcleData(listdata=datalist)
-
     def Getconfig(self, location=PATHDATA["config"]):
         self.p.configpath = location
         PATHDATA["case"] = self.p.ReadConfigData()["case"]

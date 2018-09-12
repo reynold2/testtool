@@ -18,16 +18,10 @@ class window(QMainWindow):
     def __init__(self, parent=None):
         super().__init__(parent)
         self.myui()
-
     def myui(self):
         self.dialog = ConfigDialog()
-
         self.widget = CentralView()
-
         self.setCentralWidget(self.widget)
-        self.QTdialog__init__()
-        # print("myui", id(PATHDATA))
-
         exitAction = QAction(QIcon("res/exit.png"), "退出", self)
         exitAction.setShortcut("ctrl+q")
         exitAction.setStatusTip("退出")
@@ -110,27 +104,13 @@ class window(QMainWindow):
         self.setWindowIcon(QIcon("res/aboutus.png"))
         self.center()
         self.show()
-
-    def QTdialog__init__(self):
-        # self.Form = QDialog()
-        # self.ui = Ui_AboutDialog()
-        # self.ui.setupUi(self.Form)
-        # self.ui.retranslateUi(self.Form)
-        pass
-
     def Refresh(self):
-
         self.widget_Refresh = CentralView()
         self.setCentralWidget(self.widget_Refresh)
-
         # print("Refresh", id(PATHDATA), PATHDATA)
-
     def guide(self):
-        # self.dialog.show()
-
         self.dialog1= ConfigDialog()
         self.dialog1.show()
-
     def run(self):
         # print(self.widget.Previews())
         self.runaction.setDisabled(True)
@@ -138,7 +118,6 @@ class window(QMainWindow):
         self.runmian.sinOut.connect(self.finsh)
         self.runmian.start()
         print("测试程序正在启动......")
-
     def finsh(self):
         self.runaction.setDisabled(False)
 
@@ -182,7 +161,8 @@ class window(QMainWindow):
             "http://www.microcorecn.com/about/toMcHome.do", new=0, autoraise=True)
 
     def qt(self):
-        self.Form.show()
+        x=QMessageBox()
+        x.aboutQt(self,"关于Qt版本")
 
     def save_as(self):
 

@@ -42,10 +42,12 @@ class runexe(QThread):
         z, f = os.path.split(PATHDATA.get('exe'))
         configfilepath = z + "/config"
         if os.path.exists(configfilepath) is True:
-            p = Popen(['tasklist'], stdout=PIPE, stderr=PIPE)
-            process_lists = str(p.stdout.read())
-            while 'app.exe' in process_lists:
-                Popen('taskkill /F /IM f /T')
+            # p = Popen(['tasklist'], stdout=PIPE, stderr=PIPE)
+            # process_lists = str(p.stdout.read())
+            # while 'app.exe' in process_lists:
+            #     Popen('taskkill /F /IM f /T')
+
+            os.system('TASKKILL /F /IM %s'%f)
             del_file(configfilepath)
             delete_gap_dir(configfilepath)
 

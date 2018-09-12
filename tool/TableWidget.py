@@ -106,8 +106,6 @@ class CentralView(QTableWidget):
         del list1[-1]
         Z = dict(zip(list1, self.idlist))
         return Z
-
-    # noinspection PyPep8Naming
     def Previews(self):
         send = self.sender()
         x = self.__translate()[str(send)]
