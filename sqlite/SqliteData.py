@@ -62,11 +62,11 @@ class SqlDataHandle(object):
             conn = sqlite3.connect(self.dbname)
             cursor = conn.cursor()
             for x in range(tablepage):
-                # try:
+                try:
                     cursor.execute(sqltable[x])
-                # except sqlite3.OperationalError:
-                #     print("table test already exists")
-                # finally:
+                except sqlite3.OperationalError:
+                    print("table test already exists")
+                finally:
                     cursor.executemany(self.formatsql[x], self.Parseiterationlist[x])
                     conn.commit()
             if cursor:
