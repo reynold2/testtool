@@ -28,10 +28,6 @@ class CentralView(QTableWidget):
         hhbox = QHBoxLayout()
         hhbox.addWidget(self.table_widget)  # 把表格加入布局
         self.setLayout(hhbox)
-
-    #         self.table()
-    #         self.compose_id()
-
     def ExcleView(self):
 
         self.exdatalist = []
@@ -109,15 +105,16 @@ class CentralView(QTableWidget):
     def Previews(self):
         send = self.sender()
         x = self.__translate()[str(send)]
+        print(x)
         time.sleep(0.5)
-        self.x = runexe(x)
-        self.x.start()
+        self.exe = runexe(x)
+        self.exe.start()
         time.sleep(0.5)
-        # return x
+
 
     def compose_id(self):
         send = self.sender()
-        print(send)
+
 
     def table(self):
 
@@ -125,7 +122,7 @@ class CentralView(QTableWidget):
 
     def png(self):
         send = self.sender()
-        print(send)
+
 
     def ExtensionButton(self):
         self.Defaultlistdata = []

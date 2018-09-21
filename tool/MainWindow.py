@@ -4,12 +4,10 @@ Created on 2018年7月4日
 @author: Administrator
 '''
 from PyQt5.QtWidgets import QMainWindow, QAction, QSizePolicy, QTextEdit, QFileDialog, QDesktopWidget, QDialog, QProgressBar, QMessageBox, QWidget, QApplication, QLCDNumber, qApp, QVBoxLayout
-# from PyQt5.QtGui import QIcon
 from PyQt5.QtCore import QTimer
 from tool.TableWidget import CentralView
 from tool.ProfileWizard import *
 from tool.ProcessCalls import runexe
-# from aboutqt import Ui_AboutDialog
 import time
 import sys
 
@@ -107,14 +105,12 @@ class window(QMainWindow):
     def Refresh(self):
         self.widget_Refresh = CentralView()
         self.setCentralWidget(self.widget_Refresh)
-        # print("Refresh", id(PATHDATA), PATHDATA)
     def guide(self):
         self.dialog1= ConfigDialog()
         self.dialog1.show()
     def run(self):
-        # print(self.widget.Previews())
         self.runaction.setDisabled(True)
-        self.runmian = runexe("yu")
+        self.runmian = runexe(self.widget.idlist)
         self.runmian.sinOut.connect(self.finsh)
         self.runmian.start()
         print("测试程序正在启动......")
@@ -127,12 +123,12 @@ class window(QMainWindow):
         file.setFilter(QDir.Files)
         if file.exec_():
             filename = file.selectedFiles()
-            # global PATHDATA
+
             PATHDATA['case'] = filename[0]
             self.widget_openfile_data = CentralView()
             self.setCentralWidget(self.widget_openfile_data)
 
-        # print("openfile_data", id(PATHDATA), PATHDATA)
+
         return PATHDATA
 
     def save(self):

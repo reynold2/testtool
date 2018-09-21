@@ -9,7 +9,7 @@
                 <Data key="1" text="Minimum Window" icon="images/minimize_window.png"/>
                 <Data key="2" text="Maximize Window" icon="images/maximize_window.png"/>
                 <Data key="4" text="Full Screen" icon="images/full_screen.png"/>
-                <Data key="8" text="Actived" icon="images/active.png"/>
+                <Data key="8" text="Actived"     icon="images/active.png"/>
             </Enum>
             <Size key="Size" name="Size" value="800x600"/>
             <File key="icon" name="Icon" filter="Image Files (*.png)" title="Select Icon File..." method="getOpenFileName"/>
@@ -19,8 +19,8 @@
                 <Bool key="visible" name="" value="true"/>
                 <Bool key="enabled" name="" value="true"/>
                 <Enum key="sceneMode" name="sceneMode" mode="" value="true">
-                    <Data key="0" text="visiable" icon=""/>
-                    <Data key="1" text="enabled" icon=""/>
+                    <Data key="visible" text="Show/Hide" icon="images/in-visible.png"/>
+                    <Data key="enabled" text="Allow/Disable" icon="images/en-disable.png"/>
                 </Enum>
                 <String key="key" regexp="" name="key" value="menubar" trans="true" tips="[a-zA-Z][a-zA-Z0-9\-_.]*"/>
             </SubExtPoint>
@@ -31,8 +31,8 @@
                 <Bool key="visible" name="" value="true"/>
                 <Bool key="enabled" name="" value="true"/>
                 <Enum key="sceneMode" name="" mode="" value="visible">
-                    <Data key="0" text="visible"/>
-                    <Data key="1" text="enabled"/>
+                    <Data key="visiable" text="Show/Hide"    icon="images/in-visible.png"/>
+                    <Data key="enabled" text="Allow/Disable" icon="images/en-disable.png"/>
                 </Enum>
                 <String key="sceneName" regexp="[a-zA-Z][a-zA-Z0-9\-_.]*" name="" value="" tips="" trans=""/>
                 <String key="key" regexp="[a-zA-Z][a-zA-Z0-9\-_.]*" name="key" value="toolbar" tips="" trans="true"/>
@@ -45,7 +45,7 @@
                     <Data key="3" text="Text Under Icon"/>
                 </Enum>
             </SubExtPoint>
-            <SubExtPoint key="group" displaylabel="name" name="Group" childtype="action|menu|widget" displayicon="" description="">
+            <SubExtPoint key="group" displaylabel="text" name="Group" childtype="action|menu|widget" displayicon="" description="">
                 <String key="key" regexp="[a-zA-Z][a-zA-Z0-9\-_.]*" name="key" value="group" tips="" trans="true"/>
                 <String key="text" regexp="" name="Name" value="New group" tips="" trans=""/>
                 <Int key="index" max="32767" name="index" min="0" value=""/>
@@ -55,7 +55,7 @@
                 <Bool key="enabled" name="" value="true"/>
                 <String key="key" regexp="[a-zA-Z][a-zA-Z0-9\-_.]*" name="key" value="menu" tips="" trans="true"/>
                 <String key="defaultActionId" regexp="" name="defaultActionId" value="New Menu" tips="" trans=""/>
-                <String key="text" regexp="" name="Name" value="New Menu" tips="" trans="true"/>
+                <String key="title" regexp="" name="Name" value="New Menu" tips="" trans="true"/>
                 <Int key="index" max="32767" name="" min="0" value=""/>
                 <File key="icon" name="" filter="Image Files (*.png)" value="" title="Select Icon File..." method="getOpenFileName"/>
                 <String key="toolTip" regexp="" name="" value="" tips="" trans="true"/>
@@ -64,8 +64,8 @@
                 <String key="parent" regexp="" name="parent" value="" tips="" trans=""/>
                 <String key="sceneName" regexp="[a-zA-Z][a-zA-Z0-9\-_.]*" name="" value="" tips="" trans=""/>
                 <Enum key="sceneMode" name="" mode="" value="visible">
-                    <Data key="0" text="visible"/>
-                    <Data key="1" text="enabled"/>
+                    <Data key="visiable" text="Show/Hide"    icon="images/in-visible.png"/>
+                    <Data key="enabled" text="Allow/Disable" icon="images/en-disable.png"/>
                 </Enum>
             </SubExtPoint>
             <SubExtPoint key="action" displaylabel="text" name="Action" childtype="" displayicon="icon" description="">
@@ -77,23 +77,23 @@
                 <String key="statusTip" regexp="" name="" value="" tips="" trans="true"/>
                 <Bool key="enabled" name="" value="true"/>
                 <String key="parent" regexp="" name="parent" value="" tips="" trans=""/>
-                <keySequence key="shortcut" name="" value=""/>
+                <shortcut key="shortcut" name="" value=""/>
                 <Bool key="checked" name="" value="false"/>
                 <Bool key="checkable" name="" value="false"/>
                 <Bool key="autoRepeat" name="" value="false"/>
                 <Bool key="visible" name="" value="true"/>
                 <String key="sceneName" regexp="[a-zA-Z][a-zA-Z0-9\-_.]*" name="" value="" tips="" trans=""/>
                 <Enum key="sceneMode" name="" mode="" value="visible">
-                    <Data key="0" text="visible"/>
-                    <Data key="1" text="enabled"/>
+                    <Data key="visiable" text="Show/Hide"    icon="images/in-visible.png"/>
+                    <Data key="enabled" text="Allow/Disable" icon="images/en-disable.png"/>
                 </Enum>
             </SubExtPoint>
             <SubExtPoint key="widget" displaylabel="text" name="Widget" childtype="" displayicon="" description="">
                 <Bool key="visible" name="" value="true"/>
                 <Bool key="enabled" name="" value="true"/>
                 <Enum key="sceneMode" name="" mode="" value="visible">
-                    <Data key="0" text="visible"/>
-                    <Data key="1" text="enabled"/>
+                    <Data key="visiable" text="Show/Hide"    icon="images/in-visible.png"/>
+                    <Data key="enabled" text="Allow/Disable" icon="images/en-disable.png"/>
                 </Enum>
                 <String key="key" regexp="" name="key" value="widget" tips="[a-zA-Z][a-zA-Z0-9\-_.]*" trans="true"/>
                 <String key="text" regexp="" name="Name" value="New Widget" tips="" trans="true"/>
@@ -109,8 +109,8 @@
                 <String key="key" regexp="[a-zA-Z][a-zA-Z0-9\-_.]*" name="key" value="progressBar" tips="" trans="true"/>
                 <String key="sceneName" regexp="[a-zA-Z][a-zA-Z0-9\-_.]*" name="sceneName"/>
                 <Enum key="sceneMode" name="" value="visible">
-                    <Data key="0" text="visible"/>
-                    <Data key="1" text="enabled"/>
+                    <Data key="visiable" text="Show/Hide"    icon="images/in-visible.png"/>
+                    <Data key="enabled" text="Allow/Disable" icon="images/en-disable.png"/>
                 </Enum>
                 <String key="text" regexp="" name="" value="New progressBar" trans="true" tips=""/>
                 <Bool key="permanent" name="" value="false"/>
@@ -124,8 +124,8 @@
                 <String key="key" regexp="[a-zA-Z][a-zA-Z0-9\-_.]*" name="key" value="Slider" tips="" trans="true"/>
                 <String key="sceneName" regexp="[a-zA-Z][a-zA-Z0-9\-_.]*" name="sceneName" value="" tips="" trans=""/>
                 <Enum key="sceneMode" name="" mode="" value="visible">
-                    <Data key="0" text="visible"/>
-                    <Data key="1" text="enabled"/>
+                    <Data key="visiable" text="Show/Hide"    icon="images/in-visible.png"/>
+                    <Data key="enabled" text="Allow/Disable" icon="images/en-disable.png"/>
                 </Enum>
                 <String key="text" regexp="" name="" value="New Slider" trans="true" tips=""/>
                 <Bool key="permanent" name="" value="false"/>
@@ -140,8 +140,8 @@
                 <String key="key" regexp="[a-zA-Z][a-zA-Z0-9\-_.]*" name="key" value="LineEdit" tips="" trans="true"/>
                 <String key="sceneName" regexp="[a-zA-Z][a-zA-Z0-9\-_.]*" name="sceneName" value="" tips="" trans=""/>
                 <Enum key="sceneMode" name="" mode="" value="visible">
-                    <Data key="0" text="visible"/>
-                    <Data key="1" text="enabled"/>
+                    <Data key="visiable" text="Show/Hide"    icon="images/in-visible.png"/>
+                    <Data key="enabled" text="Allow/Disable" icon="images/en-disable.png"/>
                 </Enum>
                 <Bool key="permanent" name="" value="false"/>
                 <Int key="index" max="32767" name="" min="0" value=""/>
@@ -155,8 +155,8 @@
                 <String key="key" regexp="[a-zA-Z][a-zA-Z0-9\-_.]*" name="key" value="widget" tips="" trans="true"/>
                 <String key="sceneName" regexp="[a-zA-Z][a-zA-Z0-9\-_.]*" name="sceneName" value="" tips="" trans=""/>
                 <Enum key="sceneMode" name="" mode="" value="visible">
-                    <Data key="0" text="visible"/>
-                    <Data key="1" text="enabled"/>
+                    <Data key="visiable" text="Show/Hide"    icon="images/in-visible.png"/>
+                    <Data key="enabled" text="Allow/Disable" icon="images/en-disable.png"/>
                 </Enum>
                 <Bool key="permanent" name="" value="false"/>
                 <Int key="index" max="32767" name="" min="0" value=""/>
@@ -166,7 +166,7 @@
             </SubExtPoint>
             <SubExtPoint key="group" displaylabel="name" name="Group" childtype="action|menu|widget" displayicon="" description="">
                 <String key="key" regexp="[a-zA-Z][a-zA-Z0-9\-_.]*" name="key" value="group" tips="" trans="true"/>
-                <String key="text" regexp="" name="Name" value="New group" tips="" trans=""/>
+                <String key="text" regexp="" name="Name" value="tr('New group')" tips="" trans=""/>
                 <String key="parent" regexp="" name="parent" value="" tips="" trans=""/>
             </SubExtPoint>
             <SubExtPoint key="menu" displaylabel="title" name="Menu" childtype="action|menu|group" displayicon="icon" description="">
@@ -182,28 +182,28 @@
                 <String key="parent" name="parent" value=""/>
                 <String key="sceneName" regexp="[a-zA-Z][a-zA-Z0-9\-_.]*" name=""/>
                 <Enum key="sceneMode" name="" mode="" value="visible">
-                    <Data key="0" text="visible"/>
-                    <Data key="1" text="enabled"/>
+                    <Data key="visiable" text="Show/Hide"    icon="images/in-visible.png"/>
+                    <Data key="enabled" text="Allow/Disable" icon="images/en-disable.png"/>
                 </Enum>
             </SubExtPoint>
             <SubExtPoint key="action" displaylabel="text" name="Action" childtype="" displayicon="icon" description="">
                 <String key="key" regexp="[a-zA-Z][a-zA-Z0-9\-_.]*" name="" value="action" tips="" trans="true"/>
-                <String key="text" regexp="" name="Name" value="New Action" tips="" trans="true"/>
+                <String key="text" regexp="" name="Name" value="tr('New Action')" tips="" trans="true"/>
                 <Int key="index" max="32767" name="" min="0" value=""/>
                 <File key="icon" name="" filter="Image Files (*.png)" title="Select Icon File..." method="getOpenFileName"/>
                 <String key="toolTip" regexp="" name="" value="" tips="" trans="true"/>
                 <Bool key="enabled" name="" value="true"/>
                 <Bool key="permanent" name="" value="false"/>
                 <String key="parent" regexp="" name="parent" value="" tips="" trans=""/>
-                <keySequence key="shortcut" name="" value=""/>
+                <shortcut key="shortcut" name="" value=""/>
                 <Bool key="checked" name="" value="false"/>
                 <Bool key="checkable" name="" value="false"/>
                 <Bool key="autoRepeat" name="" value="false"/>
                 <Bool key="visible" name="" value="true"/>
                 <String key="sceneName" regexp="[a-zA-Z][a-zA-Z0-9\-_.]*" name=""/>
                 <Enum key="sceneMode" name="" value="visible">
-                    <Data key="0" text="visible"/>
-                    <Data key="1" text="enabled"/>
+                    <Data key="visiable" text="Show/Hide"    icon="images/in-visible.png"/>
+                    <Data key="enabled" text="Allow/Disable" icon="images/en-disable.png"/>
                 </Enum>
             </SubExtPoint>
         </ExtPoint>
