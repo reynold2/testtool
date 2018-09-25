@@ -31,19 +31,18 @@ def delete_gap_dir(path):
 
 
 class runexe(QThread):
+    cout={}
     sinOut = pyqtSignal()
-
     def __init__(self, args):
         self.args= args
-        print(args)
         self.data=CaseData(PATHDATA.get('data'))
         super(runexe, self).__init__()
-
     def run(self):
         z, f = os.path.split(PATHDATA.get('exe'))
         configfilepath = z + "/config"
         if type(self.args)is list:
             for x in self.args:
+                print(x)
                 if os.path.exists(configfilepath) is True:
                     os.system('TASKKILL /F /IM %s'%f)
                     del_file(configfilepath)
@@ -54,10 +53,11 @@ class runexe(QThread):
                     else:
                         subprocess.call(PATHDATA["exe"])
                         self.sinOut.emit()
-                        time.sleep(5)
+
                         print("测试程序已停止运行")
                 else:
                     pass
+                time.sleep(1)
         else:
             if os.path.exists(configfilepath) is True:
                 os.system('TASKKILL /F /IM %s'%f)
@@ -69,6 +69,11 @@ class runexe(QThread):
                 else:
                     subprocess.call(PATHDATA["exe"])
                     print("测试程序已停止运行")
+    @classmethod
+    def handling(cls):
+        return cls.cout
+
+
 if __name__ == "__main__":
     ex = runexe()
     ex.run()

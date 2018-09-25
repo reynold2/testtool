@@ -10,6 +10,11 @@ import shutil
 
 
 class CaseData(object):
+    # _instance = None
+    # def __new__(cls, *args, **kw):
+    #     if not cls._instance:
+    #         cls._instance = super(CaseData, cls).__new__(cls, *args, **kw)
+    #     return cls._instance
     def __init__(self, path):
         self.path = path
         self.dirset = set()
@@ -72,4 +77,4 @@ class CaseData(object):
 
 if __name__=="__main__":
 
-    CaseData("res/RE").copyexsiondit()
+    print(CaseData("res/RE")._dirset())

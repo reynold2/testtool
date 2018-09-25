@@ -11,10 +11,10 @@ from tool.DataManger import MangerData
 from tool.Gvariable import *
 import re
 import sys
+from tool.CaseData import CaseData
 from  tool.ProcessCalls import runexe
 import time
 class CentralView(QTableWidget):
-
     def __init__(self):
         super(CentralView, self).__init__()
         self.temp = ()
@@ -93,18 +93,20 @@ class CentralView(QTableWidget):
         widget.setLayout(hLayout)
         return widget
 
-    def __translate(self):
+    def __translate(self,send):
+        keyvalue={}
         list1 = []
-        for x in self.tempid:
-            # list1.append(x[105:155])
+        for index,x in enumerate(self.tempid):
             z = re.split(r", ", x)
             list1.append(z[2])
         del list1[-1]
         Z = dict(zip(list1, self.idlist))
+
+
         return Z
     def Previews(self):
         send = self.sender()
-        x = self.__translate()[str(send)]
+        x = self.__translate(send).get(str(send),str(send))
         print(x)
         time.sleep(0.5)
         self.exe = runexe(x)
