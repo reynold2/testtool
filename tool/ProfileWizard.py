@@ -20,8 +20,6 @@ class ConfigDialog(QWidget):
         self.exceptionfilter()
         self.initUi()
 
-        # print("conf", id(PATHDATA))
-
     def initUi(self):
         self.setWindowTitle("配置文件")
         self.setGeometry(500, 500, 470, 310)
@@ -147,11 +145,8 @@ class ConfigDialog(QWidget):
         self.move(qr.topLeft())
 
     def Confirmexit(self):
-        # print("Confirmexit", PATHDATA)
         self.temp.Setconfig(location=PATHDATA["config"],
                             outconfdata=PATHDATA)
-
-        # print(id(PATHDATA["config"]))
         sleep(0.5)
         self.close()
 

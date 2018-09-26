@@ -4,17 +4,22 @@ Created on 2018年7月6日
 @author: Administrator
 '''
 from PyQt5.QtWidgets import QTableWidget, QHBoxLayout, QWidget, QAbstractItemView, QHeaderView, QPushButton, \
-    QTableWidgetItem, QComboBox, QApplication
-
+    QTableWidgetItem, QComboBox, QApplication, QMessageBox
+from PyQt5 import QtWidgets
 from PyQt5.QtCore import QAbstractTableModel
 from tool.DataManger import MangerData
 from tool.Gvariable import *
+from PyQt5.QtGui import QIcon
 import re
 import sys
 from tool.CaseData import CaseData
-from  tool.ProcessCalls import runexe
+from tool.ProcessCalls import runexe
 import time
+
+
 class CentralView(QTableWidget):
+    cunt = 0
+
     def __init__(self):
         super(CentralView, self).__init__()
         self.temp = ()
@@ -26,8 +31,11 @@ class CentralView(QTableWidget):
         self.ExtensionButton()
         self.table_widget.removeRow(0)
         hhbox = QHBoxLayout()
-        hhbox.addWidget(self.table_widget)  # 把表格加入布局
+        tab = QtWidgets.QTabWidget()
+        tab.addTab(self.table_widget, QIcon("res/open.png"), "测试用例")
+        hhbox.addWidget(tab)
         self.setLayout(hhbox)
+
     def ExcleView(self):
 
         self.exdatalist = []
@@ -93,30 +101,49 @@ class CentralView(QTableWidget):
         widget.setLayout(hLayout)
         return widget
 
-    def __translate(self,send):
-        keyvalue={}
+    def __translate(self, send):
+        keyvalue = {}
         list1 = []
-        for index,x in enumerate(self.tempid):
+        for index, x in enumerate(self.tempid):
             z = re.split(r", ", x)
             list1.append(z[2])
         del list1[-1]
         Z = dict(zip(list1, self.idlist))
 
-
         return Z
-    def Previews(self):
-        send = self.sender()
-        x = self.__translate(send).get(str(send),str(send))
-        print(x)
-        time.sleep(0.5)
-        self.exe = runexe(x)
-        self.exe.start()
-        time.sleep(0.5)
 
+    def Previews(self):
+        _id = set(self.idlist)
+        _dir = CaseData("res/RE")._dirset()
+        _cha = _id - (_id & _dir)
+        print(_cha)
+        if CentralView.cunt == 0:
+            if _cha:
+                reply = QMessageBox.warning(self, '当前路径下缺失用例名称为:%s' % _cha.pop(),
+                                            "当前测试用例数据不完整将无法批量执行是否不再提示?", QMessageBox.Yes |
+                                            QMessageBox.No, QMessageBox.No)
+
+                if reply == QMessageBox.Yes:
+                    CentralView.cunt = 1
+                else:
+                    CentralView.cunt = 0
+            else:
+                pass
+        else:
+            pass
+        send = self.sender()
+        print(send)
+        x = self.__translate(send).get(str(send), str(send))
+        if str(send) == x:
+            print("当前是异常数据项:%s" % x)
+        else:
+            time.sleep(0.5)
+            self.exe = runexe(x)
+            self.exe.start()
+            time.sleep(0.5)
 
     def compose_id(self):
         send = self.sender()
-
 
     def table(self):
 
@@ -124,7 +151,6 @@ class CentralView(QTableWidget):
 
     def png(self):
         send = self.sender()
-
 
     def ExtensionButton(self):
         self.Defaultlistdata = []
@@ -144,6 +170,7 @@ class CentralView(QTableWidget):
 
             self.table_widget.setCellWidget(i, self.colum, self.combox)
             self.duixiang[self.combox] = "通过"
+
             self.table_widget.setCellWidget(
                 i, self.colum + 1, self.buttonForRow())
             # self.tempid.append(self.buttonForRow().children())

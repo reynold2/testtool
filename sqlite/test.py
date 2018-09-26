@@ -25,7 +25,6 @@ ACQUIRED = 1
 
 def createFakeData():
     import random
-
     print("Dropping tables...")
     query = QSqlQuery()
     query.exec_("DROP TABLE assets")

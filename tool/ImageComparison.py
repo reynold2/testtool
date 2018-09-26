@@ -27,3 +27,7 @@ Created on 2018年7月18日
 #     img2 = "G:/Python3/layout/tool/res/2.png"
 #     result = image_contrast(img1, img2)
 #     print(result)
+
+from PIL import ImageGrab
+im = ImageGrab.grab()
+im.save("rrr.png")    #定义保存的路径和保存的图片格式

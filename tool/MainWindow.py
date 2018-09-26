@@ -94,7 +94,6 @@ class window(QMainWindow):
 
         self.text = QTextEdit()
         self.text.setSizePolicy(QSizePolicy.Maximum, QSizePolicy.Fixed)
-
         self.pbar = QProgressBar(self)
         self.pbar.setGeometry(1050, 730, 100, 20)
         self.setGeometry(100, 100, 1120, 750)
