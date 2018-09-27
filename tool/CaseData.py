@@ -42,7 +42,7 @@ class CaseData(object):
                 if filename == "extension.xml":
                     file_path = os.path.join(parent, filename)
                     self.exsionlist.append(file_path)
-                elif filename == "PrintScreen.png":
+                elif filename.endswith(".png"):
                     file_path = os.path.join(parent, filename)
                     self.resourcelist.append(file_path)
                 else:
@@ -77,4 +77,4 @@ class CaseData(object):
 
 if __name__=="__main__":
 
-    print(CaseData("res/RE")._dirset())
+    print(CaseData("res/RE").key_value())

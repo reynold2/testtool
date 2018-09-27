@@ -4,7 +4,7 @@ Created on 2018年7月4日
 @author: Administrator
 '''
 from PyQt5.QtWidgets import QMainWindow, QAction, QSizePolicy, QTextEdit, QFileDialog, QDesktopWidget, QDialog, QProgressBar, QMessageBox, QWidget, QApplication, QLCDNumber, qApp, QVBoxLayout
-from PyQt5.QtCore import QTimer
+from PyQt5.QtCore import QTimer,Qt
 from tool.TableWidget import CentralView
 from tool.ProfileWizard import *
 from tool.ProcessCalls import runexe
@@ -92,11 +92,14 @@ class window(QMainWindow):
         tb.setSizePolicy(QSizePolicy.Maximum, QSizePolicy.Fixed)
         tb.addWidget(timer)
 
-        self.text = QTextEdit()
-        self.text.setSizePolicy(QSizePolicy.Maximum, QSizePolicy.Fixed)
-        self.pbar = QProgressBar(self)
-        self.pbar.setGeometry(1050, 730, 100, 20)
+        # self.text = QTextEdit()
+        # self.text.setSizePolicy(QSizePolicy.Maximum, QSizePolicy.Fixed)
+        # self.pbar = QProgressBar(self)
+        # self.pbar.setGeometry(1050, 730, 100, 20)
+
         self.setGeometry(100, 100, 1120, 750)
+        # self.showFullScreen()
+        # self.setWindowState(Qt.windowNoState|Qt.windowFullScreen)
         self.setWindowTitle("自动化")
         self.setWindowIcon(QIcon("res/aboutus.png"))
         self.center()
