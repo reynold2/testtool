@@ -10,22 +10,27 @@ import shutil
 
 
 class CaseData(object):
-    # _instance = None
-    # def __new__(cls, *args, **kw):
-    #     if not cls._instance:
-    #         cls._instance = super(CaseData, cls).__new__(cls, *args, **kw)
-    #     return cls._instance
-    def __init__(self, path):
+    _obj = None
+    _init_flag=True
+    def __new__(cls, *args, **kw):
+        if not cls._obj:
+            cls._obj = object.__new__(cls)
+        return cls._obj
+    def __init__ (self, path):
         self.path = path
-        self.dirset = set()
-        self.dirlist = []
-        self.exsionlist = []
-        self.resourcelist = []
-        self.exsiondit = {}
-        self.resourcedit = {}
-        self.dir()
-        self.exsionresource()
-        self._dirset()
+        if CaseData._init_flag:
+            self.dirset = set()
+            self.dirlist = []
+            self.exsionlist = []
+            self.resourcelist = []
+            self.resourcelist1=[]
+            self.resourcedit1={}
+            self.exsiondit = {}
+            self.resourcedit = {}
+            self.dir()
+            self.exsionresource()
+            self._dirset()
+            CaseData._init_flag = False
 
     def dir(self):
         try:
@@ -37,33 +42,52 @@ class CaseData(object):
             print('出错啦！' + str(reason))
 
     def exsionresource(self):
+        exsionlist = []
+        resourcelist = []
+        resourcelist1=[]
         for parent, dirnames, filenames in os.walk(self.path,  followlinks=False):
+
             for filename in filenames:
                 if filename == "extension.xml":
                     file_path = os.path.join(parent, filename)
-                    self.exsionlist.append(file_path)
-                elif filename.endswith(".png"):
+                    exsionlist.append(file_path)
+                elif filename == "extension.png":
                     file_path = os.path.join(parent, filename)
-                    self.resourcelist.append(file_path)
-                else:
-                    pass
-        return self.exsionlist, self.resourcelist
+                    resourcelist.append(file_path)
+                elif filename == "report.png":
+                    file_path = os.path.join(parent, filename)
+                    resourcelist1.append(file_path)
+
+        self.exsionlist =list({}.fromkeys(exsionlist).keys())
+        self.resourcelist = list({}.fromkeys(resourcelist).keys())
+        self.resourcelist1 = list({}.fromkeys(resourcelist1).keys())
+
+        return self.exsionlist,self.resourcelist,self.resourcelist1
 
     def key_value(self):
-        for x in range(len(self.dirlist)):
-            self.exsiondit[self.dirlist[x]] = self.exsionlist[x]
-        for x in range(len(self.dirlist)):
-            self.resourcedit[self.dirlist[x]] = self.resourcelist[x]
-        return self.exsiondit, self.resourcedit
+        if len(self.exsionlist) == len(self.dirlist):
+            for x in range(len(self.dirlist)):
+                self.exsiondit[self.dirlist[x]] = self.exsionlist[x]
+        else:
+            print("测试数据不完整，请检查")
+        if len(self.dirlist) == len(self.resourcelist):
+            for x in range(len(self.dirlist)):
+                self.resourcedit[self.dirlist[x]] = self.resourcelist[x]
+        else:
+            print("测试数据资源不完整，请检查")
+        if len(self.dirlist) == len(self.resourcelist1):
+            for x in range(len(self.dirlist)):
+                self.resourcedit1[self.dirlist[x]] = self.resourcelist1[x]
+        else:
+            print("测试结论数据被破坏不完整，请检查")
+        return self.exsiondit, self.resourcedit, self.resourcedit1
 
     def _dirset(self):
         self.dirset = set(self.dirlist)
         return self.dirset
-    def copyexsiondit(self,id="a"):
-
+    def copyexsiondit (self,id="a"):
         z, f = os.path.split(PATHDATA.get('exe'))
         targetpath = z + "/plugins/tech.microcore.mainwin.desktop/extension.xml"
-        # targetpath="res/QxPlugin/plugins/tech.microcore.mainwin.desktop/extension.xml "
         extensoinpath=self.key_value()[0].get(id)
         if extensoinpath is not None:
             print(extensoinpath)

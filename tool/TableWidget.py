@@ -13,6 +13,7 @@ from PyQt5.QtGui import QIcon
 import re
 import sys
 from tool.CaseData import CaseData
+from tool.ImageComparison import Photoshop
 from tool.ProcessCalls import runexe
 import time
 
@@ -137,6 +138,8 @@ class CentralView(QTableWidget):
         if str(send) == x:
             print("当前是异常数据项:%s" % x)
         else:
+            PS=Photoshop(PATHDATA.get("data"))
+
             time.sleep(0.5)
             self.exe = runexe(x)
             self.exe.start()
@@ -144,7 +147,12 @@ class CentralView(QTableWidget):
 
     def compose_id(self):
         send = self.sender()
-
+        if len(self.datalist)==0:
+            print(self.Defaultlistdata)
+        else:
+            print(self.datalist)
+        print(self.idlist)
+        print(self.Defaultlistdata)
     def table(self):
 
         self.table_widget.item

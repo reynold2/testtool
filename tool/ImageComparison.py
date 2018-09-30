@@ -7,33 +7,46 @@ from PIL import ImageGrab,Image
 import math
 import operator
 from functools import reduce
-from tool.CaseData import  CaseData
-
+from tool.CaseData import CaseData
+from tool.Gvariable import *
 class Photoshop(object):
-    def __init__(self,address):
-        CaseData()
-    def image_contrast(self,imgpath):
-        image1 = Image.open(img1)
-        image2 = Image.open(img2)
+    def __init__(self,sourceroute):
+        if PATHDATA.get("data")is not None:
+            self.sourcedata=(PATHDATA.get("data"))
+        else:
+            self.sourcedata=sourceroute
+        self.sourcedata=CaseData(sourceroute)
+    def image_contrast(self,Cimg,Rimg):
+        image1 = Image.open(Cimg)
+        image2 = Image.open(Rimg)
         h1 = image1.histogram()
         h2 = image2.histogram()
         result = math.sqrt(reduce(operator.add,  list(
             map(lambda a, b: (a - b)**2, h1, h2))) / len(h1))
         return result
-    def grab(self,imgpath):
+    def grab(self,CRimg):
         im = ImageGrab.grab()
-        im.save(self.img1)
-    def alignment_section(self):
-        if self.image_contrast()
+        im.getbbox()
+        im.save(CRimg)
+        self.sourcedata=CaseData(self.sourcedata)
+    def alignment_section(self,Cimg,Rimg):
+        self.image_contrast(Cimg,Rimg)
+        result = int(self.image_contrast(Cimg,Rimg))
+        _max = 200
+        _min = 0
+        if _max >= result & result >= _min:
+            return True
+        else:
+            return False
     def casedatacheckout(self):
-        if
+        pass
 
 if __name__ == '__main__':
-
-    img1 = "res/RE/a/1.png"  # 指定图片路径
-    img2 = "res/RE/a/2.png"
-    P = Photoshop().image_contrast(img1,img2)
-    print(P)
+    Cimg = "res/RE/a/extension.png"  # 指定图片路径
+    Rimg = "res/RE/a/report.png"
+    P = Photoshop("res/RE")
+    P.grab(Rimg)
+    print(P.alignment_section(Cimg,Rimg))
 
 
 
