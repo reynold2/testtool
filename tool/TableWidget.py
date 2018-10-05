@@ -23,7 +23,8 @@ class CentralView(QTableWidget):
 
     def __init__(self):
         super(CentralView, self).__init__()
-        self.temp = ()
+        self.reportdict={}
+        self.changecomboxtemp = ()
         self.idlist = []
         self.datalist = []
         self.templist = []
@@ -80,6 +81,7 @@ class CentralView(QTableWidget):
 
         PreviewsBtn.clicked.connect(self.Previews)
         backBtn = QPushButton('截图')
+        # backBtn.keyPressEvent(QKeyEvent=="Z")
         backBtn.setStyleSheet(''' text-align : center;
                                   background-color : DarkSeaGreen;
                                   height : 30px;
@@ -102,12 +104,12 @@ class CentralView(QTableWidget):
         widget.setLayout(hLayout)
         return widget
 
-    def __translate(self, send):
+    def __translate(self, send,n):
         keyvalue = {}
         list1 = []
         for index, x in enumerate(self.tempid):
             z = re.split(r", ", x)
-            list1.append(z[2])
+            list1.append(z[n])
         del list1[-1]
         Z = dict(zip(list1, self.idlist))
 
@@ -115,9 +117,11 @@ class CentralView(QTableWidget):
 
     def Previews(self):
         _id = set(self.idlist)
-        _dir = CaseData("res/RE")._dirset()
+        _casedata=CaseData("res/RE")
+        _dir =_casedata._dirset()
+        extension=_casedata.key_value()[1]
+        report = _casedata.key_value()[2]
         _cha = _id - (_id & _dir)
-        print(_cha)
         if CentralView.cunt == 0:
             if _cha:
                 reply = QMessageBox.warning(self, '当前路径下缺失用例名称为:%s' % _cha.pop(),
@@ -134,25 +138,33 @@ class CentralView(QTableWidget):
             pass
         send = self.sender()
         print(send)
-        x = self.__translate(send).get(str(send), str(send))
-        if str(send) == x:
-            print("当前是异常数据项:%s" % x)
+        run_idcase = self.__translate(send,2).get(str(send), str(send))
+        if str(send) == run_idcase:
+            print("当前是异常数据项:%s" % run_idcase)
         else:
             PS=Photoshop(PATHDATA.get("data"))
-
             time.sleep(0.5)
-            self.exe = runexe(x)
+            self.exe = runexe(run_idcase)
             self.exe.start()
-            time.sleep(0.5)
+            time.sleep(1.5)
+            print(report.get(run_idcase))
+            if report.get(run_idcase)is None:
+                print(report.get(run_idcase))
+            else:
+                PS.grab(report.get(run_idcase))
+            RT=PS.alignment_section(extension.get(run_idcase),report.get(run_idcase))
+            self.reportdict[run_idcase]=RT
+            print(self.reportdict)
 
     def compose_id(self):
         send = self.sender()
-        if len(self.datalist)==0:
-            print(self.Defaultlistdata)
-        else:
-            print(self.datalist)
-        print(self.idlist)
-        print(self.Defaultlistdata)
+        extension_idcase1 = self.__translate(send,3).get((str(send)+"]"),str(send))
+        _casedata=CaseData("res/RE")
+        extension=_casedata.key_value()[1]
+        PS = Photoshop(PATHDATA.get("data"))
+        PS.grab(extension.get(extension_idcase1))
+
+
     def table(self):
 
         self.table_widget.item
@@ -199,7 +211,7 @@ class CentralView(QTableWidget):
                 self.listobjx.append(self.colum)
                 self.listobjx.append(xlist[i])
         self.temp = tuple(self.listobjx)
-        self.datalist = self.templist + list(self.temp)
+        self.datalist = self.templist + list(self.changecomboxtemp)
         return self.datalist
 
     def save_table(self, path):

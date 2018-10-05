@@ -109,10 +109,14 @@ class CentralView(QTableWidget):
         return Z
     def Previews(self):
         send = self.sender()
-        x = self.__translate()[str(send)]
+        print(self.__tranrunslate())
+        x = self.__tranrunslate()[str(send)]
+        print("12")
+        print(x)
+        print("12")
         time.sleep(0.5)
-        self.x = runexe(x)
-        self.x.start()
+        self.run = runexe(x)
+        self.run.start()
         time.sleep(0.5)
         # return x
 

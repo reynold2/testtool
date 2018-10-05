@@ -12,9 +12,9 @@ from PyQt5.QtWidgets import QApplication
 class run(window):
     def __init__(self):
         super().__init__()
-    def __del__(self):
-        print(window().widget.exe.cout)
-        run().__del__()
+    # def __del__(self):
+    #     print("1")
+    #     object.__del__()
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

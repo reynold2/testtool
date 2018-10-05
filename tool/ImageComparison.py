@@ -30,9 +30,10 @@ class Photoshop(object):
         im.save(CRimg)
         self.sourcedata=CaseData(self.sourcedata)
     def alignment_section(self,Cimg,Rimg):
-        self.image_contrast(Cimg,Rimg)
+        excursion=self.image_contrast(Cimg,Rimg)
         result = int(self.image_contrast(Cimg,Rimg))
-        _max = 200
+        print("图片对比偏差：%s"%excursion)
+        _max = 5
         _min = 0
         if _max >= result & result >= _min:
             return True
@@ -40,12 +41,14 @@ class Photoshop(object):
             return False
     def casedatacheckout(self):
         pass
+    def checkout(self):
+        pass
 
 if __name__ == '__main__':
     Cimg = "res/RE/a/extension.png"  # 指定图片路径
     Rimg = "res/RE/a/report.png"
     P = Photoshop("res/RE")
-    P.grab(Rimg)
+    # P.grab(Rimg)
     print(P.alignment_section(Cimg,Rimg))
 
 

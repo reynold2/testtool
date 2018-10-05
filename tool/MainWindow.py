@@ -10,6 +10,7 @@ from tool.ProfileWizard import *
 from tool.ProcessCalls import runexe
 import time
 import sys
+import os
 
 
 class window(QMainWindow):
@@ -149,7 +150,12 @@ class window(QMainWindow):
                                      QMessageBox.No, QMessageBox.No)
 
         if reply == QMessageBox.Yes:
-            event.accept()
+            try:
+                os.system('TASKKILL /F /IM app.exe')
+            except OSError:
+                print("查杀异常")
+            finally:
+                event.accept()
         else:
             event.ignore()
     @staticmethod
