@@ -30,13 +30,13 @@ def delete_gap_dir(path):
         print('正在移除空目录: ' + path)
 
 
-class runexe(QThread):
+class Runexe(QThread):
     cout={}
     sinOut = pyqtSignal()
     def __init__(self, args):
         self.args= args
         self.data=CaseData(PATHDATA.get('data'))
-        super(runexe, self).__init__()
+        super(Runexe, self).__init__()
     def run(self):
         z, f = os.path.split(PATHDATA.get('exe'))
         configfilepath = z + "/config"
@@ -75,5 +75,5 @@ class runexe(QThread):
 
 
 if __name__ == "__main__":
-    ex = runexe()
+    ex = Runexe()
     ex.run()

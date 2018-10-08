@@ -7,13 +7,13 @@ from PyQt5.QtWidgets import QMainWindow, QAction, QSizePolicy, QTextEdit, QFileD
 from PyQt5.QtCore import QTimer,Qt
 from tool.TableWidget import CentralView
 from tool.ProfileWizard import *
-from tool.ProcessCalls import runexe
+from tool.ProcessCalls import Runexe
 import time
 import sys
 import os
 
 
-class window(QMainWindow):
+class Window(QMainWindow):
     def __init__(self, parent=None):
         super().__init__(parent)
         self.myui()
@@ -113,7 +113,7 @@ class window(QMainWindow):
         self.dialog1.show()
     def run(self):
         self.runaction.setDisabled(True)
-        self.runmian = runexe(self.widget.idlist)
+        self.runmian = Runexe(self.widget.idlist)
         self.runmian.sinOut.connect(self.finsh)
         self.runmian.start()
         print("测试程序正在启动......")
@@ -135,8 +135,12 @@ class window(QMainWindow):
         return PATHDATA
 
     def save(self):
-        x=PATHDATA["report"]
-        self.widget.save_table(x)
+        x = PATHDATA["report"]
+        if os.path.exists(x):
+            self.widget.save_table(x)
+        else:
+            print("当前路径不存在请重新选择：%s",x)
+
 
     def center(self):
         qr = self.frameGeometry()
@@ -195,5 +199,5 @@ class MyTimer(QWidget):
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-    ex = window()
+    ex = Window()
     sys.exit(app.exec_())

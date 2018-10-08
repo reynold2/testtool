@@ -11,7 +11,7 @@ from tool.DataManger import MangerData
 from tool.Gvariable import *
 import re
 import sys
-from  tool.ProcessCalls import runexe
+from  tool.ProcessCalls import Runexe
 import time
 from sqlite.DataModel import SqlModel
 class CentralView(QTableWidget):
@@ -111,11 +111,8 @@ class CentralView(QTableWidget):
         send = self.sender()
         print(self.__tranrunslate())
         x = self.__tranrunslate()[str(send)]
-        print("12")
-        print(x)
-        print("12")
         time.sleep(0.5)
-        self.run = runexe(x)
+        self.run = Runexe(x)
         self.run.start()
         time.sleep(0.5)
         # return x

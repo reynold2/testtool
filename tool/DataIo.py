@@ -12,7 +12,7 @@ import logging
 from tool.Gvariable import *
 
 
-class excel_io(object):
+class Excel_io(object):
     # def __init__(self, defaultexcelpath=PATHDATA["case"], **kw):
     def __init__(self,defaultexcelpath=None,**kw):
         self._excelpath = defaultexcelpath
@@ -85,7 +85,7 @@ class excel_io(object):
                 wb.save(self._excelpath)
 
 
-class config_io(object):
+class Config_io(object):
     def __init__(self, defaultconfigpath="config.ini", **kw):
         self._configpath = defaultconfigpath
         self.confdata = {}
@@ -140,8 +140,8 @@ class config_io(object):
 
 
 if __name__ == "__main__":
-    c = config_io()
-    e = excel_io()
+    c = Config_io()
+    e = Excel_io()
     print(c.ReadConfigData())
     print(e.ReadEXcleData())
     c.configpath = "config1.ini"

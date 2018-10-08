@@ -14,7 +14,7 @@ import re
 import sys
 from tool.CaseData import CaseData
 from tool.ImageComparison import Photoshop
-from tool.ProcessCalls import runexe
+from tool.ProcessCalls import Runexe
 import time
 
 
@@ -144,7 +144,7 @@ class CentralView(QTableWidget):
         else:
             PS=Photoshop(PATHDATA.get("data"))
             time.sleep(0.5)
-            self.exe = runexe(run_idcase)
+            self.exe = Runexe(run_idcase)
             self.exe.start()
             time.sleep(1.5)
             print(report.get(run_idcase))

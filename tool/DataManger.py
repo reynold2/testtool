@@ -3,15 +3,15 @@ Created on 2018年7月4日
 
 @author: Administrator
 '''
-from tool.DataIo import excel_io, config_io
+from tool.DataIo import Excel_io, Config_io
 from tool.Gvariable import *
 
 
 class MangerData(object):
     def __init__(self):
-        self.E = excel_io()
+        self.E = Excel_io()
         self.E.excelpath
-        self.p = config_io()
+        self.p = Config_io()
         self.p.configpath
     def GetExcel(self, location=None, **kwargs):
         self.E.excelpath = location
