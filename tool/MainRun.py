@@ -6,7 +6,7 @@ Created on 2018年7月4日
 import sys
 from tool.MainWindow import Window
 from PyQt5.QtWidgets import QApplication
-# from tool.Gvariable import gol
+
 
 
 class Run(Window):
@@ -17,6 +17,9 @@ class Run(Window):
     #     object.__del__()
 
 if __name__ == "__main__":
-    app = QApplication(sys.argv)
-    ex = Run()
-    sys.exit(app.exec_())
+    try:
+        app = QApplication(sys.argv)
+        ex = Run()
+        sys.exit(app.exec_())
+    except:
+        print("程序退出")

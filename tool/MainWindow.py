@@ -18,6 +18,7 @@ class Window(QMainWindow):
         super().__init__(parent)
         self.myui()
     def myui(self):
+
         self.dialog = ConfigDialog()
         self.widget = CentralView()
         self.setCentralWidget(self.widget)
@@ -112,27 +113,35 @@ class Window(QMainWindow):
         self.dialog1= ConfigDialog()
         self.dialog1.show()
     def run(self):
-        self.runaction.setDisabled(True)
-        self.runmian = Runexe(self.widget.idlist)
-        self.runmian.sinOut.connect(self.finsh)
-        self.runmian.start()
-        print("测试程序正在启动......")
+        try:
+            self.runaction.setDisabled(True)
+            self.runmian = Runexe(self.widget.idlist)
+            self.runmian.sinOut.connect(self.finsh)
+            self.runmian.start()
+            print("测试程序正在启动......")
+
+        except:
+            z=QMessageBox()
+            z.warning(self,"异常","请终止异常操作")
+
     def finsh(self):
         self.runaction.setDisabled(False)
 
     def openfile_data(self):
-        file = QFileDialog()
-        file.setFileMode(QFileDialog.AnyFile)
-        file.setFilter(QDir.Files)
-        if file.exec_():
-            filename = file.selectedFiles()
+        try:
+            file = QFileDialog()
+            file.setFileMode(QFileDialog.AnyFile)
+            file.setFilter(QDir.Files)
+            if file.exec_():
+                filename = file.selectedFiles()
 
-            PATHDATA['case'] = filename[0]
-            self.widget_openfile_data = CentralView()
-            self.setCentralWidget(self.widget_openfile_data)
-
-
-        return PATHDATA
+                PATHDATA['case'] = filename[0]
+                self.widget_openfile_data = CentralView()
+                self.setCentralWidget(self.widget_openfile_data)
+        except:
+            print("选择路径错误")
+        finally:
+            return PATHDATA
 
     def save(self):
         x = PATHDATA["report"]
@@ -156,6 +165,7 @@ class Window(QMainWindow):
         if reply == QMessageBox.Yes:
             try:
                 os.system('TASKKILL /F /IM app.exe')
+                self.dialog1.destroy()
             except OSError:
                 print("查杀异常")
             finally:

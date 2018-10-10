@@ -88,56 +88,67 @@ class ConfigDialog(QWidget):
             pass
 
     def selectcase(self):
-        file = QFileDialog()
-        file.setFileMode(QFileDialog.AnyFile)
-        file.setFilter(QDir.Files)
-        if file.exec_():
-            filename = file.selectedFiles()
-            if PATHDATA['case'] != filename[0]:
-                self.pathchanged.emit()
+        try:
+            file = QFileDialog()
+            file.setFileMode(QFileDialog.AnyFile)
+            file.setFilter(QDir.Files)
+            if file.exec_():
+                filename = file.selectedFiles()
+                if PATHDATA['case'] != filename[0]:
+                    self.pathchanged.emit()
 
-                PATHDATA['case'] = filename[0]
-                self.caseLable.setText(filename[0])
-            else:
-                pass
+                    PATHDATA['case'] = filename[0]
+                    self.caseLable.setText(filename[0])
+                else:
+                    pass
+        except IOError:
+            print("选择数据不符规则数据无效")
             # PATHDATA['case'] = filename[0]
             # self.caseLable.setText(filename[0])
     def selectdata(self):
-        file = QFileDialog()
-        file.setFileMode(QFileDialog.AnyFile)
-        file.setFilter(QDir.Files)
-        if file.exec_():
-            filename = file.selectedFiles()
-            PATHDATA['data'] = filename[0]
-            self.dataLable.setText(filename[0])
-
+        try:
+            file = QFileDialog()
+            file.setFileMode(QFileDialog.AnyFile)
+            file.setFilter(QDir.Files)
+            if file.exec_():
+                filename = file.selectedFiles()
+                PATHDATA['data'] = filename[0]
+                self.dataLable.setText(filename[0])
+        except IOError:
+            print("选择数据不符规则数据无效")
     def selectexe(self):
-        file = QFileDialog()
-        file.setFileMode(QFileDialog.AnyFile)
-        file.setFilter(QDir.Files)
-        if file.exec_():
-            filename = file.selectedFiles()
-            PATHDATA['exe'] = filename[0]
-            self.exeLable.setText(filename[0])
-
+        try:
+            file = QFileDialog()
+            file.setFileMode(QFileDialog.AnyFile)
+            file.setFilter(QDir.Files)
+            if file.exec_():
+                filename = file.selectedFiles()
+                PATHDATA['exe'] = filename[0]
+                self.exeLable.setText(filename[0])
+        except IOError:
+            print("选择数据不符规则数据无效")
     def selectreport(self):
-        file = QFileDialog()
-        file.setFileMode(QFileDialog.AnyFile)
-        file.setFilter(QDir.Files)
-        if file.exec_():
-            filename = file.selectedFiles()
-            PATHDATA['report'] = filename[0]
-            self.reportLable.setText(filename[0])
-
+        try:
+            file = QFileDialog()
+            file.setFileMode(QFileDialog.AnyFile)
+            file.setFilter(QDir.Files)
+            if file.exec_():
+                filename = file.selectedFiles()
+                PATHDATA['report'] = filename[0]
+                self.reportLable.setText(filename[0])
+        except IOError:
+            print("选择数据不符规则数据无效")
     def selectconfig(self):
-        file = QFileDialog()
-        file.setFileMode(QFileDialog.AnyFile)
-        file.setFilter(QDir.Files)
-        if file.exec_():
-            filename = file.selectedFiles()
-            PATHDATA['config'] = filename[0]
-            self.configLable.setText(filename[0])
-
+        try:
+            file = QFileDialog()
+            file.setFileMode(QFileDialog.AnyFile)
+            file.setFilter(QDir.Files)
+            if file.exec_():
+                filename = file.selectedFiles()
+                PATHDATA['config'] = filename[0]
+                self.configLable.setText(filename[0])
+        except IOError:
+            print("选择数据不符规则数据无效")
     def center(self):
         qr = self.frameGeometry()
         cp = QDesktopWidget().availableGeometry().center()
@@ -145,10 +156,13 @@ class ConfigDialog(QWidget):
         self.move(qr.topLeft())
 
     def Confirmexit(self):
-        self.temp.Setconfig(location=PATHDATA["config"],
-                            outconfdata=PATHDATA)
-        sleep(0.5)
-        self.close()
+        try:
+            self.temp.Setconfig(location=PATHDATA["config"],
+                                outconfdata=PATHDATA)
+            sleep(0.5)
+            self.close()
+        except:
+            print("配置数据异常无法保存")
 
 
 if __name__ == "__main__":

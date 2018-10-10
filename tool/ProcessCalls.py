@@ -41,8 +41,9 @@ class Runexe(QThread):
         z, f = os.path.split(PATHDATA.get('exe'))
         configfilepath = z + "/config"
         if type(self.args)is list:
+
             for x in self.args:
-                print(x)
+                print("当前正在执行的测试用例：%s",x)
                 if os.path.exists(configfilepath) is True:
                     os.system('TASKKILL /F /IM %s'%f)
                     del_file(configfilepath)
@@ -53,8 +54,8 @@ class Runexe(QThread):
                     else:
                         subprocess.call(PATHDATA["exe"])
                         self.sinOut.emit()
-
                         print("测试程序已停止运行")
+
                 else:
                     pass
                 time.sleep(1)
