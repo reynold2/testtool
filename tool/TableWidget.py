@@ -64,6 +64,7 @@ class CentralView(QTableWidget):
         self.table_widget.removeRow(self.row - 1)
 
 
+
         for i in range(0, len(self.data), 3):
             b = self.data[i:i + 3]
             self.table_widget.setItem(b[0], b[1],
@@ -104,8 +105,9 @@ class CentralView(QTableWidget):
         screenshotBtn.clicked.connect(self.shortcutprintscreen)
 
         hLayout = QHBoxLayout()
-        hLayout.addWidget(PreviewsBtn)
+
         hLayout.addWidget(backBtn)
+        hLayout.addWidget(PreviewsBtn)
         hLayout.addWidget(screenshotBtn)
         hLayout.setContentsMargins(5, 2, 5, 2)
         widget.setLayout(hLayout)

@@ -17,9 +17,7 @@ class Run(Window):
     #     object.__del__()
 
 if __name__ == "__main__":
-    try:
-        app = QApplication(sys.argv)
-        ex = Run()
-        sys.exit(app.exec_())
-    except:
-        print("程序退出")
+    app = QApplication(sys.argv)
+    ex = Run()
+    sys.exit(app.exec_())
+

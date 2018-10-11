@@ -11,6 +11,7 @@ from tool.ProcessCalls import Runexe
 import time
 import sys
 import os
+import win32com.client
 
 
 class Window(QMainWindow):
@@ -18,7 +19,6 @@ class Window(QMainWindow):
         super().__init__(parent)
         self.myui()
     def myui(self):
-
         self.dialog = ConfigDialog()
         self.widget = CentralView()
         self.setCentralWidget(self.widget)
@@ -164,8 +164,17 @@ class Window(QMainWindow):
 
         if reply == QMessageBox.Yes:
             try:
-                os.system('TASKKILL /F /IM app.exe')
-                self.dialog1.destroy()
+                if hasattr(self, "dialog1"):
+                    if self.dialog1.isVisible()is True:
+                        self.dialog1.destroy()
+                    else:
+                        pass
+                else:
+                    pass
+                if self.check_exsit("app.exe")is True:
+                    os.system('TASKKILL /F /IM app.exe')
+                else:
+                    pass
             except OSError:
                 print("查杀异常")
             finally:
@@ -185,8 +194,14 @@ class Window(QMainWindow):
     def save_as(self):
 
         pass
-
-
+    @staticmethod
+    def check_exsit(process_name):
+        WMI = win32com.client.GetObject('winmgmts:')
+        processCodeCov = WMI.ExecQuery('select * from Win32_Process where Name="%s"' % process_name)
+        if len(processCodeCov) > 0:
+            return True
+        else:
+            return False
 class MyTimer(QWidget):
     def __init__(self):
         super(MyTimer, self).__init__()
