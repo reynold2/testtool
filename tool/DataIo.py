@@ -63,7 +63,7 @@ class Excel_io(object):
         if os.path.exists(self._excelpath):
             pass
         else:
-            self._excelpath = "report.xls"
+            self._excelpath = "res/report.xls"
             logging.exception(
                 "The file does not exist and the default path is used[report.xls]")
         if listdata == self.listdata:

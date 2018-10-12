@@ -5,7 +5,7 @@ Created on 2018年7月4日
 '''
 from PyQt5.QtWidgets import QMainWindow, QAction, QSizePolicy, QTextEdit, QFileDialog, QDesktopWidget, QDialog, QProgressBar, QMessageBox, QWidget, QApplication, QLCDNumber, qApp, QVBoxLayout
 from PyQt5.QtCore import QTimer,Qt
-from tool.TableWidget import CentralView
+from tool.CentralView import CentralView
 from tool.ProfileWizard import *
 from tool.ProcessCalls import Runexe
 import time
@@ -145,10 +145,9 @@ class Window(QMainWindow):
 
     def save(self):
         x = PATHDATA["report"]
-        if os.path.exists(x):
-            self.widget.save_table(x)
-        else:
-            print("当前路径不存在请重新选择：%s",x)
+
+        self.widget.save_table(x)
+
 
 
     def center(self):
