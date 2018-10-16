@@ -10,12 +10,14 @@ from functools import reduce
 from tool.CaseData import CaseData
 from tool.Gvariable import *
 import win32gui
-
+import ctypes
 import sys
 from PyQt5.QtGui import QPainter, QIcon
 from PyQt5.QtWidgets import QMainWindow, QApplication, QPushButton, QFileDialog, QSystemTrayIcon, QAction, QMenu
 from PyQt5.QtCore import Qt, pyqtSignal
 import logging
+
+
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
@@ -23,6 +25,13 @@ ch = logging.StreamHandler()
 formatter = logging.Formatter('%(levelname)s - %(message)s')
 ch.setFormatter(formatter)
 logger.addHandler(ch)
+
+
+class RECT(ctypes.Structure):
+    _fields_ = [('left', ctypes.c_int),
+                ('top', ctypes.c_int),
+                ('right', ctypes.c_int),
+                ('bottom', ctypes.c_int)]
 
 
 class Photoshop(object):
@@ -50,6 +59,13 @@ class Photoshop(object):
             im = ImageGrab.grab()
             im.getbbox()
             im.save(CRimg)
+            # rect = RECT()
+            # HWND = win32gui.GetForegroundWindow()
+            # ctypes.windll.user32.GetWindowRect(HWND, ctypes.byref(rect))  # 获取当前窗口坐标
+            # coordinate = (rect.left + 2, rect.top + 2, rect.right - 2, rect.bottom - 2)  # 转换为预截图窗口坐标
+            # im = ImageGrab.grab(coordinate)
+            # im.getbbox()
+            # im.save(CRimg)
         except:
             print("截图异常")
         finally:
@@ -69,9 +85,10 @@ class Photoshop(object):
         pass
     def checkout(self):
         pass
-
-
-
+    def position(self,point,CRimg):
+        im = ImageGrab.grab(point)
+        im.getbbox()
+        im.save(CRimg)
 
 
 
@@ -87,6 +104,7 @@ class MyWin(QMainWindow):
         self.btn = QPushButton('截图', self)
         self.btn.setGeometry(20, 20, 60, 60)
         self.btn.clicked.connect(self.click_btn)
+
         self.addSystemTray()  # 设置系统托盘
 
     def addSystemTray(self):
@@ -128,6 +146,7 @@ class ScreenShotsWin(QMainWindow):
         self.setWindowOpacity(0.4)
         self.btn_ok = QPushButton('保存', self)
 
+
         self.oksignal.connect(lambda: self.screenshots(self.start, self.end))
 
     def screenshots(self, start, end):
@@ -141,6 +160,9 @@ class ScreenShotsWin(QMainWindow):
 
         x = min(start[0], end[0])
         y = min(start[1], end[1])
+        g=(end[0] - start[0])
+        h=(end[1] - start[1])
+
         width = abs(end[0] - start[0])
         height = abs(end[1] - start[1])
 
@@ -171,6 +193,7 @@ class ScreenShotsWin(QMainWindow):
         pp = QPainter(self)
         pp.drawRect(x, y, w, h)
 
+        logger.debug('x:%s,y:%s,w:%s,h:%s'%(x, y, w, h))
     def mousePressEvent(self, event):
 
         # 点击左键开始选取截图区域
@@ -195,6 +218,7 @@ class ScreenShotsWin(QMainWindow):
         # 鼠标左键按下的同时移动鼠标绘制截图辅助线
         if event.buttons() and Qt.LeftButton:
             self.end = (event.pos().x(), event.pos().y())
+            logger.debug('正在移动：%s', self.end)
             # 进行重新绘制
             self.update()
 
@@ -204,7 +228,33 @@ class ScreenShotsWin(QMainWindow):
 #     P = Photoshop("res/RE")
 #     # P.grab(Rimg)
 #     print(P.alignment_section(Cimg,Rimg))
+
+
+
+
+
+
+# 定义结构体，存储当前窗口坐标
+
 if __name__ == '__main__':
+    # Cimg = "res/RE/a/extension.png"  # 指定图片路径
+    # Rimg = "res/RE/a/report.png"
+    # P = Photoshop("res/RE")
+    # # P.grab(Rimg)
+    # print(P.alignment_section(Cimg,Rimg))
+    # s=(324,103,117,143)
+    # P = Photoshop("res/RE")
+    # P.position(s)
+    # ImageGrab.grab((474,256,267,257)).show()
+
+    # rect = RECT()
+    # HWND = win32gui.GetForegroundWindow()
+    # ctypes.windll.user32.GetWindowRect(HWND, ctypes.byref(rect))  # 获取当前窗口坐标
+    # coordinate = (rect.left + 2, rect.top + 2, rect.right - 2, rect.bottom - 2)  # 转换为预截图窗口坐标
+    # print(coordinate)
+    # pic = ImageGrab.grab(coordinate)  # 截图
+    # pic.show()
+
     app = QApplication(sys.argv)
     dbb = MyWin()
     dbb.show()

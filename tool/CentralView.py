@@ -7,7 +7,7 @@ from PyQt5.QtWidgets import QTableWidget, QHBoxLayout, QWidget, QAbstractItemVie
     QTableWidgetItem, QComboBox, QApplication, QMessageBox
 
 from PyQt5 import QtWidgets
-from PyQt5.QtCore import QAbstractTableModel
+from PyQt5.QtCore import QAbstractTableModel,Qt,pyqtSignal
 from tool.DataManger import MangerData
 from tool.Gvariable import *
 from PyQt5.QtGui import QIcon
@@ -17,11 +17,15 @@ from tool.CaseData import CaseData
 from tool.ImageComparison import Photoshop
 from tool.ProcessCalls import Runexe
 import time
+import sys
+from PyQt5.QtCore import *
+from PyQt5.QtGui import *
+from PyQt5.QtWidgets import *
+
 
 
 class CentralView(QTableWidget):
     cunt = 0
-
     def __init__(self):
         super(CentralView, self).__init__()
         self.id=None
@@ -35,13 +39,16 @@ class CentralView(QTableWidget):
         self.ExcleView()
         self.ExtensionButton()
         self.table_widget.removeRow(0)
+        self.shortcut_init()
         hhbox = QHBoxLayout()
         tab = QtWidgets.QTabWidget()
         tab.addTab(self.table_widget, QIcon("res/open.png"), "测试用例")
         hhbox.addWidget(tab)
         self.setLayout(hhbox)
 
-
+    def shortcut_init(self):
+        self.shortcut = QShortcut(QKeySequence("Ctrl+h"), self)
+        self.shortcut.activated.connect(self.shortcutprintscreen)
     def ExcleView(self):
 
         self.exdatalist = []
@@ -76,44 +83,49 @@ class CentralView(QTableWidget):
         del self.idlist[0]
         self.templist.extend(self.exdatalist)
         self.datalist = self.templist
+
         return self.idlist
 
 
     def buttonForRow(self):
 
         widget = QWidget()
-        PreviewsBtn = QPushButton('运行')
-        PreviewsBtn.setStyleSheet(''' text-align : center;
+        RunBtn = QPushButton('运行')
+        RunBtn.setStyleSheet(''' text-align : center;
                                           background-color : NavajoWhite;
                                           height : 30px;
                                           border-style: outset;
                                           font : 13px  ''')
 
-        PreviewsBtn.clicked.connect(self.SingleRun)
-        backBtn = QPushButton('截图')
-        backBtn.setStyleSheet(''' text-align : center;
+        RunBtn.clicked.connect(self.SingleRun)
+        ScreenBtn = QPushButton('截图')
+        ScreenBtn.setStyleSheet(''' text-align : center;
                                   background-color : DarkSeaGreen;
                                   height : 30px;
                                   border-style: outset;
                                   font : 13px; ''')
-        backBtn.clicked.connect(self.printscreen)
-        screenshotBtn = QPushButton("条件截图",self)
-        screenshotBtn.setShortcut('Ctrl+L')
-        screenshotBtn.setStyleSheet(''' text-align : center;
+        ScreenBtn.clicked.connect(self.printscreen)
+        LocationScreenBtn = QPushButton("条件截图",self)
+        LocationScreenBtn.setShortcut('Ctrl+L')
+        LocationScreenBtn.setStyleSheet(''' text-align : center;
                                    background-color : LightCoral;
                                     height : 30px;
                                     border-style: outset;
                                    font : 13px; ''')
-        screenshotBtn.clicked.connect(self.shortcutprintscreen)
-
+        LocationScreenBtn.clicked.connect(self.shortcutprintscreen)
         hLayout = QHBoxLayout()
 
-        hLayout.addWidget(backBtn)
-        hLayout.addWidget(PreviewsBtn)
-        hLayout.addWidget(screenshotBtn)
+        hLayout.addWidget(ScreenBtn)
+        hLayout.addWidget(RunBtn)
+        hLayout.addWidget(LocationScreenBtn)
         hLayout.setContentsMargins(5, 2, 5, 2)
         widget.setLayout(hLayout)
+
         return widget
+
+    # def keyPressEvent(self, event):
+    #     if event.key() == Qt.Key_L:
+    #         self.shortcutpng.emit()
 
     def __translate(self, send,n):
         keyvalue = {}
@@ -127,9 +139,7 @@ class CentralView(QTableWidget):
         return Z
 
     def SingleRun(self):
-
         try:
-            # self.idr()
             _id = set(self.idlist)
             _casedata=CaseData("res/RE")
             _dir =_casedata._dirset()
@@ -159,7 +169,7 @@ class CentralView(QTableWidget):
                 time.sleep(0.5)
                 self.exe = Runexe(run_idcase)
                 self.exe.start()
-                time.sleep(1.5)
+                time.sleep(3)
                 print(report.get(run_idcase))
                 if report.get(run_idcase)is None:
                     print(report.get(run_idcase))
@@ -172,17 +182,20 @@ class CentralView(QTableWidget):
                     self.reportdict[run_idcase] = "不通过"
                 # print(self.reportdict)
             self.id=run_idcase
+            self.shortcutpng.connect(self.shortcutprintscreen)
             return self.id
         except:
             print("数据无效无法启动")
         finally:
+
             listi=[]
 
             for x in self.idlist:
                 self.updatetemp[x][2]=self.reportdict[x]
                 listi=listi+self.updatetemp[x]
             self.datalist=self.templist + listi
-            print(self.datalist)
+
+
 
     def printscreen(self):
         try:
@@ -198,10 +211,11 @@ class CentralView(QTableWidget):
                 print("截图完毕，路径下已存在：%s" % extension.get(extension_idcase1))
         except:
             print("无法截图")
-
+    @pyqtSlot()
     def shortcutprintscreen(self):
         try:
             if type(self.id)is str:
+                print("正在使用快捷键对运行程序截图：名称为%s的测试用例"%self.id)
                 self.PS = Photoshop(PATHDATA.get("data"))
                 print("%s/%s.extension.png"%(PATHDATA.get("data"),self.id))
                 self.PS.grab("%s/%s.extension.png"%(PATHDATA.get("data"),self.id))
@@ -212,6 +226,7 @@ class CentralView(QTableWidget):
 
         # print(self.table_widget.itemClicked(self.table_widget.currentItem()))
     def ExtensionButton(self):
+
         self.Defaultlistdata = []
         self.tempid = []
         self.duixiang = {}
@@ -238,6 +253,7 @@ class CentralView(QTableWidget):
             # self.tempid.append(self.buttonForRow().children())
             self.tempid.append(self.buttonForRow().children().__repr__())
             self.combox.currentTextChanged.connect(self.onActivated)
+
         return self.Defaultlistdata
 
     def onActivated(self, x):
@@ -261,7 +277,6 @@ class CentralView(QTableWidget):
             self.datalist = self.templist + self.listobjx
             for x in self.idlist:
                 self.updatetemp[x][2]=self.reportdict[x]
-        print(self.updatetemp)
 
     def save_table(self, path):
         print(path)

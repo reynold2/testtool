@@ -22,6 +22,7 @@ class Window(QMainWindow):
         self.dialog = ConfigDialog()
         self.widget = CentralView()
         self.setCentralWidget(self.widget)
+
         exitAction = QAction(QIcon("res/exit.png"), "退出", self)
         exitAction.setShortcut("ctrl+q")
         exitAction.setStatusTip("退出")
