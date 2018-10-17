@@ -49,6 +49,8 @@ class CentralView(QTableWidget):
     def shortcut_init(self):
         self.shortcut = QShortcut(QKeySequence("Ctrl+h"), self)
         self.shortcut.activated.connect(self.shortcutprintscreen)
+        self.shortcut1 = QShortcut(QKeySequence("Ctrl+t"), self)
+        self.shortcut1.activated.connect(self.click_btn)
     def ExcleView(self):
 
         self.exdatalist = []
@@ -122,11 +124,6 @@ class CentralView(QTableWidget):
         widget.setLayout(hLayout)
 
         return widget
-
-    # def keyPressEvent(self, event):
-    #     if event.key() == Qt.Key_L:
-    #         self.shortcutpng.emit()
-
     def __translate(self, send,n):
         keyvalue = {}
         list1 = []
@@ -187,16 +184,11 @@ class CentralView(QTableWidget):
         except:
             print("数据无效无法启动")
         finally:
-
             listi=[]
-
             for x in self.idlist:
                 self.updatetemp[x][2]=self.reportdict[x]
                 listi=listi+self.updatetemp[x]
             self.datalist=self.templist + listi
-
-
-
     def printscreen(self):
         try:
             send = self.sender()
@@ -207,7 +199,8 @@ class CentralView(QTableWidget):
                 _casedata = CaseData(PATHDATA.get("data"))
                 extension = _casedata.key_value()[1]
                 self.PS = Photoshop(PATHDATA.get("data"))
-                self.PS.grab(extension.get(extension_idcase1))
+                box=(0,0,100,100)
+                self.PS.jietu(box,extension.get(extension_idcase1))
                 print("截图完毕，路径下已存在：%s" % extension.get(extension_idcase1))
         except:
             print("无法截图")
@@ -218,12 +211,11 @@ class CentralView(QTableWidget):
                 print("正在使用快捷键对运行程序截图：名称为%s的测试用例"%self.id)
                 self.PS = Photoshop(PATHDATA.get("data"))
                 print("%s/%s.extension.png"%(PATHDATA.get("data"),self.id))
-                self.PS.grab("%s/%s.extension.png"%(PATHDATA.get("data"),self.id))
+                self.PS.Conditions_for_screenshots("%s/%s.extension.png"%(PATHDATA.get("data"),self.id))
         except:
             print("目标未启动无法截图")
         # if self.table_widget.selectedItems()
         # print(self.table_widget.selectedItems()[0].text())
-
         # print(self.table_widget.itemClicked(self.table_widget.currentItem()))
     def ExtensionButton(self):
 
@@ -285,6 +277,9 @@ class CentralView(QTableWidget):
             s.SetExcel(location=path, datalist=self.datalist)
         except:
             print("数据异常无法保存")
+    def click_btn(self):
+        self.screenshot = Photoshop("res/RE")
+        self.screenshot.showFullScreen()
 
 class MyModel(QAbstractTableModel):
     def __init__(self):
