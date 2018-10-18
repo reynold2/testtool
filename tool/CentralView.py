@@ -171,13 +171,13 @@ class CentralView(QTableWidget):
                 if report.get(run_idcase)is None:
                     print(report.get(run_idcase))
                 else:
-                    PS.grab(report.get(run_idcase))
+                    PS.Conditions_for_screenshots(address=report.get(run_idcase),box=PATHDATA.get(run_idcase))
+                    # PS.grab(report.get(run_idcase))
                 RT=PS.alignment_section(extension.get(run_idcase),report.get(run_idcase))
                 if RT:
                     self.reportdict[run_idcase] = "通过"
                 else:
                     self.reportdict[run_idcase] = "不通过"
-                # print(self.reportdict)
             self.id=run_idcase
             self.shortcutpng.connect(self.shortcutprintscreen)
             return self.id
@@ -189,6 +189,7 @@ class CentralView(QTableWidget):
                 self.updatetemp[x][2]=self.reportdict[x]
                 listi=listi+self.updatetemp[x]
             self.datalist=self.templist + listi
+
     def printscreen(self):
         try:
             send = self.sender()
@@ -198,20 +199,23 @@ class CentralView(QTableWidget):
             else:
                 _casedata = CaseData(PATHDATA.get("data"))
                 extension = _casedata.key_value()[1]
-                self.PS = Photoshop(PATHDATA.get("data"))
-                box=(0,0,100,100)
-                self.PS.jietu(box,extension.get(extension_idcase1))
-                print("截图完毕，路径下已存在：%s" % extension.get(extension_idcase1))
+                self.hide()
+                self.screenshot = Photoshop(PATHDATA.get("data"),address=extension.get(extension_idcase1),
+                                            id=extension_idcase1)
+                self.screenshot.showFullScreen()
         except:
             print("无法截图")
+        finally:
+            self.show()
+            print("截图完毕，路径下已存在：%s" % extension.get(extension_idcase1))
     @pyqtSlot()
     def shortcutprintscreen(self):
         try:
             if type(self.id)is str:
-                print("正在使用快捷键对运行程序截图：名称为%s的测试用例"%self.id)
-                self.PS = Photoshop(PATHDATA.get("data"))
-                print("%s/%s.extension.png"%(PATHDATA.get("data"),self.id))
-                self.PS.Conditions_for_screenshots("%s/%s.extension.png"%(PATHDATA.get("data"),self.id))
+                # print("正在使用快捷键对运行程序截图：名称为%s的测试用例"%self.id)
+                address="%s/%s.extension.png" % (PATHDATA.get("data"), self.id)
+                PS= Photoshop(PATHDATA.get("data"),address=address)
+                PS.grab(address)
         except:
             print("目标未启动无法截图")
         # if self.table_widget.selectedItems()

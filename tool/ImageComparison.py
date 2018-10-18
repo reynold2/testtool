@@ -31,12 +31,14 @@ logger.addHandler(ch)
 class Photoshop(QMainWindow):
     oksignal = pyqtSignal()
 
-    def __init__(self,sourceroute):
+    def __init__(self,sourceroute,address=None,id=None):
         super(Photoshop, self).__init__()
         self.initUI()
+        self.id=id
+        self.address=address
         self.start = (0, 0)  # 开始坐标点
         self.end = (0, 0)  # 结束坐标点
-        self.box=(0,0,0,0)
+        self.box=None
         if PATHDATA.get("data")is not None:
             self.sourcedata=(PATHDATA.get("data"))
         else:
@@ -80,29 +82,40 @@ class Photoshop(QMainWindow):
             return False
 
     def initUI(self):
-        self.setWindowOpacity(0.1)
+        self.setWindowOpacity(0)
         self.oksignal.connect(lambda: self.screenshots(self.start, self.end))
 
-    def screenshots(self, start, end):
+    def screenshots(self, start, end,box=None):
         x = min(start[0], end[0])
         y = min(start[1], end[1])
         width = abs(end[0] - start[0])
         height = abs(end[1] - start[1])
         self.box=(x,y,x+width,y+height)
-        if x-width>0 or y-height>0:
-            print(x-width)
-            print(y-height)
-            fileName = QFileDialog.getSaveFileName(self, '保存图片', '.', ".png;;.jpg")
-            if fileName[0]:
+        try:
+            if self.address is None:
+                fileName = QFileDialog.getSaveFileName(self, '保存图片', '.', ".png;;.jpg")
+                if fileName[0]:
+                    im = ImageGrab.grab(self.box)
+                    im.save(fileName[0] + fileName[1])
+                    self.close()
+            else:
                 im = ImageGrab.grab(self.box)
-                im.save(fileName[0] + fileName[1])
+                im.save(self.address)
+                im.show()
                 self.close()
-        else:
+        except:
+            print("已取消截图")
+        finally:
             self.close()
-    def Conditions_for_screenshots(self,CRimg):
-        im = ImageGrab.grab(self.box)
-        im.getbbox()
-        im.save(CRimg)
+            PATHDATA[self.id] =self.box
+            return self.box
+    def Conditions_for_screenshots(self,address=None,box=None):
+        if box is None:
+            im = ImageGrab.grab()
+            im.save(address)
+        else:
+            im = ImageGrab.grab(box)
+            im.save(address)
     def paintEvent(self, event):
         x = self.start[0]
         y = self.start[1]

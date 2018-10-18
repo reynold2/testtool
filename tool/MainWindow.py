@@ -148,7 +148,7 @@ class Window(QMainWindow):
         x = PATHDATA["report"]
 
         self.widget.save_table(x)
-
+        self.dialog.Confirmexit()
 
 
     def center(self):
