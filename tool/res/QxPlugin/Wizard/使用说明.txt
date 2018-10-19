@@ -1,1 +1,0 @@
-将dll放到 QtCreator4.0.2版本的  QtCreator\lib\qtcreator\plugins\ 下

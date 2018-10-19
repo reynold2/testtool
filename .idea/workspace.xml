@@ -2,23 +2,574 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc724217-7017-47c4-9292-bd41aa841c85" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Tool/GlobalConfig.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tool/LoggingConfig.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool/logging.cnf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool/Centralview.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool/Centralview.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool/DataIo.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool/DataIo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool/DataManger.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool/DataManger.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool/MainRun.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool/MainRun.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool/MainWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool/MainWindow.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool/ProcessCalls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool/ProcessCalls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool/TableWidget.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool/TableWidget.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool/UnitTests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool/UnitTests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/config/app/configureadmin.db" beforeDir="false" afterPath="$PROJECT_DIR$/tool/res/QxPlugin/config/app/configureadmin.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/config/app/extension.dat" beforeDir="false" afterPath="$PROJECT_DIR$/tool/res/QxPlugin/config/app/extension.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool/res/RE/Z/report.png" beforeDir="false" afterPath="$PROJECT_DIR$/tool/res/RE/Z/report.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool/res/RE/a/report.png" beforeDir="false" afterPath="$PROJECT_DIR$/tool/res/RE/a/report.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool/res/RE/e/report.png" beforeDir="false" afterPath="$PROJECT_DIR$/tool/res/RE/e/report.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool/res/RE/q/report.png" beforeDir="false" afterPath="$PROJECT_DIR$/tool/res/RE/q/report.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool/res/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/tool/res/config.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool/res/report.xls" beforeDir="false" afterPath="$PROJECT_DIR$/tool/res/report.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Tool/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Tool/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Tool/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/.idea/tool.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Tool/.idea/tool.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Tool/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Tool/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/09743.ico" beforeDir="false" afterPath="$PROJECT_DIR$/Tool/res/09743.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/CaseData.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tool/CaseData.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/CentralView.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tool/CentralView.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/DataIo.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tool/DataIo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/DataManger.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tool/DataManger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/Gvariable.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/HttpReport.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tool/HttpReport.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/ImageComparison.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tool/ImageComparison.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/MainRun.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tool/MainRun.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/MainRun.spec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/MainWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tool/MainWindow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/ProcessCalls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tool/ProcessCalls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/ProfileWizard.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tool/ProfileWizard.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/UnitTests.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tool/UnitTests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tool/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/build/09743/09743.exe.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/build/09743/base_library.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/build/MainRun/MainRun.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/build/MainRun/MainRun.exe.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/build/MainRun/base_library.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/build/MainRun/out00-Analysis.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/build/MainRun/out00-COLLECT.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/build/MainRun/out00-EXE.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/build/MainRun/out00-PKG.pkg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/build/MainRun/out00-PKG.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/build/MainRun/out00-PYZ.pyz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/build/MainRun/out00-PYZ.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/build/MainRun/out00-Tree.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/build/MainRun/out01-Tree.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/build/MainRun/warnMainRun.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/build/MainRun/xref-MainRun.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/build/yu/base_library.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/build/yu/yu.exe.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/Include/pyconfig.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/MSVCP140.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/MainRun.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/MainRun.exe.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/PIL._imaging.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/PIL._imagingtk.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/PIL._webp.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/PyQt5.Qt.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/PyQt5.QtCore.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/PyQt5.QtGui.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/PyQt5.QtPrintSupport.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/PyQt5.QtWidgets.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/PyQt5/Qt/plugins/iconengines/qsvgicon.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/PyQt5/Qt/plugins/imageformats/qgif.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/PyQt5/Qt/plugins/imageformats/qicns.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/PyQt5/Qt/plugins/imageformats/qico.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/PyQt5/Qt/plugins/imageformats/qjpeg.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/PyQt5/Qt/plugins/imageformats/qsvg.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/PyQt5/Qt/plugins/imageformats/qtga.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/PyQt5/Qt/plugins/imageformats/qtiff.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/PyQt5/Qt/plugins/imageformats/qwbmp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/PyQt5/Qt/plugins/imageformats/qwebp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/PyQt5/Qt/plugins/platforms/qminimal.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/PyQt5/Qt/plugins/platforms/qoffscreen.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/PyQt5/Qt/plugins/platforms/qwindows.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/PyQt5/Qt/plugins/printsupport/windowsprintersupport.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/Qt5Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/Qt5Gui.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/Qt5PrintSupport.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/Qt5Svg.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/Qt5Widgets.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/VCRUNTIME140.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/_bz2.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/_ctypes.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/_decimal.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/_elementtree.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/_hashlib.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/_lzma.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/_multiprocessing.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/_socket.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/_ssl.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/_win32sysloader.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/api-ms-win-core-console-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/api-ms-win-core-datetime-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/api-ms-win-core-debug-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/api-ms-win-core-errorhandling-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/api-ms-win-core-file-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/api-ms-win-core-file-l1-2-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/api-ms-win-core-file-l2-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/api-ms-win-core-handle-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/api-ms-win-core-heap-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/api-ms-win-core-interlocked-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/api-ms-win-core-libraryloader-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/api-ms-win-core-localization-l1-2-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/api-ms-win-core-memory-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/api-ms-win-core-namedpipe-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/api-ms-win-core-processenvironment-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/api-ms-win-core-processthreads-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/api-ms-win-core-processthreads-l1-1-1.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/api-ms-win-core-profile-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/api-ms-win-core-rtlsupport-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/api-ms-win-core-string-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/api-ms-win-core-synch-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/api-ms-win-core-synch-l1-2-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/api-ms-win-core-sysinfo-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/api-ms-win-core-timezone-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/api-ms-win-core-util-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/api-ms-win-crt-conio-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/api-ms-win-crt-convert-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/api-ms-win-crt-environment-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/api-ms-win-crt-filesystem-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/api-ms-win-crt-heap-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/api-ms-win-crt-locale-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/api-ms-win-crt-math-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/api-ms-win-crt-multibyte-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/api-ms-win-crt-process-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/api-ms-win-crt-runtime-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/api-ms-win-crt-stdio-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/api-ms-win-crt-string-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/api-ms-win-crt-time-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/api-ms-win-crt-utility-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/base_library.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/certifi/cacert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/certifi/old_root.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/certifi/weak.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/lib2to3/Grammar.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/lib2to3/Grammar3.6.1.candidate.1.pickle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/lib2to3/Grammar3.6.1.final.0.pickle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/lib2to3/PatternGrammar.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/lib2to3/PatternGrammar3.6.1.candidate.1.pickle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/lib2to3/PatternGrammar3.6.1.final.0.pickle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/lib2to3/tests/data/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/libopenblas.BNVRK7633HSX7YVO2TADGR4A5KEKXJAW.gfortran-win_amd64.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/logs/app@2018-10-10_16-38-44.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/logs/app@2018-10-10_16-38-53.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/mfc140u.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/numpy.core.multiarray.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/numpy.core.multiarray_tests.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/numpy.core.umath.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/numpy.fft.fftpack_lite.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/numpy.linalg._umath_linalg.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/numpy.linalg.lapack_lite.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/numpy.random.mtrand.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/psutil._psutil_windows.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/pyexpat.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/python3.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/python36.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/pythoncom36.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/pywintypes36.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/HEAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/Qt5Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/Qt5Gui.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/Qt5Sql.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/Qt5Svg.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/Qt5Widgets.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/Qt5Xml.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/Wizard/使用说明.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/app.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/config/app/config.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/config/app/configureadmin.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/config/app/extension.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/iconengines/qsvgicon.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/imageformats/qgif.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/imageformats/qicns.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/imageformats/qico.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/imageformats/qjpeg.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/imageformats/qsvg.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/imageformats/qtga.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/imageformats/qtiff.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/imageformats/qwbmp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/imageformats/qwebp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/languages/propertybrowser/qt_missed_zh_CN.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/languages/propertybrowser/qt_zh_CN.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/languages/propertybrowser/zh_CN.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/libEGL.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/libGLESV2.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/opengl32sw.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/platforms/qwindows.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/pluginframework.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.config.configureadmin/META.INF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.config.configureadmin/extension.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.config.configureadmin/languages/zh_CN.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.config.configureadmin/tech.microcore.config.configureadmin.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/META.INF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/extension.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/extension.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/resources/color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/resources/editcopy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/resources/editcut.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/resources/editpaste.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/resources/editredo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/resources/editundo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/resources/exportpdf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/resources/filenew.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/resources/fileopen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/resources/fileprint.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/resources/filesave.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/resources/textbold.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/resources/textcenter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/resources/textitalic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/resources/textjustify.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/resources/textleft.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/resources/textright.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/resources/textunder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/resources/zoomin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/resources/zoomout.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/tech.microcore.config.dynamiclayoutedit.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.core/META.INF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.core/extension.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.core/images/active.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.core/images/all.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.core/images/bottom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.core/images/frameless.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.core/images/full_screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.core/images/left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.core/images/maximize_window.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.core/images/minimize_window.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.core/images/normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.core/images/right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.core/images/top.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.core/tech.microcore.mainwin.core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/META.INF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/extension.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/extension.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/languages/zh_CN.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/deficon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/edit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/editcopy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/editcut.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/editpaste.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/editredo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/editundo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/exportpdf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/file.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/filenew.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/fileopen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/fileprint.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/filesave.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/help.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/logo_min.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/open.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/pic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/save.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/textbold.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/textcenter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/textitalic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/textjustify.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/textleft.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/textright.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/textunder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/zoomin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/zoomout.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/tech.microcore.mainwin.desktop.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.service.eventadmin/META.INF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/plugins/tech.microcore.service.eventadmin/tech.microcore.service.eventadmin.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/propertybrowser.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/sqldrivers/qsqlite.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/sqldrivers/qsqlmysql.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/sqldrivers/qsqlodbc.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/sqldrivers/qsqlpsql.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/translations/qt_ca.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/translations/qt_cs.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/translations/qt_de.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/translations/qt_en.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/translations/qt_fi.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/translations/qt_fr.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/translations/qt_he.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/translations/qt_hu.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/translations/qt_it.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/translations/qt_ja.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/translations/qt_ko.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/translations/qt_lv.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/translations/qt_pl.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/translations/qt_ru.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/translations/qt_sk.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/QxPlugin/translations/qt_uk.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/RE/C/extension.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/RE/C/extension.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/RE/C/report.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/RE/False.extension.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/RE/Z/extension.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/RE/Z/extension.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/RE/Z/report.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/RE/[].extension.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/RE/a.extension.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/RE/a/extension.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/RE/a/extension.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/RE/a/report.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/RE/e/extension.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/RE/e/extension.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/RE/e/report.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/RE/q/extension.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/RE/q/extension.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/RE/q/report.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/RE/report.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/Run.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/TestData.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/TestData1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/TestData2.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/aboutus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/config.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/description" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/open.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/qt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/report.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/run.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/run.spec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/save.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/res/stop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/scipy._lib._ccallback_c.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/select.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/sip.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/ucrtbase.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/unicodedata.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/win32api.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/win32com.shell.shell.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/win32gui.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/win32pdh.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/win32trace.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/win32ui.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dist/MainRun/win32wnet.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-08-29_20-59-24.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-08-29_21-19-55.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-08_16-33-33.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-08_16-33-37.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-08_16-33-41.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-08_16-33-42.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-08_16-33-58.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-08_16-34-02.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-08_16-34-06.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-08_16-34-56.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-08_16-35-01.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-08_16-35-06.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-08_16-35-10.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-08_16-37-07.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-08_16-37-13.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-08_16-42-04.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-08_16-42-09.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-08_16-42-13.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-08_16-42-21.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-08_16-43-10.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-08_16-43-22.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-08_16-43-30.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-08_16-46-57.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-08_16-47-04.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-08_16-47-12.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-08_16-47-17.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-08_16-51-31.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-08_16-51-39.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-08_16-51-44.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-08_16-51-48.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-08_16-52-19.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-08_16-52-23.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-08_16-52-24.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-08_16-52-45.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-08_16-52-50.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-08_16-52-55.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-08_16-53-06.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-08_16-54-24.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-08_16-54-28.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-08_16-54-30.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-08_16-59-11.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-08_16-59-16.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-08_16-59-18.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-08_16-59-19.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-08_17-01-19.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-08_17-01-23.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-08_17-01-26.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-09_17-36-01.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-10_09-28-11.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-10_10-10-43.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-10_10-13-07.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-10_10-15-19.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-10_14-39-35.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-10_14-39-41.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-10_14-45-02.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-10_14-45-34.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-10_14-46-15.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-10_14-50-00.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-10_14-54-37.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-10_14-58-50.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-10_14-59-39.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-10_15-01-48.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-10_15-03-29.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-10_15-03-51.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-10_15-04-24.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-10_15-04-57.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-10_15-10-32.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-10_15-14-23.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-10_15-21-26.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-10_15-28-29.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-10_15-32-13.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-10_15-32-42.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-10_15-34-38.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-10_15-35-50.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-10_15-39-07.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-10_15-40-17.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-10_16-13-23.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-10_16-18-13.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-10_16-19-06.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-10_16-32-13.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-10_16-39-36.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-10_16-39-41.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-10_16-39-46.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-10_16-44-44.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-10_16-45-17.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-10_16-45-36.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/logs/app@2018-10-10_16-46-14.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/HEAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/Qt5Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/Qt5Gui.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/Qt5Sql.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/Qt5Svg.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/Qt5Widgets.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/Qt5Xml.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/Wizard/使用说明.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/app.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/config/app/config.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/config/app/configureadmin.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/config/app/extension.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/iconengines/qsvgicon.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/imageformats/qgif.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/imageformats/qicns.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/imageformats/qico.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/imageformats/qjpeg.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/imageformats/qsvg.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/imageformats/qtga.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/imageformats/qtiff.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/imageformats/qwbmp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/imageformats/qwebp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/languages/propertybrowser/qt_missed_zh_CN.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/languages/propertybrowser/qt_zh_CN.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/languages/propertybrowser/zh_CN.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/libEGL.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/libGLESV2.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/opengl32sw.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/platforms/qwindows.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/pluginframework.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.config.configureadmin/META.INF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.config.configureadmin/extension.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.config.configureadmin/languages/zh_CN.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.config.configureadmin/tech.microcore.config.configureadmin.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/META.INF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/extension.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/extension.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/resources/color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/resources/editcopy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/resources/editcut.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/resources/editpaste.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/resources/editredo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/resources/editundo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/resources/exportpdf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/resources/filenew.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/resources/fileopen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/resources/fileprint.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/resources/filesave.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/resources/textbold.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/resources/textcenter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/resources/textitalic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/resources/textjustify.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/resources/textleft.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/resources/textright.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/resources/textunder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/resources/zoomin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/resources/zoomout.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.config.dynamiclayoutedit/tech.microcore.config.dynamiclayoutedit.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.core/META.INF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.core/extension.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.core/images/active.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.core/images/all.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.core/images/bottom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.core/images/frameless.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.core/images/full_screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.core/images/left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.core/images/maximize_window.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.core/images/minimize_window.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.core/images/normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.core/images/right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.core/images/top.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.core/tech.microcore.mainwin.core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/META.INF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/extension.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/extension.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/languages/zh_CN.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/deficon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/edit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/editcopy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/editcut.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/editpaste.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/editredo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/editundo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/exportpdf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/file.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/filenew.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/fileopen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/fileprint.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/filesave.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/help.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/logo_min.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/open.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/pic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/save.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/textbold.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/textcenter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/textitalic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/textjustify.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/textleft.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/textright.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/textunder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/zoomin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/resources/zoomout.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.mainwin.desktop/tech.microcore.mainwin.desktop.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.service.eventadmin/META.INF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/plugins/tech.microcore.service.eventadmin/tech.microcore.service.eventadmin.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/propertybrowser.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/sqldrivers/qsqlite.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/sqldrivers/qsqlmysql.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/sqldrivers/qsqlodbc.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/sqldrivers/qsqlpsql.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/translations/qt_ca.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/translations/qt_cs.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/translations/qt_de.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/translations/qt_en.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/translations/qt_fi.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/translations/qt_fr.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/translations/qt_he.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/translations/qt_hu.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/translations/qt_it.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/translations/qt_ja.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/translations/qt_ko.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/translations/qt_lv.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/translations/qt_pl.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/translations/qt_ru.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/translations/qt_sk.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/QxPlugin/translations/qt_uk.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/RE/Z/extension.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/RE/Z/extension.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/RE/Z/report.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/RE/a/extension.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/RE/a/extension.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/RE/a/report.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/RE/e/extension.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/RE/e/extension.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/RE/e/report.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/RE/q/extension.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/RE/q/extension.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/RE/q/report.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/RE/report.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/TestData.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/aboutus.png" beforeDir="false" afterPath="$PROJECT_DIR$/Tool/res/aboutus.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/config.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/description" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/open.png" beforeDir="false" afterPath="$PROJECT_DIR$/Tool/res/open.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/qt.png" beforeDir="false" afterPath="$PROJECT_DIR$/Tool/res/qt.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/run.png" beforeDir="false" afterPath="$PROJECT_DIR$/Tool/res/run.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/save.png" beforeDir="false" afterPath="$PROJECT_DIR$/Tool/res/save.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/res/stop.png" beforeDir="false" afterPath="$PROJECT_DIR$/Tool/res/stop.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/user-defined-case/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tool/user-defined-case/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/user-defined-case/test_001.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tool/user-defined-case/test_001.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,18 +578,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/testtool$CaseData.coverage" NAME="CaseData Coverage Results" MODIFIED="1538040158015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tool" />
+    <SUITE FILE_PATH="coverage/testtool$CaseData.coverage" NAME="CaseData Coverage Results" MODIFIED="1539939100227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool" />
     <SUITE FILE_PATH="coverage/testtool$SubWindow.coverage" NAME="SubWindow Coverage Results" MODIFIED="1537513843011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tool" />
-    <SUITE FILE_PATH="coverage/testtool$MainRun.coverage" NAME="MainRun Coverage Results" MODIFIED="1538987083026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tool" />
+    <SUITE FILE_PATH="coverage/testtool$MainRun.coverage" NAME="MainRun Coverage Results" MODIFIED="1539941117322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tool" />
     <SUITE FILE_PATH="coverage/testtool$DataModel.coverage" NAME="DataModel Coverage Results" MODIFIED="1538984706374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sqlite" />
     <SUITE FILE_PATH="coverage/testtool$test.coverage" NAME="test Coverage Results" MODIFIED="1538703097457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sqlite" />
-    <SUITE FILE_PATH="coverage/testtool$ImageComparison.coverage" NAME="ImageComparison Coverage Results" MODIFIED="1538702883299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tool" />
-    <SUITE FILE_PATH="coverage/testtool$ProcessCalls.coverage" NAME="ProcessCalls Coverage Results" MODIFIED="1537513317377" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tool" />
+    <SUITE FILE_PATH="coverage/testtool$ImageComparison.coverage" NAME="ImageComparison Coverage Results" MODIFIED="1539927902609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tool" />
     <SUITE FILE_PATH="coverage/testtool$Centralview.coverage" NAME="Centralview Coverage Results" MODIFIED="1537432712763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tool" />
+    <SUITE FILE_PATH="coverage/testtool$ProcessCalls.coverage" NAME="ProcessCalls Coverage Results" MODIFIED="1539940502851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool" />
     <SUITE FILE_PATH="coverage/testtool$SqliteData.coverage" NAME="SqliteData Coverage Results" MODIFIED="1537942715461" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sqlite" />
     <SUITE FILE_PATH="coverage/testtool$dataobject.coverage" NAME="dataobject Coverage Results" MODIFIED="1538703080322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sqlite" />
-    <SUITE FILE_PATH="coverage/testtool$MainWindow.coverage" NAME="MainWindow Coverage Results" MODIFIED="1538041293243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tool" />
     <SUITE FILE_PATH="coverage/testtool$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1537939419247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tool" />
+    <SUITE FILE_PATH="coverage/testtool$MainWindow.coverage" NAME="MainWindow Coverage Results" MODIFIED="1539930358728" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tool" />
     <SUITE FILE_PATH="coverage/testtool$TableWidget.coverage" NAME="TableWidget Coverage Results" MODIFIED="1538725491989" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tool" />
     <SUITE FILE_PATH="coverage/testtool$Run.coverage" NAME="Run Coverage Results" MODIFIED="1537939341311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tool" />
     <SUITE FILE_PATH="coverage/testtool$execl.coverage" NAME="execl Coverage Results" MODIFIED="1538703087520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sqlite" />
@@ -94,9 +645,11 @@
     <session id="250361049">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="15" />
           <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.22" value="2" />
           <entry key="project.open.time.24" value="1" />
@@ -104,34 +657,42 @@
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.5" value="5" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="cnf" value="3" />
+          <entry key="ini" value="13" />
+          <entry key="log" value="4" />
           <entry key="png" value="2" />
-          <entry key="py" value="89" />
+          <entry key="py" value="134" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="2" />
-          <entry key="Python" value="89" />
+          <entry key="Ini" value="13" />
+          <entry key="PLAIN_TEXT" value="7" />
+          <entry key="Python" value="134" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="12" />
-          <entry key="dummy" value="30" />
-          <entry key="py" value="7714" />
+          <entry key="cnf" value="52" />
+          <entry key="dummy" value="76" />
+          <entry key="ini" value="2" />
+          <entry key="py" value="8988" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="30" />
-          <entry key="Python" value="7726" />
+          <entry key="Ini" value="2" />
+          <entry key="PLAIN_TEXT" value="128" />
+          <entry key="Python" value="9000" />
         </counts>
       </usages-collector>
     </session>
@@ -169,22 +730,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tool/ProcessCalls.py">
+        <entry file="file://$PROJECT_DIR$/Tool/ProfileWizard.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="36" selection-start-line="36" selection-end-line="37" selection-end-column="48" />
-              <folding>
-                <element signature="e#53#62#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tool/ProfileWizard.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1862">
-              <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+            <state relative-caret-position="2964">
+              <caret line="162" selection-start-line="162" selection-end-line="163" />
               <folding>
                 <element signature="e#54#174#0" expanded="true" />
               </folding>
@@ -193,10 +742,35 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tool/CaseData.py">
+        <entry file="file://$PROJECT_DIR$/Tool/MainWindow.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="28" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="28" />
+            <state relative-caret-position="475">
+              <caret line="34" column="41" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
+              <folding>
+                <element signature="e#53#244#0" expanded="true" />
+                <marker date="1539937632233" expanded="true" signature="4317:4342" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tool/ProcessCalls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="67" column="45" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="45" />
+              <folding>
+                <element signature="e#53#62#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Tool/CaseData.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="656">
+              <caret line="91" column="43" selection-start-line="91" selection-start-column="43" selection-end-line="91" selection-end-column="43" />
               <folding>
                 <element signature="e#54#63#0" expanded="true" />
               </folding>
@@ -204,70 +778,35 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tool/MainWindow.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tool/DataManger.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3477">
-              <caret line="183" column="2" lean-forward="true" selection-start-line="183" selection-start-column="2" selection-end-line="183" selection-end-column="2" />
+            <state relative-caret-position="418">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
               <folding>
-                <element signature="e#53#244#0" expanded="true" />
+                <element signature="e#53#96#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tool/Centralview.py">
+        <entry file="file://$PROJECT_DIR$/Tool/LoggingConfig.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1252">
-              <caret line="172" column="18" selection-start-line="172" selection-start-column="8" selection-end-line="172" selection-end-column="18" />
-              <folding>
-                <element signature="e#53#209#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="76">
+              <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tool/MainRun.py">
+        <entry file="file://$PROJECT_DIR$/Tool/MainRun.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="209">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
               <folding>
                 <element signature="e#53#63#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sqlite/SqliteData.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="9" selection-start-line="9" selection-end-line="15" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tool/Gvariable.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="87" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tool/UnitTests.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sqlite/DataModel.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
-              <caret line="45" column="11" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -291,23 +830,35 @@
         <option value="$PROJECT_DIR$/sqlite/execl.py" />
         <option value="$PROJECT_DIR$/sqlite/dataobject.py" />
         <option value="$PROJECT_DIR$/sqlite/DataModel.py" />
-        <option value="$PROJECT_DIR$/tool/Gvariable.py" />
         <option value="$PROJECT_DIR$/tool/SubWindow.py" />
         <option value="$PROJECT_DIR$/tool/Run.py" />
         <option value="$PROJECT_DIR$/tool/test_001.py" />
         <option value="$PROJECT_DIR$/tool/HttpReport.py" />
-        <option value="$PROJECT_DIR$/tool/ProfileWizard.py" />
-        <option value="$PROJECT_DIR$/tool/CaseData.py" />
         <option value="$PROJECT_DIR$/sqlite/test.py" />
-        <option value="$PROJECT_DIR$/tool/ImageComparison.py" />
         <option value="$PROJECT_DIR$/tool/TableWidget.py" />
         <option value="$PROJECT_DIR$/tool/DataManger.py" />
-        <option value="$PROJECT_DIR$/tool/DataIo.py" />
         <option value="$PROJECT_DIR$/tool/MainRun.py" />
-        <option value="$PROJECT_DIR$/tool/ProcessCalls.py" />
-        <option value="$PROJECT_DIR$/tool/MainWindow.py" />
         <option value="$PROJECT_DIR$/tool/UnitTests.py" />
         <option value="$PROJECT_DIR$/tool/Centralview.py" />
+        <option value="$PROJECT_DIR$/tool/logging.py" />
+        <option value="$PROJECT_DIR$/tool/DataIo.py" />
+        <option value="$PROJECT_DIR$/tool/ProcessCalls.py" />
+        <option value="$PROJECT_DIR$/tool/CaseData.py" />
+        <option value="$PROJECT_DIR$/sqlite/logging.ini" />
+        <option value="$PROJECT_DIR$/tool/logging.cnf" />
+        <option value="$PROJECT_DIR$/tool/logging.ini" />
+        <option value="$PROJECT_DIR$/tool/ToolLogging.py" />
+        <option value="$PROJECT_DIR$/tool/config/mian_config.ini" />
+        <option value="$PROJECT_DIR$/tool/ImageComparison.py" />
+        <option value="$PROJECT_DIR$/tool/ProfileWizard.py" />
+        <option value="$PROJECT_DIR$/tool/CentralView.py" />
+        <option value="$PROJECT_DIR$/tool/Gvariable.py" />
+        <option value="$PROJECT_DIR$/tool/MainWindow.py" />
+        <option value="$PROJECT_DIR$/Tool/MainWindow.py" />
+        <option value="$PROJECT_DIR$/Tool/GlobalConfig.py" />
+        <option value="$PROJECT_DIR$/Tool/ProcessCalls.py" />
+        <option value="$PROJECT_DIR$/Tool/CaseData.py" />
+        <option value="$PROJECT_DIR$/Tool/CentralView.py" />
       </list>
     </option>
   </component>
@@ -317,7 +868,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="585" />
     <option name="y" value="63" />
     <option name="width" value="1048" />
@@ -343,13 +894,13 @@
             <path>
               <item name="testtool" type="b2602c69:ProjectViewProjectNode" />
               <item name="testtool" type="462c0819:PsiDirectoryNode" />
-              <item name="tool" type="462c0819:PsiDirectoryNode" />
+              <item name="Tool" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="testtool" type="b2602c69:ProjectViewProjectNode" />
               <item name="testtool" type="462c0819:PsiDirectoryNode" />
-              <item name="tool" type="462c0819:PsiDirectoryNode" />
-              <item name="user-defined-case" type="462c0819:PsiDirectoryNode" />
+              <item name="Tool" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -366,6 +917,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\Git_WorkSpace\testtool\tool\res" />
+      <recent name="G:\Git_WorkSpace\testtool\tool\config" />
       <recent name="G:\Git_WorkSpace\testtool\tool\user-defined-case" />
     </key>
   </component>
@@ -382,7 +935,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.MainRun">
-    <configuration name="DataModel" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="CaseData" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="testtool" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -390,12 +943,34 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sqlite" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tool" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sqlite/DataModel.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tool/CaseData.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ImageComparison" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="testtool" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tool" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tool/ImageComparison.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -426,7 +1001,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="TableWidget" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="MainWindow" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="testtool" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -439,7 +1014,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tool/TableWidget.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tool/MainWindow.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -448,7 +1023,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="execl" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ProcessCalls" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="testtool" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -456,34 +1031,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sqlite" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tool" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sqlite/execl.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="testtool" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sqlite" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sqlite/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tool/ProcessCalls.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -494,18 +1047,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.MainRun" />
-      <item itemvalue="Python.execl" />
-      <item itemvalue="Python.test" />
-      <item itemvalue="Python.TableWidget" />
-      <item itemvalue="Python.DataModel" />
+      <item itemvalue="Python.ImageComparison" />
+      <item itemvalue="Python.MainWindow" />
+      <item itemvalue="Python.CaseData" />
+      <item itemvalue="Python.ProcessCalls" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.MainRun" />
-        <item itemvalue="Python.DataModel" />
-        <item itemvalue="Python.TableWidget" />
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.execl" />
+        <item itemvalue="Python.ProcessCalls" />
+        <item itemvalue="Python.CaseData" />
+        <item itemvalue="Python.MainWindow" />
+        <item itemvalue="Python.ImageComparison" />
       </list>
     </recent_temporary>
   </component>
@@ -535,7 +1088,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17590618" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24466951" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -548,13 +1101,13 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32899022" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5063966" side_tool="true" visible="true" weight="0.39087948" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.36140725" side_tool="true" visible="true" weight="0.33659065" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32899022" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32899022" />
-      <window_info anchor="bottom" id="找到" order="13" sideWeight="0.49757987" weight="0.32894737" />
-      <window_info anchor="bottom" id="运行" order="14" sideWeight="0.4936034" weight="0.39087948" />
+      <window_info anchor="bottom" id="找到" order="13" sideWeight="0.49520257" weight="0.32790446" />
+      <window_info anchor="bottom" id="运行" order="14" sideWeight="0.6385928" weight="0.33659065" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="15" weight="0.32899022" />
-      <window_info anchor="bottom" id="调试" order="16" sideWeight="0.6369936" weight="0.330076" />
+      <window_info anchor="bottom" id="调试" order="16" sideWeight="0.63539445" weight="0.330076" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -581,11 +1134,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/sre_parse.py" />
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/sre_compile.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/re.py" />
     <entry file="file://$PROJECT_DIR$/sqlite/Logger.py" />
     <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/1099968596/PyQt5/QtWidgets/QItemDelegate.py" />
@@ -606,10 +1154,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tool/user-defined-case/__init__.py">
+    <entry file="file://$PROJECT_DIR$/Tool/user-defined-case/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tool/user-defined-case/test_001.py">
+    <entry file="file://$PROJECT_DIR$/Tool/user-defined-case/test_001.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/tool/rrr.png" />
@@ -639,76 +1187,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tool/TableWidget.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3667">
-          <caret line="217" column="17" selection-start-line="217" selection-start-column="17" selection-end-line="217" selection-end-column="17" />
-          <folding>
-            <element signature="e#53#222#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool/DataIo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="118" column="4" selection-start-line="118" selection-start-column="4" selection-end-line="118" selection-end-column="52" />
-          <folding>
-            <element signature="e#53#64#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool/HttpReport.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool/ImageComparison.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="31" column="4" lean-forward="true" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#53#1" />
-            <element signature="e#54#85#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool/DataManger.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="71" />
-          <folding>
-            <element signature="e#53#96#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool/ProfileWizard.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1862">
-          <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-          <folding>
-            <element signature="e#54#174#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool/CaseData.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="28" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="28" />
-          <folding>
-            <element signature="e#54#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool/UnitTests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tool/TableWidget.py" />
     <entry file="file://$PROJECT_DIR$/sqlite/DataModel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
+        <state relative-caret-position="798">
           <caret line="45" column="11" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="11" />
         </state>
       </provider>
@@ -720,49 +1202,174 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tool/Gvariable.py">
+    <entry file="file://$PROJECT_DIR$/tool/logging.log" />
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/xlutils/copy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="87" selection-end-column="8" />
+        <state relative-caret-position="114">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tool/ProcessCalls.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/xlutils/filter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="36" selection-start-line="36" selection-end-line="37" selection-end-column="48" />
+        <state relative-caret-position="133">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tool/DataIo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tool/HttpReport.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/logging/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="205" selection-start-line="205" selection-end-line="205" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tool/logging.cnf" />
+    <entry file="file://$PROJECT_DIR$/sqlite/logging.ini" />
+    <entry file="file://$PROJECT_DIR$/tool/log.log" />
+    <entry file="file://$PROJECT_DIR$/Tool/UnitTests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/configparser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18050">
+          <caret line="958" selection-start-line="958" selection-end-line="958" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool/config/logging.ini" />
+    <entry file="file://$PROJECT_DIR$/tool/config/mian_config.ini" />
+    <entry file="file://$PROJECT_DIR$/tool/config/main_config.ini" />
+    <entry file="file://$PROJECT_DIR$/Tool/ImageComparison.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2052">
+          <caret line="121" column="43" selection-start-line="121" selection-start-column="43" selection-end-line="121" selection-end-column="43" />
           <folding>
-            <element signature="e#53#62#0" expanded="true" />
+            <element signature="e#0#53#1" />
+            <element signature="e#54#85#0" expanded="true" />
+            <marker date="1539937632289" expanded="true" signature="3361:3366" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tool/Centralview.py">
+    <entry file="file://$PROJECT_DIR$/Tool/case/id_png.ini">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1252">
-          <caret line="172" column="18" selection-start-line="172" selection-start-column="8" selection-end-line="172" selection-end-column="18" />
+        <state relative-caret-position="19">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tool/config/logging_file.ini">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/os.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="334" selection-start-line="334" selection-end-line="334" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tool/config/logging_console.ini">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tool/GlobalConfig.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tool/ProfileWizard.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2964">
+          <caret line="162" selection-start-line="162" selection-end-line="163" />
           <folding>
-            <element signature="e#53#209#0" expanded="true" />
+            <element signature="e#54#174#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tool/MainRun.py">
+    <entry file="file://$PROJECT_DIR$/Tool/MainWindow.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="475">
+          <caret line="34" column="41" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
+          <folding>
+            <element signature="e#53#244#0" expanded="true" />
+            <marker date="1539937632233" expanded="true" signature="4317:4342" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tool/DataManger.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#53#96#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tool/LoggingConfig.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tool/MainRun.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
           <folding>
             <element signature="e#53#63#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tool/MainWindow.py">
+    <entry file="file://$PROJECT_DIR$/Tool/config/config.ini">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3477">
-          <caret line="183" column="2" lean-forward="true" selection-start-line="183" selection-start-column="2" selection-end-line="183" selection-end-column="2" />
+        <state relative-caret-position="95">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tool/ProcessCalls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="67" column="45" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="45" />
           <folding>
-            <element signature="e#53#244#0" expanded="true" />
+            <element signature="e#53#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tool/CentralView.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="171" column="41" selection-start-line="171" selection-start-column="41" selection-end-line="171" selection-end-column="41" />
+          <folding>
+            <element signature="e#53#222#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tool/CaseData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="656">
+          <caret line="91" column="43" selection-start-line="91" selection-start-column="43" selection-end-line="91" selection-end-column="43" />
+          <folding>
+            <element signature="e#54#63#0" expanded="true" />
           </folding>
         </state>
       </provider>
