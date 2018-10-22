@@ -130,11 +130,22 @@ class Window(QMainWindow):
         self.dialog1.show()
     def run(self):
         try:
-            self.runaction.setDisabled(True)
-            self.runmian = Runexe(self.widget.idlist)
-            self.runmian.sinOut.connect(self.finsh)
-            self.runmian.start()
-            logger.info("测试程序正在启动......")
+            list=[]
+            # self.runaction.setDisabled(True)
+            # self.runmian = Runexe(self.widget.idlist)
+            # self.runmian.sinOut.connect(self.finsh)
+            # for x in self.widget.idlist:
+            #     x = Runexe(x)
+            #     list.append(x)
+            # for x in list:
+            #     x.start()
+            #     time.sleep(5)
+            # logger.info("测试程序正在启动......")
+            for x in self.widget.idlist:
+                x = Runexe(x)
+                x.start()
+                time.sleep(5)
+                logger.info("测试程序正在启动......")
 
         except:
             z=QMessageBox()
