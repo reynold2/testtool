@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Plugin id="tech.microcore.mainwin.desktop" filename="tech.microcore.mainwin.desktop">
+    <ExtDataSet>
+    <ExtData id="tech.microcore.mainwin.core.layout" plugin="tech.microcore.mainwin.desktop" extPlugin="tech.microcore.mainwin.core">
+              <Layout id="tech.microcore.mainwin.core.layout.desktop" toolTip="Desktop Main Window" size="1000,800" showMode="8" title="tr('Desktop Main Window')" icon="resources/file.png"/>
+          </ExtData>
+          <ExtData id="tech.microcore.mainwin.core.control" plugin="tech.microcore.mainwin.desktop" extPlugin="tech.microcore.mainwin.core">
+              <Format target="tech.microcore.mainwin.core.layout.desktop">
+                  <MenuBar>
+                      <Menu icon="resources/logo_min.png" enabled="true" index="0" visible="true" id="tech.microcore.mainwin.desktop.actionid.MenuBarFile" toolTip="tr('FiletoolTip')" sceneMode="visible" statusTip="tr('FilestatusTip')" sceneName="" title="q">
+                          <Group id="tech.microcore.mainwin.desktop.actionid.OtherGroup" text="groupFile">
+                              <Action enabled="true" visible="true" id="tech.microcore.mainwin.desktop.Exit" toolTip="tr('Exit')" sceneMode="visible" statusTip="tr('=Exit')" text="tr('Exit')" iconSize="24x24" shortcut="ctrl+Q" icon="resources/logo_min.png"/>
+                          </Group>
+                      </Menu>
+                      <Menu enabled="true" index="1" visible="true" id="tech.microcore.mainwin.desktop.actionid.EditMenuBar" toolTip="tr('EdittoolTip')" sceneMode="visible" sceneName="" statusTip="tr('EditstatusTip')" title="tr('Edit')">
+                      </Menu>
+                      <Menu enabled="true" index="2" visible="true" id="tech.microcore.mainwin.desktop.actionid.ViewMenuBar" toolTip="tr('ViewtoolTip')" statusTip="tr('ViewstatusTip')" sceneMode="visible" sceneName="" title="tr('View')">
+                          <Menu index="3" enabled="true" visible="true" id="tech.microcore.mainwin.desktop.actionid.MenuBarView.Centralview" toolTip="tr('Opened Window')" statusTip="tr('Opened Window')" index="4" iconSize="24x24" title="tr('Opened Window')" icon="resources/view.png"/>
+                          <Menu index="1" enabled="true" id="tech.microcore.mainwin.desktop.actionid.MenuBarView.Dock" toolTip="tr('Dock View')" statusTip="tr('Dock View')" index="3" iconSize="24x24" title="tr('Dock View')" icon="resources/view.png"/>
+                      </Menu>
+                      <Menu enabled="true" index="6" visible="true" id="tech.microcore.mainwin.desktop.actionid.ToolMenuBar" toolTip="tr('TooltoolTip')" sceneMode="visible" sceneName="" statusTip="tr('ToolstatusTip')" title="tr('Tool')"/>
+                      <Menu enabled="true" index="5" visible="true" id="tech.microcore.mainwin.desktop.actionid.aboutMenuBar" toolTip="tr('AbouttoolTip')" statusTip="tr('AboutstatusTip')" sceneMode="visible" sceneName="" title="tr('About')">
+                          <Action id="tech.microcore.mainwin.desktop.AboutQt" />
+                          <Action id="tech.microcore.mainwin.desktop.AboutUs" />
+                          <Action id="tech.microcore.mainwin.desktop.Help" />
+                      </Menu>
+                  </MenuBar>
+
+                <ToolBars>
+                      <Toolbar enabled="true" visible="true" id="tech.microcore.mainwin.desktop.toolbarPic" sceneMode="visible" text="tr('about')" toolButtonStyle="0" index="1" sceneName="">
+                          <Menu enabled="true" visible="true" id="tech.microcore.mainwin.desktop.actionid.menuAbout" toolTip="tr('about')" statusTip="tr('about')" title="tr('about menu')" defaultActionId="tech.microcore.mainwin.desktop.AboutQt">
+                              <Action id="tech.microcore.mainwin.desktop.AboutUs"/>
+                              <Action id="tech.microcore.mainwin.desktop.AboutQt"/>
+                          </Menu>
+                          <Action id="tech.microcore.mainwin.desktop.Help"/>
+                      </Toolbar>
+                  </ToolBars>
+              </Format>
+              <Action enabled="true" visible="true" id="tech.microcore.mainwin.desktop.AboutUs" text="tr('About Us')" iconSize="24x24" icon="resources/logo_min.png"/>
+              <Action enabled="true" visible="true" id="tech.microcore.mainwin.desktop.AboutQt" autoRepeat="false" sceneMode="true" text="tr('About Qt')" checked="false" checkable="false" iconSize="24x24" icon="resources/file.png"/>
+              <Action enabled="true" visible="true" id="tech.microcore.mainwin.desktop.Help" shortcut="ctrl+A" autoRepeat="false" sceneMode="visible" text="tr('Help')" checked="true" checkable="false" iconSize="24x24" icon="resources/logo_min.png"/>
+          </ExtData>
+          <ExtData plugin="tech.microcore.mainwin.desktop" extPlugin="tech.microcore.mainwin.core" id="tech.microcore.mainwin.core.statusbar">
+              <Action icon="resources/logo_min.png" id="tech.microcore.mainwin.desktop.ExitKLUJLU" toolTip="tr('Exit123')" shortcut="" sceneMode="visible" sceneName="SCENE_V" index="2" permanent="true" enabled="true" text="tr('Exit')" visible="GREGGGGGGGGG"/>
+              <ProgressBar value="20" id="tech.microcore.mainwin.desktop.progressbar" index="5" sceneMode="visible" sceneName="SCENE_V" enabled="true" text="tr('ProgressBar')" visible="true" permanent="false"/>
+              <Slider value="1" id="tech.microcore.mainwin.desktop.slider1" index="1" sceneMode="visible" sceneName="SCENE_V" enabled="true" text="tr('slider11')" minimum="0" visible="true" permanent="true" maximum="100"/>
+              <LineEdit text="hellosss" id="tech.microcore.mainwin.desktop.lineedit" index="3" sceneMode="visible" sceneName="SCENE_V" enabled="true" label="hello" visible="true" permanent="false" readOnly="false"/>
+          </ExtData>
+    </ExtDataSet>
+</Plugin>

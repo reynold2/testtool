@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Plugin id="tech.microcore.config.dynamiclayoutedit" filename="tech.microcore.config.dynamiclayoutedit">
+<ExtDataSet>
+<ExtData plugin="tech.microcore.config.dynamiclayoutedit" extPlugin="tech.microcore.mainwin.core" id="tech.microcore.mainwin.core.centralview">
+  <Centralview id="tech.microcore.config.dynamiclayoutedit.UI" title="tr('layoutEdit')" icon="resources/editcopy.png" index="3" activated="true" sceneName="SCENE_EYE" />
+</ExtData>
+</ExtDataSet>
+</Plugin>

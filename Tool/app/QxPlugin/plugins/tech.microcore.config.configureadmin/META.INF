@@ -1,0 +1,11 @@
+symbolic: tech.microcore.config.configureadmin
+version: 1.0.0
+compatVersion: 1.0.0
+activation: lazy
+company: Micro Core
+copyright: Micro Core
+license: LGPL v3
+describe: configureAdmin
+category: config
+website: the plugin's homepage
+dependency:
