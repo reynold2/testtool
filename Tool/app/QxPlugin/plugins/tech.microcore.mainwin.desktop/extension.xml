@@ -7,7 +7,7 @@
           <ExtData id="tech.microcore.mainwin.core.control" plugin="tech.microcore.mainwin.desktop" extPlugin="tech.microcore.mainwin.core">
               <Format target="tech.microcore.mainwin.core.layout.desktop">
                   <MenuBar>
-                      <Menu icon="resources/logo_min.png" enabled="true" index="0" visible="true" id="tech.microcore.mainwin.desktop.actionid.MenuBarFile" toolTip="tr('FiletoolTip')" sceneMode="visible" statusTip="tr('FilestatusTip')" sceneName="" title="M">
+                      <Menu icon="resources/logo_min.png" enabled="true" index="0" visible="true" id="tech.microcore.mainwin.desktop.actionid.MenuBarFile" toolTip="tr('FiletoolTip')" sceneMode="visible" statusTip="tr('FilestatusTip')" sceneName="" title="q">
                           <Group id="tech.microcore.mainwin.desktop.actionid.OtherGroup" text="groupFile">
                               <Action enabled="true" visible="true" id="tech.microcore.mainwin.desktop.Exit" toolTip="tr('Exit')" sceneMode="visible" statusTip="tr('=Exit')" text="tr('Exit')" iconSize="24x24" shortcut="ctrl+Q" icon="resources/logo_min.png"/>
                           </Group>

@@ -4,7 +4,7 @@ Created on 2018年7月4日
 @author: Administrator
 '''
 from PyQt5.QtWidgets import QMainWindow, QAction, QSizePolicy, QTextEdit, QFileDialog, QDesktopWidget, QDialog, QProgressBar, QMessageBox, QWidget, QApplication, QLCDNumber, qApp, QVBoxLayout
-from PyQt5.QtCore import QTimer,Qt
+from PyQt5.QtCore import QTimer,Qt,pyqtSlot
 from Tool.CentralView import CentralView
 from Tool.ProfileWizard import *
 from Tool.ProcessCalls import Runexe
@@ -13,6 +13,7 @@ import sys
 import os
 import win32com.client
 from Tool.LoggingConfig import logger
+from Tool.UnitTests import wrapper
 
 
 class Window(QMainWindow):
@@ -151,6 +152,8 @@ class Window(QMainWindow):
             z=QMessageBox()
             z.warning(self,"异常","请终止异常操作")
             logger.error("请终止异常操作,要弄死程序了")
+        finally:
+            x.quit()
 
     def finsh(self):
         self.runaction.setDisabled(False)
@@ -215,10 +218,12 @@ class Window(QMainWindow):
         webbrowser.open(
             "http://www.microcorecn.com/about/toMcHome.do", new=0, autoraise=True)
 
+    @pyqtSlot()
+    @wrapper("5")
     def qt(self):
         x=QMessageBox()
         x.aboutQt(self,"关于Qt版本")
-
+        print("11")
     def save_as(self):
 
         pass

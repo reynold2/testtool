@@ -21,6 +21,7 @@ import sys
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
+from Tool.UnitTests import wrapper
 from Tool.LoggingConfig import logger
 
 
@@ -136,7 +137,8 @@ class CentralView(QTableWidget):
         Z = dict(zip(list1, self.idlist))
 
         return Z
-
+    @pyqtSlot()
+    @wrapper("5")
     def SingleRun(self):
         try:
             _id = set(self.idlist)
