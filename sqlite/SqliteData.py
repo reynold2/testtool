@@ -48,6 +48,7 @@ class SqlDataHandle(object):
             except sqlite3.OperationalError:
                 print("table test already exists")
             finally:
+                print(self.formatsql)
                 cursor.executemany(self.formatsql, self.eachXlsx())
                 conn.commit()
                 if cursor:
@@ -67,6 +68,7 @@ class SqlDataHandle(object):
                 except sqlite3.OperationalError:
                     print("table test already exists")
                 finally:
+                    print(self.formatsql[x])
                     cursor.executemany(self.formatsql[x], self.Parseiterationlist[x])
                     conn.commit()
             if cursor:

@@ -2,7 +2,7 @@ from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.webdriver.common.by import By
 import unittest
 import time
-from webtool.Config import BD_config
+
 
 class BaiduTest(unittest.TestCase):
     def setUp(self):
@@ -10,14 +10,7 @@ class BaiduTest(unittest.TestCase):
         self.base_url = "https://www.baidu.com"
 
     def test_baidu(self):
-        driver = self.driver
-        driver.get(self.base_url + "/")
-        driver.find_element(*BD_config["首页搜索"]["搜索框"]).clear()
-        driver.find_element(*BD_config["首页搜索"]["搜索框"]).send_keys("unittest")
-        driver.find_element(*BD_config["首页搜索"]["搜索按钮"]).click()
-        time.sleep(2)
-        title = driver.title
-        self.assertEqual(title, u"unittest_百度搜索")
+        print(11)
     # def test_baidu1(self):
     #     driver = self.driver
     #     driver.get(self.base_url + "/")
