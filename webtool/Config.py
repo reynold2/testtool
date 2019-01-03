@@ -1,3 +1,4 @@
+import os
 class Global_Config():
     URL="https://www.baidu.com"
     # URL="http://192.168.43.146:8080/#/login"
@@ -5,6 +6,7 @@ class Global_Config():
     LOGPATH="./log.txt"
     REPORTPATH="Report"
     CASEDIR="testcase"
+    BASEPATH=os.path.dirname(__file__)
 # 定位信息维护在此处，维护结构由外到内为：页面名称--页面下元素名称--元素的定位方式+参数
 class Element_Config():
     YWJK_config = {

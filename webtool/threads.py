@@ -1,3 +1,4 @@
+from  webtool.ResultManger import Result
 def func_arg(arg =False,num=3):
     if arg:
         def func(funNume):
@@ -14,7 +15,7 @@ def func_arg(arg =False,num=3):
             return func_in
         return func
 
-# @func_arg(arg=True,num=2)
-# def f1(a,b):
-#     return 'haha'
+
+run = Result()
+run.writresult("1")
 

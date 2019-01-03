@@ -1,4 +1,4 @@
-from webtool.Result import Result
+from webtool.ResultManger import Result
 
 class Run(Result):
     def __init__(self):
