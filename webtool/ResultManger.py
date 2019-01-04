@@ -10,9 +10,9 @@ import sys
 class Result(Casemanger):
     def __init__(self):
         super(Result,self).__init__()
-    def writresult(self,*kw):
-        if self.testcasedit.get(kw):
-            alltestnames = self.testcasedit.get(kw)
+    def writresult(self,casename):
+        if self.testcasedit.get(casename):
+            alltestnames = self.testcasedit.get(casename)
         else:
             alltestnames=self.GetTestSuite()
         now = time.strftime("%Y-%m-%d %H_%M_%S", time.localtime(time.time()))
