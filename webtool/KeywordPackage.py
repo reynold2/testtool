@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from webtool.log_config import Logger,LOGER
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions

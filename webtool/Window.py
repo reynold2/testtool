@@ -1,42 +1,48 @@
-'''
-Created on 2018年7月4日
-
-@author: Administrator
-'''
-from PyQt5.QtWidgets import QMainWindow,QApplication,QHBoxLayout
+# -*- coding: utf-8 -*-
+from PyQt5.QtWidgets import QMainWindow,QApplication,QHBoxLayout,QMenuBar,QTabBar,QAction
+from PyQt5.QtGui import QIcon
 import sys
 from webtool.SqlModel import Model_View
-
 class UI(QMainWindow):
     def __init__(self, parent=None):
         super(UI,self).__init__(parent)
-
+        self.central_view = Model_View()
+        self.central_widget = self.central_view.modelview()
         self.__window__()
     def __window__(self):
         self.__menuBar()
         self.__toolbar()
         self.__dockview()
-        self.__centerview()
         self.setGeometry(100, 100, 1120, 750)
-        layout=QHBoxLayout()
-        layout.addWidget(self.view())
-        self.setLayout(layout)
         self.setWindowTitle("Test")
-        self.setCentralWidget(self.view())
+        self.setCentralWidget(self.central_widget)
         self.show()
     def __menuBar(self):
-        pass
-    def view(self):
-        x = Model_View()
-        z=x.modelview()
-        return z
+        menus=QMenuBar()
     def __toolbar(self):
-        tb=self.addToolBar("toolbar")
+        runbutton = QAction(QIcon("res/save.png"), "测试", self)
+        runbutton.setShortcut("ctrl+R")
+        runbutton.setStatusTip("一件操作")
+
+        openreport = QAction(QIcon("res/save.png"), "打开报告", self)
+        openreport.setShortcut("ctrl+p")
+        openreport.setStatusTip("报告")
+
+        tb = self.addToolBar("工具栏")
+        tb.addAction(runbutton)
+        tb.addAction(openreport)
+
+        runbutton.triggered.connect(self.mianrun)
+        openreport.triggered.connect(self.openreport)
 
     def __dockview(self):
         pass
     def __centerview(self):
         pass
+    def mianrun(self):
+        self.central_view.Work("test_baidu2")
+    def openreport(self):
+        self.control.openresult()
 
 
 

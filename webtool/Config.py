@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import os
 class Global_Config():
     URL="https://www.baidu.com"

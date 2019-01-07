@@ -1,4 +1,4 @@
-# coding=utf-8
+# -*- coding: utf-8 -*-
 # from  webtool.ResultManger import Result
 # def func_arg(arg =False,num=3):
 #     if arg:
@@ -15,65 +15,6 @@
 #                 return funNume(*args,**kargs)
 #             return func_in
 #         return func
-
-from PyQt5.QtCore import  QThreadPool,QRunnable,QThread,QObject,pyqtSlot
-from PyQt5.QtWidgets import QProgressBar,QApplication
-import sys
-
-#
-#
-# class Thread(QRunnable):
-#
-#     def __init__(self, num):
-#         super(Thread, self).__init__()
-#         self.num = num
-#
-#     def run(self):
-#         print
-#         ("Running Thread #%d" % (self.num))
-#         # time.sleep(2)
-#         # some say time.sleep will froze entire main thread(thus not recommended)
-#
-#         # QtCore.QTimer.singleShot
-#
-#         QThread.msleep(80)
-#
-#
-# class Tasks(QObject):
-#     signal = pyqtSlot(int)
-#
-#     # signal must be declared outside the constructor but within class.
-#
-#     def __init__(self, num):
-#         super(Tasks, self).__init__()
-#         self.pool = QThreadPool.globalInstance()
-#         self.num = num
-#         self.signal.connect(proBar.setValue)
-#
-#     # signal slot connection.watch out for parameter matching(type & count).
-#
-#     def start(self):
-#         threadIns = Thread(self.num)
-#         self.pool.start(threadIns)
-#         self.pool.waitForDone()
-#         self.signal.emit(self.num)  # the signal emit.
-#
-#
-# if __name__ == "__main__":
-#     App = QApplication(sys.argv)
-#     print
-#     (QThread.currentThreadId())
-#
-#     proBar = QProgressBar()
-#     proBar.setWindowTitle("Nuclear Launch Progression")
-#     proBar.setValue(0)
-#     proBar.setGeometry(200, 500, 1000, 30)
-#     proBar.show()
-#
-#     for counter in range(1, 51):
-#         task = Tasks(counter)
-#         task.start()
-#     sys.exit(App.exec_())
 from PyQt5.QtCore import *
 from webtool.ResultManger import Result
 from PyQt5.QtWidgets import *

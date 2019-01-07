@@ -1,8 +1,9 @@
-# coding=utf-8
+# -*- coding: utf-8 -*-
 from PyQt5.QtWidgets import *
 from PyQt5.QtSql import QSqlDatabase,QSqlTableModel,QSqlRelationalTableModel,QSqlRelation
 from PyQt5.Qt import Qt,QTimer
 from webtool.threads import RunThread
+from webtool.log_config import LOGER
 import time
 import sys
 class Model_View(object):
@@ -11,10 +12,6 @@ class Model_View(object):
         db.setDatabaseName(databasename)
         self.sqltablename=sqltablename
         self.__tablemodel()
-
-        # self.t = 0
-
-
     def __tablemodel(self):
         # self.model=QSqlTableModel()
         # self.model.setRelation(4,QSqlRelation("TEST","id_test","method_name"))
@@ -72,6 +69,8 @@ class Model_View(object):
         self.thread.trigger.connect(self.TimeStop)
     def TimeStop(self):
         self.timer.stop()
+        LOGER.loginfo(self.name,"用例执行完毕，邮件已发送")
+        print("用例运行完毕，邮件已发送")
         # print("运行结束用时", RUNTIME)
         # self.t = 0
     # def tabadd(self):

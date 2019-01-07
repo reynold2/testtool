@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from webtool.KeywordPackage import UIHandle
 from webtool.Config import Global_Config
 from selenium.webdriver.chrome.webdriver import WebDriver

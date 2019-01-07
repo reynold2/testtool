@@ -1,43 +1,48 @@
+# -*- coding: utf-8 -*-
 import smtplib
 from  email.mime.text import MIMEText
-from  email.mime.multipart import MIMEMultipart
 from  email.header import Header
+from  email.mime.multipart import MIMEMultipart
+from  webtool.log_config import LOGER
+def send_mail(content_filename,accessory_filename=None):
+    try:
+        htmlcontent=open(content_filename, 'rb')
+        ZW = MIMEText(htmlcontent.read(), "html","utf-8")
+    except IOError:
+        LOGER.loginfo(IOError.filename)
+    finally:
+        htmlcontent.close()
+    msgRoot=MIMEMultipart()
+    msgRoot['Subject']=Header("é‚®ä»¶æµ‹è¯•","utf-8")
+    msgRoot['From'] = Header("æµ‹è¯•ç³»ç»Ÿ", 'utf-8')
+    msgRoot['To'] = Header("å¼€å‘äººå‘˜", 'utf-8')
+    msgRoot.attach(ZW)
+    if accessory_filename:
+        try:
+            fujiancontent = open(accessory_filename, 'rb')
+            FJ = MIMEText(fujiancontent.read(), 'base64', 'utf-8')
+        except:
+            LOGER.loginfo("é™„ä»¶æ–‡ä»¶æ‰“å¼€å¼‚å¸¸")
+        finally:
+            fujiancontent.close()
+        FJ["Content-Type"] = 'application/octet-stream'
+        FJ["Content-Disposition"] = 'attachment; filename="%s"'%accessory_filename
+        msgRoot.attach(FJ)
+    try:
+        smtp = smtplib.SMTP()
+        smtp.connect("smtp.qq.com")
+        smtp.login("www.47812005@qq.com", "rxyriuplwysrbihj")
+        smtp.sendmail("www.47812005@qq.com", "1029425458@qq.com", msgRoot.as_string())
+        smtp.quit()
+        LOGER.loginfo("é‚®ä»¶å‘é€æˆåŠŸ")
+    except smtplib.SMTPException:
+        LOGER.loginfo("Error: æ— æ³•å‘é€é‚®ä»¶")
+    finally:
+        LOGER.loginfo("è¿æ¥é”€æ¯")
+if __name__=="__main__":
+    send_mail("Report\\2018-12-29 13_59_26_result.html")
 
 
-#·¢ËÍÓÊÏä·şÎñÆ÷
-smtpserver=""
-#½ÓÊÕÓÊÏäµØÖ·
-receiver=""
-#·¢ËÍÓÊÏäµØÖ·
-sender=""
-#·¢ËÍÓÊÏäÓÃ»§ºÍÃÜÂë
-user=''
-password=""
-#ÓÊ¼şÖ÷Ìâ
-subject=''
-#·¢ËÍ¸½¼ş
-sendfile=""
-
-
-
-html=MIMEText(mail_body,"html","utf-8")
-html["subject"]=Header("×Ô¶¯»¯²âÊÔ±¨¸æ","utf-8")
-open(mail_body)
-
-att=MIMEText(sendfile,'base64','utf-8')
-att["content-Disposition"]='attachment';filename='log.txt'
-att["content-type"]='application/octet-stream'
-
-
-msgroot=MIMEMultipart("related")
-msgroot["subject"]=subject
-msgroot.attach(att)
-
-smtp=smtplib.SMTP()
-smtp.connect(smtpserver)
-smtp.login(user,password)
-smtp.sendmail(sender,receiver,msgroot.as_string())
-smtp.quit()
 
 
 

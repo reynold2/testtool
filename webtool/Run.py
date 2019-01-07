@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 from webtool.ResultManger import Result
 
 class Run(Result):
