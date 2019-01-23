@@ -1,0 +1,103 @@
+2019-01-23 10:28:40,406 - log_config.py:20 - log - {'test_baidu2': '(test_de.login1)', 'test_baidu3': '(test_de.login1)', 'test_baidu1': '(test_demo.login)'}
+2019-01-23 10:28:40,406 - log_config.py:20 - log - {'test_baidu2': <test_de.login1 testMethod=test_baidu2>, 'test_baidu3': <test_de.login1 testMethod=test_baidu3>, 'test_baidu1': <test_demo.login testMethod=test_baidu1>}
+2019-01-23 10:42:08,213 - log_config.py:20 - log - {'test_baidu2': '(test_de.login1)', 'test_baidu3': '(test_de.login1)', 'test_baidu1': '(test_demo.login)'}
+2019-01-23 10:42:08,213 - log_config.py:20 - log - {'test_baidu2': <test_de.login1 testMethod=test_baidu2>, 'test_baidu3': <test_de.login1 testMethod=test_baidu3>, 'test_baidu1': <test_demo.login testMethod=test_baidu1>}
+2019-01-23 10:44:49,540 - log_config.py:20 - log - {'test_baidu2': '(test_de.login1)', 'test_baidu3': '(test_de.login1)', 'test_baidu1': '(test_demo.login)'}
+2019-01-23 10:44:49,540 - log_config.py:20 - log - {'test_baidu2': <test_de.login1 testMethod=test_baidu2>, 'test_baidu3': <test_de.login1 testMethod=test_baidu3>, 'test_baidu1': <test_demo.login testMethod=test_baidu1>}
+2019-01-23 10:45:37,437 - log_config.py:20 - log - {'test_baidu2': '(test_de.login1)', 'test_baidu3': '(test_de.login1)', 'test_baidu1': '(test_demo.login)'}
+2019-01-23 10:45:37,437 - log_config.py:20 - log - {'test_baidu2': <test_de.login1 testMethod=test_baidu2>, 'test_baidu3': <test_de.login1 testMethod=test_baidu3>, 'test_baidu1': <test_demo.login testMethod=test_baidu1>}
+2019-01-23 10:45:57,549 - log_config.py:20 - log - {'test_baidu2': '(test_de.login1)', 'test_baidu3': '(test_de.login1)', 'test_baidu1': '(test_demo.login)'}
+2019-01-23 10:45:57,549 - log_config.py:20 - log - {'test_baidu2': <test_de.login1 testMethod=test_baidu2>, 'test_baidu3': <test_de.login1 testMethod=test_baidu3>, 'test_baidu1': <test_demo.login testMethod=test_baidu1>}
+2019-01-23 10:46:09,883 - log_config.py:20 - log - {'test_baidu2': '(test_de.login1)', 'test_baidu3': '(test_de.login1)', 'test_baidu1': '(test_demo.login)'}
+2019-01-23 10:46:09,883 - log_config.py:20 - log - {'test_baidu2': <test_de.login1 testMethod=test_baidu2>, 'test_baidu3': <test_de.login1 testMethod=test_baidu3>, 'test_baidu1': <test_demo.login testMethod=test_baidu1>}
+2019-01-23 10:46:41,929 - log_config.py:20 - log - {'test_baidu2': '(test_de.login1)', 'test_baidu3': '(test_de.login1)', 'test_baidu1': '(test_demo.login)'}
+2019-01-23 10:46:41,930 - log_config.py:20 - log - {'test_baidu2': <test_de.login1 testMethod=test_baidu2>, 'test_baidu3': <test_de.login1 testMethod=test_baidu3>, 'test_baidu1': <test_demo.login testMethod=test_baidu1>}
+2019-01-23 10:46:48,865 - log_config.py:20 - log - {'test_baidu2': '(test_de.login1)', 'test_baidu3': '(test_de.login1)', 'test_baidu1': '(test_demo.login)'}
+2019-01-23 10:46:48,866 - log_config.py:20 - log - {'test_baidu2': <test_de.login1 testMethod=test_baidu2>, 'test_baidu3': <test_de.login1 testMethod=test_baidu3>, 'test_baidu1': <test_demo.login testMethod=test_baidu1>}
+2019-01-23 10:48:05,956 - log_config.py:20 - log - {'test_baidu2': '(test_de.login1)', 'test_baidu3': '(test_de.login1)', 'test_baidu1': '(test_demo.login)'}
+2019-01-23 10:48:05,957 - log_config.py:20 - log - {'test_baidu2': <test_de.login1 testMethod=test_baidu2>, 'test_baidu3': <test_de.login1 testMethod=test_baidu3>, 'test_baidu1': <test_demo.login testMethod=test_baidu1>}
+2019-01-23 10:48:52,501 - log_config.py:20 - log - {'test_baidu2': '(test_de.login1)', 'test_baidu3': '(test_de.login1)', 'test_baidu1': '(test_demo.login)'}
+2019-01-23 10:48:52,502 - log_config.py:20 - log - {'test_baidu2': <test_de.login1 testMethod=test_baidu2>, 'test_baidu3': <test_de.login1 testMethod=test_baidu3>, 'test_baidu1': <test_demo.login testMethod=test_baidu1>}
+2019-01-23 10:48:57,875 - log_config.py:20 - log - {'test_baidu2': '(test_de.login1)', 'test_baidu3': '(test_de.login1)', 'test_baidu1': '(test_demo.login)'}
+2019-01-23 10:48:57,876 - log_config.py:20 - log - {'test_baidu2': <test_de.login1 testMethod=test_baidu2>, 'test_baidu3': <test_de.login1 testMethod=test_baidu3>, 'test_baidu1': <test_demo.login testMethod=test_baidu1>}
+2019-01-23 10:49:28,044 - log_config.py:20 - log - {'test_baidu2': '(test_de.login1)', 'test_baidu3': '(test_de.login1)', 'test_baidu1': '(test_demo.login)'}
+2019-01-23 10:49:28,045 - log_config.py:20 - log - {'test_baidu2': <test_de.login1 testMethod=test_baidu2>, 'test_baidu3': <test_de.login1 testMethod=test_baidu3>, 'test_baidu1': <test_demo.login testMethod=test_baidu1>}
+2019-01-23 10:51:04,900 - log_config.py:20 - log - {'test_baidu2': '(test_de.login1)', 'test_baidu3': '(test_de.login1)', 'test_baidu1': '(test_demo.login)'}
+2019-01-23 10:51:04,901 - log_config.py:20 - log - {'test_baidu2': <test_de.login1 testMethod=test_baidu2>, 'test_baidu3': <test_de.login1 testMethod=test_baidu3>, 'test_baidu1': <test_demo.login testMethod=test_baidu1>}
+2019-01-23 10:56:56,387 - log_config.py:20 - log - {'test_baidu2': '(test_de.login1)', 'test_baidu3': '(test_de.login1)', 'test_baidu1': '(test_demo.login)'}
+2019-01-23 10:56:56,387 - log_config.py:20 - log - {'test_baidu2': <test_de.login1 testMethod=test_baidu2>, 'test_baidu3': <test_de.login1 testMethod=test_baidu3>, 'test_baidu1': <test_demo.login testMethod=test_baidu1>}
+2019-01-23 10:57:56,326 - log_config.py:20 - log - {'test_baidu2': '(test_de.login1)', 'test_baidu3': '(test_de.login1)', 'test_baidu1': '(test_demo.login)'}
+2019-01-23 10:57:56,326 - log_config.py:20 - log - {'test_baidu2': <test_de.login1 testMethod=test_baidu2>, 'test_baidu3': <test_de.login1 testMethod=test_baidu3>, 'test_baidu1': <test_demo.login testMethod=test_baidu1>}
+2019-01-23 13:14:05,408 - log_config.py:20 - log - {'test_baidu2': '(test_de.login1)', 'test_baidu3': '(test_de.login1)', 'test_baidu1': '(test_demo.login)'}
+2019-01-23 13:14:05,408 - log_config.py:20 - log - {'test_baidu2': <test_de.login1 testMethod=test_baidu2>, 'test_baidu3': <test_de.login1 testMethod=test_baidu3>, 'test_baidu1': <test_demo.login testMethod=test_baidu1>}
+2019-01-23 13:14:55,900 - log_config.py:20 - log - {'test_baidu2': '(test_de.login1)', 'test_baidu3': '(test_de.login1)', 'test_baidu1': '(test_demo.login)'}
+2019-01-23 13:14:55,900 - log_config.py:20 - log - {'test_baidu2': <test_de.login1 testMethod=test_baidu2>, 'test_baidu3': <test_de.login1 testMethod=test_baidu3>, 'test_baidu1': <test_demo.login testMethod=test_baidu1>}
+2019-01-23 13:19:08,234 - log_config.py:20 - log - {'test_baidu2': '(test_de.login1)', 'test_baidu3': '(test_de.login1)', 'test_baidu1': '(test_demo.login)'}
+2019-01-23 13:19:08,235 - log_config.py:20 - log - {'test_baidu2': <test_de.login1 testMethod=test_baidu2>, 'test_baidu3': <test_de.login1 testMethod=test_baidu3>, 'test_baidu1': <test_demo.login testMethod=test_baidu1>}
+2019-01-23 13:20:12,591 - log_config.py:20 - log - {'test_baidu2': '(test_de.login1)', 'test_baidu3': '(test_de.login1)', 'test_baidu1': '(test_demo.login)'}
+2019-01-23 13:20:12,592 - log_config.py:20 - log - {'test_baidu2': <test_de.login1 testMethod=test_baidu2>, 'test_baidu3': <test_de.login1 testMethod=test_baidu3>, 'test_baidu1': <test_demo.login testMethod=test_baidu1>}
+2019-01-23 13:21:25,597 - log_config.py:20 - log - {'test_baidu2': '(test_de.login1)', 'test_baidu3': '(test_de.login1)', 'test_baidu1': '(test_demo.login)'}
+2019-01-23 13:21:25,597 - log_config.py:20 - log - {'test_baidu2': <test_de.login1 testMethod=test_baidu2>, 'test_baidu3': <test_de.login1 testMethod=test_baidu3>, 'test_baidu1': <test_demo.login testMethod=test_baidu1>}
+2019-01-23 13:21:32,311 - log_config.py:20 - log - {'test_baidu2': '(test_de.login1)', 'test_baidu3': '(test_de.login1)', 'test_baidu1': '(test_demo.login)'}
+2019-01-23 13:21:32,311 - log_config.py:20 - log - {'test_baidu2': <test_de.login1 testMethod=test_baidu2>, 'test_baidu3': <test_de.login1 testMethod=test_baidu3>, 'test_baidu1': <test_demo.login testMethod=test_baidu1>}
+2019-01-23 13:21:50,287 - log_config.py:20 - log - {'test_baidu2': '(test_de.login1)', 'test_baidu3': '(test_de.login1)', 'test_baidu1': '(test_demo.login)'}
+2019-01-23 13:21:50,288 - log_config.py:20 - log - {'test_baidu2': <test_de.login1 testMethod=test_baidu2>, 'test_baidu3': <test_de.login1 testMethod=test_baidu3>, 'test_baidu1': <test_demo.login testMethod=test_baidu1>}
+2019-01-23 13:22:09,144 - log_config.py:20 - log - {'test_baidu2': '(test_de.login1)', 'test_baidu3': '(test_de.login1)', 'test_baidu1': '(test_demo.login)'}
+2019-01-23 13:22:09,144 - log_config.py:20 - log - {'test_baidu2': <test_de.login1 testMethod=test_baidu2>, 'test_baidu3': <test_de.login1 testMethod=test_baidu3>, 'test_baidu1': <test_demo.login testMethod=test_baidu1>}
+2019-01-23 13:22:56,495 - log_config.py:20 - log - {'test_baidu2': '(test_de.login1)', 'test_baidu3': '(test_de.login1)', 'test_baidu1': '(test_demo.login)'}
+2019-01-23 13:22:56,496 - log_config.py:20 - log - {'test_baidu2': <test_de.login1 testMethod=test_baidu2>, 'test_baidu3': <test_de.login1 testMethod=test_baidu3>, 'test_baidu1': <test_demo.login testMethod=test_baidu1>}
+2019-01-23 13:23:11,423 - log_config.py:20 - log - {'test_baidu2': '(test_de.login1)', 'test_baidu3': '(test_de.login1)', 'test_baidu1': '(test_demo.login)'}
+2019-01-23 13:23:11,424 - log_config.py:20 - log - {'test_baidu2': <test_de.login1 testMethod=test_baidu2>, 'test_baidu3': <test_de.login1 testMethod=test_baidu3>, 'test_baidu1': <test_demo.login testMethod=test_baidu1>}
+2019-01-23 13:24:55,629 - log_config.py:20 - log - {'test_baidu2': '(test_de.login1)', 'test_baidu3': '(test_de.login1)', 'test_baidu1': '(test_demo.login)'}
+2019-01-23 13:24:55,629 - log_config.py:20 - log - {'test_baidu2': <test_de.login1 testMethod=test_baidu2>, 'test_baidu3': <test_de.login1 testMethod=test_baidu3>, 'test_baidu1': <test_demo.login testMethod=test_baidu1>}
+2019-01-23 13:26:08,120 - log_config.py:20 - log - {'test_baidu2': '(test_de.login1)', 'test_baidu3': '(test_de.login1)', 'test_baidu1': '(test_demo.login)'}
+2019-01-23 13:26:08,121 - log_config.py:20 - log - {'test_baidu2': <test_de.login1 testMethod=test_baidu2>, 'test_baidu3': <test_de.login1 testMethod=test_baidu3>, 'test_baidu1': <test_demo.login testMethod=test_baidu1>}
+2019-01-23 13:26:47,824 - log_config.py:20 - log - {'test_baidu2': '(test_de.login1)', 'test_baidu3': '(test_de.login1)', 'test_baidu1': '(test_demo.login)'}
+2019-01-23 13:26:47,825 - log_config.py:20 - log - {'test_baidu2': <test_de.login1 testMethod=test_baidu2>, 'test_baidu3': <test_de.login1 testMethod=test_baidu3>, 'test_baidu1': <test_demo.login testMethod=test_baidu1>}
+2019-01-23 13:30:32,352 - log_config.py:20 - log - {'test_baidu2': '(test_de.login1)', 'test_baidu3': '(test_de.login1)', 'test_baidu1': '(test_demo.login)'}
+2019-01-23 13:30:32,352 - log_config.py:20 - log - {'test_baidu2': <test_de.login1 testMethod=test_baidu2>, 'test_baidu3': <test_de.login1 testMethod=test_baidu3>, 'test_baidu1': <test_demo.login testMethod=test_baidu1>}
+2019-01-23 13:31:07,159 - log_config.py:20 - log - {'test_baidu2': '(test_de.login1)', 'test_baidu3': '(test_de.login1)', 'test_baidu1': '(test_demo.login)'}
+2019-01-23 13:31:07,159 - log_config.py:20 - log - {'test_baidu2': <test_de.login1 testMethod=test_baidu2>, 'test_baidu3': <test_de.login1 testMethod=test_baidu3>, 'test_baidu1': <test_demo.login testMethod=test_baidu1>}
+2019-01-23 13:32:03,379 - log_config.py:20 - log - {'test_baidu2': '(test_de.login1)', 'test_baidu3': '(test_de.login1)', 'test_baidu1': '(test_demo.login)'}
+2019-01-23 13:32:03,379 - log_config.py:20 - log - {'test_baidu2': <test_de.login1 testMethod=test_baidu2>, 'test_baidu3': <test_de.login1 testMethod=test_baidu3>, 'test_baidu1': <test_demo.login testMethod=test_baidu1>}
+2019-01-23 13:33:53,312 - log_config.py:20 - log - {'test_baidu2': '(test_de.login1)', 'test_baidu3': '(test_de.login1)', 'test_baidu1': '(test_demo.login)'}
+2019-01-23 13:33:53,312 - log_config.py:20 - log - {'test_baidu2': <test_de.login1 testMethod=test_baidu2>, 'test_baidu3': <test_de.login1 testMethod=test_baidu3>, 'test_baidu1': <test_demo.login testMethod=test_baidu1>}
+2019-01-23 13:34:04,064 - log_config.py:20 - log - {'test_baidu2': '(test_de.login1)', 'test_baidu3': '(test_de.login1)', 'test_baidu1': '(test_demo.login)'}
+2019-01-23 13:34:04,065 - log_config.py:20 - log - {'test_baidu2': <test_de.login1 testMethod=test_baidu2>, 'test_baidu3': <test_de.login1 testMethod=test_baidu3>, 'test_baidu1': <test_demo.login testMethod=test_baidu1>}
+2019-01-23 13:34:50,487 - log_config.py:20 - log - {'test_baidu2': '(test_de.login1)', 'test_baidu3': '(test_de.login1)', 'test_baidu1': '(test_demo.login)'}
+2019-01-23 13:34:50,488 - log_config.py:20 - log - {'test_baidu2': <test_de.login1 testMethod=test_baidu2>, 'test_baidu3': <test_de.login1 testMethod=test_baidu3>, 'test_baidu1': <test_demo.login testMethod=test_baidu1>}
+2019-01-23 13:36:30,313 - log_config.py:20 - log - {'test_baidu2': '(test_de.login1)', 'test_baidu3': '(test_de.login1)', 'test_baidu1': '(test_demo.login)'}
+2019-01-23 13:36:30,314 - log_config.py:20 - log - {'test_baidu2': <test_de.login1 testMethod=test_baidu2>, 'test_baidu3': <test_de.login1 testMethod=test_baidu3>, 'test_baidu1': <test_demo.login testMethod=test_baidu1>}
+2019-01-23 13:37:01,345 - log_config.py:20 - log - {'test_baidu2': '(test_de.login1)', 'test_baidu3': '(test_de.login1)', 'test_baidu1': '(test_demo.login)'}
+2019-01-23 13:37:01,346 - log_config.py:20 - log - {'test_baidu2': <test_de.login1 testMethod=test_baidu2>, 'test_baidu3': <test_de.login1 testMethod=test_baidu3>, 'test_baidu1': <test_demo.login testMethod=test_baidu1>}
+2019-01-23 13:37:16,014 - log_config.py:20 - log - {'test_baidu2': '(test_de.login1)', 'test_baidu3': '(test_de.login1)', 'test_baidu1': '(test_demo.login)'}
+2019-01-23 13:37:16,015 - log_config.py:20 - log - {'test_baidu2': <test_de.login1 testMethod=test_baidu2>, 'test_baidu3': <test_de.login1 testMethod=test_baidu3>, 'test_baidu1': <test_demo.login testMethod=test_baidu1>}
+2019-01-23 13:37:38,392 - log_config.py:20 - log - {'test_baidu2': '(test_de.login1)', 'test_baidu3': '(test_de.login1)', 'test_baidu1': '(test_demo.login)'}
+2019-01-23 13:37:38,393 - log_config.py:20 - log - {'test_baidu2': <test_de.login1 testMethod=test_baidu2>, 'test_baidu3': <test_de.login1 testMethod=test_baidu3>, 'test_baidu1': <test_demo.login testMethod=test_baidu1>}
+2019-01-23 13:37:52,728 - log_config.py:20 - log - {'test_baidu2': '(test_de.login1)', 'test_baidu3': '(test_de.login1)', 'test_baidu1': '(test_demo.login)'}
+2019-01-23 13:37:52,729 - log_config.py:20 - log - {'test_baidu2': <test_de.login1 testMethod=test_baidu2>, 'test_baidu3': <test_de.login1 testMethod=test_baidu3>, 'test_baidu1': <test_demo.login testMethod=test_baidu1>}
+2019-01-23 13:37:54,830 - log_config.py:20 - log - UIHandle：关键字初始化成功
+2019-01-23 13:37:54,831 - log_config.py:17 - log - https://www.baidu.com
+2019-01-23 13:37:57,922 - log_config.py:17 - log - 首页搜索
+2019-01-23 13:37:58,384 - log_config.py:17 - log - test_baidu2用例执行完毕，邮件已发送
+2019-01-23 13:38:59,768 - log_config.py:20 - log - {'test_baidu2': '(test_de.login1)', 'test_baidu3': '(test_de.login1)', 'test_baidu1': '(test_demo.login)'}
+2019-01-23 13:38:59,768 - log_config.py:20 - log - {'test_baidu2': <test_de.login1 testMethod=test_baidu2>, 'test_baidu3': <test_de.login1 testMethod=test_baidu3>, 'test_baidu1': <test_demo.login testMethod=test_baidu1>}
+2019-01-23 13:39:14,552 - log_config.py:20 - log - {'test_baidu2': '(test_de.login1)', 'test_baidu3': '(test_de.login1)', 'test_baidu1': '(test_demo.login)'}
+2019-01-23 13:39:14,552 - log_config.py:20 - log - {'test_baidu2': <test_de.login1 testMethod=test_baidu2>, 'test_baidu3': <test_de.login1 testMethod=test_baidu3>, 'test_baidu1': <test_demo.login testMethod=test_baidu1>}
+2019-01-23 13:39:16,954 - log_config.py:20 - log - UIHandle：关键字初始化成功
+2019-01-23 13:39:16,955 - log_config.py:17 - log - https://www.baidu.com
+2019-01-23 13:39:19,231 - log_config.py:17 - log - 首页搜索
+2019-01-23 13:39:19,333 - log_config.py:17 - log - 输入:开
+2019-01-23 13:39:19,333 - log_config.py:20 - log - send_keys:page:首页搜索,element:搜索框,msg:开
+2019-01-23 13:39:19,334 - log_config.py:17 - log - 首页搜索
+2019-01-23 13:39:19,418 - log_config.py:17 - log - 点击成功
+2019-01-23 13:39:19,418 - log_config.py:20 - log - Click:page:首页搜索,element:搜索按钮
+2019-01-23 13:39:22,573 - log_config.py:17 - log - test_baidu2用例执行完毕，邮件已发送
+2019-01-23 13:40:29,687 - log_config.py:20 - log - {'test_baidu2': '(test_de.login1)', 'test_baidu3': '(test_de.login1)', 'test_baidu1': '(test_demo.login)'}
+2019-01-23 13:40:29,687 - log_config.py:20 - log - {'test_baidu2': <test_de.login1 testMethod=test_baidu2>, 'test_baidu3': <test_de.login1 testMethod=test_baidu3>, 'test_baidu1': <test_demo.login testMethod=test_baidu1>}
+2019-01-23 16:14:53,347 - log_config.py:20 - log - {'test_baidu2': '(test_de.login1)', 'test_baidu3': '(test_de.login1)', 'test_baidu1': '(test_demo.login)'}
+2019-01-23 16:14:53,347 - log_config.py:20 - log - {'test_baidu2': <test_de.login1 testMethod=test_baidu2>, 'test_baidu3': <test_de.login1 testMethod=test_baidu3>, 'test_baidu1': <test_demo.login testMethod=test_baidu1>}
+2019-01-23 16:14:55,476 - log_config.py:20 - log - UIHandle：关键字初始化成功
+2019-01-23 16:14:55,476 - log_config.py:17 - log - https://www.baidu.com
+2019-01-23 16:14:56,939 - log_config.py:17 - log - 首页搜索
+2019-01-23 16:14:57,218 - log_config.py:17 - log - test_baidu2用例执行完毕，邮件已发送

@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc724217-7017-47c4-9292-bd41aa841c85" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/testtool.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/testtool.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sqlite/data.db" beforeDir="false" afterPath="$PROJECT_DIR$/sqlite/data.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webtool/CaseManger.py" beforeDir="false" afterPath="$PROJECT_DIR$/webtool/CaseManger.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webtool/Config.py" beforeDir="false" afterPath="$PROJECT_DIR$/webtool/Config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webtool/HTMLTestRunner.py" beforeDir="false" afterPath="$PROJECT_DIR$/webtool/HTMLTestRunner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webtool/KeywordPackage.py" beforeDir="false" afterPath="$PROJECT_DIR$/webtool/KeywordPackage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webtool/ResultManger.py" beforeDir="false" afterPath="$PROJECT_DIR$/webtool/ResultManger.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webtool/Run.py" beforeDir="false" afterPath="$PROJECT_DIR$/webtool/Run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webtool/SqlModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/webtool/SqlModel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webtool/Window.py" beforeDir="false" afterPath="$PROJECT_DIR$/webtool/Window.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webtool/email_send.py" beforeDir="false" afterPath="$PROJECT_DIR$/webtool/email_send.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webtool/log_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/webtool/log_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webtool/testcase/test_de.py" beforeDir="false" afterPath="$PROJECT_DIR$/webtool/testcase/test_de.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webtool/threads.py" beforeDir="false" afterPath="$PROJECT_DIR$/webtool/threads.py" afterDir="false" />
-    </list>
+    <list default="true" id="cc724217-7017-47c4-9292-bd41aa841c85" name="Default Changelist" comment="拆分了界面类" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -259,11 +242,12 @@
         <counts>
           <entry key="dummy" value="1" />
           <entry key="py" value="566" />
+          <entry key="txt" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="PLAIN_TEXT" value="10" />
           <entry key="Python" value="566" />
         </counts>
       </usages-collector>
@@ -766,7 +750,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945712" visible="true" weight="0.31190726" />
       <window_info id="Structure" order="1" sideWeight="0.5005429" side_tool="true" weight="0.31190726" />
@@ -801,6 +784,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="拆分了界面类" />
+    <option name="LAST_COMMIT_MESSAGE" value="拆分了界面类" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
