@@ -1,4 +1,5 @@
-# -*- coding: utf-8 -*-
+# -*- coding: UTF-8 -*-
+#！usr/bin/python
 from PyQt5.QtWidgets import *
 from PyQt5.QtSql import QSqlDatabase,QSqlTableModel,QSqlRelationalTableModel,QSqlRelation
 from PyQt5.Qt import Qt,QTimer
@@ -69,7 +70,7 @@ class Model_View(object):
         self.thread.trigger.connect(self.TimeStop)
     def TimeStop(self):
         self.timer.stop()
-        LOGER.loginfo(self.name,"用例执行完毕，邮件已发送")
+        LOGER.loginfo(self.name+"用例执行完毕，邮件已发送")
         print("用例运行完毕，邮件已发送")
         # print("运行结束用时", RUNTIME)
         # self.t = 0
@@ -97,6 +98,7 @@ class Model_View(object):
     def run(self,WindowTitle= "data"):
         app = QApplication(sys.argv)
         dig=QDialog()
+
         layout=QHBoxLayout()
         layout.addWidget(self.modelview())
         dig.setLayout(layout)
@@ -104,6 +106,7 @@ class Model_View(object):
         dig.resize(800,400)
         dig.show()
         sys.exit(app.exec_())
+
 
 if __name__=="__main__":
     m=Model_View()

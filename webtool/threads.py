@@ -82,6 +82,7 @@ class RunThread(QThread):
         # wechat.start_auto(self.callback)
         R=Result()
         R.writresult(self.casename)
+        print(self.casename)
         self.trigger.emit()
         # self._signal.emit(msg)
 

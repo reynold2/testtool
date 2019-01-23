@@ -1,4 +1,5 @@
-# -*- coding: utf-8 -*-
+# -*- coding: UTF-8 -*-
+#！usr/bin/python
 from PyQt5.QtWidgets import QMainWindow,QApplication,QHBoxLayout,QMenuBar,QTabBar,QAction
 from PyQt5.QtGui import QIcon
 import sys

@@ -1,4 +1,5 @@
-# -*- coding: utf-8 -*-
+# -*- coding: UTF-8 -*-
+#！usr/bin/python
 import os
 class Global_Config():
     URL="https://www.baidu.com"

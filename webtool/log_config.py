@@ -1,3 +1,5 @@
+# -*- coding: UTF-8 -*-
+#！usr/bin/python
 from webtool.Config import Global_Config
 import logging.handlers
 # 日志类

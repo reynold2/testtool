@@ -1,4 +1,5 @@
-# -*- coding: utf-8 -*-
+# -*- coding: UTF-8 -*-
+#！usr/bin/python
 import unittest
 from webtool.Config import Global_Config
 from webtool.log_config import LOGER

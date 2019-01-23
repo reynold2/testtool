@@ -1,4 +1,5 @@
-# -*- coding: utf-8 -*-
+# -*- coding: UTF-8 -*-
+#！usr/bin/python
 import smtplib
 from  email.mime.text import MIMEText
 from  email.header import Header
