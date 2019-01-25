@@ -2,11 +2,12 @@
 #！usr/bin/python
 from PyQt5.QtWidgets import *
 from PyQt5.QtSql import QSqlDatabase,QSqlTableModel,QSqlRelationalTableModel,QSqlRelation
-from PyQt5.Qt import Qt,QTimer
+from PyQt5.Qt import Qt,QTimer,QCoreApplication
 from webtool.threads import RunThread
 from webtool.log_config import LOGER
 import time
 import sys
+
 class Model_View(object):
     def __init__(self,databasetype="QSQLITE",databasename="sql/testcase.db",sqltablename="result"):
         db=QSqlDatabase.addDatabase(databasetype)
@@ -31,6 +32,7 @@ class Model_View(object):
     def modelview(self):
         self.view=QTableView()
         self.view.setEditTriggers(QAbstractItemView.NoEditTriggers)
+        self.view.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
         self.view.setSelectionBehavior(QAbstractItemView.SelectRows)
         self.view.setModel(self.model)
         for index in range(self.model.rowCount()):
@@ -41,11 +43,11 @@ class Model_View(object):
     def button(self,id):
         widget = QWidget()
         Btn = QPushButton('执行')
-        # Btn.setStyleSheet(''' text-align : center;
-        #                                   background-color : NavajoWhite;
-        #                                   height : 30px;
-        #                                   border-style: outset;
-        #                                   font : 15px  ''')
+        Btn.setStyleSheet(''' text-align : center;
+                                          background-color : NavajoWhite;
+                                          height : 30px;
+                                          border-style: outset;
+                                          font : 15px  ''')
 
         Btn.clicked.connect(lambda: self.Work(id))
         self.timer = QTimer()
@@ -67,48 +69,30 @@ class Model_View(object):
         self.timer.start(1000)
         self.thread = RunThread(index)
         self.thread.start()
-        self.thread.trigger.connect(self.TimeStop)
+        self.thread.thread_signal.connect(self.TimeStop)
+    # @staticmethod
+    # def allrun():
+    #
+    #     thread = RunThread(0)
+    #     thread.start()
+    #     # thread.join()
+    #     QCoreApplication.processEvents()
     def TimeStop(self):
         self.timer.stop()
         LOGER.loginfo(self.name+"用例执行完毕，邮件已发送")
         print("用例运行完毕，邮件已发送")
-        # print("运行结束用时", RUNTIME)
-        # self.t = 0
-    # def tabadd(self):
-    #     row = self.model.rowCount()
-    #     self.model.insertRow(row)
-    #     index = self.model.index(row)
-    #     self.view.setCurrentIndex(index)
-    #     self.view.edit(index)
-    # def tabdel(self):
-    #     index = self.modelview().currentIndex()
-    #     # self.model.removeRow(index.row())
-    # def tabupdate(self):
-    #     self.model.updateRowInTable()
-    # def row(self):
-    #     row=self.model.rowCount()
-    #     return row
-    # def line(self):
-    #     line=self.model.columnCount()
-    #     return line
-    # def rowvalue(self):
-    #     rowvalue=self.model.insertRowIntoTable(QSqlRecord="")
-    # def data(self):
-    #     self.model.data()
-    def run(self,WindowTitle= "data"):
-        app = QApplication(sys.argv)
-        dig=QDialog()
 
-        layout=QHBoxLayout()
-        layout.addWidget(self.modelview())
-        dig.setLayout(layout)
-        dig.setWindowTitle(WindowTitle)
-        dig.resize(800,400)
-        dig.show()
-        sys.exit(app.exec_())
 
 
 if __name__=="__main__":
     m=Model_View()
-    m.run()
+    app = QApplication(sys.argv)
+    dig=QDialog()
+    layout=QHBoxLayout()
+    layout.addWidget(m.modelview())
+    dig.setLayout(layout)
+    dig.setWindowTitle("test")
+    dig.resize(800,400)
+    dig.show()
+    sys.exit(app.exec_())
 

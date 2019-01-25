@@ -11,7 +11,7 @@ from Tool.ProcessCalls import Runexe
 import time
 import sys
 import os
-import win32com.client
+# import win32com.client
 from Tool.LoggingConfig import logger
 from Tool.UnitTests import wrapper
 

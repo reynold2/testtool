@@ -10,7 +10,7 @@ import operator
 from functools import reduce
 from Tool.CaseData import CaseData
 from Tool.GlobalConfig import *
-import win32gui
+# import win32gui
 import ctypes
 import sys
 from PyQt5.QtGui import QPainter, QIcon
@@ -51,15 +51,15 @@ class Photoshop(QMainWindow):
 
     def grab(self,CRimg):
         try:
-            shellTray = win32gui.FindWindow("Shell_TrayWnd", None)
-            win32gui.ShowWindow(shellTray, 0)
+            # shellTray = win32gui.FindWindow("Shell_TrayWnd", None)
+            # win32gui.ShowWindow(shellTray, 0)
             im = ImageGrab.grab()
             im.getbbox()
             im.save(CRimg)
         except:
             logger.error("截图异常")
         finally:
-            win32gui.ShowWindow(shellTray, 1)
+            # win32gui.ShowWindow(shellTray, 1)
             self.sourcedata=CaseData(self.sourcedata)
 
     def alignment_section(self,Cimg,Rimg):

@@ -296,6 +296,8 @@ class MyModel(QAbstractTableModel):
         super().__init__()
         list1 = []
         list2 = []
+
+
         dizhi = PATHDATA["case"]
         self.data = MangerData().GetExcel(location=dizhi)
         if self.data is None:
@@ -305,7 +307,8 @@ class MyModel(QAbstractTableModel):
                 b = self.data[i:i + 3]
                 list1.append(b[0])
                 list2.append(b[1])
-            self.rownew = max(list1) + 1
+    #这里的路径是Excel路基，路径未进行判断
+            self.rownew = max(list1)+1
             self.columnew = max(list2) + 1
 
     def row(self):

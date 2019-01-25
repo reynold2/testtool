@@ -30,7 +30,7 @@ class Result(Casemanger):
         runner = HTMLTestRunner(stream=fp, title='测试报告', description='测试执行情况')
         runner.run(alltestnames)
         fp.close()
-
+        print(1111111111111)
         # self.send()
         self.filename = filename
         return filename
