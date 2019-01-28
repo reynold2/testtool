@@ -43,7 +43,6 @@ class Runexe(QThread):
         z, f = os.path.split(PATHDATA.get('exe'))
         configfilepath = z + "/config"
         if type(self.args)is list:
-
             for x in self.args:
                 logger.debug("当前正在执行的测试用例：%s",x)
                 if os.path.exists(configfilepath) is True:

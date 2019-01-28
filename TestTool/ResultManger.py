@@ -19,18 +19,15 @@ class Result(Casemanger):
             alltestnames=self.GetTestSuite()
         now = time.strftime("%Y-%m-%d %H_%M_%S", time.localtime(time.time()))
         filename = Global_Config.REPORTPATH+"/" + now + '_result.html'  # 定义个报告存放路径，支持相对路径。
-
         #没有文件时报告文件夹后会失败
         # if os.path.exists(filename):
         #     pass
         # else:
         #     os.mkdir(Global_Config.REPORTPATH)
-
         fp = open(filename, 'wb+')
         runner = HTMLTestRunner(stream=fp, title='测试报告', description='测试执行情况')
         runner.run(alltestnames)
         fp.close()
-        print(1111111111111)
         # self.send()
         self.filename = filename
         return filename
