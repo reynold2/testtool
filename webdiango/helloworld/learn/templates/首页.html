@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form action="/add/" method="post" id="login-form"><input type="hidden" name="csrfmiddlewaretoken" value="yBX2kcOr5DwTNakY8taGcIMsQuXJM4u28dNbsk2djzzhFym3srPGZ4fRQK8Qk8fJ">
+  <div class="form-row">
+
+    <label class="required" for="id_username">Username:</label> <input type="text" name="username" autofocus="" required="" id="id_username">
+  </div>
+  <div class="form-row">
+
+    <label class="required" for="id_password">Password:</label> <input type="password" name="password" required="" id="id_password">
+    <input type="hidden" name="next" value="/admin/">
+  </div>
+
+
+  <div class="submit-row">
+    <label>&nbsp;</label><input type="submit" value="Log in">
+  </div>
+</form>
+
+</body>
+</html>

@@ -16,9 +16,29 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from learn import views as learn_views  # new
+#计算相加页面跳转1
+# urlpatterns = [
+#     path('', learn_views.home),  # new
+#    path('add/<int:a>/<int:b>/', learn_views.add, name='add'),
+#    path('add/', learn_views.add2, name='add2'),
+#     path('admin/', admin.site.urls),
+# ]
+#模板继承2
+# urlpatterns = [
+#     path('', learn_views.home),  # new
+#     path('admin/', admin.site.urls),
+# ]
+
+#模板进阶
+# urlpatterns = [
+#     path('', learn_views.home),  # new
+#     path('admin/', admin.site.urls),
+# ]
 
 urlpatterns = [
+    path('', learn_views.index),  # new
+   path('add/', learn_views.add, name='add'),
     path('admin/', admin.site.urls),
-	path('', learn_views.index),  # new
-
 ]
+
+
