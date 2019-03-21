@@ -1,0 +1,22 @@
+﻿生成启动时间为 2019/3/21 16:17:56。
+     1>项目“D:\Documents\Visual Studio 2015\Projects\reynold\测试\测试\测试.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt "命令8.cpp"
+         命令8.cpp
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Documents\Visual Studio 2015\Projects\reynold\测试\Debug\测试.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"D:\Documents\Visual Studio 2015\Projects\reynold\测试\Debug\测试.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Documents\Visual Studio 2015\Projects\reynold\测试\Debug\测试.lib" /MACHINE:X86 "Debug\单列模式9.obj"
+         "Debug\命令8.obj"
+         "Debug\工厂方法4.obj"
+         "Debug\抽象工厂7.obj"
+         "Debug\模板方法5.obj"
+         "Debug\策略6.obj"
+         "Debug\简单工厂2.obj"
+         "Debug\简单工厂1.obj"
+         "Debug\观察者模式10.obj"
+         "Debug\适配器3.obj"
+         测试.vcxproj -> D:\Documents\Visual Studio 2015\Projects\reynold\测试\Debug\测试.exe
+     1>已完成生成项目“D:\Documents\Visual Studio 2015\Projects\reynold\测试\测试\测试.vcxproj”(Build 个目标)的操作。
+
+已成功生成。
+
+已用时间 00:00:01.46
