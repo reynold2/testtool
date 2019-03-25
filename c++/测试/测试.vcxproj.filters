@@ -15,31 +15,46 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="简单工厂1.cpp">
+    <ClCompile Include="多线程.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="简单工厂2.cpp">
+    <ClCompile Include="6策略.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="适配器3.cpp">
+    <ClCompile Include="7抽象工厂.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="工厂方法4.cpp">
+    <ClCompile Include="12代理.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="模板方法5.cpp">
+    <ClCompile Include="9单列模式.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="策略6.cpp">
+    <ClCompile Include="4工厂方法.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="抽象工厂7.cpp">
+    <ClCompile Include="10观察者模式.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="命令8.cpp">
+    <ClCompile Include="1简单工厂.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="单列模式.cpp">
+    <ClCompile Include="3简单工厂.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="8命令.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="5模板方法.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="3适配器.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="11装饰模式.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="13生产者消费者模式.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
