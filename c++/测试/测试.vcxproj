@@ -147,8 +147,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="12代理.cpp" />
+    <ClCompile Include="15指针的引用.cpp" />
+    <ClCompile Include="17内联函数.cpp" />
+    <ClCompile Include="18用c链接.cpp" />
     <ClCompile Include="9单列模式.cpp" />
     <ClCompile Include="8命令.cpp" />
+    <ClCompile Include="14const替换define.cpp" />
     <ClCompile Include="多线程.cpp" />
     <ClCompile Include="4工厂方法.cpp" />
     <ClCompile Include="7抽象工厂.cpp" />
@@ -160,6 +164,7 @@
     <ClCompile Include="11装饰模式.cpp" />
     <ClCompile Include="10观察者模式.cpp" />
     <ClCompile Include="3适配器.cpp" />
+    <ClCompile Include="类.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
