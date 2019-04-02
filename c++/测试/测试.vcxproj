@@ -164,7 +164,8 @@
     <ClCompile Include="11装饰模式.cpp" />
     <ClCompile Include="10观察者模式.cpp" />
     <ClCompile Include="3适配器.cpp" />
-    <ClCompile Include="类.c" />
+    <ClCompile Include="19构造函数.cpp" />
+    <ClCompile Include="20深浅拷贝.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

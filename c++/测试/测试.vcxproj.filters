@@ -69,7 +69,10 @@
     <ClCompile Include="18用c链接.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="类.c">
+    <ClCompile Include="19构造函数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="20深浅拷贝.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
