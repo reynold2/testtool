@@ -1,0 +1,14 @@
+﻿生成启动时间为 2019/4/9 星期二 14:51:42。
+     1>项目“F:\testtool【mater】\c++\测试\测试.vcxproj”在节点 2 上(Build 个目标)。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(366,5): warning MSB8003: Could not find WindowsSDKDir variable from the registry.  TargetFrameworkVersion or PlatformToolset may be set to an invalid version number.
+     1>ClCompile:
+         CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt "12代理.cpp" "15指针的引用.cpp" "17内联函数.cpp" "18用c链接.cpp" "9单列模式.cpp" "8命令.cpp" "14const替换define.cpp" "多线程.cpp" "4工厂方法.cpp" "7抽象工厂.cpp" "5模板方法.cpp" "13生产者消费者模式.cpp" "6策略.cpp" "3简单工厂.cpp" "1简单工厂.cpp" "11装饰模式.cpp" "10观察者模式.cpp" "3适配器.cpp" "19构造函数.cpp" "20深浅拷贝.cpp"
+         TRACKER : 错误 TRK0005: 未能找到: “CL.exe”。系统找不到指定的文件。
+         
+         
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets(355,5): error MSB6006: “CL.exe”已退出，代码为 5。
+     1>已完成生成项目“F:\testtool【mater】\c++\测试\测试.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:01.48
