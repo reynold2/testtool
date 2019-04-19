@@ -19,9 +19,11 @@
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
+#include <QtWidgets/QProgressBar>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QTabWidget>
 #include <QtWidgets/QToolBar>
+#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -32,7 +34,6 @@ public:
     QWidget *centralWidget;
     QTabWidget *tabWidget;
     QWidget *FileTable;
-    QPushButton *FileButton;
     QLineEdit *Edit_Path;
     QLineEdit *Edit_Source;
     QLineEdit *Edit_Target;
@@ -42,9 +43,14 @@ public:
     QPushButton *Button_FilePath;
     QLabel *label_5;
     QComboBox *ComboBox_Suffix;
+    QProgressBar *progressBar;
+    QWidget *widget;
+    QVBoxLayout *verticalLayout_2;
+    QVBoxLayout *verticalLayout;
+    QPushButton *MianButton;
+    QPushButton *FileButton;
+    QPushButton *ContextButton;
     QWidget *ContentTable;
-    QPushButton *ContentButton;
-    QLabel *label_4;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
 
@@ -60,9 +66,6 @@ public:
         tabWidget->setGeometry(QRect(0, 0, 601, 341));
         FileTable = new QWidget();
         FileTable->setObjectName(QStringLiteral("FileTable"));
-        FileButton = new QPushButton(FileTable);
-        FileButton->setObjectName(QStringLiteral("FileButton"));
-        FileButton->setGeometry(QRect(500, 290, 91, 23));
         Edit_Path = new QLineEdit(FileTable);
         Edit_Path->setObjectName(QStringLiteral("Edit_Path"));
         Edit_Path->setGeometry(QRect(130, 20, 113, 20));
@@ -94,16 +97,43 @@ public:
         ComboBox_Suffix = new QComboBox(FileTable);
         ComboBox_Suffix->setObjectName(QStringLiteral("ComboBox_Suffix"));
         ComboBox_Suffix->setGeometry(QRect(410, 20, 72, 22));
-        ComboBox_Suffix->setCurrentText(QStringLiteral("*.doc"));
+        ComboBox_Suffix->setCurrentText(QStringLiteral("*.*"));
+        progressBar = new QProgressBar(FileTable);
+        progressBar->setObjectName(QStringLiteral("progressBar"));
+        progressBar->setGeometry(QRect(0, 290, 118, 23));
+        progressBar->setValue(24);
+        widget = new QWidget(FileTable);
+        widget->setObjectName(QStringLiteral("widget"));
+        widget->setGeometry(QRect(510, 240, 84, 76));
+        verticalLayout_2 = new QVBoxLayout(widget);
+        verticalLayout_2->setSpacing(6);
+        verticalLayout_2->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
+        verticalLayout_2->setContentsMargins(0, 0, 0, 0);
+        verticalLayout = new QVBoxLayout();
+        verticalLayout->setSpacing(6);
+        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
+        MianButton = new QPushButton(widget);
+        MianButton->setObjectName(QStringLiteral("MianButton"));
+
+        verticalLayout->addWidget(MianButton);
+
+        FileButton = new QPushButton(widget);
+        FileButton->setObjectName(QStringLiteral("FileButton"));
+
+        verticalLayout->addWidget(FileButton);
+
+
+        verticalLayout_2->addLayout(verticalLayout);
+
+        ContextButton = new QPushButton(widget);
+        ContextButton->setObjectName(QStringLiteral("ContextButton"));
+
+        verticalLayout_2->addWidget(ContextButton);
+
         tabWidget->addTab(FileTable, QString());
         ContentTable = new QWidget();
         ContentTable->setObjectName(QStringLiteral("ContentTable"));
-        ContentButton = new QPushButton(ContentTable);
-        ContentButton->setObjectName(QStringLiteral("ContentButton"));
-        ContentButton->setGeometry(QRect(490, 290, 101, 23));
-        label_4 = new QLabel(ContentTable);
-        label_4->setObjectName(QStringLiteral("label_4"));
-        label_4->setGeometry(QRect(10, 20, 54, 12));
         tabWidget->addTab(ContentTable, QString());
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
@@ -125,7 +155,6 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "\346\226\207\346\241\243\344\277\256\346\224\271\347\245\236\345\231\250", Q_NULLPTR));
-        FileButton->setText(QApplication::translate("MainWindow", "FileButton", Q_NULLPTR));
         label->setText(QApplication::translate("MainWindow", "\346\226\207\344\273\266\345\244\271\346\211\200\345\234\250\350\267\257\345\276\204", Q_NULLPTR));
         label_2->setText(QApplication::translate("MainWindow", "\346\272\220\346\225\260\346\215\256", Q_NULLPTR));
         label_3->setText(QApplication::translate("MainWindow", "\347\233\256\346\240\207\346\225\260\346\215\256", Q_NULLPTR));
@@ -136,6 +165,7 @@ public:
         label_5->setText(QApplication::translate("MainWindow", "\346\226\207\344\273\266\345\220\216\347\274\200", Q_NULLPTR));
         ComboBox_Suffix->clear();
         ComboBox_Suffix->insertItems(0, QStringList()
+         << QApplication::translate("MainWindow", "*.*", Q_NULLPTR)
          << QApplication::translate("MainWindow", "*.doc", Q_NULLPTR)
          << QApplication::translate("MainWindow", "*.docx", Q_NULLPTR)
          << QApplication::translate("MainWindow", "*.rtf", Q_NULLPTR)
@@ -143,10 +173,11 @@ public:
          << QApplication::translate("MainWindow", "*.xlsx", Q_NULLPTR)
          << QApplication::translate("MainWindow", "*.txt", Q_NULLPTR)
         );
-        tabWidget->setTabText(tabWidget->indexOf(FileTable), QApplication::translate("MainWindow", "\346\226\207\344\273\266\345\244\271\346\223\215\344\275\234", Q_NULLPTR));
-        ContentButton->setText(QApplication::translate("MainWindow", "ContentButton", Q_NULLPTR));
-        label_4->setText(QApplication::translate("MainWindow", "\350\267\257\345\276\204", Q_NULLPTR));
-        tabWidget->setTabText(tabWidget->indexOf(ContentTable), QApplication::translate("MainWindow", "\346\226\207\344\273\266\345\206\205\345\256\271\346\223\215\344\275\234", Q_NULLPTR));
+        MianButton->setText(QApplication::translate("MainWindow", "\345\205\250\351\203\250\346\233\277\346\215\242", Q_NULLPTR));
+        FileButton->setText(QApplication::translate("MainWindow", "\346\226\207\344\273\266\345\220\215\346\233\277\346\215\242", Q_NULLPTR));
+        ContextButton->setText(QApplication::translate("MainWindow", "\346\226\207\344\273\266\345\206\205\345\256\271\346\233\277\346\215\242", Q_NULLPTR));
+        tabWidget->setTabText(tabWidget->indexOf(FileTable), QApplication::translate("MainWindow", "\346\226\207\344\273\266\346\223\215\344\275\234", Q_NULLPTR));
+        tabWidget->setTabText(tabWidget->indexOf(ContentTable), QApplication::translate("MainWindow", "\345\267\245\345\205\267", Q_NULLPTR));
     } // retranslateUi
 
 };

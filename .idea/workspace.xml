@@ -2,11 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc724217-7017-47c4-9292-bd41aa841c85" name="Default Changelist" comment="拆分了界面类">
-      <change afterPath="$PROJECT_DIR$/TestTool/CommonTool/remotelib.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestDemo/demo/QQ截图20190418152850.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestDemo/demo/QQ截图20190418152850.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestDemo/demo/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestDemo/demo/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cproject/FileTool/ToolSource/myrunable.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cproject/FileTool/ToolSource/myrunable.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cproject/FileTool/ToolSource/mythread.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cproject/FileTool/ToolSource/mythread.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cproject/FileTool/test/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cproject/FileTool/test/mainwindow.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cproject/FileTool/test/mainwindow.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cproject/FileTool/test/mainwindow.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cproject/FileTool/test/myrunable.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cproject/FileTool/test/myrunable.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cproject/FileTool/test/mythread.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cproject/FileTool/test/mythread.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cproject/FileTool/test/test.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/testtool.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/testtool.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestTool/DmodTestCase/remotelib.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestTool/DmodTestCase/TestCase/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestTool/ResultManger.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestTool/ResultManger.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToolTest_Q/ProcessCalls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ToolTest_Q/ProcessCalls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cproject/FileTool/ToolSource/FileTool.pro" beforeDir="false" afterPath="$PROJECT_DIR$/cproject/FileTool/ToolSource/FileTool.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cproject/FileTool/ToolSource/FileTool.pro.user" beforeDir="false" afterPath="$PROJECT_DIR$/cproject/FileTool/ToolSource/FileTool.pro.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cproject/FileTool/ToolSource/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cproject/FileTool/ToolSource/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cproject/FileTool/ToolSource/Makefile.Debug" beforeDir="false" afterPath="$PROJECT_DIR$/cproject/FileTool/ToolSource/Makefile.Debug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cproject/FileTool/ToolSource/Makefile.Release" beforeDir="false" afterPath="$PROJECT_DIR$/cproject/FileTool/ToolSource/Makefile.Release" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cproject/FileTool/ToolSource/debug/FileTool.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cproject/FileTool/ToolSource/debug/FileTool.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cproject/FileTool/ToolSource/debug/documentoperation.o" beforeDir="false" afterPath="$PROJECT_DIR$/cproject/FileTool/ToolSource/debug/documentoperation.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cproject/FileTool/ToolSource/debug/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/cproject/FileTool/ToolSource/debug/main.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cproject/FileTool/ToolSource/debug/mainwindow.o" beforeDir="false" afterPath="$PROJECT_DIR$/cproject/FileTool/ToolSource/debug/mainwindow.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cproject/FileTool/ToolSource/debug/moc_mainwindow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cproject/FileTool/ToolSource/debug/moc_mainwindow.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cproject/FileTool/ToolSource/debug/moc_mainwindow.o" beforeDir="false" afterPath="$PROJECT_DIR$/cproject/FileTool/ToolSource/debug/moc_mainwindow.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cproject/FileTool/ToolSource/documentoperation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cproject/FileTool/ToolSource/documentoperation.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cproject/FileTool/ToolSource/documentoperation.h" beforeDir="false" afterPath="$PROJECT_DIR$/cproject/FileTool/ToolSource/documentoperation.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cproject/FileTool/ToolSource/fileoperation.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cproject/FileTool/ToolSource/fileoperation.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cproject/FileTool/ToolSource/mainwindow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cproject/FileTool/ToolSource/mainwindow.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cproject/FileTool/ToolSource/mainwindow.h" beforeDir="false" afterPath="$PROJECT_DIR$/cproject/FileTool/ToolSource/mainwindow.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cproject/FileTool/ToolSource/mainwindow.ui" beforeDir="false" afterPath="$PROJECT_DIR$/cproject/FileTool/ToolSource/mainwindow.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cproject/FileTool/ToolSource/ui_mainwindow.h" beforeDir="false" afterPath="$PROJECT_DIR$/cproject/FileTool/ToolSource/ui_mainwindow.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cproject/FileTool/pyword/findwords.py" beforeDir="false" afterPath="$PROJECT_DIR$/cproject/FileTool/pyword/findwords.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,280 +102,16 @@
     <expand />
     <select />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="191069982">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.0" value="2" />
-          <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="gitignore" value="1" />
-          <entry key="py" value="20" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="20" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="Python" value="337" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.js.language.service.starts" />
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="py" value="337" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="250361049">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="15" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.17" value="1" />
-          <entry key="project.open.time.18" value="1" />
-          <entry key="project.open.time.19" value="1" />
-          <entry key="project.open.time.20" value="1" />
-          <entry key="project.open.time.22" value="2" />
-          <entry key="project.open.time.24" value="1" />
-          <entry key="project.open.time.25" value="1" />
-          <entry key="project.open.time.26" value="1" />
-          <entry key="project.open.time.28" value="1" />
-          <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.5" value="5" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="18" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="cnf" value="3" />
-          <entry key="ini" value="13" />
-          <entry key="log" value="4" />
-          <entry key="png" value="2" />
-          <entry key="py" value="134" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="Image" value="2" />
-          <entry key="Ini" value="13" />
-          <entry key="PLAIN_TEXT" value="7" />
-          <entry key="Python" value="134" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="Python Console" value="12" />
-          <entry key="cnf" value="52" />
-          <entry key="dummy" value="76" />
-          <entry key="ini" value="2" />
-          <entry key="py" value="8988" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="Ini" value="2" />
-          <entry key="PLAIN_TEXT" value="128" />
-          <entry key="Python" value="9000" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="1539341517">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="py" value="13" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="Python" value="13" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="py" value="520" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="Python" value="520" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="-334512211">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="20" />
-          <entry key="project.open.time.10" value="9" />
-          <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.12" value="3" />
-          <entry key="project.open.time.13" value="1" />
-          <entry key="project.open.time.14" value="1" />
-          <entry key="project.open.time.8" value="1" />
-          <entry key="project.open.time.9" value="6" />
-          <entry key="project.opened" value="22" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="Python Console" value="34" />
-          <entry key="dummy" value="40" />
-          <entry key="py" value="4841" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="PLAIN_TEXT" value="40" />
-          <entry key="Python" value="4874" />
-          <entry key="SQL" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="html" value="11" />
-          <entry key="js" value="1" />
-          <entry key="log" value="5" />
-          <entry key="py" value="145" />
-          <entry key="txt" value="1" />
-          <entry key="xml" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="HTML" value="11" />
-          <entry key="JavaScript" value="1" />
-          <entry key="PLAIN_TEXT" value="6" />
-          <entry key="Python" value="145" />
-          <entry key="XML" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.js.language.service.starts" />
-      <usages-collector id="statistics.vcs.git.usages" />
-    </session>
-    <session id="-1909401178">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="7" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.13" value="1" />
-          <entry key="project.open.time.15" value="2" />
-          <entry key="project.open.time.20" value="1" />
-          <entry key="project.open.time.3" value="3" />
-          <entry key="project.opened" value="10" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="dummy" value="1" />
-          <entry key="py" value="2233" />
-          <entry key="txt" value="9" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="PLAIN_TEXT" value="10" />
-          <entry key="Python" value="2233" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="html" value="1" />
-          <entry key="ini" value="3" />
-          <entry key="jpg" value="1" />
-          <entry key="png" value="21" />
-          <entry key="py" value="173" />
-          <entry key="qrc" value="2" />
-          <entry key="txt" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="HTML" value="1" />
-          <entry key="Image" value="22" />
-          <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Python" value="173" />
-          <entry key="XML" value="2" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FavoritesManager">
     <favorites_list name="testtool" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestTool/Run.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="35" column="48" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
-              <folding>
-                <element signature="e#41#81#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestTool/CommonTool/remotelib.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestTool/threads.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1275">
-              <caret line="78" column="26" selection-start-line="78" selection-start-column="26" selection-end-line="78" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://E:/APP/Python/Scripts/django-admin.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/webdiango/helloworld/helloworld/wsgi.py">
+        <entry file="file://$PROJECT_DIR$/cproject/FileTool/pyword/findwords.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-              <folding>
-                <element signature="e#226#235#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://E:/APP/Python/Lib/ctypes/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3060">
-              <caret line="180" column="15" selection-start-line="180" selection-start-column="10" selection-end-line="180" selection-end-column="15" />
+            <state relative-caret-position="544">
+              <caret line="253" column="49" selection-start-line="253" selection-start-column="45" selection-end-line="253" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -362,6 +133,7 @@
       <find>By</find>
       <find>header_row</find>
       <find>sqltablename</find>
+      <find>cmd</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -370,9 +142,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/excel_xml/conversion.py" />
-        <option value="$PROJECT_DIR$/excel_xml/T.py" />
-        <option value="$PROJECT_DIR$/webtool/Operational_monitoring/Test_denglu.py" />
         <option value="$PROJECT_DIR$/webtool/Operational_monitoring/login.py" />
         <option value="$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/selenium/webdriver/remote/webdriver.py" />
         <option value="$PROJECT_DIR$/webtool/Operational_monitoring/test_baidu_search.py" />
@@ -421,20 +190,17 @@
         <option value="$PROJECT_DIR$/ToolTest_Q/ProcessCalls.py" />
         <option value="$PROJECT_DIR$/TestTool/Run.py" />
         <option value="$PROJECT_DIR$/TestTool/CommonTool/remotelib.py" />
+        <option value="$PROJECT_DIR$/TestDemo/demo/test.py" />
+        <option value="$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/pytesseract/pytesseract.py" />
+        <option value="$PROJECT_DIR$/cproject/FileTool/pyword/findwords.py" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="588" />
-    <option name="y" value="161" />
-    <option name="width" value="1048" />
-    <option name="height" value="770" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="594" />
+    <option name="y" value="45" />
+    <option name="width" value="1337" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -461,21 +227,62 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="testtool" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testtool" type="462c0819:PsiDirectoryNode" />
+              <item name="testtool[dev]" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testtool[dev]" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="testtool" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testtool" type="462c0819:PsiDirectoryNode" />
+              <item name="testtool[dev]" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testtool[dev]" type="462c0819:PsiDirectoryNode" />
+              <item name="cproject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testtool[dev]" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testtool[dev]" type="462c0819:PsiDirectoryNode" />
+              <item name="cproject" type="462c0819:PsiDirectoryNode" />
+              <item name="FileTool" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testtool[dev]" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testtool[dev]" type="462c0819:PsiDirectoryNode" />
+              <item name="cproject" type="462c0819:PsiDirectoryNode" />
+              <item name="FileTool" type="462c0819:PsiDirectoryNode" />
+              <item name="pyword" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testtool[dev]" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testtool[dev]" type="462c0819:PsiDirectoryNode" />
+              <item name="TestTool" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testtool[dev]" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testtool[dev]" type="462c0819:PsiDirectoryNode" />
+              <item name="TestTool" type="462c0819:PsiDirectoryNode" />
+              <item name="CommonTool" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testtool[dev]" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testtool[dev]" type="462c0819:PsiDirectoryNode" />
+              <item name="ToolTest_Q" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testtool[dev]" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testtool[dev]" type="462c0819:PsiDirectoryNode" />
+              <item name="ToolTest_Q" type="462c0819:PsiDirectoryNode" />
+              <item name="case" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testtool[dev]" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testtool[dev]" type="462c0819:PsiDirectoryNode" />
               <item name="webdiango" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="testtool" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testtool" type="462c0819:PsiDirectoryNode" />
+              <item name="testtool[dev]" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testtool[dev]" type="462c0819:PsiDirectoryNode" />
               <item name="webdiango" type="462c0819:PsiDirectoryNode" />
               <item name="helloworld" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -483,29 +290,33 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/webtool/ui" />
+    <property name="last_opened_file_path" value="D:/abby/vue-demo" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\ykq\web\testtool\webtool\res" />
-      <recent name="F:\ykq\web\testtool\webtool" />
-      <recent name="D:\git_workspace\testtool\webtool\Operational_monitoring" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\ykq\web\testtool\TestTool\CommonTool" />
       <recent name="F:\ykq\web\testtool\TestDemo" />
       <recent name="F:\ykq\web\testtool\TestTool\DmodTestCase" />
       <recent name="F:\ykq\web\testtool\TestTool\WebTestCase" />
       <recent name="F:\ykq\web\testtool\TestTool\WebTestCase\TestCase" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\testtool[dev]\TestDemo\demo" />
+      <recent name="F:\ykq\web\testtool\webtool\res" />
+      <recent name="F:\ykq\web\testtool\webtool" />
+      <recent name="D:\git_workspace\testtool\webtool\Operational_monitoring" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -520,49 +331,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.remotelib">
-    <configuration name="MainRun" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="testtool" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ToolTest_Q" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ToolTest_Q/MainRun.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ProfileWizard" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="testtool" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ToolTest_Q" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ToolTest_Q/ProfileWizard.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.findwords">
     <configuration name="Run" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="testtool" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -575,7 +344,52 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TestTool/Run.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="findwords" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="testtool" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cproject/FileTool/pyword" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cproject/FileTool/pyword/findwords.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytesseract" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="testtool" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/pytesseract" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/pytesseract/pytesseract.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -596,7 +410,30 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TestTool/CommonTool/remotelib.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="testtool" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TestDemo/demo" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TestDemo/demo/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -607,16 +444,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.Run" />
-      <item itemvalue="Python.MainRun" />
-      <item itemvalue="Python.ProfileWizard" />
       <item itemvalue="Python.remotelib" />
+      <item itemvalue="Python.findwords" />
+      <item itemvalue="Python.test" />
+      <item itemvalue="Python.pytesseract" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.findwords" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.pytesseract" />
         <item itemvalue="Python.remotelib" />
         <item itemvalue="Python.Run" />
-        <item itemvalue="Python.MainRun" />
-        <item itemvalue="Python.ProfileWizard" />
       </list>
     </recent_temporary>
   </component>
@@ -630,6 +469,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1535983236849</updated>
+      <workItem from="1555307189010" duration="3909000" />
+      <workItem from="1555383261981" duration="36000" />
+      <workItem from="1555383330709" duration="19000" />
+      <workItem from="1555408239753" duration="28685000" />
+      <workItem from="1555551003812" duration="9792000" />
+      <workItem from="1555655497305" duration="33000" />
     </task>
     <servers />
   </component>
@@ -665,6 +510,9 @@
       <configuration name="Unittests in test_de.py" configurationId="tests" />
     </history-entry>
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="42474000" />
+  </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -676,18 +524,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945712" visible="true" weight="0.16859852" />
-      <window_info id="Structure" order="1" sideWeight="0.5005429" side_tool="true" weight="0.31190726" />
-      <window_info id="Favorites" order="2" sideWeight="0.5005429" side_tool="true" weight="0.31190726" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49853373" visible="true" weight="0.30469584" />
+      <window_info id="Structure" order="1" sideWeight="0.5014663" side_tool="true" weight="0.20277481" />
+      <window_info id="Favorites" order="2" sideWeight="0.5014663" side_tool="true" weight="0.20277481" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49924356" weight="0.32790446" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7992624" weight="0.2944882" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.73182297" weight="0.40608034" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7992624" visible="true" weight="0.3421342" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.73182297" weight="0.40522876" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32899022" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32899022" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
@@ -709,22 +556,12 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="拆分了界面类" />
     <option name="LAST_COMMIT_MESSAGE" value="拆分了界面类" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/ToolTest_Q/DataIo.py</url>
-          <line>115</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -734,51 +571,12 @@
       </default-breakpoints>
     </breakpoint-manager>
   </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/testtool_dev_$test.coverage" NAME="test Coverage Results" MODIFIED="1555575616997" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestDemo/demo" />
+    <SUITE FILE_PATH="coverage/testtool_dev_$findwords.coverage" NAME="findwords Coverage Results" MODIFIED="1555579701292" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cproject/FileTool/pyword" />
+    <SUITE FILE_PATH="coverage/testtool_dev_$pytesseract.coverage" NAME="pytesseract Coverage Results" MODIFIED="1555573796760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/pytesseract" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/webtool/res/暂停_hover.png" />
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/49133163/PyQt5/QtCore/QThread.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="145" lean-forward="true" selection-start-line="145" selection-end-line="145" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webtool/ResultManger.py" />
-    <entry file="file://$PROJECT_DIR$/webtool/threads.py" />
-    <entry file="file://$PROJECT_DIR$/webtool/KeywordPackage.py" />
-    <entry file="file://$PROJECT_DIR$/webtool/testcase/OperationPackage.py" />
-    <entry file="file://$PROJECT_DIR$/webtool/testcase/test_de.py" />
-    <entry file="file://$PROJECT_DIR$/webtool/Config.py" />
-    <entry file="file://$PROJECT_DIR$/webtool/sql/__InitSql__.py" />
-    <entry file="file://$PROJECT_DIR$/webtool/SqlModel.py" />
-    <entry file="file://$PROJECT_DIR$/webtool/sql/model.py" />
-    <entry file="file://$PROJECT_DIR$/webtool/Run.py" />
-    <entry file="file://$PROJECT_DIR$/TestTool/Operational_monitoring/test_login.py" />
-    <entry file="file://$PROJECT_DIR$/TestTool/WebTestCase/TestCase/OperationPackage.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestTool/WebTestCase/TestCase/test_demo.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestTool/WebTestCase/TestCase/test_de.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestTool/Ui/mianwindow.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestTool/WebTestCase/KeywordPackage.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestTool/CaseManger.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestTool/CommonTool/email_send.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/TestTool/Sqlite_Sql/model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -793,13 +591,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/49133163/PyQt5/QtWidgets/QTableWidget.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="605" column="8" selection-start-line="605" selection-start-column="8" selection-end-line="605" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/49133163/PyQt5/QtWidgets/QTableWidget.py" />
     <entry file="file://$PROJECT_DIR$/ToolTest_Q/case/id_png.ini">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -807,27 +599,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="22" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ToolTest_Q/DataManger.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="23" column="45" lean-forward="true" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ToolTest_Q/DataIo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="118" column="32" lean-forward="true" selection-start-line="118" selection-start-column="32" selection-end-line="118" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ToolTest_Q/CentralView.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-867">
-          <caret line="9" column="58" lean-forward="true" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
         </state>
       </provider>
     </entry>
@@ -856,31 +627,6 @@
     <entry file="file://$PROJECT_DIR$/TestDemo/sqlite/DataModel.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-421" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ToolTest_Q/GlobalConfig.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ToolTest_Q/HttpReport.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ToolTest_Q/ImageComparison.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1326" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ToolTest_Q/LoggingConfig.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ToolTest_Q/MainRun.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ToolTest_Q/MainWindow.py">
@@ -924,9 +670,11 @@
         <state relative-caret-position="-306" />
       </provider>
     </entry>
+    <entry file="file://E:/APP/Python/Lib/ctypes/__init__.py" />
+    <entry file="file://E:/APP/Python/Scripts/django-admin.py" />
     <entry file="file://$PROJECT_DIR$/TestTool/Run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
+        <state relative-caret-position="783">
           <caret line="35" column="48" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
           <folding>
             <element signature="e#41#81#0" expanded="true" />
@@ -936,35 +684,206 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TestTool/CommonTool/remotelib.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
+        <state relative-caret-position="216">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TestTool/threads.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
+        <state relative-caret-position="2025">
           <caret line="78" column="26" selection-start-line="78" selection-start-column="26" selection-end-line="78" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/APP/Python/Lib/ctypes/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3060">
-          <caret line="180" column="15" selection-start-line="180" selection-start-column="10" selection-end-line="180" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/APP/Python/Scripts/django-admin.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/webdiango/helloworld/helloworld/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="378">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="e#226#235#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestTool/CaseManger.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/docx/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <folding>
+            <element signature="e#186#250#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestTool/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/docx/document.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="134" selection-start-line="134" selection-end-line="134" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/docx/parts/document.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="110" selection-start-line="110" selection-end-line="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/docx/opc/package.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="171" selection-start-line="171" selection-end-line="171" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/docx/opc/pkgwriter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/docx/opc/phys_pkg.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="140" selection-start-line="140" selection-end-line="140" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/zipfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1104">
+          <caret line="1112" selection-start-line="1112" selection-end-line="1112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/docx/section.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="421" column="62" selection-start-line="421" selection-start-column="47" selection-end-line="421" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/win32com/client/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ToolTest_Q/CentralView.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="9" column="58" lean-forward="true" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/win32com/client/dynamic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-139">
+          <caret line="256" selection-start-line="256" selection-end-line="256" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ToolTest_Q/CaseData.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ToolTest_Q/DataIo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1863">
+          <caret line="75" column="33" selection-start-line="75" selection-start-column="24" selection-end-line="75" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ToolTest_Q/GlobalConfig.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ToolTest_Q/HttpReport.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ToolTest_Q/ImageComparison.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ToolTest_Q/LoggingConfig.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ToolTest_Q/MainRun.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ToolTest_Q/DataManger.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestDemo/demo/QQ截图20190418152850.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/PIL/Image.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="2651" selection-start-line="2651" selection-end-line="2651" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/pytesseract/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="29" lean-forward="true" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/subprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="728" selection-start-line="728" selection-end-line="728" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestDemo/demo/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/pytesseract/pytesseract.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="117" column="60" selection-start-line="117" selection-start-column="45" selection-end-line="117" selection-end-column="60" />
+          <folding>
+            <element signature="e#181#190#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cproject/FileTool/pyword/findwords.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="253" column="49" selection-start-line="253" selection-start-column="45" selection-end-line="253" selection-end-column="49" />
         </state>
       </provider>
     </entry>

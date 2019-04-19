@@ -26,14 +26,20 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    fileoperation.cpp \
-    documentoperation.cpp
+    documentoperation.cpp \
+    myrunable.cpp \
+    mythread.cpp
+
 
 HEADERS += \
         mainwindow.h \
-    fileoperation.h \
-    documentoperation.h
+    documentoperation.h \
+    mythread.h \
+    myrunable.h
+
 
 
 FORMS += \
         mainwindow.ui
+
+DISTFILES +=

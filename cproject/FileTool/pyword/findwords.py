@@ -228,22 +228,32 @@ class RemoteExcel():
 
     def active_sheet(self):
         return self.xlApp.ActiveSheet
-    def re_Excel(self):
+
+    def re_Excel(self,old,new):
         for Worksheet in self.xlBook.Worksheets:
             Rows=Worksheet.UsedRange.Rows.Count
             Columns=Worksheet.UsedRange.Columns.Count
             for Row in range(Rows):
                 for Column in range(Columns):
-                    print(Row,Column)
-                    print(Worksheet.Cells(1, 1).Value)
+                    print(Row+1,Column+1)
+                    text=Worksheet.Cells(Row+1, Column+1).Value
+                    if type(text) is float:
+                        Worksheet.Cells(Row+1, Column+1).Value=str(int(text)).replace(str(old),str(new))
+                    elif type(text) is str:
+                        if old in text:
+                            Worksheet.Cells(Row+1, Column+1).Value=text.replace(old,new)
+                    else:
+                        if str(old) in str(text):
+                            Worksheet.Cells(Row+1, Column+1).Value=str(text).replace(old,new)
+        self.save()
 
 
 if __name__=='__main__':
     #example1
     TODAY = time.strftime('%Y-%m-%d',    time.localtime(time.time()))
-    excel = RemoteExcel('E:\\新建 Microsoft Excel 工作表 - 副本 - 副本.xlsx')
+    excel = RemoteExcel('E:\\2019内审检查表(8章)_r.xlsx')
 
-    excel.re_Excel()
+    excel.re_Excel(".",")")
     # excel.set_cell('old',1,1, "111")
     # print (excel.get_cell(1,1,'old'))
     excel.close()
