@@ -49,7 +49,7 @@ void MainWindow::on_Button_FilePath_clicked()
     file_full = QFileDialog::getOpenFileName(this);
     fi = QFileInfo(file_full);
     ui->Edit_Path->setText(fi.path()+"/");
-    ui->Edit_Path->setDisabled(true);
+
 }
 
 void MainWindow::on_MianButton_clicked()
@@ -59,7 +59,15 @@ void MainWindow::on_MianButton_clicked()
 
 void MainWindow::on_ContextButton_clicked()
 {
-
+    string Sourcex=ui->Edit_Source->text().toStdString();
+    string Targetx=ui->Edit_Target->text().toStdString();
+    string pyFilePath = "/script";
+    int ret = CplusUsePython::instance()->init(pyFilePath,"fileOperation");
+    if(ret != 0)
+    {
+        cout << "init failure!" << endl;
+    }
+    ret = CplusUsePython::instance()->CCallClassFunc("re_Excel","D:\\test\\新建 Microsoft Excel 工作表.xlsx",Sourcex,Targetx);
 }
 
 //void MainWindow::on_progressBar_valueChanged(int value)

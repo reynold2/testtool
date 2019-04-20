@@ -171,7 +171,6 @@ class RemoteExcel():
             Columns=Worksheet.UsedRange.Columns.Count
             for Row in range(Rows):
                 for Column in range(Columns):
-                    print(Row+1,Column+1)
                     text=Worksheet.Cells(Row+1, Column+1).Value
                     if type(text) is float:
                         Worksheet.Cells(Row+1, Column+1).Value=str(int(text)).replace(str(old),str(new))
@@ -187,7 +186,7 @@ class RemoteExcel():
 
 if __name__=='__main__':
     #example1
-    excel = RemoteExcel('E:\\2019内审检查表(8章)_r.xlsx')
-    excel.re_Excel(".",")")
-    word = RemoteWord('E:\\2019内审检查表(8章)_r.xlsx')
-    word.word_replace(".",")")
+    excel = RemoteExcel('D:\\test\\新建 Microsoft Excel 工作表.xlsx')
+    excel.re_Excel("啊啊","123")
+    word = RemoteWord('D:\\test\\新建 Microsoft Word 文档.docx')
+    word.word_replace("啊啊","123")

@@ -10,7 +10,11 @@
 #include"documentoperation.h"
 #include "myrunable.h"
 #include "mythread.h"
-
+#include "math.h"
+#include <Python.h>
+#include <iostream>
+#include <string>
+#include "extension_python.h"
 namespace Ui {
 class MainWindow;
 }

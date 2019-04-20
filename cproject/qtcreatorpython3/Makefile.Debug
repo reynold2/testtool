@@ -14,10 +14,10 @@ CXX           = g++
 DEFINES       = -DUNICODE -DQT_DEPRECATED_WARNINGS -DQT_QML_DEBUG -DQT_CORE_LIB
 CFLAGS        = -fno-keep-inline-dllexport -pipe -g -Wextra -Wall -W $(DEFINES)
 CXXFLAGS      = -fno-keep-inline-dllexport -pipe -g -std=gnu++11 -Wextra -Wall -W -fexceptions -mthreads $(DEFINES)
-INCPATH       = -I. -IC:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\include -IC:\Qt\Qt5.9.0\5.9\mingw53_32\include -IC:\Qt\Qt5.9.0\5.9\mingw53_32\include\QtCore -Idebug -IC:\Qt\Qt5.9.0\5.9\mingw53_32\mkspecs\win32-g++ 
+INCPATH       = -I. -IC:\Users\47812\AppData\Local\Programs\Python\Python36-32\include -IC:\Qt\Qt5.9.0\5.9\mingw53_32\include -IC:\Qt\Qt5.9.0\5.9\mingw53_32\include\QtCore -Idebug -IC:\Qt\Qt5.9.0\5.9\mingw53_32\mkspecs\win32-g++ 
 LINKER      =        g++
 LFLAGS        =        -Wl,-subsystem,console -mthreads
-LIBS        =        -LC:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\libs -lPython37 -LC:\Qt\Qt5.9.0\5.9\mingw53_32\lib C:\Qt\Qt5.9.0\5.9\mingw53_32\lib\libQt5Cored.a 
+LIBS        =        -LC:\Users\47812\AppData\Local\Programs\Python\Python36-32\libs -lPython36 -LC:\Qt\Qt5.9.0\5.9\mingw53_32\lib C:\Qt\Qt5.9.0\5.9\mingw53_32\lib\libQt5Cored.a 
 QMAKE         = C:\Qt\Qt5.9.0\5.9\mingw53_32\bin\qmake.exe
 IDC           = idc
 IDL           = midl
@@ -116,79 +116,77 @@ compiler_clean: compiler_moc_predefs_clean
 
 ####### Compile
 
-debug/main.o: main.cpp C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/Python.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/patchlevel.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/pyconfig.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/pymacconfig.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/pyport.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/pymacro.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/pyatomic.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/dynamic_annotations.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/pymath.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/pytime.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/object.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/pymem.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/objimpl.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/typeslots.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/pyhash.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/pydebug.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/bytearrayobject.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/bytesobject.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/unicodeobject.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/longobject.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/longintrepr.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/boolobject.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/floatobject.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/complexobject.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/rangeobject.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/memoryobject.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/tupleobject.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/listobject.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/dictobject.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/odictobject.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/enumobject.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/setobject.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/methodobject.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/moduleobject.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/funcobject.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/classobject.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/fileobject.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/pycapsule.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/traceback.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/pystate.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/pythread.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/sliceobject.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/cellobject.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/iterobject.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/genobject.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/descrobject.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/warnings.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/weakrefobject.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/structseq.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/namespaceobject.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/codecs.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/pyerrors.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/context.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/pyarena.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/modsupport.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/compile.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/code.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/pythonrun.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/pylifecycle.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/ceval.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/sysmodule.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/osmodule.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/intrcheck.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/import.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/abstract.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/bltinmodule.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/eval.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/pyctype.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/pystrtod.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/pystrcmp.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/dtoa.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/fileutils.h \
-		C:/Users/Administrator/AppData/Local/Programs/Python/Python37-32/include/pyfpe.h \
+debug/main.o: main.cpp C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/Python.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/patchlevel.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/pyconfig.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/pymacconfig.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/pyport.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/pymacro.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/pyatomic.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/dynamic_annotations.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/pymath.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/pytime.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/object.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/pymem.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/objimpl.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/typeslots.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/pyhash.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/pydebug.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/bytearrayobject.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/bytesobject.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/unicodeobject.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/longobject.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/longintrepr.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/boolobject.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/floatobject.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/complexobject.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/rangeobject.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/memoryobject.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/tupleobject.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/listobject.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/dictobject.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/odictobject.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/enumobject.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/setobject.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/methodobject.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/moduleobject.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/funcobject.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/classobject.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/fileobject.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/pycapsule.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/traceback.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/pystate.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/sliceobject.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/cellobject.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/iterobject.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/genobject.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/descrobject.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/warnings.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/weakrefobject.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/structseq.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/namespaceobject.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/codecs.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/pyerrors.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/pyarena.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/modsupport.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/pythonrun.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/pylifecycle.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/ceval.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/sysmodule.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/osmodule.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/intrcheck.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/import.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/abstract.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/bltinmodule.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/compile.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/code.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/eval.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/pyctype.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/pystrtod.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/pystrcmp.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/dtoa.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/fileutils.h \
+		C:/Users/47812/AppData/Local/Programs/Python/Python36-32/include/pyfpe.h \
 		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtCore/QDebug \
 		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtCore/qdebug.h \
 		C:/Qt/Qt5.9.0/5.9/mingw53_32/include/QtCore/qalgorithms.h \

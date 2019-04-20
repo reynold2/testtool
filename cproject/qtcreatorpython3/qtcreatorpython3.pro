@@ -26,5 +26,6 @@ DISTFILES += \
 #INCLUDEPATH +=C:\Users\Administrator\AppData\Local\Programs\Python\Python36-32\include   ############# python enviroment
 #LIBS += -LC:\Users\Administrator\AppData\Local\Programs\Python\Python36-32\libs\ -lPython36
 
-INCLUDEPATH +=C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\include
-LIBS += -LC:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\libs\ -lPython37
+INCLUDEPATH +=C:\Users\47812\AppData\Local\Programs\Python\Python36-32\include
+LIBS += -LC:\Users\47812\AppData\Local\Programs\Python\Python36-32\libs\ -lPython36
+

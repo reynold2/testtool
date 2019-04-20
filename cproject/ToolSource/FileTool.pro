@@ -45,9 +45,7 @@ FORMS += \
         mainwindow.ui
 
 DISTFILES += \
-    fileOperation.py \
-    pythontest.py \
-    ISmileLi.py
+    fileOperation.py
 
-INCLUDEPATH +=C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\include
-LIBS += -LC:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\libs\ -lPython37
+INCLUDEPATH +=C:\Users\47812\AppData\Local\Programs\Python\Python36-32\include
+LIBS += -LC:\Users\47812\AppData\Local\Programs\Python\Python36-32\libs\ -lPython36

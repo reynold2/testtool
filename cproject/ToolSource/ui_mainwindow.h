@@ -104,7 +104,7 @@ public:
         progressBar->setValue(24);
         layoutWidget = new QWidget(FileTable);
         layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
-        layoutWidget->setGeometry(QRect(510, 240, 84, 85));
+        layoutWidget->setGeometry(QRect(510, 220, 84, 85));
         verticalLayout_2 = new QVBoxLayout(layoutWidget);
         verticalLayout_2->setSpacing(6);
         verticalLayout_2->setContentsMargins(11, 11, 11, 11);
