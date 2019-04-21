@@ -20,7 +20,7 @@ public:
     // 初始化相关操作
     int init(const string pyFilePath, const string pyFileNameNoSuffix);
     // C++调用python类中的函数
-    int CCallClassFunc(const string pyFuncName,const string filepath, const string oldname, const string newname);
+    int CCallClassFunc(const string pyclassName,const string pyFuncName,const string filepath, const string oldname, const string newname);
 
 private:
     PyObject *pName;

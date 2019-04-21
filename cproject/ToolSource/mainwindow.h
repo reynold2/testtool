@@ -43,10 +43,15 @@ private slots:
 private:
     Ui::MainWindow *ui;
     MyThread myThread;
+
+private:
+    vector<string> FileNamePath;
+
 public:
     vector<string> WordFileNamePath_docx;
     vector<string> ExcelFileNamePath_xlsx;
-    vector<string> FileNamePath;
+    string CurrentFilepath ;
+
 };
 
 #endif // MAINWINDOW_H

@@ -75,20 +75,10 @@ int CplusUsePython::init(const string pyFilePath, const string pyFileNameNoSuffi
     return 0;
 }
 
-//************************************
-// 函数名称: CCallClassFunc
-// 函数说明：C++调用python类中的函数
-// 返 回 值: int
-// 参    数: const string pyFuncName
-// 参    数: const string name
-// 参    数: const string age
-// 作    者：ISmileLi
-// 作成日期：2018/11/25
-// 修改记录：
-//************************************
-int CplusUsePython::CCallClassFunc(const string pyFuncName,const string filepath, const string oldname, const string newname)
+
+int CplusUsePython::CCallClassFunc(const string pyclassName,const string pyFuncName,const string filepath, const string oldname, const string newname)
 {
-    if (pyFuncName.empty() || filepath.empty() )
+    if (pyFuncName.empty() || pyclassName.empty())
     {
         return -1;
     }
@@ -101,7 +91,7 @@ int CplusUsePython::CCallClassFunc(const string pyFuncName,const string filepath
     PyTuple_SetItem(pArgsinit, 0, Py_BuildValue("s", filepath.c_str()));
 
     // 增加支持调用类中方法的操作
-    pClass = PyObject_GetAttrString(pModule,"RemoteExcel"); // DrawPic为类的名字
+    pClass = PyObject_GetAttrString(pModule,pyclassName.c_str()); // pyclassName为类的名字
     if(!pClass)
     {
       cout<<"查找类名出错"<<endl;

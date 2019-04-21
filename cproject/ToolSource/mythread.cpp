@@ -9,8 +9,6 @@ MyThread::MyThread(QObject *parent) :
 
 void MyThread::run()
 {
-    qDebug() << "MyThread";
-
     QThreadPool myPool;
     myPool.setMaxThreadCount(4);
     for(int i = 0;i < 4;i++)
