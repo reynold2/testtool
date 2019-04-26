@@ -12,7 +12,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     filetool=new DocumentOperation();
     filetool->QfileListAll("DirPath");
-    AllFileListPath_Main=filetool->AllFileListPath;
+    AllFileListPath_Main=filetool->GetAllFileListPath();
 
 }
 
@@ -44,7 +44,7 @@ void MainWindow::on_Button_FilePath_clicked()
     //获取全部文件路径
     AllFileListPath_Main.clear();
     filetool->QfileListAll(CurrentDirPath);    
-    AllFileListPath_Main=filetool->AllFileListPath;
+    AllFileListPath_Main=filetool->GetAllFileListPath();
 
 }
 
@@ -75,7 +75,7 @@ void MainWindow::on_FileButton_clicked()
 
     AllFileListPath_Main.values().clear();
     filetool->QfileListAll(CurrentDirPath);
-    AllFileListPath_Main=filetool->AllFileListPath;
+    AllFileListPath_Main=filetool->GetAllFileListPath();
 
 //    DocumentOperation *filetool= new DocumentOperation(Path,Suffix,Source,Target,false);
 //    this->FileNamePath=filetool->fileNameList;

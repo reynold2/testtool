@@ -48,6 +48,7 @@ void DocumentOperation::QfileRename(QString suffixs,QString soures,QString targe
         {
         for(int j=0;j<it.value().count();j++)//C语言写法遍历
             {    
+
             oldfilenamepath =it.value().at(j);//at取出来的值为const，不可更改，迭代器可以更改
 
 //            string oldname=string((const char *)(it.value().at(j)).toLocal8Bit());
@@ -71,6 +72,11 @@ void DocumentOperation::QfileRename(QString suffixs,QString soures,QString targe
             qDebug()<< it.value();
         }
     }
+}
+
+QMap<QString, QVector<QString> > DocumentOperation::GetAllFileListPath()
+{
+    return AllFileListPath;
 }
 DocumentOperation::~DocumentOperation()
 {

@@ -32,10 +32,14 @@ private:
 
     QString oldfilenamepath;
     QString newfilenamepath;
-public:
     QMap< QString,QVector< QString >> AllFileListPath;
+public:
+
     void QfileListAll(QString path);
     void QfileRename(QString suffixs,QString soures,QString target);
+
+
+    QMap< QString,QVector< QString >> GetAllFileListPath();
 };
 
 #endif // DOCUMENTOPERATION_H
