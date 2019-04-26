@@ -39,6 +39,9 @@
         <height>20</height>
        </rect>
       </property>
+      <property name="text">
+       <string>DirPath</string>
+      </property>
      </widget>
      <widget class="QLineEdit" name="Edit_Source">
       <property name="geometry">
@@ -153,32 +156,32 @@
       </item>
       <item>
        <property name="text">
-        <string>*.doc</string>
+        <string>doc</string>
        </property>
       </item>
       <item>
        <property name="text">
-        <string>*.docx</string>
+        <string>docx</string>
        </property>
       </item>
       <item>
        <property name="text">
-        <string>*.rtf</string>
+        <string>rtf</string>
        </property>
       </item>
       <item>
        <property name="text">
-        <string>*.xls</string>
+        <string>xls</string>
        </property>
       </item>
       <item>
        <property name="text">
-        <string>*.xlsx</string>
+        <string>xlsx</string>
        </property>
       </item>
       <item>
        <property name="text">
-        <string>*.txt</string>
+        <string>txt</string>
        </property>
       </item>
      </widget>

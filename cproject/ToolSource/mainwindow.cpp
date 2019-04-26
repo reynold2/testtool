@@ -5,12 +5,14 @@ MainWindow::MainWindow(QWidget *parent) :
 
 {
     ui->setupUi(this);
-
     connect(ui->FileButton, SIGNAL(clicked()), this, SLOT(on_FileButton_clicked()),Qt::UniqueConnection);
     connect(ui->Button_FilePath, SIGNAL(clicked()), this, SLOT(on_Button_FilePath_clicked()),Qt::UniqueConnection);
     connect(ui->MianButton, SIGNAL(clicked()), this, SLOT(on_MianButton_clicked()),Qt::UniqueConnection);
     connect(&myThread,SIGNAL(requestMsg(const QString&)),this,SLOT(showMsg(const QString&)));
 
+    filetool=new DocumentOperation();
+    filetool->QfileListAll("DirPath");
+    AllFileListPath_Main=filetool->AllFileListPath;
 
 }
 
@@ -18,58 +20,101 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
-
-void MainWindow::on_FileButton_clicked()
-{
-
-    QString Path=ui->Edit_Path->text();
-    QString Suffix=ui->ComboBox_Suffix->currentText();
-    QString Source=ui->Edit_Source->text();
-    QString Target=ui->Edit_Target->text();
-    DocumentOperation filetool(Path,Suffix,Source,Target,false);
-//    for (size_t i =0; i < filetool.fileNameList.size(); i ++)
-//    {
-
-//            cout<< filetool.fileNameList[i]<<endl;
-
-//     }
-
-    int int_Suffix=ui->ComboBox_Suffix->currentIndex();
-    cout<<int_Suffix<<endl;
-    switch(int_Suffix)
-    {
-        case 1:
-            WordFileNamePath_docx=filetool.file_operator();
-        case 2:
-            ExcelFileNamePath_xlsx=filetool.file_operator();
-        case 0:
-            FileNamePath=filetool.file_operator();
-    }
-
-}
-
 void MainWindow::on_Button_FilePath_clicked()
 {
     QFileInfo fi;
-    QString file_full;
-    file_full = QFileDialog::getOpenFileName(this);
-    fi = QFileInfo(file_full);
-    this->CurrentFilepath=file_full.toStdString();
-    ui->Edit_Path->setText(fi.path()+"/");
+    CurrentFilepath = QFileDialog::getOpenFileName(this);
+    fi = QFileInfo(CurrentFilepath);
+    if(ui->ComboBox_Suffix->findText(fi.completeSuffix()) == -1) // 针对addItem方法可避免重复添加
+    {
+       ui->ComboBox_Suffix->setCurrentText("*.*");
+    }
+    else
+    {
+
+       ui->ComboBox_Suffix->setCurrentText(fi.completeSuffix());
+    }
+
+    CurrentDirPath=fi.path()+"/";
+    ui->Edit_Path->setText(CurrentDirPath);
+
+    ui->ComboBox_Suffix->setEditable(false);
+    CurrentSuffix=ui->ComboBox_Suffix->currentText();
+
+    //获取全部文件路径
+    AllFileListPath_Main.clear();
+    filetool->QfileListAll(CurrentDirPath);    
+    AllFileListPath_Main=filetool->AllFileListPath;
 
 }
 
+void MainWindow::on_FileButton_clicked()
+{
+    CurrentDirPath=ui->Edit_Path->text();
+    CurrentSuffix=ui->ComboBox_Suffix->currentText();
+    Source=ui->Edit_Source->text();
+    Target=ui->Edit_Target->text();
+
+    if(CurrentSuffix=="*.*")
+    {
+        int size=AllFileListPath_Main.keys().count();
+
+        for(int i = 0; i<size; ++i)
+        {
+            QString Suffix_L=AllFileListPath_Main.keys()[i];
+            filetool->QfileRename(Suffix_L,Source,Target);
+
+        }
+
+    }
+    else{
+
+        filetool->QfileRename(CurrentSuffix,Source,Target);
+
+    }
+
+    AllFileListPath_Main.values().clear();
+    filetool->QfileListAll(CurrentDirPath);
+    AllFileListPath_Main=filetool->AllFileListPath;
+
+//    DocumentOperation *filetool= new DocumentOperation(Path,Suffix,Source,Target,false);
+//    this->FileNamePath=filetool->fileNameList;
+//    int int_Suffix=ui->ComboBox_Suffix->currentIndex();
+//    cout<<int_Suffix<<endl;
+//    switch(int_Suffix)
+//    {
+//        case 1:
+//            WordFileNamePath_docx=filetool->file_operator();
+//        case 2:
+//            ExcelFileNamePath_xlsx=filetool->file_operator();
+//        default:
+//            this->FileNamePath=filetool->file_operator();
+
+//    }
+
+}
+
+
+
 void MainWindow::on_MianButton_clicked()
 {
+
+//        myThread.setdata(classname,classfuns,Sourcex,Targetx);
+//        MyThread.setvector(WordFileNamePath_docx);
         myThread.start();
 }
 
 void MainWindow::on_ContextButton_clicked()
 {
-    string Sourcex=ui->Edit_Source->text().toStdString();
-    string Targetx=ui->Edit_Target->text().toStdString();
+
+    string CurrentFilepath_s=CurrentFilepath.toStdString();
+    string Source_s=ui->Edit_Source->text().toStdString();
+    string Target_s=ui->Edit_Target->text().toStdString();
     int int_Suffix=ui->ComboBox_Suffix->currentIndex();
-    cout<<int_Suffix<<endl;
+    string classname;
+    string classfuns;
+    try
+    {
     string pyFilePath = "/script";
     int ret = CplusUsePython::instance()->init(pyFilePath,"fileOperation");
     if(ret != 0)
@@ -80,13 +125,25 @@ void MainWindow::on_ContextButton_clicked()
     switch(int_Suffix)
     {
         case 2:
-             ret = CplusUsePython::instance()->CCallClassFunc("RemoteWord","word_replace",this->CurrentFilepath,Sourcex,Targetx);
+             classname="RemoteWord";
+             classfuns="word_replace";
+             qDebug()<<"11111";
+
+     qDebug()<< AllFileListPath_Main.value("docx")<<"ss"<<endl;
+             ret = CplusUsePython::instance()->CCallClassFunc(classname,classfuns,CurrentFilepath_s,Source_s,Target_s);
 
         case 5:
-             ret = CplusUsePython::instance()->CCallClassFunc("RemoteExcel","re_Excel",this->CurrentFilepath,Sourcex,Targetx);
+             classname="RemoteExcel";
+             classfuns="re_Excel";
+
+             ret = CplusUsePython::instance()->CCallClassFunc(classname,classfuns,CurrentFilepath_s,Source_s,Target_s);
 
     }
 
+    }
+    catch(...){
+        qDebug()<< "调用外部工具出错";
+    }
 
 }
 

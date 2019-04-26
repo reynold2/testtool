@@ -8,6 +8,15 @@
 #include <stdlib.h>
 #include <vector>
 #include <iostream>
+#include <QVector>
+#include <QMap>
+#include <QString>
+#include <QDir>
+#include <QFileInfoList>
+#include <QStringList>
+#include <QFileInfo>
+#include <QFile>
+#include <QDebug>
 
 
 using namespace std;
@@ -15,31 +24,18 @@ class DocumentOperation
 {
 public:
 
-     DocumentOperation(QString dirpath,QString suffixs,QString soures,QString target,bool x);
+     DocumentOperation();
 
     ~DocumentOperation();
 
-     std::string& replace_all(std::string& str, const std::string& old_value, const std::string& new_value);
-
 private:
-    QString dirpath;
-    QString suffixs;
-    QString soures;
-    QString target;
-    bool state ;
-    vector<string> fileNameList;
 
-    string s_dirpath;
-    string s_suffixs;
-    string s_soures;
-    string s_target;
-private :
-    void setvector();
-
+    QString oldfilenamepath;
+    QString newfilenamepath;
 public:
-    vector<string>  file_operator();
-
-
+    QMap< QString,QVector< QString >> AllFileListPath;
+    void QfileListAll(QString path);
+    void QfileRename(QString suffixs,QString soures,QString target);
 };
 
 #endif // DOCUMENTOPERATION_H

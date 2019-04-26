@@ -16,6 +16,20 @@ signals:
     void requestMsg(const QString &msg);
 
 public slots:
+public:
+//    void setvector(const vector<string>* pvec);
+//    void setdata(const string &x, const string &y, const string &z, const string &m);
+
+private:
+    //父对象
+
+//    vector<string>* filenamepath;
+    int runnableID;
+
+//    string Sourcex;
+//    string Targetx;
+//    string classname;
+//    string classfuns;
 
 };
 

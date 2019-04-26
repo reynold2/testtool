@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 5.9.0
+** Created by: Qt User Interface Compiler version 5.8.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -155,6 +155,7 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "\346\226\207\346\241\243\346\223\215\344\275\234\345\267\245\345\205\267", Q_NULLPTR));
+        Edit_Path->setText(QApplication::translate("MainWindow", "DirPath", Q_NULLPTR));
         label->setText(QApplication::translate("MainWindow", "\346\226\207\344\273\266\345\244\271\346\211\200\345\234\250\350\267\257\345\276\204", Q_NULLPTR));
         label_2->setText(QApplication::translate("MainWindow", "\346\272\220\346\225\260\346\215\256", Q_NULLPTR));
         label_3->setText(QApplication::translate("MainWindow", "\347\233\256\346\240\207\346\225\260\346\215\256", Q_NULLPTR));
@@ -166,12 +167,12 @@ public:
         ComboBox_Suffix->clear();
         ComboBox_Suffix->insertItems(0, QStringList()
          << QApplication::translate("MainWindow", "*.*", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "*.doc", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "*.docx", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "*.rtf", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "*.xls", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "*.xlsx", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "*.txt", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "doc", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "docx", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "rtf", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "xls", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "xlsx", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "txt", Q_NULLPTR)
         );
         MianButton->setText(QApplication::translate("MainWindow", "\345\205\250\351\203\250\346\233\277\346\215\242", Q_NULLPTR));
         FileButton->setText(QApplication::translate("MainWindow", "\346\226\207\344\273\266\345\220\215\346\233\277\346\215\242", Q_NULLPTR));

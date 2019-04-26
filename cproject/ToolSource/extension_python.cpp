@@ -42,6 +42,8 @@ int CplusUsePython::init(const string pyFilePath, const string pyFileNameNoSuffi
     pArgsfunc = NULL;
     pClass = NULL;
     pInstance = NULL;
+
+
      //判断初始化是否成功
     if (!Py_IsInitialized())
         return -2;
@@ -56,14 +58,15 @@ int CplusUsePython::init(const string pyFilePath, const string pyFileNameNoSuffi
     // 导入python文件的相关操作
     if (ret == 0)
     {
-
         ret = PyRun_SimpleString("sys.path.append('./')");
     }
+
     if (ret != 0)
     {
         Py_Finalize();
         return -4;
     }
+
       pModule = PyImport_ImportModule(pyFileNameNoSuffix.c_str());
  //   pModule = PyImport_Import(pyFileNameNoSuffix.c_str());
     if (!pModule)
@@ -72,6 +75,7 @@ int CplusUsePython::init(const string pyFilePath, const string pyFileNameNoSuffi
         Py_Finalize();
         return -5;
     }
+
     return 0;
 }
 

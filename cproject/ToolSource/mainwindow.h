@@ -15,6 +15,11 @@
 #include <iostream>
 #include <string>
 #include "extension_python.h"
+
+
+//vector<vector<string>> ALLFILEPATHLIST;
+
+
 namespace Ui {
 class MainWindow;
 }
@@ -43,14 +48,27 @@ private slots:
 private:
     Ui::MainWindow *ui;
     MyThread myThread;
+    DocumentOperation *filetool;
 
 private:
-    vector<string> FileNamePath;
+   QMap< QString,QVector< QString >> AllFileListPath_Main;
+   QString CurrentDirPath;
+   QString CurrentFilepath ;
+   QString CurrentSuffix;
+
+   QString Source;
+   QString Target;
 
 public:
     vector<string> WordFileNamePath_docx;
     vector<string> ExcelFileNamePath_xlsx;
-    string CurrentFilepath ;
+    vector<string> FileNamePath;
+
+
+
+
+
+
 
 };
 
