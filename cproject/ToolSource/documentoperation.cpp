@@ -6,8 +6,9 @@ DocumentOperation::DocumentOperation()
 {
 
 }
-void DocumentOperation::QfileListAll(QString path)
+void DocumentOperation::QfileListAll(QString path1)
 {
+this->path=path1;
 QDir dir(path);
     if(!dir.exists())
     {
@@ -39,6 +40,7 @@ QDir dir(path);
 
 void DocumentOperation::QfileRename(QString suffixs,QString soures,QString target)
 {
+
     QMap<QString,QVector< QString >>::Iterator  it;
     for(it = AllFileListPath.begin();it != AllFileListPath.end();++it)//迭代器遍历
     {
@@ -62,16 +64,26 @@ void DocumentOperation::QfileRename(QString suffixs,QString soures,QString targe
             }
             else
             {
+
                 qDebug()<<"文件替换成功:" <<oldfilenamepath.replace(soures,target)<<endl;
 
             }
             }
+
+        qDebug()<<5<<AllFileListPath.values();
         }
+
     else
         {
-            qDebug()<< it.value();
+            //qDebug()<< it.value();
         }
     }
+    AllFileListPath.clear();
+   // qDebug()<<6<<AllFileListPath.values();
+    this->QfileListAll(this->path);
+
+   // qDebug()<<7<<AllFileListPath.values();
+
 }
 
 QMap<QString, QVector<QString> > DocumentOperation::GetAllFileListPath()

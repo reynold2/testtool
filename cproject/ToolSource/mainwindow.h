@@ -49,6 +49,7 @@ private:
     Ui::MainWindow *ui;
     MyThread myThread;
     DocumentOperation *filetool;
+    void _init_DocumentOperation();
 
 private:
    QMap< QString,QVector< QString >> AllFileListPath_Main;
@@ -60,6 +61,7 @@ private:
    QString Target;
 
 public:
+
     vector<string> WordFileNamePath_docx;
     vector<string> ExcelFileNamePath_xlsx;
     vector<string> FileNamePath;
