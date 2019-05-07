@@ -2,7 +2,6 @@
 #define MAINWINDOW_H
 #include<qfiledialog.h>
 #include<QMessageBox.h>
-#include <QDebug>
 #include <QDateTime>
 #include <QThreadPool>
 #include <QMainWindow>
@@ -58,6 +57,7 @@ private:
 
    QString Source;
    QString Target;
+   int ret;
 
 public:
     vector<string> WordFileNamePath_docx;

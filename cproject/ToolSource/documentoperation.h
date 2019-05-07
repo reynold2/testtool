@@ -33,9 +33,10 @@ private:
     QString oldfilenamepath;
     QString newfilenamepath;
     QMap< QString,QVector< QString >> AllFileListPath;
+    QString path;
 public:
 
-    void QfileListAll(QString path);
+    void QfileListAll(QString path1);
     void QfileRename(QString suffixs,QString soures,QString target);
 
 

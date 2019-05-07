@@ -6,8 +6,13 @@ DocumentOperation::DocumentOperation()
 {
 
 }
-void DocumentOperation::QfileListAll(QString path)
+void DocumentOperation::QfileListAll(QString path1)
 {
+if (!AllFileListPath.isEmpty())
+{
+    AllFileListPath.clear();
+}
+this->path=path1;
 QDir dir(path);
     if(!dir.exists())
     {
@@ -39,6 +44,7 @@ QDir dir(path);
 
 void DocumentOperation::QfileRename(QString suffixs,QString soures,QString target)
 {
+
     QMap<QString,QVector< QString >>::Iterator  it;
     for(it = AllFileListPath.begin();it != AllFileListPath.end();++it)//迭代器遍历
     {
@@ -47,7 +53,7 @@ void DocumentOperation::QfileRename(QString suffixs,QString soures,QString targe
     if(QString::compare(it.key(),suffixs)==0)
         {
         for(int j=0;j<it.value().count();j++)//C语言写法遍历
-            {    
+            {
 
             oldfilenamepath =it.value().at(j);//at取出来的值为const，不可更改，迭代器可以更改
 
@@ -58,20 +64,30 @@ void DocumentOperation::QfileRename(QString suffixs,QString soures,QString targe
 
             if( c==0)
             {
-                qDebug()<<"文件替换失败:" <<it.value().at(j)<<endl;
+                qDebug()<<"File replacement failed:" <<it.value().at(j)<<endl;
             }
             else
             {
-                qDebug()<<"文件替换成功:" <<oldfilenamepath.replace(soures,target)<<endl;
+
+                qDebug()<<"File replaced successfully:" <<oldfilenamepath.replace(soures,target)<<endl;
 
             }
             }
+
+        qDebug()<<5<<AllFileListPath.values();
         }
+
     else
         {
-            qDebug()<< it.value();
+            //qDebug()<< it.value();
         }
     }
+    AllFileListPath.clear();
+    qDebug()<<6<<AllFileListPath.values();
+    this->QfileListAll(this->path);
+
+    qDebug()<<7<<AllFileListPath.values();
+
 }
 
 QMap<QString, QVector<QString> > DocumentOperation::GetAllFileListPath()
@@ -82,6 +98,10 @@ DocumentOperation::~DocumentOperation()
 {
 
 }
+
+
+
+
 
 //string &DocumentOperation::replace_all(string &str, const string &old_value, const string &new_value)
 //{

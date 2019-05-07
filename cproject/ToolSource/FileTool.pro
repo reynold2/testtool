@@ -29,7 +29,8 @@ SOURCES += \
     documentoperation.cpp \
     myrunable.cpp \
     mythread.cpp \
-    extension_python.cpp
+    extension_python.cpp \
+
 
 
 HEADERS += \
@@ -37,7 +38,8 @@ HEADERS += \
     documentoperation.h \
     mythread.h \
     myrunable.h \
-    extension_python.h
+    extension_python.h \
+
 
 
 
@@ -46,6 +48,12 @@ FORMS += \
 
 DISTFILES += \
     fileOperation.py
+############# python enviroment
+#home
 
-INCLUDEPATH +=C:\Users\Administrator\AppData\Local\Programs\Python\Python37\include
-LIBS += -LC:\Users\Administrator\AppData\Local\Programs\Python\Python37\libs\ -lPython37
+#INCLUDEPATH +=C:\Users\Administrator\AppData\Local\Programs\Python\Python37\include
+#LIBS += -LC:\Users\Administrator\AppData\Local\Programs\Python\Python37\libs\ -lPython37
+
+#company
+INCLUDEPATH +=C:\Users\Administrator\AppData\Local\Programs\Python\Python36\include
+LIBS += -LC:\Users\Administrator\AppData\Local\Programs\Python\Python36\libs\ -lPython36

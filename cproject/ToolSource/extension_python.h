@@ -30,6 +30,8 @@ private:
     PyObject *pArgsfunc;
     PyObject *pClass;
     PyObject *pInstance;
+    PyObject *result;
+    PyObject *pDict;
 };
 
 #endif // CPLUSUSEPYTHON_H
