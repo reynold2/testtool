@@ -3,6 +3,8 @@
 #include "math.h"
 #include <Python.h>
 #include <iostream>
+#include<direct.h>
+#include <iomanip>
 #include<QDebug>
 using namespace std;
 class CplusUsePython
@@ -21,6 +23,11 @@ public:
     int init(const string pyFilePath, const string pyFileNameNoSuffix);
     // C++调用python类中的函数
     int CCallClassFunc(const string pyclassName,const string pyFuncName,const string filepath, const string oldname, const string newname);
+
+
+    char* zhuanhuan(string src);
+
+
 
 private:
     PyObject *pName;

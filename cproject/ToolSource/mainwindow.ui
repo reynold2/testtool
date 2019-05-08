@@ -39,7 +39,13 @@
         <height>20</height>
        </rect>
       </property>
+      <property name="inputMask">
+       <string/>
+      </property>
       <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
        <string>DirPath</string>
       </property>
      </widget>
@@ -249,7 +255,7 @@
      <x>0</x>
      <y>0</y>
      <width>600</width>
-     <height>23</height>
+     <height>22</height>
     </rect>
    </property>
   </widget>

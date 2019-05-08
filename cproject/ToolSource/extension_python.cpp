@@ -55,16 +55,18 @@ int CplusUsePython::init(const string pyFilePath, const string pyFileNameNoSuffi
         Py_Finalize();
         return -3;
     }
-    // 导入python文件的相关操作
-    if (ret == 0)
-    {
-        ret = PyRun_SimpleString("sys.path.append('./')");
-    }
 
+    // 导入python文件的相关操作
+    ret = PyRun_SimpleString(pyFilePath.c_str());
     if (ret != 0)
     {
-        Py_Finalize();
-        return -4;
+        ret = PyRun_SimpleString("sys.path.append('./')");
+        cout<<"Find alternate script paths"<<endl;
+        if (ret != 0)
+        {
+            Py_Finalize();
+            return -4;
+        }
     }
 
       pModule = PyImport_ImportModule(pyFileNameNoSuffix.c_str());
@@ -152,5 +154,19 @@ int CplusUsePython::CCallClassFunc(const string pyclassName,const string pyFuncN
         PyArg_Parse(result, "i", &c);
         qDebug() << "status code:" << c << endl;
 
-    return 0;
+        return 0;
 }
+//string转char数组c_str用来替换方法避免可能出现的中文乱码
+char *CplusUsePython::zhuanhuan(string src)
+{
+        char *dst = new char[255];
+        int i;
+        for(i=0;i <=src.length();i++)
+            dst[i]=src[i];
+        dst[i] = '\0';
+        return dst;
+}
+
+
+
+

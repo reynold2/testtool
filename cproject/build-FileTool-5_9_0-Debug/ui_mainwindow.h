@@ -138,7 +138,7 @@ public:
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 600, 23));
+        menuBar->setGeometry(QRect(0, 0, 600, 22));
         MainWindow->setMenuBar(menuBar);
         mainToolBar = new QToolBar(MainWindow);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
@@ -155,7 +155,9 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "\346\226\207\346\241\243\346\223\215\344\275\234\345\267\245\345\205\267", Q_NULLPTR));
-        Edit_Path->setText(QApplication::translate("MainWindow", "DirPath", Q_NULLPTR));
+        Edit_Path->setInputMask(QString());
+        Edit_Path->setText(QString());
+        Edit_Path->setPlaceholderText(QApplication::translate("MainWindow", "DirPath", Q_NULLPTR));
         label->setText(QApplication::translate("MainWindow", "\346\226\207\344\273\266\345\244\271\346\211\200\345\234\250\350\267\257\345\276\204", Q_NULLPTR));
         label_2->setText(QApplication::translate("MainWindow", "\346\272\220\346\225\260\346\215\256", Q_NULLPTR));
         label_3->setText(QApplication::translate("MainWindow", "\347\233\256\346\240\207\346\225\260\346\215\256", Q_NULLPTR));

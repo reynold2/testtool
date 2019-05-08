@@ -35,7 +35,7 @@ private:
     QMap< QString,QVector< QString >> AllFileListPath;
     QString path;
 public:
-
+    static std::string& replace_all(std::string& str, const std::string& old_value, const std::string& new_value);
     void QfileListAll(QString path1);
     void QfileRename(QString suffixs,QString soures,QString target);
 

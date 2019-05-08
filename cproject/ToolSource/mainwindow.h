@@ -48,6 +48,8 @@ private:
     Ui::MainWindow *ui;
     MyThread myThread;
     DocumentOperation *filetool;
+    void stringSpilt();
+    string exepath;
 
 private:
    QMap< QString,QVector< QString >> AllFileListPath_Main;
