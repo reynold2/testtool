@@ -6,6 +6,7 @@
 #include<direct.h>
 #include <iomanip>
 #include<QDebug>
+#include<QTime>
 using namespace std;
 class CplusUsePython
 {
@@ -39,6 +40,10 @@ private:
     PyObject *pInstance;
     PyObject *result;
     PyObject *pDict;
+public:
+    bool stuate;
+    double timeall;
+
 };
 
 #endif // CPLUSUSEPYTHON_H

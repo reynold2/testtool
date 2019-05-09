@@ -5,6 +5,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
 {
     ui->setupUi(this);
+    ui->ComboBox_Suffix->setEnabled(false);
     connect(ui->FileButton, SIGNAL(clicked()), this, SLOT(on_FileButton_clicked()),Qt::UniqueConnection);
     connect(ui->Button_FilePath, SIGNAL(clicked()), this, SLOT(on_Button_FilePath_clicked()),Qt::UniqueConnection);
     connect(ui->MianButton, SIGNAL(clicked()), this, SLOT(on_MianButton_clicked()),Qt::UniqueConnection);
@@ -12,7 +13,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     MainWindow::stringSpilt();
     filetool=new DocumentOperation();
-    int ret = CplusUsePython::instance()->init(exepath,"fileOperation");
+    int ret = usepython->instance()->init(exepath,"fileOperation");
     if(ret != 0)
     {
         qDebug() << "script init failure!" << endl;
@@ -48,17 +49,17 @@ void MainWindow::on_Button_FilePath_clicked()
     //获取全部文件路径判断是否AllFileListPath_Main是否初始化
     filetool->QfileListAll(CurrentDirPath);
     AllFileListPath_Main=filetool->GetAllFileListPath();
-
+    ui->ComboBox_Suffix->setEnabled(true);
 //    qDebug()<<AllFileListPath_Main.values();
 }
 
 void MainWindow::on_FileButton_clicked()
 {
+    ui->FileButton->setEnabled(false);
     CurrentDirPath=ui->Edit_Path->text();
     CurrentSuffix=ui->ComboBox_Suffix->currentText();
     Source=ui->Edit_Source->text();
     Target=ui->Edit_Target->text();
-
     if(CurrentSuffix=="*.*")
     {
         int size=AllFileListPath_Main.keys().count();
@@ -66,7 +67,6 @@ void MainWindow::on_FileButton_clicked()
         for(int i = 0; i<size; ++i)
         {
             QString Suffix_L=AllFileListPath_Main.keys()[i];
-
             filetool->QfileRename(Suffix_L,Source,Target);
 
         }
@@ -75,29 +75,47 @@ void MainWindow::on_FileButton_clicked()
     else{
 
         filetool->QfileRename(CurrentSuffix,Source,Target);
-
     }
       AllFileListPath_Main=filetool->GetAllFileListPath();
-      qDebug()<<8<<AllFileListPath_Main.values();
+     // qDebug()<<8<<AllFileListPath_Main.values();
 
-
+    ui->FileButton->setEnabled(true);
 }
 
 
 
 void MainWindow::on_MianButton_clicked()
 {
+    this->on_FileButton_clicked();
+    string Source_s=ui->Edit_Source->text().toStdString();
+    string Target_s=ui->Edit_Target->text().toStdString();
+    try
+    {
+    QMap<QString,QVector< QString >>::Iterator  it_mian;
+        for(it_mian = AllFileListPath_Main.begin();it_mian != AllFileListPath_Main.end();++it_mian)
+        {
+            for(int j=0;j<it_mian.value().count();j++)
+            {
+                string CurrentFilepath_local= it_mian.value().at(j).toStdString();
+                QFuture<void> future= QtConcurrent::run(this, &MainWindow::thread_context,CurrentFilepath_local,Source_s,Target_s);
+            }
 
-        myThread.start();
+        }
+
+    }
+    catch(...){
+        qDebug()<< "Error calling external tool";
+    }
 }
 
 void MainWindow::on_ContextButton_clicked()
 {
-
+    ui->ContextButton->setDisabled(true);
     string CurrentFilepath_s=CurrentFilepath.toStdString();
     string Source_s=ui->Edit_Source->text().toStdString();
     string Target_s=ui->Edit_Target->text().toStdString();
     string Standby_Mode=ui->ComboBox_Suffix->currentText().toStdString();
+
     try
     {
         if(Standby_Mode=="*.*")
@@ -108,15 +126,31 @@ void MainWindow::on_ContextButton_clicked()
             for(int j=0;j<it.value().count();j++)
             {
                 string CurrentFilepath_local= it.value().at(j).toStdString();
-                QThread::sleep(3);
-                int ret = CplusUsePython::instance()->CCallClassFunc("classname","classfuns",CurrentFilepath_local,Source_s,Target_s);
+                QThread::sleep(1);
+                    do
+                     {
+                          qDebug()<<1<<usepython->stuate;
+                         if(usepython->stuate)
+                         {
+                            qDebug()<<2<<usepython->stuate;
+                            int ret = usepython->instance()->CCallClassFunc("classname","classfuns",CurrentFilepath_local,Source_s,Target_s);
+                            qDebug()<<3<<usepython->timeall;
+
+                         }
+                         qDebug()<<4<<usepython->stuate;
+                         continue;
+                         qDebug()<<5<<usepython->stuate;
+                     }while(!usepython->stuate);
+                qDebug()<<6<<usepython->stuate;
 
             }
 
         }
     }
     else{
+            qDebug()<<usepython->stuate;
         int ret = CplusUsePython::instance()->CCallClassFunc("classname","classfuns",CurrentFilepath_s,Source_s,Target_s);
+        qDebug()<<usepython->stuate;
     }
 
     }
@@ -124,12 +158,13 @@ void MainWindow::on_ContextButton_clicked()
         qDebug()<< "Error calling external tool";
     }
 
+    ui->ContextButton->setDisabled(false);
 }
 
-//void MainWindow::on_progressBar_valueChanged(int value)
-//{
+void MainWindow::on_progressBar_valueChanged(int value)
+{
 
-//}
+}
 
 void MainWindow::showMsg(const QString &msg)
 {
@@ -145,4 +180,9 @@ void MainWindow::stringSpilt()
     QString z=QString::fromStdString(m);
     QString str1=QString("sys.path.append('%1')").arg(z);
     exepath=str1.toStdString();
+}
+
+void MainWindow::thread_context(string CurrentFilepath_s,string Source_s,string Target_s)
+{
+    CplusUsePython::instance()->CCallClassFunc("classname","classfuns",CurrentFilepath_s,Source_s,Target_s);
 }

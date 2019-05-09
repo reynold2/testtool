@@ -10,10 +10,10 @@
 #include "myrunable.h"
 #include "mythread.h"
 #include "math.h"
-#include <Python.h>
 #include <iostream>
 #include <string>
 #include "extension_python.h"
+#include <QtConcurrent>
 
 
 //vector<vector<string>> ALLFILEPATHLIST;
@@ -40,7 +40,7 @@ private slots:
 
     void on_ContextButton_clicked();
 
-//    void on_progressBar_valueChanged(int value);
+    void on_progressBar_valueChanged(int value);
 
     void showMsg(const QString &msg);
 
@@ -50,6 +50,8 @@ private:
     DocumentOperation *filetool;
     void stringSpilt();
     string exepath;
+    CplusUsePython *usepython;
+    void thread_context(string CurrentFilepath_s, string Source_s, string Target_s);
 
 private:
    QMap< QString,QVector< QString >> AllFileListPath_Main;
@@ -65,6 +67,8 @@ public:
     vector<string> WordFileNamePath_docx;
     vector<string> ExcelFileNamePath_xlsx;
     vector<string> FileNamePath;
+public:
+
 
 
 

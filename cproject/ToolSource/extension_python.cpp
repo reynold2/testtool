@@ -15,6 +15,7 @@ CplusUsePython::~CplusUsePython()
         if (pFunc) Py_DECREF(pFunc);
         if (pClass) Py_DECREF(pClass);
         if (pInstance) Py_DECREF(pInstance);
+        if (result) Py_DECREF(result);
         Py_Finalize();
     }
 }
@@ -42,7 +43,7 @@ int CplusUsePython::init(const string pyFilePath, const string pyFileNameNoSuffi
     pClass = NULL;
     pInstance = NULL;
     result = NULL;
-
+    stuate=true;
 
      //判断初始化是否成功
     if (!Py_IsInitialized())
@@ -76,6 +77,12 @@ int CplusUsePython::init(const string pyFilePath, const string pyFileNameNoSuffi
         cout <<  pyFileNameNoSuffix << endl;
         Py_Finalize();
         return -5;
+    }
+    PyEval_InitThreads();     //开启多线程支持
+    int nInit = PyEval_ThreadsInitialized();  //检测线程支持是否开启成功
+    if ( nInit )
+    {
+        PyEval_SaveThread();  //因为调用PyEval_InitThreads成功后，当前线程就拥有了GIL，释放当前线程的GIL，
     }
 
     return 0;
@@ -139,7 +146,18 @@ int CplusUsePython::CCallClassFunc(const string pyclassName,const string pyFuncN
 //         cout<<"An error occurred calling the real column method"<<endl;
 //        return -4;
 //    }
+//初始化Python环境
+    int nHold = PyGILState_Check() ;   //检测当前线程是否拥有GIL
+        PyGILState_STATE gstate;
+        if ( !nHold )
+        {
+            gstate = PyGILState_Ensure();   //如果没有GIL，则申请获取GIL
+        }
+        Py_BEGIN_ALLOW_THREADS;
+        Py_BLOCK_THREADS;
 
+
+        stuate=false;
         pArgsfunc = Py_BuildValue("(s,s,s)", (char*)filepath.c_str(),(char*)oldname.c_str(),(char*)newname.c_str());
         pFunc = PyObject_GetAttrString(pModule, "mianfile");
         if(!pFunc)
@@ -149,11 +167,19 @@ int CplusUsePython::CCallClassFunc(const string pyclassName,const string pyFuncN
         }
 
         result=PyEval_CallObject(pFunc, pArgsfunc);
-        int c=0 ;
+        double timeall=0 ;
            // 将 python 类型的返回值转换为 C/C++类型
-        PyArg_Parse(result, "i", &c);
-        qDebug() << "status code:" << c << endl;
+        PyArg_Parse(result, "d", &timeall);
+        qDebug() << "status code:" << timeall << endl;
+        stuate=true;
 
+
+        Py_UNBLOCK_THREADS;
+        Py_END_ALLOW_THREADS;
+        if (!nHold)
+        {
+                PyGILState_Release(gstate);    //释放当前线程的GIL
+        }
         return 0;
 }
 //string转char数组c_str用来替换方法避免可能出现的中文乱码
